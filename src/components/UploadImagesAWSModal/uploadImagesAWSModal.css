@@ -1,0 +1,76 @@
+﻿.uploadButton {
+    width: 250px;
+    border: 1px solid var(--Border);
+    border-radius: 6px;
+    color: var(--Paragraph);
+    font-size: 12px;
+    font-weight: 600;
+    background-color: var(--BorderHover);
+    padding: 10px 20px;
+  }
+  
+
+  
+
+
+  .react-modal-content .content-modal-home-Upload .itensModalHome-Upload {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 100%;
+    padding: 20px;
+}
+ 
+
+
+  .react-modal-content .content-modal-home-Upload .itensModalHome-Upload .listImages {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 100%;
+    max-height: 400px;
+    padding: 0px 0px 20px 0px;
+    background-color: var(--BorderInput2);
+    border-radius: 6px;
+    overflow: auto !important;
+    margin-top: 10px;
+}
+
+.react-modal-content .content-modal-home-Upload .itensModalHome-Upload .listImages::-webkit-scrollbar {
+    width: 12px;       
+    border-radius: 6px;        /* width of the entire scrollbar */
+  }
+  
+    .react-modal-content .content-modal-home-Upload .itensModalHome-Upload .listImages::-webkit-scrollbar-track {
+    background: var(--BorderHover);        /* color of the tracking area */
+    border-radius: 6px;
+  }
+  
+    .react-modal-content .content-modal-home-Upload .itensModalHome-Upload .listImages::-webkit-scrollbar-thumb {
+    background-color: var(--Border);    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border: 3px solid var(--BorderHover);  /* creates padding around scroll thumb */
+  }
+
+ 
+  .react-modal-content .content-modal-home-Upload .itensModalHome-Upload h4 {
+    color: var(--Primary);
+    margin: 10px 5px;
+    font-weight: 700;
+    text-align: center;
+}
+ 
+  .react-modal-content .content-modal-home-Upload .itensModalHome-Upload .btnSave {
+    width: 150px;
+    border: none;
+    border-radius: 20px;
+    color: var(--White);
+    font-size: 12px;
+    font-weight: 600;
+    background-color: var(--Primary);
+    padding: 10px 20px;
+    margin-top: 20px;
+  }
+  

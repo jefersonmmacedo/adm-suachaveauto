@@ -1,0 +1,608 @@
+﻿.NewContract {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.NewContract .aside {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 80px 0 40px 170px;
+}
+
+    .NewContract .aside .link {
+        border: none;
+        border-radius: 20px;
+        background-color: none;
+        color: var(--Primary);
+        font-size: 16px;
+        font-weight: 600;
+        text-decoration: none;
+
+      }
+      
+      .NewContract .aside .textHome {
+        width: 90%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        } 
+    
+    .NewContract .aside .textHome h3 {
+      font-weight: bold;
+      text-align: center;
+      color: var(--Paragraph);
+      margin: 20px 0;
+    }
+    .NewContract .aside .textHome h4 {
+      font-weight: 500;
+      text-align: center;
+      margin: 20px 5px 10px 5px;
+      color: var(--Paragraph);
+    }
+    
+.NewContract .aside .btnSend {
+    width: 300px;
+    padding: 10px 20px;
+    border: 1px solid var(--Border);
+    background-color: var(--White);
+    font-weight: 500;
+    border-radius: 20px;
+    color: var(--White);
+    margin: 5px;
+    font-size: 14px;
+    background-color: var(--Primary);
+    margin: 20px 5px;
+}
+
+
+.NewContract .aside .form {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    border-radius: 20px;
+    padding: 10px 15px;
+    background-color: var(--White);
+    box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+   border: none;
+}
+
+.NewContract .aside .form .textHome {
+    width: 98%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    } 
+
+.NewContract .aside .form .textHome h3 {
+  font-weight: bold;
+  text-align: center;
+  color: var(--Paragraph);
+  margin: 20px 0;
+}
+.NewContract .aside .form .textHome h4 {
+  font-weight: 700;
+  text-align: center;
+  margin: 5px;
+  color: var(--Paragraph);
+}
+.NewContract .aside .form .newInfo {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    margin: 5px 0 0 ;
+}
+.NewContract .aside .form .btnSendContract {
+    border: 1px solid var(--Border);
+    background-color: var(--Primary);
+    color: var(--White);
+    border-radius: 20px;
+    padding: 10px 20px;
+    margin: 20px;
+}
+
+.NewContract .aside .form input{
+    width: 99%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 20px;
+    background-color: var(--White);
+    border: 1px solid var(--Border);
+    font-weight: 500;
+    color: var(--Description);
+}
+
+.NewContract .aside .form input::placeholder{
+    color: var(--Gray);
+}
+.NewContract .aside .form textarea::placeholder{
+    color: var(--Gray);
+}
+.NewContract .aside .form select{
+    width: 99%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 20px;
+    background-color: var(--White);
+    border: 1px solid var(--Description);
+    font-weight: 500;
+    color: var(--Gray);
+}
+.NewContract .aside .form .select{
+    width: 99%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 20px;
+    background-color: var(--White);
+    border: 1px solid var(--Description);
+    font-weight: 500;
+    color: var(--Description);
+}
+
+
+.NewContract .aside .form select option {
+    margin: 40px;
+    background: var(--White);
+    color: var(--Primary);
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
+    border-radius: 1px;
+    border: none;
+  }
+.NewContract .aside .form textarea{
+    width: 99%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 20px;
+    background-color: var(--White);
+    border: 1px solid var(--Border);
+    font-weight: 500;
+    resize: none;
+    color: var(--Description);
+}
+
+.NewContract .aside .form textarea::placeholder{
+    color: var(--Gray);
+}
+
+.NewContract .aside .form .data {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: flex-start;
+    width: 100%;
+    margin: 0 0 10px 0;
+    padding: 20px 0;
+    border-bottom: 1px solid var(--Border);
+    flex-wrap: wrap;
+}
+.NewContract .aside .form .data .dataInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    width: 250px;
+    margin: 0px 5px;
+}
+.NewContract .aside .form .data .dataInfo input {
+    border: 1px solid var(--Border);
+    color: var(--Paragraph);
+    border-radius: 20px;
+    width: 100%x;
+    margin-right: 5px;
+    padding: 10px;
+    height: 40px;
+}
+
+.NewContract .aside .form .data .dataInfo span {
+    margin: 0px 10px;
+}
+
+.NewContract .aside .form .data .textData {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.NewContract .aside .form .data .textData h5 {
+    color: var(--Gray2);
+    font-weight: 700;
+}
+.NewContract .aside .form .newFeature {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 20px 0;
+    background-color: var(--BorderInput2);
+    padding: 5px;
+}
+
+.NewContract .aside .form .newFeature h5 {
+    font-weight: 700;
+    color: var(--Gray2)
+}
+
+.NewContract .aside .form .newFeature input {
+    border: 1px solid var(--Border);
+    color: var(--Paragraph);
+    border-radius: 20px;
+    width: 550px;
+    margin-right: 5px;
+    padding: 10px 20px;
+}
+.NewContract .aside .form .newFeature button {
+    border: 1px solid var(--Border);
+    background-color: var(--Primary);
+    color: var(--White);
+    border-radius: 20px;
+    padding: 10px 20px;
+}
+.NewContract .aside .form .characteristcs {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    flex-wrap: wrap;
+    padding: 10px 0;
+    border-top: 1px solid var(--Border);
+}
+.NewContract .aside .form .characteristcs .itemCharacteristc {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 5px;
+    padding: 5px 10px;
+    border-radius: 20px;
+    background-color: rgba(170,0,0,0.04);
+    width: 30%;
+}
+
+.NewContract .aside .form .characteristcs .itemCharacteristc h5 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: var(--Description);
+    margin: 0px;
+}
+.NewContract .aside .form .characteristcs .itemCharacteristc h5 svg {
+    color: var(--Primary);
+    margin-right: 3px;
+}
+.NewContract .aside .form .characteristcs .itemCharacteristc .btnItem {
+    width: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 0px;
+    border-radius: 3px;
+    background-color: rgba(170,0,0,0.015);
+    color: var(--Primary);
+    margin: 0px;
+    box-shadow: none;
+    border: none;
+}
+
+
+.NewContract .aside .form .Check {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.NewContract .aside .form .Check .btnCheck {
+    padding: 10px;
+    border: 1px solid var(--Border);
+    background-color: var(--White);
+    font-weight: 500;
+    border-radius: 25px;
+    color: var(--Gray);
+    margin: 5px 3px;
+    font-size: 14px;
+    color: var(--Gray);
+    width: 24%;
+}
+.NewContract .aside .form .Check .selected {
+    padding: 10px 20px;
+    border: 1px solid var(--Border);
+    background-color: var(--White);
+    font-weight: 500;
+    border-radius: 25px;
+    color: var(--White);
+    margin: 5px 3px;
+    font-size: 14px;
+    background-color: var(--Primary);
+    width: 24%;
+}
+.NewContract .aside .form .Check .btnCheck:hover {
+    color: var(--White);
+    background-color: var(--Primary);
+}
+
+.NewContract .aside .form .myImages{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    flex-wrap: wrap;
+}
+.NewContract .aside .form .myImages .btnImage{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    background-color: rgba(255,255,255, 0.1);
+    color: var(--White);
+    position: absolute;
+    margin-left: 125px; 
+    margin-top: 80px; 
+}
+.NewContract .aside .form .myImages .featuredImage{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    color: var(--White);
+    position: absolute;
+    margin-right: 125px; 
+    margin-top: 80px; 
+    background-color: rgba(255,255,255, 0.1);
+}
+.NewContract .aside .form .myImages .imageUnic{
+    width: 170px;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+.NewContract .aside .form .myImages .imageUnic img{
+    width: 170px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+.NewContract .aside .form .myImages .imageUnicFeatured{
+    width: 170px;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+    object-fit: cover;
+    border-radius: 20px;
+    background-color: var(--Primary)
+}
+.NewContract .aside .form .myImages .imageUnicFeatured img{
+    width: 170px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 20px;
+    border: 2px solid var(--Primary)
+}
+.NewContract .aside .form span{
+    font-size: 12px;
+    color: var(--Gray);
+    font-weight: 700;
+    margin: 10px 0;
+}
+.NewContract .aside .form .data .btnData{
+    width: 20%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 12px;
+    margin: 5px;
+    border-radius: 20px;
+    background-color: var(--Edit);
+    color: var(--White);
+    border: none;
+    font-weight: 500;
+}
+.NewContract .aside .form .data input{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 12px;
+    margin: 5px;
+    border-radius: 20px;
+    background-color: var(--White);
+    border: 1px solid var(--Border);
+    font-weight: 500;
+}
+.NewContract .aside .form .data select{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 20px;
+    background-color: var(--White);
+    border: 1px solid var(--Border);
+    font-weight: 500;
+}
+.NewContract .aside .form .data .select{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 20px;
+    background-color: var(--White);
+    border: 1px solid var(--Description);
+    font-weight: 500;
+    color: var(--Description);
+}
+
+.NewContract .aside .form input[type="file"] {
+    display: none;
+}
+.NewContract .aside .form label {
+    padding:10px;
+    background-color: var(--Primary);
+    color: #FFF;
+    text-transform: uppercase;
+    text-align: center;
+    display: block;
+    margin-top: 10px;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 20px;
+}
+
+
+@media (max-width: 950px) {
+    .NewContract .aside .form {
+        width: 95%;
+    }
+
+    .NewContract .aside .form .data .dataInfo {
+        width: 31%;
+        margin:5px;
+    }
+
+
+    @media (max-width: 850px) {
+
+        .NewContract .aside .form .data .dataInfo {
+            width: 48%;
+            margin:5px;
+        }
+
+        
+        .NewContract .aside .form .Check .btnCheck {
+            width: 32%;
+        }
+        .NewContract .aside .form .Check .selected {
+            width: 32%;
+        }
+    @media (max-width: 750px) {
+        .NewContract .aside .form .data .dataInfo {
+            width: 45%;
+            margin:5px;
+        }
+    @media (max-width: 700px) {
+        .NewContract .aside {
+            padding-left: 0px;
+            padding-bottom: 80px;
+        }
+
+            .NewContract .aside .form {
+                width: 95%;
+            }
+
+            .NewContract .aside .form .data {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+            }
+
+            .NewContract .aside .form .data .dataInfo {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: flex-end;
+                width: 95%;
+                margin:5px 5px 5px 0px;
+            }
+
+            .NewContract .aside .form .Check .btnCheck {
+                width: 48%;
+            }
+            .NewContract .aside .form .Check .selected {
+                width: 48%;
+            }
+
+            .NewContract .aside .form .characteristcs .itemCharacteristc {
+                width: 45%;
+            }
+
+            .NewContract .aside .form .myImages .imageUnic{
+                width: 130px;
+                height: 80px;
+            }
+            .NewContract .aside .form .myImages .imageUnic img{
+                width: 130px;
+                height: 80px;
+            }
+            .NewContract .aside .form .myImages .imageUnicFeatured{
+                width: 130px;
+                height: 80px;
+            }
+            .NewContract .aside .form .myImages .imageUnicFeatured img{
+                width: 130px;
+                height: 80px;
+            }
+
+            .NewContract .aside .form .newFeature {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .NewContract .aside .form .newFeature input {
+                width: 100%;
+            }
+            
+        }
+    }
+}
+}
+
+

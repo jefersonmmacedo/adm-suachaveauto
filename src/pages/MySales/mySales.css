@@ -1,0 +1,386 @@
+﻿.MySales {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.MySales .aside {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 170px;
+  padding-top: 100px;
+}
+
+.MySales .aside .textHome {
+width: 90%;
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: space-between;
+margin-bottom: 20px;
+}
+
+
+.MySales .aside .textHome h3 {
+  font-weight: bold;
+  text-align: center;
+  color: var(--Paragraph);
+}
+
+.MySales .aside .infoData {
+width: 90%;
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: center;
+flex-wrap: wrap;
+padding: 10px;
+background-color: var(--White);
+box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.1);
+border-radius: 6px;
+}
+
+.MySales .aside .infoData .textInfo{
+padding: 10px 20px;
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: center;
+border: 1px solid var(--Border);
+border-radius: 6px;
+margin: 5px;
+
+}
+
+.MySales .aside .infoData .textInfo h5 {
+font-weight: 600;
+text-align: center;
+color: var(--Gray);
+}
+.MySales .aside .infoData .textInfo h5 span {
+font-weight: 900;
+color: var(--Primary);
+}
+
+.MySales .aside .link {
+border: none;
+border-radius: 6px;
+background-color: none;
+color: var(--Primary);
+font-size: 16px;
+font-weight: 600;
+text-decoration: none;
+}
+
+
+.MySales .informations {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 10px;
+  background-color: var(--White);
+  box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+  margin-bottom: 100px;
+}
+
+.MySales .informations .propertyListAdm{
+  width: 95%;
+  border-radius: 4px;
+  background-color: var(--White);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+  margin:10px;
+  box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.1);
+}
+.MySales .informations .propertyListAdm .image{
+  border-radius: 4px 0 0 4px;
+  width: 120px;
+  height: 100%;
+  object-fit: cover;
+}
+.MySales .informations .propertyListAdm .image img{
+  border-radius: 4px 0 0 4px;
+  width: 120px;
+  height: 100%;
+  object-fit: cover;
+}
+
+.MySales .informations .propertyListAdm .textpropertyListAdm{
+
+  background-color: var(--BorderInput);
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 10px;
+  text-align:left;
+  width: 100%;
+  height: 100%;
+  background-color: var(--White);
+}
+.MySales .informations .propertyListAdm .textpropertyListAdm .textDatapropertyListAdm{
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  text-align:left;
+  width: 100%;
+  height: 100%;
+}
+.MySales .informations .propertyListAdm .textpropertyListAdm .textDatapropertyListAdm h3 {
+  color: var(--Primary);
+  font-weight: 700;
+  margin: 0 10px;
+  text-align:left;
+}
+
+.MySales .informations .propertyListAdm .textpropertyListAdm .textDatapropertyListAdm h5 {
+  color: var(--Gray);
+  margin: 0 9px;
+  text-align:left;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: row;
+  font-weight: 700;
+}
+.MySales .informations .propertyListAdm .textpropertyListAdm .textDatapropertyListAdm h6 {
+  color: var(--Gray);
+  margin: 5px 10px 0 10px;
+  text-align:left;
+}
+.MySales .informations .propertyListAdm .textpropertyListAdm h4 {
+  margin: 5px 10px 0 10px;
+  text-align:center;
+  padding: 3px 5px;
+  background-color: var(--Aproved);
+  color: var(--White);
+  border-radius: 3px;
+  font-size: 14px;
+}
+.MySales .informations .propertyListAdm .infosContactData {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+  padding: 10px 0;
+  width: 100%;
+  flex-wrap: wrap;
+}
+.MySales .informations .propertyListAdm .infosContactData .infoUnicData {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 6px;
+  border: 1px solid var(--Border);
+}
+
+.MySales .informations .propertyListAdm .infosContactData .infoUnicData svg {
+  color: var(--Gray);
+  margin-right: 5px;
+}
+.MySales .informations .propertyListAdm .infosContactData .infoUnicData  h5 {
+  font-weight: 600;
+  color: var(--Gray);
+}
+
+.MySales .informations .propertyListAdm .infosContactData .infoUnicData:hover {
+  background-color: var(--BorderInput2);
+}
+
+.MySales .informations .propertyListAdm .buttons{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 10px;
+  border-left: 1px solid var(--Border);
+}
+
+.MySales .informations .propertyListAdm .buttons .linkEdit {
+padding: 10px;
+border: none;
+border-radius: 6px;
+background-color: var(--Edit);
+color: var(--White);
+margin: 5px;
+font-size: 16px;
+font-weight: 700;
+              display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: row;
+}
+.MySales .informations .propertyListAdm .buttons .delete {
+padding: 10px;
+border: none;
+border-radius: 6px;
+background-color: var(--Button);
+color: var(--White);
+margin: 5px;
+font-size: 16px;
+font-weight: 700;
+              display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: row;
+}
+.MySales .informations .propertyListAdm .buttons .notView {
+padding: 10px;
+border: none;
+border-radius: 6px;
+background-color: var(--Aproved);
+color: var(--White);
+margin: 5px;
+font-size: 16px;
+font-weight: 700;
+              display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: row;
+}
+.MySales .aside .search {
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: row;
+margin: 10px;
+width: 90%;
+padding: 10px 15px;
+background-color: var(--White);
+box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.1);
+border-radius: 6px;
+}
+.MySales .aside .search .selection {
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: row;
+width: 100%;
+}
+
+
+.MySales .aside .search input {
+width: 50%;
+height: 40px;
+padding: 10px 20px;
+border: 1px solid var(--Border);
+border-radius: 6px;
+margin: 2px;
+}
+.MySales .aside .search .selection select {
+width: 100%;
+height: 40px;
+padding: 10px 20px;
+border: 1px solid var(--Border);
+border-radius: 6px;
+margin: 2px;
+}
+
+
+@media(max-width: 850px) {
+.MySales .aside .search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 90%;
+}
+
+
+.MySales .aside .search input {
+  width: 100%;
+}
+
+
+@media (max-width: 700px) {
+  .MySales .informations {
+      padding: 0 10px 10px 10px;
+  }
+  .MySales .aside {
+      padding-left: 0px;
+  }
+
+
+
+  @media (max-width: 570px) {
+
+        .MySales .informations .propertyListAdm{
+          width: 100%;
+          margin:20px 5px;
+
+          display: flex;
+          align-items: center;
+          justify-content: flex-start;
+          flex-direction: column;
+      }
+
+          .MySales .informations .propertyListAdm .image{
+          width: 100%;
+          height: 100px;
+      }
+        .MySales .informations .propertyListAdm .image img{
+          width: 100%;
+          height: 100px;
+      }
+
+      .MySales .informations .propertyListAdm .infosContactData .infoUnicData {
+        padding: 5px;
+      }
+    
+
+      .MySales .informations .propertyListAdm .buttons{
+        justify-content: space-evenly;
+        flex-direction: row;
+        width: 100%;
+        border-left:none;
+        border-top: 1px solid var(--Border);
+        padding: 5px;
+    }
+
+      .MySales .informations .propertyListAdm .buttons .linkEdit {
+      width: 100%;
+    }
+      .MySales .informations .propertyListAdm .buttons .delete {
+      width: 100%;
+    }
+      .MySales .informations .propertyListAdm .buttons .notView {
+      width: 100%;
+    }
+
+
+    .MySales .aside .search {
+      width: 90%;
+      padding: 10px;
+    }
+
+    .MySales .aside .search .selection {
+      flex-direction: column;
+      width: 100%;
+    }
+
+    .MySales .aside .infoData .textInfo {
+      padding: 5px 10px;
+      margin: 3px;
+    }
+    .MySales .aside .infoData .textInfo h5 {
+      font-size: 12px;
+    }
+    
+  }
+}
+}

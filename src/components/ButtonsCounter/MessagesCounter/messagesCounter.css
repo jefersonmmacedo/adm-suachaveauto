@@ -1,0 +1,15 @@
+﻿.couterMessages{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: var(--Primary);
+    color: var(--White);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    position: absolute;
+    margin-top: -70px;
+    margin-left: -10px;
+    font-size: 12px;
+}

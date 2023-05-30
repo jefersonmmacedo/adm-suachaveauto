@@ -1,0 +1,387 @@
+﻿.ProposalList {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 60px 20px;
+}
+
+.ProposalList h2 {
+    margin: 20px;
+    font-weight: bold;
+
+}
+.ProposalList .proposalItens {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+}
+.ProposalList .proposalItens .proposalLists {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin: 10px;
+}
+
+.ProposalList .proposalItens .proposalLists button {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--Button);
+    border: none;
+    border-radius: 6px;
+    padding: 10px 20px;
+    color: var(--White);
+    font-weight: 700;
+    margin: 20px 0;
+}
+.ProposalList .proposalItens .proposalLists .proposalUnic {
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid var(--Border);
+    padding: 0;
+    height: 120px;
+    margin-top: -1px;
+}
+.ProposalList .proposalItens .proposalLists .proposalUnic:hover {
+background-color: var(--BorderHover);
+}
+
+.ProposalList .proposalItens .proposalLists .proposalUnic .user {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100px;
+}
+
+.ProposalList .proposalItens .proposalLists .proposalUnic .user p {
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.ProposalList .proposalItens .proposalLists .proposalUnic .user .image {
+    width: 60px; 
+}
+.ProposalList .proposalItens .proposalLists .proposalUnic .user .image img {
+ width: 60px;
+}
+
+.ProposalList .proposalItens .proposalLists .proposalUnic .data {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 60%;
+    height: 120px;
+}
+
+.ProposalList .proposalItens .proposalLists .proposalUnic .data h3 {
+    font-weight: 900;
+    color: var(--Primary)
+}
+.ProposalList .proposalItens .proposalLists .proposalUnic .data h5 {
+    font-weight: 700;
+    color: var(--Description);
+}
+
+.ProposalList .proposalItens .proposalLists .proposalUnic .data p {
+    color: var(--Description);
+    font-weight: 700;
+}
+
+.ProposalList .proposalItens .proposalLists .proposalUnic .data .professionals {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.ProposalList .proposalItens .proposalLists .proposalUnic .data .professionals p {
+    color: var(--White);
+    background-color: var(--Gray);
+    padding: 5px 5px;
+    margin: 5px 5px 5px 0;
+    border-radius: 6px;
+    font-size: 10px;
+    font-weight: normal;
+}
+
+.ProposalList .proposalItens .proposalLists .proposalUnic .status {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+    width: 20%;
+    height: 100%;
+    padding: 5px;
+}
+
+.ProposalList .proposalItens .proposalLists .proposalUnic .status h4 {
+    color: var(--White);
+    background-color: var(--Aproved);
+    padding: 5px 10px;
+    margin: 5px 0 5px 5px;
+    border-radius: 6px;
+    font-weight: normal;
+    font-size: 14px;
+}
+
+.ProposalList .proposalItens .proposalLists .proposalUnic .status p {
+    font-weight: 700;
+    color: var(--Description);
+    align-items: right;
+}
+
+
+
+
+.ProposalList .proposalItens .proposalView {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid var(--Border);
+    margin: 10px;
+    height: 400px;
+    padding: 15px;
+    position: fixed;
+    right: 0;
+}
+
+.ProposalList .proposalItens .proposalView .block1 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.ProposalList .proposalItens .proposalView .block1 h3 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-weight: 900;
+    color: var(--Primary)
+}
+.ProposalList .proposalItens .proposalView .block1 h5 {
+    font-weight: 700;
+    color: var(--Description);
+}
+
+.ProposalList .proposalItens .proposalView .block1 .professionals {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 5px 0;
+}
+
+.ProposalList .proposalItens .proposalView .block1 .professionals p {
+    color: var(--White);
+    background-color: var(--Gray);
+    padding: 5px 5px;
+    margin: 5px 5px 5px 0;
+    border-radius: 6px;
+    font-size: 10px;
+    font-weight: normal;
+}
+
+.ProposalList .proposalItens .proposalView .block1 p {
+    font-weight: 700;
+    color: var(--Description);
+}
+
+
+
+
+.ProposalList .proposalItens .proposalView .block2 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.ProposalList .proposalItens .proposalView .block2 .status {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.ProposalList .proposalItens .proposalView .block2 .status h4 {
+    color: var(--White);
+    background-color: var(--Aproved);
+    padding: 5px 10px;
+    margin: 5px 5px 5px 0;
+    border-radius: 6px;
+    font-weight: normal;
+}
+
+.ProposalList .proposalItens .proposalView .block2 p {
+    font-weight: 700;
+    color: var(--Paragraph);
+}
+
+
+
+
+
+.ProposalList .proposalItens .proposalView .block3 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+}
+
+.ProposalList .proposalItens .proposalView .block3 p {
+    font-weight: 700;
+    color: var(--Paragraph);
+}
+
+.ProposalList .proposalItens .proposalView .block3 .infos {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 5px 0;
+}
+
+.ProposalList .proposalItens .proposalView .block3 .infos p {
+    font-weight: 700;
+    color: var(--Description);
+    margin-left: 5px;
+}
+
+.ProposalList .proposalItens .proposalView .block3 .image {
+    width: 30px; 
+}
+.ProposalList .proposalItens .proposalView .block3 .image img {
+ width: 30px;
+}
+.ProposalList .proposalItens .proposalView .block3 a {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--Button);
+    border: none;
+    border-radius: 6px;
+    padding: 10px 20px;
+    color: var(--White);
+    font-weight: 700;
+    text-decoration: none;
+}
+
+@media (max-width: 1100px) {
+    .ProposalList .proposalItens {
+        width: 90%;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: center;
+    }
+
+
+    .ProposalList .proposalItens .proposalLists {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        margin: 10px;
+    }
+    .ProposalList .proposalItens .proposalLists .proposalUnic {
+        height: 120px;
+    }
+
+    @media (max-width: 900px) {
+
+        
+        .ProposalList .proposalItens {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            justify-content: center;
+        }
+
+        .ProposalList .proposalItens .proposalLists {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            margin: 10px;
+        }
+
+        .ProposalList .proposalItens .proposalView {
+            display: none;
+        }
+        .ProposalList .proposalItens .proposalLists .proposalUnic {
+            width: 90%;
+        }
+
+        @media (max-width: 750px) {
+            .ProposalList .proposalItens .proposalLists {
+                margin-top: 60px;
+            }
+
+            .ProposalList .proposalItens .proposalLists .proposalUnic {
+                width: 100%;
+            }
+        @media (max-width: 560px) {
+            .ProposalList {
+                padding: 60px 5px 20px 5px;
+            }
+
+            .ProposalList .proposalItens .proposalLists {
+                width: 100%;
+            }
+
+            .ProposalList .proposalItens .proposalLists .proposalUnic {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: flex-start;
+                border: 1px solid var(--Border);
+                padding: 0 3px;
+                height: 160px;
+                margin-top: -1px;
+            }
+
+            .ProposalList .proposalItens .proposalLists .proposalUnic .user {
+                display: none;
+            }
+
+            .ProposalList .proposalItens .proposalLists .proposalUnic .data {
+                margin-top: 10px;
+                width: 100%;
+            }
+            .ProposalList .proposalItens .proposalLists .proposalUnic .status {
+                width: 100%;
+                flex-direction: row;
+            }
+        }
+        }
+    
+    }
+}

@@ -1,0 +1,176 @@
+﻿.Proposal {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.Proposal .proposalItens {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+}
+.Proposal .proposalItens .proposalList {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.Proposal .proposalItens .proposalList .proposalUnic {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid var(--Border);
+    padding: 10px;
+    margin-top: -1px;
+}
+.Proposal .proposalItens .proposalList .proposalUnic:hover {
+background-color: var(--BorderHover);
+}
+
+.Proposal .proposalItens .proposalList .proposalUnic .data {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 60%;
+}
+
+.Proposal .proposalItens .proposalList .proposalUnic .data h3 {
+    font-weight: 900;
+    color: var(--Primary)
+}
+.Proposal .proposalItens .proposalList .proposalUnic .data h5 {
+    font-weight: 700;
+    color: var(--Description);
+}
+
+.Proposal .proposalItens .proposalList .proposalUnic .data p {
+    color: var(--Description);
+    font-weight: 700;
+}
+
+.Proposal .proposalItens .proposalList .proposalUnic .data .professionals {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.Proposal .proposalItens .proposalList .proposalUnic .data .professionals p {
+    color: var(--White);
+    background-color: var(--Gray);
+    padding: 5px 5px;
+    margin: 5px 5px 5px 0;
+    border-radius: 6px;
+    font-size: 10px;
+    font-weight: normal;
+}
+
+.Proposal .proposalItens .proposalList .proposalUnic .status {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+    width: 20%;
+    height: 100%;
+}
+
+.Proposal .proposalItens .proposalList .proposalUnic .status h4 {
+    color: var(--White);
+    background-color: var(--Aproved);
+    padding: 5px 10px;
+    margin: 5px 0 5px 5px;
+    border-radius: 6px;
+    font-weight: normal;
+    font-size: 14px;
+}
+
+.Proposal .proposalItens .proposalList .proposalUnic .status p {
+    font-weight: 700;
+    color: var(--Description);
+    align-items: right;
+}
+
+
+
+@media (max-width: 1100px) {
+    .Proposal .proposalItens {
+        width: 90%;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: center;
+    }
+
+
+    .Proposal .proposalItens .proposalList {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+
+    @media (max-width: 900px) {
+
+        
+        .Proposal .proposalItens {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            justify-content: center;
+        }
+
+        .Proposal .proposalItens .proposalList {
+            width: 90%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+        }
+
+       
+        @media (max-width: 560px) {
+
+            .Proposal .proposalItens .proposalList {
+                width: 100%;
+            }
+
+            .Proposal .proposalItens .proposalList .proposalUnic {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: flex-start;
+                border: 1px solid var(--Border);
+                padding: 0;
+                margin-top: -1px;
+            }
+
+            .Proposal .proposalItens .proposalList .proposalUnic .user {
+                display: none;
+            }
+
+            .Proposal .proposalItens .proposalList .proposalUnic .data {
+                margin-left: 15px;
+                margin-top: 10px;
+                width: 100%;
+            }
+            .Proposal .proposalItens .proposalList .proposalUnic .status {
+                width: 100%;
+                flex-direction: row;
+            }
+        }
+    
+    }
+}

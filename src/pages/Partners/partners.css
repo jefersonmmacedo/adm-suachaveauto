@@ -1,0 +1,83 @@
+.Partners {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.Partners .aside {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 170px;
+    padding-top: 80px;
+}
+.Partners .aside .textHome {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 5px;
+  }
+  
+  
+  .Partners .aside .textHome h3 {
+      font-weight: bold;
+      text-align: center;
+      color: var(--Paragraph);
+  }
+
+  
+
+  .Partners .informations {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+    margin-bottom: 100px;
+    padding: 10px 15px;
+    background-color: var(--White);
+    box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+}
+
+.Partners .informations .infoData {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    border: none;
+    border-bottom: 1px solid var(--Border);
+    padding: 10px;
+    margin: 5px 10px;
+}
+
+.Partners .informations .infoData h4 {
+    font-weight: 700;
+    color: var(--Primary);
+}
+.Partners .informations .infoData h5 {
+    font-weight: 600;
+    color: var(--Gray2);
+}
+.Partners .informations .infoData h5 a {
+   text-decoration: none;
+   color: var(--Gray);
+}
+
+@media (max-width: 700px) {
+    .Partners .informations {
+        padding-bottom: 100px;
+    }
+    .Partners .aside {
+        padding-left: 0px;
+    }
+}

@@ -1,0 +1,316 @@
+﻿.SignInCompany {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.SignInCompany .login {
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--Black);
+}
+
+.SignInCompany .login .form {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.SignInCompany .login .form img {
+    width: 180px;
+    margin-bottom: 40px;
+}
+
+.SignInCompany .login .form .data {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+    padding: 10px;
+}
+
+
+.SignInCompany .login .form .data .dataInputs {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    border: 1px solid var(--Border);
+    border-radius: 20px;
+    margin: 5px 0;
+}
+.SignInCompany .login .form .data .dataInputs .icon {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.SignInCompany .login .form .data .dataInputs .icon svg {
+    color: var(--White);
+    margin: 5px 20px;
+}
+.SignInCompany .login .form .data .dataInputs input {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    padding: 5px 20px;
+    margin: 5px 0;
+    font-weight: bold;
+    background-color: var(--Black);
+}
+
+
+.SignInCompany .login .form .data input {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    color: var(--Border);
+    background-color: var(--Black);
+    border: 1px solid var(--Border);
+    padding: 10px 20px;
+    border-radius: 20px;
+    margin: 5px 0;
+    font-weight: bold;
+}
+
+.SignInCompany .login .form .data input::placeholder {
+    color: var(--Border);
+}
+.SignInCompany .login .form .data .message {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: var(--Primary);
+    font-weight: bold;
+    margin: 10px 0;
+    background-color: var(--White);
+    border-radius: 6px;
+    padding: 10px;
+}
+
+.SignInCompany .login .form .data .message h5 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+}
+
+.SignInCompany .login .form .data .message h5 svg {
+    margin-right: 5px;
+}
+
+.SignInCompany .login .form .data .links {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    color: var(--Border);
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.SignInCompany .login .form .data .links p .link {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--Wite);
+    border: none;
+    color: var(--BorderHover);
+    font-weight: 700;
+    text-decoration: none;
+    padding: 5px;
+    width: 100%;
+    margin: 0px;
+}
+
+
+.SignInCompany .login .form .data button {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--Button);
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    color: var(--White);
+    font-weight: 700;
+    margin: 20px 0;
+}
+.SignInCompany .login .form .data a {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--Black2);
+    border: none;
+    border-radius: 6px;
+    padding: 10px 20px;
+    color: var(--Border);
+    font-weight: 700;
+    margin: 20px 0;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.SignInCompany .professional {
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-image: url("../../assets/images/background3.jpg"); /* The image used */
+    background-color: var(--Primary); /* Used if the image is unavailable */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+.SignInCompany .professional .block {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(237, 50, 55, 0.3);
+}
+
+.SignInCompany .professional .block button {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--Button);
+    color: var(--White);
+    border: none;
+    border-radius: 6px;
+    padding: 10px 20px;
+    font-weight: 700;
+    margin: 20px 0;
+}
+
+
+
+@media (max-width: 850px) {
+
+    
+   .SignInCompany .login .form .data {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 20px 0;
+        padding: 10px;
+    }
+
+   .SignInCompany .login .form .data .dataInputs {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: 90%;
+        border-bottom: 2px solid var(--Border);
+    }
+
+
+    
+   .SignInCompany .login .form .data input {
+        width: 90%;
+    }
+   .SignInCompany .login .form .data select {
+        width: 90%;
+    }
+   .SignInCompany .login .form .data textarea {
+        width: 90%;
+    }
+    
+   .SignInCompany .login .form .data input::placeholder {
+        color: var(--Gray);
+    }
+   .SignInCompany .login .form .data .links {
+        width: 90%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-end;
+        color: var(--Gray);
+        font-weight: bold;
+        margin: 10px 0;
+    }
+    
+   .SignInCompany .login .form .data button {
+        width: 90%;
+    }
+
+@media (max-width: 700px) {
+
+   .SignInCompany .login .form {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+   .SignInCompany .login {
+        width: 100%;
+        height: 100vh;
+    }
+    
+   .SignInCompany .professional {
+        display: none;
+    }
+
+    
+    @media (max-width: 500px) {
+       .SignInCompany .login .form {
+            width: 90%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+       .SignInCompany .login .form .data {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 20px 0;
+            padding: 10px;
+        }
+        
+    }
+}
+}

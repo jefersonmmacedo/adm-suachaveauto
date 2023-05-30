@@ -1,0 +1,559 @@
+﻿.SignUpProfessional {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.SignUpProfessional .login {
+    width: 60%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--White);
+}
+
+.SignUpProfessional .login form {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.SignUpProfessional .login form img {
+    height: 35px;
+    margin: 20px 0 5px 0;
+}
+
+.SignUpProfessional .login form .data {
+    width: 90%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 0;
+    padding: 10px;
+}
+.SignUpProfessional .login form .data .dataInfo {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+    padding: 10px;
+}
+.SignUpProfessional .login form .data .dataInfo .infoAdress {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.SignUpProfessional .login form .data .dataInfo .infoAdress input {
+    width: 49%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border: 1px solid var(--Border);
+    border-radius: 20px;
+    padding: 7px 15px;
+    margin: 3px 0;
+    font-weight: 600;
+}
+
+
+.SignUpProfessional .login form .data .check {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content:flex-start;
+    text-align: center;
+    margin: 10px 0 5px 0;
+}
+.SignUpProfessional .login form .data .check input[type='checkbox'] {
+    margin: 0px;
+    width: 20px;
+    margin: 5px;
+}
+.SignUpProfessional .login form .data .check h5 {
+    color: var(--Gray2);
+    font-size: 12px;
+    text-align: left;
+}
+.SignUpProfessional .login form .data .check h5 a {
+    text-decoration: none;
+    color: var(--Primary)
+}
+.SignUpProfessional .login form .data .BuscaCep {
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0 20px 0;
+    padding:0px 20px;
+    text-align: center;
+}
+
+.SignUpProfessional .login form .data .BuscaCep button {
+    width: 30px;
+    height: 30px;
+    border: none;
+    background-color: var(--Primary);
+    color: var(--White);
+    border-radius: 20px;
+    margin-left: 5px;
+}
+.SignUpProfessional .login form .data .situationCnpj {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+    padding: 20px;
+    background-color: var(--BorderInput2);
+    border-radius: 20px;
+        text-align: center;
+}
+
+.SignUpProfessional .login form .data .situationCnpj h4 {
+    color: var(--Gray);
+    margin-bottom: 5px;
+        text-align: center;
+}
+.SignUpProfessional .login form .data .situationCnpj h3 {
+    color: var(--Aproved);
+    font-weight: 700;
+    margin-bottom: -20px;
+        text-align: center;
+}
+
+.SignUpProfessional .login form .data .situationCnpj2 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+    padding: 20px;
+    background-color: var(--BorderInput2);
+    border-radius: 20px;
+    text-align: center;
+}
+
+.SignUpProfessional .login form .data .situationCnpj2 h4 {
+    color: var(--Gray);
+    font-weight: 700;
+    margin-bottom: 5px;
+    text-align: center;
+}
+.SignUpProfessional .login form .data .situationCnpj2 h3 {
+    color: var(--Primary);
+    font-weight: 700;
+    text-align: center;
+}
+
+.SignUpProfessional .login form .data .situationCnpj2 h5 {
+    color: var(--Gray);
+    margin: 10px;
+    text-align: center;
+    
+}
+
+
+
+.SignUpProfessional .login form .data input {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border: 1px solid var(--Border);
+    border-radius: 20px;
+    padding: 7px 15px;
+    margin: 3px 0;
+    font-weight: 600;
+}
+
+.SignUpProfessional .login form .data .dataInputs {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    border: 1px solid var(--Border);
+    border-radius: 20px;
+    padding: 7px 15px;
+    margin: 5px 0;
+}
+.SignUpProfessional .login form .data .dataInputs .icon {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+}
+.SignUpProfessional .login form .data .dataInputs input {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    padding:0px;
+    font-weight: 600;
+}
+
+
+.SignUpProfessional .login form .data select {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border: 1px solid var(--Border);
+    border-radius: 20px;
+    padding: 7px 15px;
+    margin: 5px 0;
+    font-weight: 600;
+    background-color: var(--White);
+}
+.SignUpProfessional .login form .data span {
+    color: var(--Gray);
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.SignUpProfessional .login form .data h5 {
+    color: var(--Gray);
+    font-weight: 700;
+    margin: 5px 0;
+    font-size: 12px;
+}
+.SignUpProfessional .login form .data h6 {
+    color: var(--Gray);
+    font-weight: 700;
+    margin: 5px 0;
+}
+.SignUpProfessional .login form .data textarea {
+    width: 80%;
+    border: none;
+    border: 1px solid var(--Border);
+    border-radius: 20px;
+    padding: 7px 15px;
+    margin: 5px 0;
+    font-weight: 600;
+    resize: none;
+}
+
+.SignUpProfessional .login form .data input::placeholder {
+    color: var(--Gray);
+}
+.SignUpProfessional .login form .data .links {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    color: var(--Gray);
+    font-weight: 600;
+    margin: 10px 0;
+}
+.SignUpProfessional .login form .data .buttons {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.SignUpProfessional .login form .data .buttons .btn4  {
+    width: 45%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--White);
+    border: 1px solid var(--Secondary);
+    border-radius: 20px;
+    padding: 7px 15px;
+    color: var(--Secondary);
+    font-weight: 700;
+    margin: 10px;
+}
+.SignUpProfessional .login form .data .buttons .btn3  {
+    width: 45%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--White);
+    border: 1px solid var(--Secondary);
+    border-radius: 20px;
+    padding: 7px 15px;
+    color: var(--Secondary);
+    font-weight: 700;
+    margin: 10px;
+}
+.SignUpProfessional .login form .data .buttons .btn {
+    width: 45%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--Secondary);
+    border: none;
+    border-radius: 20px;
+    padding: 7px 15px;
+    color: var(--White);
+    font-weight: 700;
+    margin: 10px;
+}
+.SignUpProfessional .login form .data .buttons .btn1 {
+    width: 45%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--Primary);
+    border: none;
+    border-radius: 20px;
+    padding: 7px 15px;
+    color: var(--White);
+    font-weight: 700;
+    margin: 10px;
+}
+.SignUpProfessional .login form .data .buttons .btn5 {
+    width: 45%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--White);
+    border: 1px solid var(--Primary);
+    border-radius: 20px;
+    padding: 7px 15px;
+    color: var(--Primary);
+    font-weight: 700;
+    margin: 10px;
+}
+
+
+.SignUpProfessional .login form .data .label-avatar{
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    cursor: pointer;
+    margin: 0px 0 40px 0;
+}
+
+.SignUpProfessional .login form .data .label-avatar input {
+    display: none;
+    width: 80px;
+    height: 80px;
+}
+
+.SignUpProfessional .login form .data .label-avatar span {
+    z-index: 99;
+    position: absolute;
+    opacity: 0.7;
+    transition: all .5s;
+}
+
+.SignUpProfessional .login form .data .label-avatar span:hover{
+    opacity: 1;
+    transform: scale(1.4);
+}
+
+.SignUpProfessional .login form .data .label-avatar img{
+    margin-bottom: 1em;
+    border-radius: 16px;
+    object-fit: cover;
+    width: 80px;
+    height: 80px;
+    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.2);
+}
+
+.SignUpProfessional .professional {
+    width: 40%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-image: url("../../assets/images/background5.jpg"); /* The image used */
+    background-color: var(--Primary); /* Used if the image is unavailable */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+.SignUpProfessional .professional .block {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(237, 50, 55, 0.3);
+}
+
+.SignUpProfessional .professional .block button {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--Button);
+    color: var(--White);
+    border: none;
+    border-radius: 20px;
+    padding: 7px 15px;
+    font-weight: 700;
+    margin: 10px 0;
+}
+
+.SignUpProfessional .login form .data input:focus {
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
+
+
+
+
+@media (max-width: 1000px) {
+
+
+@media (max-width: 850px) {
+
+    .SignUpProfessional .login form {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .SignUpProfessional .login form .data .dataInputs {
+        width: 90%;
+    }
+
+    .SignUpProfessional .login {
+        width: 100%;
+        height: 100vh;
+    }
+    
+    .SignUpProfessional .professional {
+        display: none;
+    }
+
+    .SignUpProfessional .login form .data {
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 20px 0;
+        padding: 10px;
+    }
+    
+    .SignUpProfessional .login form .data input {
+        width: 90%;
+    }
+    .SignUpProfessional .login form .data select {
+        width: 90%;
+    }
+    .SignUpProfessional .login form .data textarea {
+        width: 90%;
+    }
+    
+    .SignUpProfessional .login form .data input::placeholder {
+        color: var(--Gray);
+    }
+    .SignUpProfessional .login form .data .links {
+        width: 90%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-end;
+        color: var(--Gray);
+        font-weight: 600;
+        margin: 10px 0;
+    }
+    
+    .SignUpProfessional .login form .data button {
+        width: 90%;
+    }
+
+    .SignUpProfessional .login form .data .BuscaCep {
+        width: 80%;
+    }
+
+
+    .SignUpProfessional .login form .data .dataInfo .infoAdress {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .SignUpProfessional .login form .data .dataInfo .infoAdress input {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        border: none;
+        border: 1px solid var(--Border);
+        border-radius: 20px;
+        padding: 7px 15px;
+        margin: 3px 0;
+        font-weight: 600;
+    }
+    
+    
+    @media (max-width: 650px) {
+        .SignUpProfessional .login form {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .SignUpProfessional .login form .data {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 20px 0;
+            padding: 10px;
+        }
+
+        .SignUpProfessional .login form .data .BuscaCep {
+            width: 85%;
+        }
+        }
+      
+        
+    }
+}

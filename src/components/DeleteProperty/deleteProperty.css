@@ -1,0 +1,130 @@
+﻿.link {
+    border: none;
+    border-radius: 6px;
+    background-color: none;
+    color: var(--Primary);
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    background-color: var(--Background);
+  }
+  
+
+  .content-moda-Process {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;    
+    overflow:auto;
+    max-height: 600px;  
+}
+
+  .content-moda-Process::-webkit-scrollbar {
+    width: 12px;               /* width of the entire scrollbar */
+  }
+  
+    .content-moda-Process::-webkit-scrollbar-track {
+    background: var(--BorderHover);        /* color of the tracking area */
+    border-radius: 6px;
+  }
+  
+    .content-moda-Process::-webkit-scrollbar-thumb {
+    background-color: var(--Border);    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border: 3px solid var(--BorderHover);  /* creates padding around scroll thumb */
+  }
+
+
+.content-moda-Process .itensModal-Process {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; 
+    padding: 10px;
+
+}
+.content-moda-Process .itensModal-Process .textModal {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; 
+    padding: 10px;
+
+}
+
+.content-moda-Process .itensModal-Process .textModal svg {
+    color: var(--Primary);
+    font-size: 40px;
+}
+.content-moda-Process .itensModal-Process .textModal h3 {
+    font-weight: 900;
+    color: var(--Primary);
+}
+.content-moda-Process .itensModal-Process h4 {
+    font-weight: 700;
+    color: var(--Gray2);
+    margin-bottom: 5px;
+}
+.content-moda-Process .itensModal-Process h5 {
+    font-weight: 600;
+    color: var(--Gray);
+    margin: 0px;
+}
+
+.content-moda-Process .itensModal-Process .buttons {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 20px 10px;
+    border-radius: 20px;
+}
+
+.content-moda-Process .itensModal-Process .buttons button {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    background-color: var(--Primary);
+    border: 1px solid var(--Primary);
+    color: var(--White);
+    margin: 5px;
+    width: 45%;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+.content-moda-Process .itensModal-Process .buttons .cancel {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    background-color: var(--White);
+    border: 1px solid var(--Primary);
+    color: var(--Primary);
+    margin: 5px;
+    width: 45%;
+    padding: 10px 20px;
+}
+
+
+
+@media (max-width: 570px) {
+    
+    .New {
+        width: 100%;
+    }
+    @media (max-width: 550px) {
+
+
+    
+    
+    
+}
+}

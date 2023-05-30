@@ -1,0 +1,247 @@
+﻿
+.infoUnicData {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 20px;
+    border: 1px solid var(--Border);
+    cursor: pointer;
+  }
+
+  .infoUnicData svg {
+    color: var(--Gray);
+    margin-right: 5px;
+    font-size: 12px;
+  }
+  .infoUnicData  h6 {
+    font-weight: 600;
+    color: var(--Gray);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+  }
+
+  .infoUnicData:hover {
+    background-color: var(--BorderInput2);
+  }
+
+.MatchPropertySearch .viewMatchSearch {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    flex-flow: column nowrap;
+    background: var(--BorderHover);
+    border-left: 1px solid var(--Border);
+    backdrop-filter: blur(4px);
+    position: fixed;
+    transform: translateX(0);
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 650px;
+    transition: transform 0.3s ease-in-out;
+    z-index: 99;
+    box-shadow: 1px 1px 20px 0px rgba(0,0,0,0.3);
+    -webkit-box-shadow: 1px 1px 20px 0px rgba(0,0,0,0.3);
+    -moz-box-shadow: 1px 1px 20px 0px rgba(0,0,0,0.3);
+}
+.MatchPropertySearch .viewMatchSearchNone {
+    transform: translateX(100%);
+    flex-flow: column nowrap;
+    background: var(--White);
+    border-left: 1px solid var(--Border);
+    backdrop-filter: blur(4px);
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 500px;
+    transition: transform 0.3s ease-in-out;
+    z-index: 99;
+}
+.MatchPropertySearch .viewMatchSearch .buttonsMatch {
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.MatchPropertySearch .viewMatchSearch .buttonsMatch .btnMatch {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 7px 15px;
+    Background-color: var(--White);
+    color: var(--Paragraph);
+    font-weight: 500;
+    border: 1px solid var(--Gray);
+    border-radius: 6px;
+    font-size: 12px;
+}
+
+.MatchPropertySearch .viewMatchSearch .dataMatch {
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    overflow: auto !important;
+}
+
+.MatchPropertySearch .viewMatchSearch .dataMatch::-webkit-scrollbar {
+    width: 12px;       
+    border-radius: 6px;        /* width of the entire scrollbar */
+  }
+  
+    .MatchPropertySearch .viewMatchSearch .dataMatch::-webkit-scrollbar-track {
+    background: var(--BorderHover);        /* color of the tracking area */
+    border-radius: 6px;
+  }
+  
+    .MatchPropertySearch .viewMatchSearch .dataMatch::-webkit-scrollbar-thumb {
+    background-color: var(--Border);    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border: 3px solid var(--BorderHover);  /* creates padding around scroll thumb */
+  }
+.MatchPropertySearch .viewMatchSearch .dataMatch .user {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    background-color: var(--BorderInput);
+    border-radius: 10px;
+    padding: 5px 10px;
+    margin: 3px;
+}
+
+.MatchPropertySearch .viewMatchSearch .dataMatch .user .text {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.MatchPropertySearch .viewMatchSearch .dataMatch .user h4{
+    color: var(--Primary);
+    font-weight: 700;
+     text-align: center;
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     justify-content: center;
+ } 
+
+.MatchPropertySearch .viewMatchSearch .dataMatch .user .text h5{
+    color: var(--Paragraph);
+    font-weight: 500;
+     text-align: center;
+     margin: 3px;
+     display: flex;
+     flex-direction: row;
+     align-items: flex-end;
+     justify-content: center;
+ } 
+
+ .MatchPropertySearch .viewMatchSearch .dataMatch .user .text h5 svg {
+    color: var(--Primary);
+ }
+ 
+
+.MatchPropertySearch .viewMatchSearch .dataMatch h3{
+   color: var(--Primary);
+   font-weight: 700;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+} 
+.MatchPropertySearch .viewMatchSearch .dataMatch h4{
+   color: var(--Paragraph);
+   font-weight: 700;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+} 
+.MatchPropertySearch .viewMatchSearch .dataMatch h5{
+   color: var(--Paragraph);
+   font-weight: 500;
+    text-align: center;
+    margin: 2px 0px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+} 
+
+.MatchPropertySearch .viewMatchSearch .dataMatch h5 span {
+    font-weight: 700;
+    margin: 5px 3px 0px 3px;
+}
+.MatchPropertySearch .viewMatchSearch .dataMatch h5 svg {
+    margin: 5px 3px 0px 3px;
+}
+
+
+.MatchPropertySearch .viewMatchSearchNone .dataMatch {
+    width: 95%;
+    display: none;
+}
+
+.MatchPropertySearch .viewMatchSearchNone .buttons {
+    width: 95%;
+    display: none;
+}
+
+.MatchPropertySearch .viewMatchSearch .dataMatch button svg {
+    margin-right: 0px;
+}
+
+
+@media(max-width:650px) {
+
+    
+    .MatchPropertySearch .viewMatchSearch {
+        width: 100%;
+        padding: 10px 5px;
+    }
+
+    .MatchPropertySearch .viewMatchSearch .buttons .btnMatch {
+        margin-top: 50px;
+    }
+
+
+
+   
+    @media(max-width: 570px) { 
+        .MatchPropertySearch .btnAtiveFilter {
+            width: 100%;
+          }
+
+    @media(max-width: 450px) { 
+.MatchPropertySearch .viewMatchSearch .dataMatch {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+    }
+    }
+
+}

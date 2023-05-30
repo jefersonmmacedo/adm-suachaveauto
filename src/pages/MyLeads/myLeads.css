@@ -1,0 +1,407 @@
+﻿.MyLeads {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.MyLeads .aside {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 170px;
+    padding-top: 100px;
+}
+.MyLeads .aside .textHome {
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+.MyLeads .aside .textHome h3 {
+    font-weight: bold;
+    text-align: center;
+    color: var(--Paragraph);
+}
+
+
+.MyLeads .aside .infoData {
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 10px 15px;
+background-color: var(--White);
+box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.1);
+border-radius: 20px;
+}
+
+.MyLeads .aside .infoData .textInfo{
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--Border);
+  border-radius: 20px;
+  margin: 5px;
+}
+
+.MyLeads .aside .infoData .textInfo h5 {
+  font-weight: 600;
+  text-align: center;
+  color: var(--Gray);
+}
+.MyLeads .aside .infoData .textInfo h5 span {
+  font-weight: 900;
+  color: var(--Primary);
+}
+
+.MyLeads .informationsClients {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+    margin-bottom: 100px;
+    padding: 10px 15px;
+    background-color: var(--White);
+    box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+}
+
+.MyLeads .informationsClients .clientListAdm{
+    width: 100%;
+    background-color: var(--BorderHover);
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: row;
+    margin: 5px;
+    padding: 5px 5px 10px 5px;
+    border-bottom: 1px solid var(--Border);
+}
+.MyLeads .informationsClients .clientListAdm .image{
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    object-fit: contain;
+}
+.MyLeads .informationsClients .clientListAdm .image img{
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    object-fit: contain;
+}
+
+.MyLeads .informationsClients .clientListAdm .textclientListAdm{
+
+    background-color: var(--BorderInput);
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 0 10px;
+    text-align:left;
+    width: 100%;
+    background-color: var(--BorderHover);
+}
+.MyLeads .informationsClients .clientListAdm .textclientListAdm .textDataclientListAdm{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;;
+    flex-direction: row;
+    text-align:left;
+    width: 100%;
+    flex-wrap: wrap;
+}
+.MyLeads .informationsClients .clientListAdm .textclientListAdm .textDataclientListAdm .dataUnic{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    text-align:left;
+    padding: 2px;
+    width: 150px;
+}
+.MyLeads .informationsClients .clientListAdm .textclientListAdm .textDataclientListAdm h4 {
+    color: var(--Primary);
+    font-weight: 600;
+    margin: 0;
+    text-align:left;
+  }
+
+  .MyLeads .informationsClients .clientListAdm .textclientListAdm .textDataclientListAdm .contactText {
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  .MyLeads .informationsClients .clientListAdm .textclientListAdm .textDataclientListAdm .contactText h5 {
+    color: var(--Gray);
+    text-align:left;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: row;
+    font-weight: 500;
+  }
+  .MyLeads .informationsClients .clientListAdm .textclientListAdm .textDataclientListAdm .contactText h5 svg {
+    margin: 0 3px 0 0px;
+  }
+  .MyLeads .informationsClients .clientListAdm .textclientListAdm .textDataclientListAdm .contactText a  {
+    text-decoration: none;
+  }
+  .MyLeads .informationsClients .clientListAdm .textclientListAdm .textDataclientListAdm h5 {
+    color: var(--Gray);
+    text-align:left;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: row;
+    font-weight: 500;
+  }
+  .MyLeads .informationsClients .clientListAdm .textclientListAdm .textDataclientListAdm h5 svg {
+    margin: 0 3px 0 10px;
+  }
+  .MyLeads .informationsClients .clientListAdm .textclientListAdm .textDataclientListAdm a  {
+    text-decoration: none;
+    margin-left: -10px;
+  }
+
+  .MyLeads .informationsClients .clientListAdm .textclientListAdm h6 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    margin: 2px 0 0 0;
+    text-align:center;
+    padding: 2px 10px;
+    background-color: var(--Aproved);
+    color: var(--White);
+    border-radius: 20px;
+    font-size: 12px;
+  }
+  .MyLeads .informationsClients .clientListAdm .infosContactData {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    padding: 10px 0;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  .MyLeads .informationsClients .clientListAdm .infosContactData .infoUnicData {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 20px;
+    border: 1px solid var(--Border);
+  }
+
+  .MyLeads .informationsClients .clientListAdm .infosContactData .infoUnicData svg {
+    color: var(--Gray);
+    margin-right: 5px;
+  }
+  .MyLeads .informationsClients .clientListAdm .infosContactData .infoUnicData  h5 {
+    font-weight: 600;
+    color: var(--Gray);
+    
+  }
+
+  .MyLeads .informationsClients .clientListAdm .infosContactData .infoUnicData:hover {
+    background-color: var(--BorderInput2);
+  }
+
+  .MyLeads .informationsClients .clientListAdm .buttonsClients{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 10px;
+    border-left: 1px solid var(--Border);
+    height: 100%;
+}
+
+.MyLeads .informationsClients .clientListAdm .buttonsClients .linkEdit {
+  padding: 10px;
+  border: none;
+  border-radius: 20px;
+  background-color: var(--Edit);
+  color: var(--White);
+  font-size: 16px;
+  font-weight: 700;
+                display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: row;
+}
+.MyLeads .informationsClients .clientListAdm .buttonsClients .delete {
+  padding: 10px;
+  border: none;
+  border-radius: 20px;
+  background-color: var(--Button);
+  color: var(--White);
+  margin: 3px;
+  font-size: 16px;
+  font-weight: 700;
+                display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: row;
+}
+.MyLeads .informationsClients .clientListAdm .buttonsClients .notView {
+  padding: 10px;
+  border: none;
+  border-radius: 20px;
+  background-color: var(--Aproved);
+  color: var(--White);
+  margin: 3px;
+  font-size: 16px;
+  font-weight: 700;
+                display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: row;
+}
+.MyLeads .aside .search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  margin: 10px;
+  width: 90%;
+  padding: 10px 15px;
+background-color: var(--White);
+box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.1);
+border-radius: 20px;
+}
+.MyLeads .aside .search .selection {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  width: 100%;
+}
+
+
+.MyLeads .aside .search input {
+  width: 50%;
+  height: 40px;
+  padding: 10px 20px;
+  border: 1px solid var(--Border);
+  border-radius: 20px;
+  margin: 2px;
+}
+.MyLeads .aside .search .selection select {
+  width: 100%;
+  height: 40px;
+  padding: 10px 20px;
+  border: 1px solid var(--Border);
+  border-radius: 20px;
+  margin: 2px;
+}
+
+
+@media(max-width: 850px) {
+  .MyLeads .aside .search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 90%;
+  }
+  
+  
+  .MyLeads .aside .search input {
+    width: 100%;
+  }
+
+
+@media (max-width: 700px) {
+    .MyLeads .informationsClients {
+        padding: 0 10px 0px 10px;
+    }
+    .MyLeads .aside {
+        padding-left: 0px;
+    }
+
+
+
+    @media (max-width: 550px) {
+
+      .MyLeads .informationsClients {
+        padding: 0 5px 0px 5px;
+        width: 95%;
+    }
+
+          .MyLeads .informationsClients .clientListAdm{
+            width: 100%;
+            background-color: none;
+        }
+
+        .MyLeads .informationsClients .clientListAdm .image{
+         display: none;
+      }
+
+
+        .MyLeads .informationsClients .clientListAdm .textclientListAdm{
+          background-color: rgba(255,255,255,0.0);
+      }
+
+        .MyLeads .informationsClients .clientListAdm .textclientListAdm .textDataclientListAdm h5 {
+          font-size: 12px;
+          margin: 2px 5px 0 -10px;
+        }
+
+
+        .MyLeads .informationsClients .clientListAdm .infosContactData .infoUnicData {
+          padding: 5px;
+        }
+      
+
+        .MyLeads .informationsClients .clientListAdm .buttonsClients{
+          padding: 0px;
+          border: none;
+      }
+
+
+
+
+      .MyLeads .aside .search {
+        width: 100%;
+        padding: 10px;
+      }
+
+      .MyLeads .aside .search .selection {
+        flex-direction: column;
+        width: 100%;
+      }
+
+      .MyLeads .aside .infoData .textInfo {
+        padding: 5px 10px;
+        margin: 3px;
+      }
+      .MyLeads .aside .infoData .textInfo h5 {
+        font-size: 12px;
+      }
+
+
+    }
+}
+}

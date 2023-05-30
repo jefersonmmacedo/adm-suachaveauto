@@ -1,0 +1,412 @@
+﻿.WebApp {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.WebApp .aside {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 100px 0 40px 170px;
+}
+
+
+.WebApp .aside .btn {
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--Primary);
+    color: var(--White);
+    margin-top: 20px;
+    border-radius: 20px;
+    }
+.WebApp .aside .textHome {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+    }
+
+    .WebApp .aside .link {
+        border: none;
+        border-radius: 20px;
+        background-color: none;
+        color: var(--Primary);
+        font-size: 16px;
+        font-weight: 600;
+        text-decoration: none;
+
+      }
+      
+    
+    
+    .WebApp .aside .textHome h3 {
+      font-weight: bold;
+      text-align: center;
+      margin-bottom: 10px;
+      color: var(--Paragraph);
+    }
+    .WebApp .aside .textHome h4 {
+      font-weight: 500;
+      text-align: center;
+      margin: 10px 5px;
+      color: var(--Paragraph);
+    }
+
+
+
+.WebApp .aside .form{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    border-radius: 20px;
+    padding: 10px 15px;
+    background-color: var(--White);
+    box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+   border: none;
+}
+
+
+.WebApp .aside .label-avatar{
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    cursor: pointer;
+    margin: 30px 0 0 0;
+}
+
+.WebApp .aside .label-avatar input {
+    display: none;
+}
+
+.WebApp .aside .label-avatar span {
+    z-index: 99;
+    position: absolute;
+    opacity: 0.7;
+    transition: all .5s;
+}
+
+.WebApp .aside .label-avatar span:hover{
+    opacity: 1;
+    transform: scale(1.4);
+}
+
+.WebApp .aside .label-avatar img{
+    margin-bottom: 1em;
+    border-radius: 10px;
+    object-fit: cover;
+    width: 100px;
+    height: 100px;
+    box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+.WebApp .aside .form input{
+    width: 99%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 20px;
+    background-color: var(--White);
+    border: 1px solid var(--Border);
+    font-weight: 500;
+    color: var(--Description);
+}
+
+
+.WebApp .aside .form input::placeholder{
+    color: var(--Gray);
+}
+.WebApp .aside .form textarea::placeholder{
+    color: var(--Gray);
+}
+.WebApp .aside .form select{
+    width: 99%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 20px;
+    background-color: var(--White);
+    border: 1px solid var(--Border);
+    font-weight: 500;
+    color: var(--Gray);
+}
+.WebApp .aside .form .select{
+    width: 99%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 20px;
+    background-color: var(--White);
+    border: 1px solid var(--Primary);
+    font-weight: 500;
+    color: var(--Primary);
+}
+
+.WebApp .aside .form .data .select{
+    width: 99%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 20px;
+    background-color: var(--White);
+    border: 1px solid var(--Primary);
+    font-weight: 500;
+    color: var(--Primary);
+}
+
+
+.WebApp .aside .form select option {
+    margin: 40px;
+    background: var(--White);
+    color: var(--Primary);
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
+    border-radius: 1px;
+    border: none;
+  }
+.WebApp .aside .form textarea{
+    width: 99%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 20px;
+    background-color: var(--White);
+    border: 1px solid var(--Border);
+    font-weight: 500;
+    resize: none;
+    color: var(--Description);
+}
+
+.WebApp .aside .form textarea::placeholder{
+    color: var(--Gray);
+}
+
+.WebApp .aside .form .data {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin: 2px 0;
+}
+
+.WebApp .aside .form span{
+    font-size: 12px;
+    color: var(--Gray);
+    font-weight: 700;
+}
+.WebApp .aside .form .data input{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 12px;
+    margin: 5px;
+    border-radius: 20px;
+    background-color: var(--White);
+    border: 1px solid var(--Border);
+    font-weight: 500;
+}
+
+.WebApp .aside .form .data select{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 20px;
+    background-color: var(--White);
+    border: 1px solid var(--Border);
+    font-weight: 500;
+}
+.WebApp .aside .form .data .select{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 20px;
+    background-color: var(--White);
+    border: 1px solid var(--Primary);
+    font-weight: 500;
+    color: var(--Primary);
+}
+
+
+.WebApp .aside .form .data .dataColor {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 5px;
+}
+
+.WebApp .aside .form .data .dataColor span {
+    margin: 0px 10px;
+}
+.WebApp .aside .form .data .dataColor input[type="color"]{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 1px 3px;
+    border-radius: 20px;
+    background-color: var(--White);
+    border: 1px solid var(--Border);
+    font-weight: 500;
+    padding: 5px 10px;
+}
+
+.WebApp .aside .form .data .dataColor input{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 12px;
+    margin: 5px;
+    border-radius: 20px;
+    background-color: var(--White);
+    border: 1px solid var(--Border);
+    font-weight: 500;
+}
+
+.WebApp .aside .form .data .dataColor select{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 20px;
+    background-color: var(--White);
+    border: 1px solid var(--Border);
+    font-weight: 500;
+}
+.WebApp .aside .form .data .dataColor .select{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 20px;
+    background-color: var(--White);
+    border: 1px solid var(--Primary);
+    font-weight: 500;
+    color: var(--Primary);
+}
+.WebApp .aside .solicitation{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px;
+}
+.WebApp .aside .solicitation h2{
+    color: var(--Primary);
+    font-weight: 800;
+    text-align: center;
+}
+.WebApp .aside .solicitation h4{
+    color: var(--Gray);
+    font-weight: 600;
+    text-align: center;
+    margin: 5px;
+}
+.WebApp .aside .solicitation img{
+    width: 500px;
+    margin: 40px 0;
+}
+.WebApp .aside .solicitation .btnSolicitation {
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--Primary);
+    color: var(--White);
+    margin-top: 20px;
+    border-radius: 20px;
+    }
+
+@media (max-width: 950px) {
+    .WebApp .aside .form {
+        width: 95%;
+    }
+
+    @media (max-width: 700px) {
+        .WebApp .aside {
+            padding-left: 0px;
+            padding-bottom: 80px;
+        }
+
+        @media (max-width: 650px) {
+            .WebApp .aside .form {
+                width: 95%;
+            }
+
+            .WebApp .aside .form .data {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+            }
+
+            .WebApp .aside .solicitation img{
+                width: 90%;
+                margin: 20px 0;
+            }
+            
+
+            
+        }
+    }
+}
+
+

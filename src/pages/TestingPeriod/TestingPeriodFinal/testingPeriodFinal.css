@@ -1,0 +1,140 @@
+.TestingPeriodFinal {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--BorderHover);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.TestingPeriodFinal h2 {
+    text-align: center;
+    color: var(--Primary);
+    font-weight: 900;
+    margin: 10px;
+}
+.TestingPeriodFinal img {
+    width: 250px;
+    margin: 10px;
+}
+
+.TestingPeriodFinal .coming {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 20px 10px;
+}
+.TestingPeriodFinal h4 {
+    text-align: center;
+    color: var(--Gray);
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.TestingPeriodFinal .coming h5 {
+    text-align: center;
+    color: var(--Gray);
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.TestingPeriodFinal .coming h4 {
+    text-align: center;
+    color: var(--Gray);
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.TestingPeriodFinal .coming h4 svg {
+    margin-right: 3px;
+    margin-bottom: -2px;
+    margin-top: 0px;
+}
+.TestingPeriodFinal .logo {
+    width: 150px;
+    margin: 20px;
+}
+.TestingPeriodFinal .logo img {
+    width: 100%;
+}
+.TestingPeriodFinal .buttons {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.TestingPeriodFinal .buttons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    text-decoration: none;
+    border: none;
+    background-color: var(--Primary);
+    padding: 10px 20px;
+    border-radius: 20px;
+    color: var(--White);
+    margin: 5px;
+    width: 200px;
+    font-size: 14px;
+}
+
+
+.TestingPeriodFinal .buttons .whats {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    text-decoration: none;
+    border: none;
+    background-color: var(--Aproved);
+    padding: 10px 20px;
+    border-radius: 20px;
+    color: var(--White);
+    margin: 20px 5px;
+    width: 200px;
+    font-size: 14px;
+}
+.TestingPeriodFinal .buttons .logout {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    text-decoration: none;
+    border: none;
+    background-color: var(--BorderInput2);
+    padding: 10px 20px;
+    border-radius: 20px;
+    color: var(--Primary);
+    margin: 20px 5px;
+    width: 200px;
+    font-size: 14px;
+}
+
+
+@media (max-width: 600px) {
+
+    .TestingPeriodFinal h2 {
+        font-size: 20px;
+    }
+
+    .TestingPeriodFinal img {
+        width: 250px;
+        margin: 20px 10px;
+    }
+
+    .TestingPeriodFinal .image {
+        width: 261px;
+        height: 164px;
+        margin-top: 63px;
+        margin-left: 1px;
+    }
+
+
+    .TestingPeriodFinal .coming {
+        width: 200px;
+    }
+}

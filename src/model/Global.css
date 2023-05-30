@@ -1,0 +1,357 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  --Primary: #E0282F;
+  --PrimaryRGBA: rgba(224, 40, 47, 0.5);
+  --PrimaryCharacteristcs: rgba(224, 40, 47, 0.08);
+  --PrimaryImage: rgba(224, 40, 47, 0.3);
+  --BlackOpacity: rgba(0, 0, 0, 0.3);
+  --PrimaryHover: #d51942;
+  --Secondary: #00afef;
+  --SecondaryHover: #37b2e6;
+  --Description: #302f2f;
+  --Paragraph: #4D4D4D;
+  --Background: #EEEEEE;
+  --Gray: #999999;
+  --Gray2: #777777;
+  --Border: #E6E7E8;
+  --BorderInput: #F1F1F1;
+  --BorderInput2: #F4F4F4;
+  --BorderHover: #F9F9F9;
+  --Link: #f91942;
+  --LinkHover: #d51942;
+  --Black: #000000;
+  --Black2: #191919;
+  --White: #ffffff;
+  --Button: #ed3237;
+  --ButtonHover: #d51942;
+  --ButtonDisabled: #ff5977;
+  --Delete: #de0053;
+  --Edit: #ffc200;
+  --Aproved: #00a859;
+  --AprovedHover: #09b859;
+  --Loading: #00afef;
+
+}
+
+
+
+html {
+  @media (max-width: 1080px) {
+    font-size: 93.75%;
+    
+    @media (max-width: 720px) {
+      font-size: 87.5%;
+    }
+  }
+  
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  font-family: 'Archivo', sans-serif;
+  background: var(--White);
+}
+
+.content {
+  background-image: linear-gradient(to right, var(--Primary) , var(--Primary2));
+  width: 100%;
+  height: 100%;
+  display: flex;
+
+}
+.content-Login1 {
+    background-image: linear-gradient(to right, var(--Primary) , var(--Primary2));
+  width: 100vw;
+  height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+.content-Login {
+    background-image: linear-gradient(to right, var(--Primary) , var(--Primary2));
+  width: 100vw;
+  height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+body, input, textarea, button {
+  font-family: 'Archivo', sans-serif;
+  font-weight: 400;
+  outline:none
+
+  
+}
+body, input, textarea, button :focus{
+  outline:none
+  }
+
+  body::-webkit-scrollbar {
+    width: 12px;               /* width of the entire scrollbar */
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: var(--BorderHover);        /* color of the tracking area */
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: var(--Border);    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border: 3px solid var(--BorderHover);  /* creates padding around scroll thumb */
+  }
+
+  textarea {
+    padding: 10px;
+  }
+  input, textarea {
+    color: var(--Description);
+  }
+
+h1, h2, h3, h4, h5, h6, strong {
+  font-weight: 400;
+}
+
+p {
+  font-size: 12px;
+}
+
+button {
+  cursor: pointer;
+}
+
+
+
+.react-modal-overlay {
+  background-color: rgba(0,0,0,0.9);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 99;
+}
+
+.react-modal-overlay:focus{
+  outline: none;
+  }
+
+.react-modal-content {
+  width: 100%;
+  max-width: 700px;
+  background-color: var(--White);
+  position: relative;
+  border-radius: 8px;
+  border: none;
+}
+
+.react-modal-content:focus{
+  outline: none;
+  }
+
+.react-modal-button {
+  width: 15px;
+  height: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color:var(--White);
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin: 15px;
+  border: none;
+}
+
+@media(max-width: 900px) {
+  .container {
+      background-image: linear-gradient(to right, var(--Primary) , var(--Primary2));
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+
+
+
+
+
+
+/* ------------------------------------- Novo DOC ------------------- */
+
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  --Primary: #8124E2;
+  --Background: #121212;
+  --Background-man: #ececff;
+  --Background-woman: #ffecfc;
+  --Background-preferences: #ffffec;
+  --Background2: #000000;
+  --Gray_font1: #828CA9;
+  --Gray_font2: #727376;
+  --Black: #000000;
+  --White: #ffffff;
+  --Button: #0095D3;
+  --Gray-Border: #BFC4D3;
+  --Delete:#d01616;
+}
+
+html {
+  @media (max-width: 1080px) {
+    font-size: 93.75%;
+    
+    @media (max-width: 720px) {
+      font-size: 87.5%;
+    }
+  }
+  
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  background: var(--Black);
+}
+
+.container {
+    background-image: linear-gradient(to right, var(--Primary) , var(--Primary2));
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content {
+    background-image: linear-gradient(to right, var(--Primary) , var(--Primary2));
+  width: 100%;
+    height: 100%;
+    display: flex;
+
+}
+.content-Login {
+    background-image: linear-gradient(to right, var(--Primary) , var(--Primary2));
+  width: 100vw;
+    height: 100vh;
+    display: flex;
+
+}
+
+body, input, textarea, button {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 400;
+  
+  
+}
+body, input, textarea, button :focus{
+  outline: none;
+  }
+
+  body::-webkit-scrollbar {
+    width: 12px;              
+  /* }
+  
+  body::-webkit-scrollbar-track {
+    background: var(--Background2);  
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: var(--Background-man);    
+    border-radius: 20px;      
+    border: 3px solid var(--Background2);  
+  }
+
+  textarea {
+    padding: 10px;
+  }
+  input, textarea {
+
+    color: var(--Primary);
+  }
+
+h1, h2, h3, h4, h5, h6, strong {
+  font-weight: 400;
+}
+
+p {
+  font-size: 12px;
+}
+
+button {
+  cursor: pointer;
+}
+
+.react-modal-overlay {
+  background-color: rgba(0,0,0,0.5);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.react-modal-overlay:focus{
+  outline: none;
+  }
+
+.react-modal-content {
+  width: 100%;
+  max-width: 576px;
+  background-color: var(--White);
+  padding: 20px 0;
+  position: relative;
+  border-radius: 8px;
+  border: none;
+}
+
+.react-modal-content:focus{
+  outline: none;
+  }
+
+.react-modal-button {
+  width: 15px;
+  height: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color:var(--White);
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin: 15px;
+  border: none;
+}
+
+@media(max-width: 900px) {
+  .container {
+      background-image: linear-gradient(to right, var(--Primary) , var(--Primary2));
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+} 
+ */

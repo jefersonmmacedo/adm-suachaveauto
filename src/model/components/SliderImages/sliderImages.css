@@ -1,0 +1,12 @@
+﻿.content-modal {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.content-moda .itensModal h5 {
+    color: var(--Primary);
+    font-weight: 700;
+}

@@ -1,0 +1,344 @@
+﻿.FinancerAdm {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.FinancerAdm .aside {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 170px;
+    padding-top: 80px;
+
+}
+
+.FinancerAdm .aside .textHome {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  
+  .FinancerAdm .aside .textHome h3 {
+      font-weight: bold;
+      text-align: center;
+      color: var(--Paragraph);
+  }
+  
+.FinancerAdm .infosFinancer {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    
+}
+.FinancerAdm .infosFinancer .infoFinancerUnic {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin: 5px;
+    padding: 10px 15px;
+    background-color: var(--BorderHover);
+    box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.1);
+    border-radius: 16px;
+}
+.FinancerAdm .infosFinancer .infoFinancerUnicTotal {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin: 5px;
+    padding: 10px 15px;
+    background-color: var(--AprovedHover);
+    border-radius: 16px;
+    color: var(--White);
+    box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.1);
+}
+.FinancerAdm .infosFinancer .infoFinancerUnicTotal2 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin: 5px;
+    padding: 10px 15px;
+    background-color: var(--Primary);
+    border-radius: 16px;
+    color: var(--White);
+    box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.1);
+}
+.FinancerAdm .infosFinancer .infoFinancerUnic .top {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.FinancerAdm .infosFinancer .infoFinancerUnicTotal .top {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.FinancerAdm .infosFinancer .infoFinancerUnicTotal2 .top {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.FinancerAdm .infosFinancer .infoFinancerUnic .top h5 {
+    color: var(--Gray);
+    font-weight: 700;
+}
+.FinancerAdm .infosFinancer .infoFinancerUnicTotal .top h5 {
+    color: var(--White);
+    font-weight: 700;
+}
+.FinancerAdm .infosFinancer .infoFinancerUnicTotal2 .top h5 {
+    color: var(--White);
+    font-weight: 700;
+}
+.FinancerAdm .infosFinancer .infoFinancerUnic h2 {
+    color: var(--Paragraph);
+    font-weight: 500;
+    margin-top: 5px;
+}
+.FinancerAdm .infosFinancer .infoFinancerUnicTotal h2 {
+    color: var(--White);
+    font-weight: 500;
+    margin-top: 5px;
+}
+.FinancerAdm .infosFinancer .infoFinancerUnicTotal2 h2 {
+    color: var(--White);
+    font-weight: 500;
+    margin-top: 5px;
+}
+.FinancerAdm .top h5 {
+    color: var(--Gray);
+    font-weight: 700;
+}
+.FinancerAdm .financerList {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 15px;
+    background-color: var(--White);
+    box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.1);
+    margin: 10px 10px 100px 10px;
+    border-radius: 20px;
+
+}
+.FinancerAdm .financerList .searchFinance {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 5px 0;
+    padding: 5px 0px;
+}
+
+.FinancerAdm .financerList .searchFinance input {
+    border: 1px solid var(--Border);
+    padding: 5px 10px;
+    border-radius: 16px;
+    height: 36px;
+    width: 100%;
+    margin: 3px;
+    color: var(--Description);
+}
+.FinancerAdm .financerList .searchFinance input::placeholder {
+    color: var(--Gray);
+}
+.FinancerAdm .financerList .searchFinance select {
+border: 1px solid var(--Border);
+padding: 5px 10px;
+border-radius: 16px;
+height: 36px;
+width: 100%;
+margin: 3px;
+color: var(--Description);
+}
+.FinancerAdm .financerList .FinancerListUnic {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 5px 0;
+    padding: 0px 10px;
+    background-color: var(--BorderHover);
+    color: var(--Gray);
+    border-radius: 16px;
+    box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.1);
+}
+
+.FinancerAdm .financerList .FinancerListUnic h5 {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+.FinancerAdm .financerList .FinancerListUnic .up {
+    color: var(--Aproved);
+    justify-content: center;
+}
+.FinancerAdm .financerList .FinancerListUnic .down {
+    color: var(--Primary);
+    justify-content: center;
+}
+.FinancerAdm .financerList .FinancerListUnic .date {
+    justify-content: center;
+}
+.FinancerAdm .financerList .FinancerListUnic  .buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 5px 0;
+    padding: 5px 10px;
+    background-color: var(--BorderHover);
+    border-radius: 16px;
+    color: var(--Gray);
+}
+.FinancerAdm .financerList .FinancerListUnic .buttons  button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--BorderInput2);
+    border: none;
+    color: var(--Gray);
+    padding: 7px;
+    border-radius: 16px;
+    margin: 3px;
+}
+
+.FinancerAdm .financerList .FinancerListUnic .buttons button svg {
+    margin: 0px;
+}
+
+
+
+
+
+
+
+@media (max-width: 990px) {
+    .FinancerAdm .financerList {
+        width: 90%;
+    }
+    .FinancerAdm .infosFinancer {
+        width: 90%;
+    }
+
+@media (max-width: 700px) {
+    .FinancerAdm .aside {
+        padding-left: 0px;
+        padding-bottom: 80px;
+    }
+
+
+    
+    @media (max-width: 550px) {
+
+
+        .FinancerAdm .financerList {
+            width: 95%;
+        }
+
+        .FinancerAdm .infosFinancer {
+            width: 95%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 10px;
+        }
+
+        
+
+        .FinancerAdm .infosFinancer .infoFinancerUnic {
+            margin: 5px 20px;
+            padding: 5px 20px;
+        }
+
+        .FinancerAdm .infosFinancer .infoFinancerUnicTotal {
+            margin: 5px 20px;
+            padding: 5px 20px;
+        }
+
+        .FinancerAdm .financerList .searchFinance {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 5px 0;
+            padding: 5px 0px;
+        }
+
+        .FinancerAdm .financerList .FinancerListUnic  {
+            flex-wrap: wrap;
+            margin: 5px 0;
+            padding: 5px;
+        }
+        .FinancerAdm .financerList .FinancerListUnic h5 {
+            width: 50%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            margin: 2px 0;
+        }
+
+        .FinancerAdm .financerList .FinancerListUnic .up {
+            color: var(--Aproved);
+            justify-content: center;
+            margin: 2px 0;
+        }
+        .FinancerAdm .financerList .FinancerListUnic .down {
+            color: var(--Primary);
+            justify-content: center;
+            margin: 2px 0;
+        }
+        .FinancerAdm .financerList .FinancerListUnic .date {
+            justify-content: center;
+            margin: 2px 0;
+        }
+        .FinancerAdm .financerList .FinancerListUnic .buttons {
+            width: 50%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            margin: 2px 0;
+            margin: 0;
+            padding: 0px 10px;
+            border-radius: 16px;
+            color: var(--Gray);
+        }
+
+
+        
+}
+}
+}

@@ -1,0 +1,59 @@
+﻿.deletemessageChat {
+    background-color: var(--White);
+    border: none;
+    color: var(--Primary);
+    margin: 0px;
+}
+
+  .react-modal-content .content-modal-home-Search .itensModalHome-Search .form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 80%
+}
+
+.react-modal-content .content-modal-home-Search .itensModalHome-Search .form h2 {
+    font-weight: 700;
+    color: var(--Gray2);
+}
+  .react-modal-content .content-modal-home-Search .itensModalHome-Search .form .ButtonsDeleteMessage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    width: 80%
+}
+
+.react-modal-content .content-modal-home-Search .itensModalHome-Search .form .ButtonsDeleteMessage .btn1 {
+    background-color: var(--Primary);
+    color: var(--White);
+    border: none;
+    border-radius: 6px;
+    width: 100%;
+}
+.react-modal-content .content-modal-home-Search .itensModalHome-Search .form .ButtonsDeleteMessage .btn2 {
+    background-color: var(--Border);
+    color: var(--Gray);
+    border: none;
+    border-radius: 6px;
+    width: 100%;
+}
+
+
+@media (max-width: 700px) {
+    .react-modal-content .content-modal-home-Search .itensModalHome-Search .form {
+        width: 100%
+    }
+    @media (max-width: 500px) {
+        .react-modal-content .content-modal-home-Search .itensModalHome-Search .form .ButtonsDeleteMessage {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            width: 80%
+        }
+        
+        
+}
+}

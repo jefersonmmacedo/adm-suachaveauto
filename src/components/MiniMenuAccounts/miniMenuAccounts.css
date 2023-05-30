@@ -1,0 +1,87 @@
+
+.MiniMenuAccounts {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--Border);
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+}
+
+.MiniMenuAccounts .textMimiMenu {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.MiniMenuAccounts .textMimiMenu h3 {
+    font-weight: 700;
+    color: var(--Paragraph);
+}
+
+.MiniMenuAccounts .buttonsAccount {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    padding:0px;
+    flex-wrap: wrap;
+    border: none;
+    }
+
+    .MiniMenuAccounts .buttonsAccount a {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        padding: 10px 20px;
+        background-color: var(--BorderInput2);
+        color: var(--Paragraph);
+        border-radius: 20px;
+       border: none;
+       margin: 5px;
+       font-size: 12px;
+       text-decoration: none;
+    }
+
+    .MiniMenuAccounts .buttonsAccount a svg {
+        margin-right: 5px;
+    }
+
+
+    @media(max-width: 500px) {
+        .MiniMenuAccounts {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+        }
+
+        .MiniMenuAccounts .textMimiMenu {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+        }
+        
+
+        .MiniMenuAccounts .buttonsAccount {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            padding: 10px;
+            flex-wrap: wrap;
+            border: none;
+            }
+        
+    }

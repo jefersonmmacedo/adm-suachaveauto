@@ -1,0 +1,591 @@
+﻿.buttonScheduling {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--White);
+    border: 1px solid var(--Primary);
+    color: var(--Primary);
+    border-radius: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.buttonScheduling svg {
+    margin-right: 10px;
+}
+
+.buttonScheduling:hover {
+    background-color: var(--Primary);
+    color: var(--White);
+}
+
+.content-modal-scheduling {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    border-radius: 8px;
+
+}
+
+.content-modal-scheduling .itensModal-scheduling {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    overflow:auto; 
+    max-height: 500px;
+    padding: 20px;
+}
+
+.content-modal-scheduling .itensModal-scheduling .textTitle {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 95%;
+    padding: 10px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.content-modal-scheduling .itensModal-scheduling .title {
+    font-weight: 700;
+    color: var(--Paragraph);
+    margin-bottom: 0px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.content-modal-scheduling .itensModal-scheduling .title svg {
+    margin-right: 5px;
+    margin-bottom: 5px;
+    color: var(--Primary);
+    font-size: 30px;
+}
+
+.content-modal-scheduling .itensModal-scheduling svg {
+    color: var(--Primary);
+    font-size: 18px;
+}
+
+.content-modal-scheduling .itensModal-scheduling .listDays {
+    width: 90%;
+    margin: 10px 0 10px 0;
+}
+.content-modal-scheduling .itensModal-scheduling .listDays .CardDay {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 120px;
+    border: 1px solid var(--Primary);
+    background-color: var(--BorderHover);
+    margin: 5px auto;
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.content-modal-scheduling .itensModal-scheduling .listDays .CardDay h2 {
+    color: var(--Primary);
+    margin: 5px 0px;
+    font-weight: 800;
+    font-size: 40px;
+}
+.content-modal-scheduling .itensModal-scheduling .listDays .CardDay h4 {
+    color: var(--Gray);
+    margin: 0px;
+    font-weight: 700;
+    font-size: 14px;
+}
+.content-modal-scheduling .itensModal-scheduling .listDays .CardDay h5 {
+    color: var(--Gray);
+    margin: 0px;
+    font-weight: 500;
+    font-size: 14px;
+}
+.content-modal-scheduling .itensModal-scheduling .listDays .CardDaySelected {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 120px;
+    border: 1px solid var(--Primary);
+    background-color: var(--Primary);
+    margin: 5px auto;
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.content-modal-scheduling .itensModal-scheduling .listDays .CardDaySelected h2 {
+    color: var(--White);
+    margin: 5px 0px;
+    font-weight: 800;
+    font-size: 40px;
+}
+.content-modal-scheduling .itensModal-scheduling .listDays .CardDaySelected h4 {
+    color: var(--BorderHover);
+    margin: 0px;
+    font-weight: 700;
+    font-size: 14px;
+}
+.content-modal-scheduling .itensModal-scheduling .listDays .CardDaySelected h5 {
+    color: var(--BorderHover);
+    margin: 0px;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+
+.content-modal-scheduling .itensModal-scheduling .form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 90%;
+    margin-top: 20px;
+}
+
+.content-modal-scheduling .itensModal-scheduling .form input {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    padding: 10px 20px;
+    background-color: var(--White);
+    border: 1px solid var(--Border);
+    border-radius: 25px;
+}
+
+.content-modal-scheduling .itensModal-scheduling .form select {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    padding: 10px 20px;
+    background-color: var(--White);
+    border: 1px solid var(--Border);
+    border-radius: 25px;
+    color: var(--Gray2);
+}
+
+.content-modal-scheduling .itensModal-scheduling .form .select {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    padding: 10px 20px;
+    background-color: var(--White);
+    border: 1px solid var(--Gray2);
+    border-radius: 25px;
+    color: var(--Description);
+}
+
+.content-modal-scheduling .itensModal-scheduling .form .buttonsType {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    flex-wrap: wrap;
+    padding: 0 auto;
+}
+
+.content-modal-scheduling .itensModal-scheduling .form .buttonsType .btnType {
+    width: 40%;
+    padding: 20px 40px;
+    background: var(--BorderInput);
+    color: var(--Paragraph);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    margin: 15px 5px;
+    font-weight: 700;
+    border: none;
+}
+
+.content-modal-scheduling .itensModal-scheduling .form .buttonsType .btnType svg {
+    margin-right: 5px;
+    font-size: 12px;
+    color: var(--Paragraph);
+    margin-bottom: 0px;
+}
+
+.content-modal-scheduling .itensModal-scheduling .form .buttonsType .btnType:hover {
+    background: var(--White);
+
+}
+
+
+.content-modal-scheduling .itensModal-scheduling .form .buttonsDays {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    flex-wrap: wrap;
+    padding: 0 auto;
+}
+
+.content-modal-scheduling .itensModal-scheduling .form .buttonsDays button {
+    width: 32px;
+    height: 32px;
+    background: var(--Background);
+    color: var(--Paragraph);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    border: 1px solid var(--Background);
+}
+
+.content-modal-scheduling .itensModal-scheduling .form .textModal-scheduling {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 10px;
+    margin-bottom: 3px;
+}
+
+.content-modal-scheduling .itensModal-scheduling .form .textModal-scheduling p {
+    font-weight: 700;
+    margin-left: 10px;
+}
+
+.content-modal-scheduling .itensModal-scheduling .form .data {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.content-modal-scheduling .itensModal-scheduling .form .data .infosData {
+    width: 49%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.content-modal-scheduling .itensModal-scheduling .form .data .infosData .text {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 10px;
+    margin-bottom: 3px;
+}
+
+.content-modal-scheduling .itensModal-scheduling .form .data .infosData .textModal-scheduling p {
+    font-weight: 700;
+    color: var(--Gray2)
+}
+
+.content-modal-scheduling .itensModal-scheduling .form .btnSubmit {
+    width: 100%;
+    background: var(--Primary);
+    color: var(--White);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding:15px 20px;
+    border: none;
+    border-radius: 20px;
+    margin: 20px 0;
+}
+
+.content-modal-scheduling .itensModal-scheduling .form .address {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.content-modal-scheduling .itensModal-scheduling .form .address p {
+    font-weight: 700;
+    font-size: 12px;
+}
+
+.content-modal-scheduling .itensModal-scheduling .form .address p svg {
+    margin-right: 5px;
+    font-size: 12px;
+    margin-bottom: 0px;
+    margin-left: 10px;
+}
+
+.content-modal-scheduling .itensModal-scheduling::-webkit-scrollbar {
+    width: 12px;               /* width of the entire scrollbar */
+  }
+  
+  .content-modal-scheduling .itensModal-scheduling::-webkit-scrollbar-track {
+    background: var(--BorderHover);        /* color of the tracking area */
+  }
+  
+  .content-modal-scheduling .itensModal-scheduling::-webkit-scrollbar-thumb {
+    background-color: var(--Border);    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border: 3px solid var(--BorderHover);  /* creates padding around scroll thumb */
+  }
+
+
+  @media (max-width: 550px) {
+    .content-modal-scheduling .itensModal-scheduling .dataProperty {
+        width: 100%;
+    }
+
+    .content-modal-scheduling .itensModal-scheduling .form {
+        width: 100%;
+    }
+
+    .content-modal-scheduling .itensModal-scheduling .form .buttonsType .btnType {
+        width: 90%;
+        margin: 5px;
+        padding: 20px;
+    }
+     
+
+  }
+  
+
+  
+.content-modal-Favorite {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    border-radius: 8px;
+    background-color: var(--White);
+}
+
+.content-modal-Favorite .itensModalFavorite {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 100%;
+    overflow:auto; 
+    max-height: 500px;
+    margin: 20px 10px;
+    padding: 20px;
+}
+
+.content-modal-Favorite .itensModalFavorite svg {
+    color: var(--Primary);
+    font-size: 45px;
+}
+
+.content-modal-Favorite .itensModalFavorite h1 {
+    font-weight: 800;
+    color: var(--Paragraph);
+    margin: 15px 0;
+}
+
+.content-modal-Favorite .itensModalFavorite h4 {
+    margin-right: 30px;
+}
+
+.content-modal-Favorite .itensModalFavorite button {
+    width: 150px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    background-color: var(--Primary);
+    color: var(--White);
+    margin: 30px 0 10px 0px;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.content-modal-Favorite .itensModalFavorite .form {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.content-modal-Favorite .itensModalFavorite .form .buttons {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.content-modal-Favorite .itensModalFavorite .form .buttons .button1 {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--Border);
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    color: var(--Paragraph);
+    font-weight: 700;
+    margin: 20px 5px;
+}
+
+.content-modal-Favorite .itensModalFavorite .form .buttons .button2 {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--Primary);
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    color: var(--White);
+    font-weight: 700;
+    margin: 20px 5px;
+}
+
+.content-modal-Favorite .itensModalFavorite .form .buttons .btn {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--Button);
+    border: none;
+    border-radius: 20px 0 0 20px;
+    padding: 10px 20px;
+    color: var(--White);
+    font-weight: 700;
+    margin: 20px 0;
+}
+
+.content-modal-Favorite .itensModalFavorite .form .buttons .btn2 {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--Border);
+    border: none;
+    border-radius: 20px 0 0 20px;
+    padding: 10px 20px;
+    color: var(--Paragraph);
+    font-weight: 700;
+    margin: 20px 0;
+}
+
+.content-modal-Favorite .itensModalFavorite .form input {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-bottom: 2px solid var(--Border);
+    padding: 5px;
+    margin: 5px 0;
+    font-weight: bold;
+}
+
+.content-modal-Favorite .itensModalFavorite .form input::placeholder {
+    color: var(--Gray);
+}
+
+.content-modal-Favorite .itensModalFavorite .form .message {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--Primary);
+    font-weight: bold;
+    margin: 10px 0;
+    background-color: var(--White);
+    border: 1px solid var(--Primary);
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.content-modal-Favorite .itensModalFavorite .form .message h5 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    text-align: center;
+}
+
+.content-modal-Favorite .itensModalFavorite .form .message h5 svg {
+    margin-right: 3px;
+    font-size: 15px;
+}
+
+
+.content-modal-Favorite .itensModalFavorite .form .links {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    color: var(--Gray);
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.content-modal-Favorite .itensModalFavorite .form .links p .link {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--Wite);
+    border: none;
+    color: var(--Gray);
+    font-weight: 700;
+    text-decoration: none;
+    padding: 5px;
+    width: 100%;
+    margin: 0px;
+}
+
+.content-modal-Favorite .itensModalFavorite .form button {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--Button);
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    color: var(--White);
+    font-weight: 700;
+    margin: 20px 0;
+}

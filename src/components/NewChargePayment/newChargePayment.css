@@ -1,0 +1,221 @@
+﻿.financerButton {
+    border: none;
+    border-radius: 6px;
+    background-color: none;
+    color: var(--Primary);
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    background-color: var(--Background)
+  }
+  
+
+  
+
+
+  .react-modal-content .content-modal-home-Search .itensModalHome-Search .form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 80%
+}
+  .react-modal-content .content-modal-home-Search .itensModalHome-Search .form .data {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    width: 100%
+}
+
+.react-modal-content .content-modal-home-Search .itensModalHome-Search .form input {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    border-radius: 6px;
+    border: 1px solid var(--Border);
+    background-color: var(--White);
+    margin: 5px;
+    padding: 10px 20px;
+}
+
+.react-modal-content .content-modal-home-Search .itensModalHome-Search .form input {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    border-radius: 6px;
+    border: 1px solid var(--Border);
+    background-color: var(--White);
+    margin: 5px;
+    padding: 10px 20px;
+}
+.react-modal-content .content-modal-home-Search .itensModalHome-Search .form input::placeholder {
+    color: var(--Gray);
+}
+.react-modal-content .content-modal-home-Search .itensModalHome-Search .form select {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    border-radius: 6px;
+    border: 1px solid var(--Border);
+    background-color: var(--White);
+    margin: 5px;
+    padding: 10px 20px;
+}
+.react-modal-content .content-modal-home-Search .itensModalHome-Search .form textarea {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    border-radius: 6px;
+    border: 1px solid var(--Border);
+    background-color: var(--White);
+    margin: 5px;
+    padding: 10px 20px;
+    resize: none;
+}
+
+.react-modal-content .content-modal-home-Search .itensModalHome-Search .form .TypeButtons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    margin: 5px;
+    padding: 10pxx;
+    width: 100%;
+}
+
+.react-modal-content .content-modal-home-Search .itensModalHome-Search .form .TypeButtons .btnType1 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    border-radius: 6px;
+    border: 1px solid var(--Aproved);
+    background-color: rgba(0,168,89, 0.05);
+    margin: 5px;
+    padding: 20px 20px;
+    color: var(--Aproved);
+    font-size: 16px;
+}
+.react-modal-content .content-modal-home-Search .itensModalHome-Search .form .TypeButtons .btnType2 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    border-radius: 6px;
+    border: 1px solid var(--Primary);
+    background-color: rgba(224, 40, 47, 0.05);
+    margin: 5px;
+    padding: 20px 20px;
+    color: var(--Primary);
+    font-size: 16px;
+}
+.react-modal-content .content-modal-home-Search .itensModalHome-Search .form .TypeButtons .btnType3 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    border-radius: 6px;
+    margin: 5px;
+    border: 1px solid var(--Aproved);
+    background-color: var(--AprovedHover);
+    padding: 20px 20px;
+    color: var(--White);
+    font-size: 16px;
+}
+.react-modal-content .content-modal-home-Search .itensModalHome-Search .form .TypeButtons .btnType4 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    border-radius: 6px;
+    margin: 5px;
+    border: 1px solid var(--Primary);
+    background-color: var(--PrimaryHover);
+    padding: 20px 20px;
+    color: var(--White);
+    font-size: 16px;
+}
+.react-modal-content .content-modal-home-Search .itensModalHome-Search .form .send {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    border-radius: 6px;
+    border: 1px solid var(--Primary);
+    background-color: var(--PrimaryHover);
+    margin: 5px;
+    padding: 10px 20px;
+    color: var(--White);
+}
+
+.react-modal-content .content-modal-home-Search .itensModalHome-Search .form .send svg {
+    margin-right: 5px;
+    font-size: 20px;
+}
+.react-modal-content .content-modal-home-Search .itensModalHome-Search .form .btnDocuments {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    border-radius: 6px;
+    border: 1px solid var(--Border);
+    background-color: var(--Border);
+    margin: 5px;
+    padding: 10px 20px;
+    color: var(--Gray);
+}
+
+.react-modal-content .content-modal-home-Search .itensModalHome-Search .form .btnDocuments svg {
+    margin-right: 5px;
+    font-size: 20px;
+}
+.react-modal-content .content-modal-home-Search .itensModalHome-Search .form .dataForm {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.react-modal-content .content-modal-home-Search .itensModalHome-Search .form .dataForm h4 {
+    color: var(--Gray);
+    margin: 5px;
+}
+
+.react-modal-content .content-modal-home-Search .itensModalHome-Search .form h5 {
+    color: var(--Gray);
+    margin-top: 15px;
+}
+
+.react-modal-content .content-modal-home-Search .itensModalHome-Search .form a {
+    color: var(--SecondaryHover);
+    margin: 5px 0;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+@media (max-width: 700px) {
+    .react-modal-content .content-modal-home-Search .itensModalHome-Search .form {
+        width: 100%
+    }
+    @media (max-width: 500px) {
+        .react-modal-content .content-modal-home-Search .itensModalHome-Search .form .btnDocuments {
+            width: 80%;
+        }
+        
+}
+}

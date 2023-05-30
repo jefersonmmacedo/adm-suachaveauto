@@ -1,0 +1,308 @@
+﻿.MyContracts {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.MyContracts .aside {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 170px;
+  padding-top: 100px;
+}
+
+.MyContracts .aside .textHome {
+width: 90%;
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: space-between;
+margin-bottom: 20px;
+}
+
+
+.MyContracts .aside .textHome h3 {
+  font-weight: bold;
+  text-align: center;
+  color: var(--Paragraph);
+}
+
+.MyContracts .aside .infoData {
+width: 90%;
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: center;
+flex-wrap: wrap;
+padding: 10px;
+background-color: var(--White);
+box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.1);
+border-radius: 6px;
+}
+
+.MyContracts .aside .infoData .textInfo{
+padding: 10px 20px;
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: center;
+border: 1px solid var(--Border);
+border-radius: 6px;
+margin: 5px;
+
+}
+
+.MyContracts .aside .infoData .textInfo h5 {
+font-weight: 600;
+text-align: center;
+color: var(--Gray);
+}
+.MyContracts .aside .infoData .textInfo h5 span {
+font-weight: 900;
+color: var(--Primary);
+}
+
+.MyContracts .aside .link {
+border: none;
+border-radius: 6px;
+background-color: none;
+color: var(--Primary);
+font-size: 16px;
+font-weight: 600;
+text-decoration: none;
+margin-bottom: 10px;
+}
+
+
+.MyContracts .informations {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding:5px;
+  background-color: var(--White);
+  border: 1px solid var(--Border);
+  border-radius: 20px;
+  margin-bottom: 100px;
+}
+
+.MyContracts .informations .contracts{
+  width: 98%;
+  border-radius: 4px;
+  background-color: var(--White);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+  border-bottom: 1px solid var(--Border);
+  margin: 5px 0;
+}
+
+
+.MyContracts .informations .contracts .dataContracts{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+  padding: 5px;
+  flex-wrap: wrap;
+}
+.MyContracts .informations .contracts .dataContracts .dataContractsUnic{
+  width: 190px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  margin: 3px;
+}
+.MyContracts .informations .contracts .dataContracts .dataContractsUnic h6{
+  font-weight: 700;
+  color: var(--Gray);
+}
+.MyContracts .informations .contracts .dataContracts .dataContractsUnic h5{
+  font-weight: 700;
+  color: var(--Gray2);
+}
+
+.MyContracts .informations .contracts .buttons{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  padding: 3px;
+  border-left: 1px solid var(--Border);
+}
+
+.MyContracts .informations .contracts .buttons .btnControl {
+  width: 30px;
+  height: 30px;
+  padding: 8px;
+  border: none;
+  border-radius: 20px;
+  background-color: var(--BorderInput);
+  color: var(--Gray2);
+  margin: 5px;
+  font-weight: 700;
+                display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: row;
+}
+.MyContracts .informations .contracts .buttons .btnControl svg {
+  margin: 0px;
+}
+
+.MyContracts .informations .contracts .buttons .btnControl:hover {
+  background-color: var(--Primary);
+  color: var(--White);
+}
+
+.MyContracts .aside .search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  margin: 0px 10px 20px 10px;
+  width: 90%;
+  padding: 10px;
+  background-color: var(--White);
+  border: 1px solid var(--Border);
+  border-radius: 30px;
+  }
+  .MyContracts .aside .search .selection {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  width: 100%;
+  }
+  
+  
+  .MyContracts .aside .search input {
+  width: 50%;
+  height: 40px;
+  padding: 10px 20px;
+  border: 1px solid var(--Border);
+  border-radius: 20px;
+  margin: 2px;
+  }
+  .MyContracts .aside .search .selection select {
+  width: 100%;
+  height: 40px;
+  padding: 10px 20px;
+  border: 1px solid var(--Border);
+  border-radius: 20px;
+  margin: 2px;
+  }
+  
+
+@media(max-width: 1000px) {
+  .MyContracts .informations .contracts .dataContracts{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 5px;
+    flex-wrap: wrap;
+  }
+  .MyContracts .informations .contracts .dataContracts .dataContractsUnic{
+    width: 150px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    padding:5px;
+  }
+@media(max-width: 850px) {
+.MyContracts .aside .search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 90%;
+}
+
+
+.MyContracts .aside .search input {
+  width: 100%;
+}
+
+.MyContracts .informations .contracts .buttons{
+  flex-direction: column;
+}
+
+
+@media (max-width: 700px) {
+  .MyContracts .informations {
+      padding: 10px;
+  }
+  .MyContracts .aside {
+      padding-left: 0px;
+  }
+
+
+
+  @media (max-width: 570px) {
+
+        .MyContracts .informations .contracts{
+          width: 100%;
+
+          display: flex;
+          align-items: center;
+          justify-content: flex-start;
+          flex-direction: column;
+      }
+
+      .MyContracts .informations .contracts .dataContracts .dataContractsUnic{
+        width: 120px;
+      }
+
+      .MyContracts .informations .contracts .buttons{
+        justify-content: space-evenly;
+        flex-direction: row;
+        width: 100%;
+        border-left:none;
+        border-top: 1px solid var(--Border);
+        padding: 5px;
+    }
+
+      .MyContracts .informations .contracts .buttons .linkEdit {
+      width: 100%;
+    }
+      .MyContracts .informations .contracts .buttons .delete {
+      width: 100%;
+    }
+      .MyContracts .informations .contracts .buttons .notView {
+      width: 100%;
+    }
+
+
+    .MyContracts .aside .search {
+      width: 90%;
+      padding: 10px;
+    }
+
+    .MyContracts .aside .search .selection {
+      flex-direction: column;
+      width: 100%;
+    }
+
+    .MyContracts .aside .infoData .textInfo {
+      padding: 5px 10px;
+      margin: 3px;
+    }
+
+    
+  }
+}
+}
+}

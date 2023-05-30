@@ -1,0 +1,336 @@
+﻿.PlainsAdm {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.PlainsAdm .aside {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 170px;
+    padding-top: 80px;
+}
+.PlainsAdm .aside h3 {
+    margin: 20px 10px 5px 10px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.PlainsAdm .Payment {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+.PlainsAdm .Payment .PlainSelected {
+    max-width: 350px;
+    min-width: 280px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.1);
+    border-radius: 6px;
+    padding: 20px;
+    margin: 5px;
+    background-color: var(--White);
+}
+.PlainsAdm .Payment .PlainSelected h3 {
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.PlainsAdm .Payment .PlainSelected svg {
+    color: var(--Aproved);
+    font-size: 16px;
+    margin-right: 5px;
+}
+.PlainsAdm .Payment .PlainSelected2 {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.1);
+    border-radius: 6px;
+    padding: 20px;
+    margin: 5px;
+    background-color: var(--White);
+}
+.PlainsAdm .Payment .PlainSelected2 h3 {
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.PlainsAdm .Payment .PlainSelected2 svg {
+    color: var(--Primary);
+    font-size: 20px;
+    margin-right: 5px;
+}
+
+.PlainsAdm .Payment .PlainSelected .plain {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+
+.PlainsAdm .Payment .PlainSelected .plain h4 {
+    font-weight: bold;
+}
+.PlainsAdm .Payment .PlainSelected .plain h4 span {
+    font-weight: 900;
+}
+
+.PlainsAdm .Payment .PlainSelected a {
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--White);
+    border: 1px solid var(--Primary);
+    padding: 10px;
+    color: var(--Primary);
+    border-radius: 3px;
+}
+.PlainsAdm .Payment .PlainSelected2 .plain {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+
+.PlainsAdm .Payment .PlainSelected2 .plain h4 {
+    font-weight: bold;
+}
+.PlainsAdm .Payment .PlainSelected2 .plain h4 span {
+    font-weight: 900;
+}
+
+.PlainsAdm .Payment .PlainSelected2 a {
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--White);
+    border: 1px solid var(--Primary);
+    padding: 10px;
+    color: var(--Primary);
+    border-radius: 3px;
+}
+
+.PlainsAdm .Payment .PlainSelected .text {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin: 5px 0;
+    padding: 10px 5px;
+    border: none;
+    border-top: 1px solid var(--Border);
+    border-bottom: 1px solid var(--Border);
+}
+
+.PlainsAdm .Payment .PlainSelected .text p {
+    font-size: 12px;
+    font-weight: 700;
+    margin: 2px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    color: var(--Description);
+}
+
+
+.PlainsAdm .Payment .PlainSelected .text svg {
+    color: var(--Aproved);
+    font-size: 16px;
+    margin-right: 5px;
+}
+
+.PlainsAdm .Payment .PlainSelected .pricePlain {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+.PlainsAdm .Payment .PlainSelected .pricePlain p {
+    font-weight: 700;
+}
+
+.PlainsAdm .Payment .PaymentPlayn {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.1);
+    border-radius: 6px;
+    padding: 10px;
+    margin: 5px;
+    background-color: var(--White);
+}
+.PlainsAdm .Payment .PaymentPlayn .buttons {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+}
+
+.PlainsAdm .Payment .PaymentPlayn h3 {
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.PlainsAdm .Payment .PaymentPlayn a {
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--Primary);
+    padding: 10px;
+    color: var(--White);
+    border-radius: 3px;
+    margin-bottom: 10px;
+}
+.PlainsAdm .Payment .PaymentPlayn .payments {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--BorderHover);
+    box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    margin: 5px 0;
+    color: var(--Paragraph);
+    border-radius: 3px;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.PlainsAdm .Payment .PaymentPlayn .payments .itensPayment {
+margin: 3px;
+}
+.PlainsAdm .Payment .PaymentPlayn .payments .itensPayment h5 {
+    margin: 3px 0;
+    font-weight: 700;
+}
+.PlainsAdm .Payment .PaymentPlayn .payments .itensPayment .link {
+    margin: 3px 0;
+    font-weight: 500;
+    cursor: pointer;
+        display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 3px;
+    font-size: 14px;
+    color: var(--Primary);
+    background-color: var(--BorderHover);
+}
+
+.content-modal-home-Search {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    border-radius: 8px;
+    background-color: var(--BorderInput2);
+}
+
+.content-modal-home-Search .itensModalHome-Search {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    overflow:auto; 
+    max-height: 500px;
+    margin: 20px 10px;
+    padding: 20px;
+}
+
+
+.content-modal-home-Search .itensModalHome-Search img {
+    width: 100%;
+}
+
+@media (max-width: 1000px) {
+    .PlainsAdm .Payment {
+        width: 100%;
+    }
+    
+@media (max-width: 850px) {
+    .PlainsAdm .Payment {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .PlainsAdm .Payment .PlainSelected {
+        min-width: 90%;
+    }
+
+    .PlainsAdm .Payment .PaymentPlayn {
+        width: 90%;
+    }
+
+@media (max-width: 700px) {
+    .PlainsAdm .Payment {
+        padding-bottom: 100px;
+    }
+    .PlainsAdm .aside {
+        padding-left: 0px;
+        
+    }
+    
+    .PlainsAdm .Payment .PlainSelected {
+        min-width: 95%;
+    }
+    
+    .PlainsAdm .Payment .PaymentPlayn {
+        width: 95%;
+        margin-bottom: 80px;
+    }
+    @media (max-width: 500px) {
+        .PlainsAdm .Payment .PaymentPlayn .payments .itensPayment {
+            margin: 3px;
+            width: 30%;
+            }
+}
+}
+}
+}

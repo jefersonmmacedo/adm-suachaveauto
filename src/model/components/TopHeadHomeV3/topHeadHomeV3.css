@@ -1,0 +1,108 @@
+.TopHeadHomeV3 {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; 
+    background-image: url("../../assets/images/background10.jpg"); /* The image used */
+    background-color: #cccccc; /* Used if the image is unavailable */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+  }
+  .TopHeadHomeV3 .blockTop{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%; 
+    background-color: rgba(0, 0, 0, 0.15);
+    backdrop-filter: blur(5px);
+    padding: 10px;
+    border-bottom: 1px solid var(--Border);
+  }
+.TopHeadHomeV3 .blockTop .SearchText{
+    width: 1000px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+.TopHeadHomeV3 .blockTop .SearchText .TextTopSearch{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 40px 0;
+    text-align: center;
+  }
+
+  .TopHeadHomeV3 .blockTop .SearchText .TextTopSearch h1 {
+    font-weight: 800;
+    color: var(--White);
+    font-size: 45px;
+    line-height: 2.8rem;
+    margin-bottom:10px;
+  }
+  .TopHeadHomeV3 .blockTop .SearchText .TextTopSearch h1 span {
+    color: var(--Primary);
+  }
+
+  .TopHeadHomeV3 .blockTop .SearchText .TextTopSearch h4 {
+    font-weight: 500;
+    color: var(--BorderInput);
+  }
+
+  .TopHeadHomeV3 .blockTop .SearchText .TextTopSearch button {
+    border: none;
+    border-radius: 6px;
+    background-color: var(--Primary);
+    color: var(--White);
+    padding: 10px 20px;
+    margin-top: 20px;
+  }
+  
+
+  @media (max-width: 1020px){
+    .TopHeadHomeV3 .blockTop .SearchText{
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+
+  @media (max-width: 850px){
+    
+    .TopHeadHomeV3 .blockTop .SearchText .TextTopSearch{
+      width: 90%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+      margin: 40px 0 20px;
+    }
+  
+
+    .TopHeadHomeV3 .blockTop .SearchText .TextTopSearch h1 {
+      font-weight: 900;
+      font-size: 30px;
+      line-height: 2.0rem;
+      margin-bottom:10px;
+    }
+
+
+
+@media (max-width: 600px) {
+  .TopHeadHomeV3 .blockTop .SearchText{
+    width: 100%;
+  }
+
+}
+  }
+  }
+  

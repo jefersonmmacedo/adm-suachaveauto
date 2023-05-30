@@ -1,0 +1,112 @@
+﻿.NewFavorite {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: var(--White);
+    cursor: pointer;
+    border:none;
+}
+.NewFavorite svg {
+    color: var(--Border);
+    font-size: 30px;
+    cursor: pointer;
+}
+.NewFavorite svg:hover {
+    color: var(--Primary);
+}
+
+
+.content-modal-Message {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    border-radius: 8px;
+    background-color: var(--White);
+}
+.content-modal-Message .itensModalMessage {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 100%;
+    overflow:auto; 
+    max-height: 500px;
+    margin: 20px 10px;
+    padding: 20px;
+}
+
+.content-modal-Message .itensModalMessage svg {
+    color: var(--Primary);
+    font-size: 45px;
+}
+.content-modal-Message .itensModalMessage h1 {
+    font-weight: 800;
+    color: var(--Paragraph);
+    margin: 15px 0;
+}
+.content-modal-Message .itensModalMessage h2 {
+    font-weight: 800;
+    color: var(--Paragraph);
+    margin:0;
+}
+.content-modal-Message .itensModalMessage h4 {
+    margin-right: 30px;
+}
+
+.content-modal-Message .itensModalMessage a {
+    width: 150px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    background-color: var(--Primary);
+    color: var(--White);
+    margin: 30px 0 10px 0px;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 14px;
+}
+.content-modal-Message .itensModalMessage button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    background-color: var(--Primary);
+    color: var(--White);
+    margin: 10px 0 5px 0px;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 14px;
+}
+.content-modal-Message .itensModalMessage form {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding:20px 0;
+    margin:5px 0;
+}
+
+.content-modal-Message .itensModalMessage form input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--Gray);
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+.content-modal-Message .itensModalMessage form span {
+    font-weight: 700;
+    color: var(--Paragraph);
+    margin:5px 0;
+}
+

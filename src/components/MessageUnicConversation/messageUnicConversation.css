@@ -1,0 +1,48 @@
+﻿.conversationUnic {
+    width: 97%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    background-color: var(--BorderInput);
+    border: none;
+    color: var(--Paragraph);
+    border-radius: 6px;
+    margin: 2px 0;
+    padding: 10px
+}
+ .direction {
+    width: 97%;
+    text-decoration: none;
+}
+.conversationUnic:hover {
+    background-color: var(--Primary);
+    color: var(--White);
+}
+.conversationUnic .imageUnic {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.conversationUnic .imageUnic img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.conversationUnic .textUnic {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 0 5px;
+    height: 100%;
+}
+.conversationUnic .textUnic h5 {
+    font-weight: 700;
+}
+.conversationUnic .textUnic h6 {
+    font-style: italic;
+}

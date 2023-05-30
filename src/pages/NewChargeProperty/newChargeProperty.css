@@ -1,0 +1,595 @@
+﻿.NewChargeProperty {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.NewChargeProperty .aside {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 80px 0 40px 170px;
+}
+
+.NewChargeProperty .aside .textHome {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    }
+
+    .NewChargeProperty .aside .link {
+        border: none;
+        border-radius: 20px;
+        background-color: none;
+        color: var(--Primary);
+        font-size: 16px;
+        font-weight: 600;
+        text-decoration: none;
+
+      }
+      
+    
+    
+    .NewChargeProperty .aside .textHome h3 {
+      font-weight: bold;
+      text-align: center;
+      color: var(--Paragraph);
+      margin: 20px 0;
+    }
+    .NewChargeProperty .aside .textHome h4 {
+        font-weight: 700;
+        text-align: center;
+        margin: 5px;
+        color: var(--Paragraph);
+    }
+    
+.NewChargeProperty .aside .btnSend {
+    width: 300px;
+    padding: 10px 20px;
+    border: 1px solid var(--Border);
+    background-color: var(--White);
+    font-weight: 500;
+    border-radius: 20px;
+    color: var(--White);
+    margin: 5px;
+    font-size: 14px;
+    background-color: var(--Primary);
+    margin: 20px 5px;
+}
+
+
+.NewChargeProperty .aside .form {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    border-radius: 20px;
+    padding: 10px 15px;
+    background-color: var(--White);
+    box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+   border: none;
+}
+
+.NewChargeProperty .aside .form .textHome {
+    width: 98%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    }  
+    
+    .NewChargeProperty .aside .form .textHome h3 {
+      font-weight: bold;
+      text-align: center;
+      color: var(--Paragraph);
+      margin: 5p;
+    }
+    .NewChargeProperty .aside .form .textHome h4 {
+      font-weight: 700;
+      text-align: center;
+      margin: 10px 5px;
+      color: var(--Paragraph);
+    }
+    .NewChargeProperty .aside .form .newInfo {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    margin: 5px 0 0 ;
+}
+.NewChargeProperty .aside .newInfo {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    margin: 5px 0 0 ;
+}
+.NewChargeProperty .aside .form .btnSendContract {
+    border: 1px solid var(--Border);
+    background-color: var(--Primary);
+    color: var(--White);
+    border-radius: 20px;
+    padding: 10px 20px;
+    margin: 20px;
+}
+.NewChargeProperty .aside .btnSendContract {
+    border: 1px solid var(--Border);
+    background-color: var(--Primary);
+    color: var(--White);
+    border-radius: 20px;
+    padding: 10px 20px;
+    margin: 20px;
+}
+
+.NewChargeProperty .aside .form input{
+    width: 99%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 20px;
+    background-color: var(--White);
+    border: 1px solid var(--Border);
+    font-weight: 500;
+    color: var(--Description);
+}
+
+.NewChargeProperty .aside .form input::placeholder{
+    color: var(--Gray);
+}
+.NewChargeProperty .aside .form textarea::placeholder{
+    color: var(--Gray);
+}
+.NewChargeProperty .aside .form select{
+    width: 99%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 20px;
+    background-color: var(--White);
+    border: 1px solid var(--Border);
+    font-weight: 500;
+    color: var(--Gray);
+}
+.NewChargeProperty .aside .form .select{
+    width: 99%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 20px;
+    background-color: var(--White);
+    border: 1px solid var(--Border);
+    font-weight: 500;
+    color: var(--Description);
+}
+
+
+.NewChargeProperty .aside .form select option {
+    margin: 40px;
+    background: var(--White);
+    color: var(--Primary);
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
+    border-radius: 1px;
+    border: none;
+  }
+.NewChargeProperty .aside .form textarea{
+    width: 99%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 20px;
+    background-color: var(--White);
+    border: 1px solid var(--Border);
+    font-weight: 500;
+    resize: none;
+    color: var(--Description);
+}
+
+.NewChargeProperty .aside .form textarea::placeholder{
+    color: var(--Gray);
+}
+
+.NewChargeProperty .aside .form .data {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+    width: 100%;
+    margin: 2px 0;
+}
+.NewChargeProperty .aside .form .data .dataInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    width: 100%;
+    margin: 0px 5px;
+}
+.NewChargeProperty .aside .form .data .dataInfo input {
+    border: 1px solid var(--Border);
+    color: var(--Paragraph);
+    border-radius: 20px;
+    width: 100%x;
+    margin-right: 5px;
+    padding: 10px;
+    height: 40px;
+}
+
+.NewChargeProperty .aside .form .data .dataInfo span {
+    margin: 0px 10px;
+}
+
+.NewChargeProperty .aside .form .data .textData {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.NewChargeProperty .aside .form .data .textData h5 {
+    color: var(--Gray2);
+    font-weight: 700;
+}
+.NewChargeProperty .aside .form .newFeature {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 20px 0;
+    background-color: var(--BorderInput2);
+    padding: 5px;
+}
+
+.NewChargeProperty .aside .form .newFeature h5 {
+    font-weight: 700;
+    color: var(--Gray2)
+}
+
+.NewChargeProperty .aside .form .newFeature input {
+    border: 1px solid var(--Border);
+    color: var(--Paragraph);
+    border-radius: 20px;
+    width: 550px;
+    margin-right: 5px;
+    padding: 10px 20px;
+}
+.NewChargeProperty .aside .form .newFeature button {
+    border: 1px solid var(--Border);
+    background-color: var(--Primary);
+    color: var(--White);
+    border-radius: 20px;
+    padding: 10px 20px;
+}
+.NewChargeProperty .aside .form .characteristcs {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    flex-wrap: wrap;
+    padding: 10px 0;
+    border-top: 1px solid var(--Border);
+}
+.NewChargeProperty .aside .form .characteristcs .itemCharacteristc {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 5px;
+    padding: 5px 10px;
+    border-radius: 20px;
+    background-color: rgba(170,0,0,0.04);
+    width: 30%;
+}
+
+.NewChargeProperty .aside .form .characteristcs .itemCharacteristc h5 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: var(--Description);
+    margin: 0px;
+}
+.NewChargeProperty .aside .form .characteristcs .itemCharacteristc h5 svg {
+    color: var(--Primary);
+    margin-right: 3px;
+}
+.NewChargeProperty .aside .form .characteristcs .itemCharacteristc .btnItem {
+    width: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 0px;
+    border-radius: 3px;
+    background-color: rgba(170,0,0,0.015);
+    color: var(--Primary);
+    margin: 0px;
+    box-shadow: none;
+    border: none;
+}
+
+
+.NewChargeProperty .aside .form .Check {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.NewChargeProperty .aside .form .Check .btnCheck {
+    padding: 10px;
+    border: 1px solid var(--Border);
+    background-color: var(--White);
+    font-weight: 500;
+    border-radius: 25px;
+    color: var(--Gray);
+    margin: 5px 3px;
+    font-size: 14px;
+    color: var(--Gray);
+    width: 24%;
+}
+.NewChargeProperty .aside .form .Check .selected {
+    padding: 10px 20px;
+    border: 1px solid var(--Border);
+    background-color: var(--White);
+    font-weight: 500;
+    border-radius: 25px;
+    color: var(--White);
+    margin: 5px 3px;
+    font-size: 14px;
+    background-color: var(--Primary);
+    width: 24%;
+}
+.NewChargeProperty .aside .form .Check .btnCheck:hover {
+    color: var(--White);
+    background-color: var(--Primary);
+}
+
+.NewChargeProperty .aside .form .myImages{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    flex-wrap: wrap;
+}
+.NewChargeProperty .aside .form .myImages .btnImage{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    background-color: rgba(255,255,255, 0.1);
+    color: var(--White);
+    position: absolute;
+    margin-left: 125px; 
+    margin-top: 80px; 
+}
+.NewChargeProperty .aside .form .myImages .featuredImage{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    color: var(--White);
+    position: absolute;
+    margin-right: 125px; 
+    margin-top: 80px; 
+    background-color: rgba(255,255,255, 0.1);
+}
+.NewChargeProperty .aside .form .myImages .imageUnic{
+    width: 170px;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+.NewChargeProperty .aside .form .myImages .imageUnic img{
+    width: 170px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+.NewChargeProperty .aside .form .myImages .imageUnicFeatured{
+    width: 170px;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+    object-fit: cover;
+    border-radius: 20px;
+    background-color: var(--Primary)
+}
+.NewChargeProperty .aside .form .myImages .imageUnicFeatured img{
+    width: 170px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 20px;
+    border: 2px solid var(--Primary)
+}
+.NewChargeProperty .aside .form span{
+    font-size: 12px;
+    color: var(--Gray);
+    font-weight: 700;
+    margin: 10px 0;
+}
+.NewChargeProperty .aside .form .data .btnData{
+    width: 20%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 12px;
+    margin: 5px;
+    border-radius: 20px;
+    background-color: var(--Edit);
+    color: var(--White);
+    border: none;
+    font-weight: 500;
+}
+.NewChargeProperty .aside .form .data input{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 12px;
+    margin: 5px;
+    border-radius: 20px;
+    background-color: var(--White);
+    border: 1px solid var(--Border);
+    font-weight: 500;
+}
+.NewChargeProperty .aside .form .data select{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 20px;
+    background-color: var(--White);
+    border: 1px solid var(--Border);
+    font-weight: 500;
+}
+.NewChargeProperty .aside .form .data .select{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 20px;
+    background-color: var(--White);
+    border: 1px solid var(--Border);
+    font-weight: 500;
+    color: var(--Description);
+}
+
+.NewChargeProperty .aside .form input[type="file"] {
+    display: none;
+}
+.NewChargeProperty .aside .form label {
+    padding:10px;
+    background-color: var(--Primary);
+    color: #FFF;
+    text-transform: uppercase;
+    text-align: center;
+    display: block;
+    margin-top: 10px;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 20px;
+}
+
+
+@media (max-width: 950px) {
+    .NewChargeProperty .aside .form {
+        width: 95%;
+    }
+
+    @media (max-width: 820px) {
+        .NewChargeProperty .aside .form .Check .btnCheck {
+            width: 32%;
+        }
+        .NewChargeProperty .aside .form .Check .selected {
+            width: 32%;
+        }
+    @media (max-width: 700px) {
+        .NewChargeProperty .aside {
+            padding-left: 0px;
+            padding-bottom: 80px;
+        }
+
+            .NewChargeProperty .aside .form {
+                width: 95%;
+            }
+
+            .NewChargeProperty .aside .form .data {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+            }
+
+            .NewChargeProperty .aside .form .Check .btnCheck {
+                width: 48%;
+            }
+            .NewChargeProperty .aside .form .Check .selected {
+                width: 48%;
+            }
+
+            .NewChargeProperty .aside .form .characteristcs .itemCharacteristc {
+                width: 45%;
+            }
+
+            .NewChargeProperty .aside .form .myImages .imageUnic{
+                width: 130px;
+                height: 80px;
+            }
+            .NewChargeProperty .aside .form .myImages .imageUnic img{
+                width: 130px;
+                height: 80px;
+            }
+            .NewChargeProperty .aside .form .myImages .imageUnicFeatured{
+                width: 130px;
+                height: 80px;
+            }
+            .NewChargeProperty .aside .form .myImages .imageUnicFeatured img{
+                width: 130px;
+                height: 80px;
+            }
+
+            .NewChargeProperty .aside .form .newFeature {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .NewChargeProperty .aside .form .newFeature input {
+                width: 100%;
+            }
+            
+        }
+    }
+}
+
+

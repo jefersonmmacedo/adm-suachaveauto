@@ -1,0 +1,326 @@
+﻿.MyChargesProperty {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.MyChargesProperty .aside {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 170px;
+  padding-top: 100px;
+}
+
+.MyChargesProperty .aside .textHome {
+width: 90%;
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: space-between;
+margin-bottom: 20px;
+}
+
+
+.MyChargesProperty .aside .textHome h3 {
+  font-weight: bold;
+  text-align: center;
+  color: var(--Paragraph);
+}
+
+.MyChargesProperty .aside .infoData {
+width: 90%;
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: center;
+flex-wrap: wrap;
+padding: 10px;
+background-color: var(--White);
+box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.1);
+border-radius: 6px;
+}
+
+.MyChargesProperty .aside .infoData .textInfo{
+padding: 10px 20px;
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: center;
+border: 1px solid var(--Border);
+border-radius: 6px;
+margin: 5px;
+
+}
+
+.MyChargesProperty .aside .infoData .textInfo h5 {
+font-weight: 600;
+text-align: center;
+color: var(--Gray);
+}
+.MyChargesProperty .aside .infoData .textInfo h5 span {
+font-weight: 900;
+color: var(--Primary);
+}
+
+.MyChargesProperty .aside .link {
+border: none;
+border-radius: 6px;
+background-color: none;
+color: var(--Primary);
+font-size: 16px;
+font-weight: 600;
+text-decoration: none;
+margin-bottom: 10px;
+}
+
+
+.MyChargesProperty .informations {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  background-color: var(--White);
+  box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  margin-bottom: 100px;
+}
+
+.MyChargesProperty .informations .contracts{
+  width: 100%;
+  border-radius: 4px;
+  background-color: var(--White);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+  border-bottom: 1px solid var(--Border);
+}
+
+
+.MyChargesProperty .informations .contracts .dataContracts{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  padding: 5px;
+}
+.MyChargesProperty .informations .contracts .dataContracts .dataContractsUnic{
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 5px;
+}
+.MyChargesProperty .informations .contracts .dataContracts .dataContractsUnic h6{
+  font-weight: 700;
+  color: var(--Gray);
+}
+.MyChargesProperty .informations .contracts .dataContracts .dataContractsUnic h5{
+  font-weight: 700;
+  color: var(--Gray2);
+}
+
+.MyChargesProperty .informations .contracts .buttons{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  padding: 3px;
+  border-left: 1px solid var(--Border);
+}
+
+.MyChargesProperty .informations .contracts .buttons .linkEdit {
+padding: 7px;
+border: none;
+border-radius: 6px;
+background-color: var(--Edit);
+color: var(--White);
+margin: 2px;
+font-size: 16px;
+font-weight: 700;
+              display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: row;
+}
+.MyChargesProperty .informations .contracts .buttons .delete {
+padding: 7px;
+border: none;
+border-radius: 6px;
+background-color: var(--Button);
+color: var(--White);
+margin: 2px;
+font-size: 16px;
+font-weight: 700;
+              display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: row;
+}
+.MyChargesProperty .informations .contracts .buttons .notView {
+padding: 7px;
+border: none;
+border-radius: 6px;
+background-color: var(--Aproved);
+color: var(--White);
+margin: 2px;
+font-size: 16px;
+font-weight: 700;
+              display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: row;
+}
+.MyChargesProperty .aside .search {
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: row;
+margin: 10px;
+width: 90%;
+padding: 10px 15px;
+background-color: var(--White);
+box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.1);
+border-radius: 30px;
+}
+.MyChargesProperty .aside .search .selection {
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: row;
+width: 100%;
+}
+
+
+.MyChargesProperty .aside .search input {
+width: 50%;
+height: 40px;
+padding: 10px 20px;
+border: 1px solid var(--Border);
+border-radius: 20px;
+margin: 2px;
+}
+.MyChargesProperty .aside .search .selection select {
+width: 100%;
+height: 40px;
+padding: 10px 20px;
+border: 1px solid var(--Border);
+border-radius: 20px;
+margin: 2px;
+}
+
+
+@media(max-width: 1000px) {
+  .MyChargesProperty .informations .contracts .dataContracts{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 5px;
+    flex-wrap: wrap;
+  }
+  .MyChargesProperty .informations .contracts .dataContracts .dataContractsUnic{
+    width: 150px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    padding:5px;
+  }
+@media(max-width: 850px) {
+.MyChargesProperty .aside .search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 90%;
+}
+
+
+.MyChargesProperty .aside .search input {
+  width: 100%;
+}
+
+.MyChargesProperty .informations .contracts .buttons{
+  flex-direction: column;
+}
+
+
+@media (max-width: 700px) {
+  .MyChargesProperty .informations {
+      padding: 10px;
+  }
+  .MyChargesProperty .aside {
+      padding-left: 0px;
+  }
+
+
+
+  @media (max-width: 570px) {
+
+        .MyChargesProperty .informations .contracts{
+          width: 100%;
+
+          display: flex;
+          align-items: center;
+          justify-content: flex-start;
+          flex-direction: column;
+      }
+
+      .MyChargesProperty .informations .contracts .dataContracts .dataContractsUnic{
+        width: 120px;
+      }
+
+      .MyChargesProperty .informations .contracts .buttons{
+        justify-content: space-evenly;
+        flex-direction: row;
+        width: 100%;
+        border-left:none;
+        border-top: 1px solid var(--Border);
+        padding: 5px;
+    }
+
+      .MyChargesProperty .informations .contracts .buttons .linkEdit {
+      width: 100%;
+    }
+      .MyChargesProperty .informations .contracts .buttons .delete {
+      width: 100%;
+    }
+      .MyChargesProperty .informations .contracts .buttons .notView {
+      width: 100%;
+    }
+
+
+    .MyChargesProperty .aside .search {
+      width: 90%;
+      padding: 10px;
+    }
+
+    .MyChargesProperty .aside .search .selection {
+      flex-direction: column;
+      width: 100%;
+    }
+
+    .MyChargesProperty .aside .infoData .textInfo {
+      padding: 5px 10px;
+      margin: 3px;
+    }
+    .MyChargesProperty .aside .infoData .textInfo h5 {
+      font-size: 12px;
+    }
+    
+  }
+}
+}
+}

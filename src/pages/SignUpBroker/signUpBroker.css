@@ -1,0 +1,414 @@
+﻿.SignUpBroker {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.SignUpBroker .login {
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--White);
+}
+
+.SignUpBroker .login form {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.SignUpBroker .login form img {
+    height: 50px;
+}
+
+.SignUpBroker .login form .data {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+    padding: 10px;
+}
+.SignUpBroker .login form .data .BuscaCep {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0 20px 0;
+    padding:0px 20px;
+    text-align: center;
+}
+
+.SignUpBroker .login form .data .BuscaCep button {
+    width: 30px;
+    height: 30px;
+    border: none;
+    background-color: var(--Primary);
+    color: var(--White);
+    border-radius: 6px;
+    margin-left: 5px;
+}
+.SignUpBroker .login form .data .situationCnpj {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+    padding: 20px;
+    background-color: var(--BorderInput2);
+    border-radius: 6px;
+        text-align: center;
+}
+
+.SignUpBroker .login form .data .situationCnpj h4 {
+    color: var(--Gray);
+    margin-bottom: 5px;
+        text-align: center;
+}
+.SignUpBroker .login form .data .situationCnpj h3 {
+    color: var(--Aproved);
+    font-weight: 700;
+    margin-bottom: -20px;
+        text-align: center;
+}
+
+.SignUpBroker .login form .data .situationCnpj2 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+    padding: 20px;
+    background-color: var(--BorderInput2);
+    border-radius: 6px;
+    text-align: center;
+}
+
+.SignUpBroker .login form .data .situationCnpj2 h4 {
+    color: var(--Gray);
+    font-weight: 700;
+    margin-bottom: 5px;
+    text-align: center;
+}
+.SignUpBroker .login form .data .situationCnpj2 h3 {
+    color: var(--Primary);
+    font-weight: 700;
+    text-align: center;
+}
+
+.SignUpBroker .login form .data .situationCnpj2 h5 {
+    color: var(--Gray);
+    margin: 10px;
+    text-align: center;
+}
+
+
+
+.SignUpBroker .login form .data input {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-bottom: 2px solid var(--Border);
+    padding: 5px;
+    margin: 5px 0;
+    font-weight: bold;
+}
+
+.SignUpBroker .login form .data .dataInputs {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    border-bottom: 2px solid var(--Border);
+}
+.SignUpBroker .login form .data .dataInputs .icon {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+}
+.SignUpBroker .login form .data .dataInputs input {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    padding: 3px;
+    margin: 5px 0;
+    font-weight: bold;
+}
+
+
+.SignUpBroker .login form .data select {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-bottom: 2px solid var(--Border);
+    padding: 5px;
+    margin: 5px 0;
+    font-weight: bold;
+    background-color: var(--White);
+}
+.SignUpBroker .login form .data span {
+    color: var(--Gray);
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.SignUpBroker .login form .data h5 {
+    color: var(--Gray);
+    font-weight: 700;
+    margin: 5px 0;
+}
+.SignUpBroker .login form .data textarea {
+    width: 80%;
+    border: none;
+    border-bottom: 2px solid var(--Border);
+    padding: 5px;
+    margin: 5px 0;
+    font-weight: bold;
+    resize: none;
+}
+
+.SignUpBroker .login form .data input::placeholder {
+    color: var(--Gray);
+}
+.SignUpBroker .login form .data .links {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    color: var(--Gray);
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.SignUpBroker .login form .data .btn3  {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--White);
+    border: 1px solid var(--Secondary);
+    border-radius: 6px;
+    padding: 10px 20px;
+    color: var(--Secondary);
+    font-weight: 700;
+    margin: 10px 0 0 0;
+}
+.SignUpBroker .login form .data .btn {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--Secondary);
+    border: none;
+    border-radius: 6px;
+    padding: 10px 20px;
+    color: var(--White);
+    font-weight: 700;
+    margin: 30px 10px 10px 10px;
+}
+.SignUpBroker .login form .data .btn1 {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--Primary);
+    border: none;
+    border-radius: 6px;
+    padding: 10px 20px;
+    color: var(--White);
+    font-weight: 700;
+    margin: 20px 0;
+}
+
+
+.SignUpBroker .login form .data .label-avatar{
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    cursor: pointer;
+    margin: 20px 0;
+}
+
+.SignUpBroker .login form .data .label-avatar input {
+    display: none;
+}
+
+.SignUpBroker .login form .data .label-avatar span {
+    z-index: 99;
+    position: absolute;
+    opacity: 0.7;
+    transition: all .5s;
+}
+
+.SignUpBroker .login form .data .label-avatar span:hover{
+    opacity: 1;
+    transform: scale(1.4);
+}
+
+.SignUpBroker .login form .data .label-avatar img{
+    margin-bottom: 1em;
+    border-radius: 10px;
+    object-fit: cover;
+    width: 100px;
+    height: 100px;
+    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.2);
+}
+
+.SignUpBroker .professional {
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-image: url("../../assets/images/background5.jpg"); /* The image used */
+    background-color: var(--Primary); /* Used if the image is unavailable */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+.SignUpBroker .professional .block {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(237, 50, 55, 0.3);
+}
+
+.SignUpBroker .professional .block button {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--Button);
+    color: var(--White);
+    border: none;
+    border-radius: 6px;
+    padding: 10px 20px;
+    font-weight: 700;
+    margin: 10px 0;
+}
+
+.SignUpBroker .login form .data input:focus {
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
+
+
+
+
+@media (max-width: 850px) {
+
+    .SignUpBroker .login form {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .SignUpBroker .login form .data .dataInputs {
+        width: 90%;
+    }
+
+    .SignUpBroker .login {
+        width: 100%;
+        height: 100vh;
+    }
+    
+    .SignUpBroker .professional {
+        display: none;
+    }
+
+    .SignUpBroker .login form .data {
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 20px 0;
+        padding: 10px;
+    }
+    
+    .SignUpBroker .login form .data input {
+        width: 90%;
+    }
+    .SignUpBroker .login form .data select {
+        width: 90%;
+    }
+    .SignUpBroker .login form .data textarea {
+        width: 90%;
+    }
+    
+    .SignUpBroker .login form .data input::placeholder {
+        color: var(--Gray);
+    }
+    .SignUpBroker .login form .data .links {
+        width: 90%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-end;
+        color: var(--Gray);
+        font-weight: bold;
+        margin: 10px 0;
+    }
+    
+    .SignUpBroker .login form .data button {
+        width: 90%;
+    }
+    
+    @media (max-width: 500px) {
+        .SignUpBroker .login form {
+            width: 90%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .SignUpBroker .login form .data {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 20px 0;
+            padding: 10px;
+        }
+        
+    }
+}

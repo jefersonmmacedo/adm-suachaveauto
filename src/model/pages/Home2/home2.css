@@ -1,0 +1,321 @@
+﻿.Home2 {
+    width: 100%;
+}
+.Home2 .textHome2 {
+    margin: 40px auto 0 auto;
+    width: 1080px;
+    text-align: left;
+}
+.Home2 .textFeature {
+    width: 1080px;
+    text-align: left;
+    margin: 40px auto 0 auto;
+}
+.Home2 .textHome2 h3 {
+    margin: 20px 40px;
+    font-weight: 700;
+    color: var(--Gray);
+}
+.Home2 .textFeature h3 {
+    margin: 20px 40px;
+    font-weight: 700;
+    color: var(--Gray);
+}
+.Home2 .carroussel {
+    width: 1080px;
+    margin: 0px auto;
+}
+
+.Home2 .searchViewButton {
+    display: none;
+}
+
+
+.Home2 .iconsHome2Properties {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 100px;
+    margin-bottom: 60px;
+    flex-wrap: wrap;
+}
+.Home2 .iconsHome2Properties .unic {
+    display: flex;
+    flex-direction: row;
+    align-items:  flex-start;
+    justify-content: center;
+    padding: 10px 20px;
+    border-radius: 20px;
+    margin: 5px;
+    background-color: rgba(99,99,99, 0.5);
+    color: var(--White);
+    cursor: pointer;
+}
+
+.Home2 .iconsHome2Properties .unic svg {
+    margin-right: 5px;
+}
+.Home2 .iconsHome2Properties .unic:hover {
+    background-color: rgba(237,50,55, 0.9);
+}
+
+
+.content-modal-home2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    border-radius: 8px;
+    background-color: #BB0000;
+}
+.content-modal-home2-Search {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    border-radius: 8px;
+    background-color: var(--BorderInput2);
+}
+.content-modal-home2 .itensModalHome2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    overflow:auto; 
+    max-height: 500px;
+    margin: 20px 10px;
+}
+.content-modal-home2-Search .itensModalHome2-Search {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    overflow:auto; 
+    max-height: 500px;
+    margin: 20px 10px;
+}
+
+.content-modal-home2 .itensModalHome2 img {
+    width: 150px;
+    margin: 20px;
+}
+.content-modal-home2 .itensModalHome2 h2 {
+    font-weight: 700;
+    color: var(--White);
+    margin: 10px
+}
+
+.content-modal-home2 .itensModalHome2 form {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 20px 0;
+}
+
+.content-modal-home2 .itensModalHome2  form select {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    padding: 10px 20px;
+    background: var(--Background);
+    border-radius: 6px;
+}
+
+
+.content-modal-home2 .itensModalHome2 form .dataButtons {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center; 
+}
+.content-modal-home2 .itensModalHome2 form .dataButtons button {
+    width: 150px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    background-color: var(--White);
+    color: var(--Primary);
+    margin: 5px;
+    font-weight: 700;
+}
+
+.content-modal-home2 .itensModalHome2 form h3 {
+    font-weight: 700;
+    color: var(--White);
+    margin-top: 10px;
+}
+
+.content-modal-home2 .itensModalHome2 form select {
+    margin: 5px;
+    font-weight: 700;
+}
+
+.content-modal-home2 .itensModalHome2 form button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    background-color: var(--White);
+    color: var(--Primary);
+    margin: 10px;
+    font-weight: 700;
+}
+.content-modal-home2 .itensModalHome2 .loginAccount {
+    width: 400px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid var(--BorderHover);
+    margin: 20px 0;
+    padding: 10px;
+    flex-wrap: wrap;
+}
+
+.content-modal-home2 .itensModalHome2 .loginAccount a {
+    width: 150px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    background-color: var(--White);
+    color: var(--Primary);
+    margin: 5px;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+@media (max-width: 1085px) {
+    .Home2 .carroussel {
+        width: 95%;
+        margin: 0px auto;
+    }
+
+    .Home2 .textFeature {
+        width: 100%;
+    }
+
+    .Home2 .textHome2 {
+        width: 100%;
+    }
+    @media (max-width: 970px) {
+        .Home2 .carroussel {
+            width: 100%;
+            margin: 0px auto;
+        }
+
+
+
+        @media (max-width: 750px) {
+            .Home2 .textFeature {
+                width: 90%;
+                text-align: center;
+            }
+
+            .Home2 .textHome2 {
+                width:80%;
+                text-align: center;
+            }
+            .Home2 .searchView {
+                display: none;
+            }
+            .Home2 .searchViewButton {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+                margin-top: -25px;
+                z-index: 2;
+                position: absolute;
+            }
+
+            .Home2 .searchViewButton button {
+                border: 3px solid var(--White);
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                padding: 15px 20px;
+                Background-color: var(--Primary);
+                color: var(--White);
+                font-weight: 700;
+                border-radius: 6px;
+                width: 70%;
+                box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.2);
+            }
+
+            .Home2 .searchViewButton button svg {
+                margin-right: 5px;
+                font-size: 16px;
+            }
+
+            .Home2 .iconsHome2Properties {
+                margin-top: 80px;
+            }
+
+            @media (max-width: 555px) {
+                .Home2 .textFeature {
+                    width: 80%;
+                    text-align: center;
+                }
+
+                .Home2 .textHome2 {
+                    width: 80%;
+                    text-align: center;
+                }
+                .content-modal-home2 .itensModalHome2 form {
+                    width: 85%;
+                }
+
+                .content-modal-home2 .itensModalHome2 .loginAccount {
+                    width: 85%;
+                    margin: 20px 0 0 0;
+                }
+
+                @media (max-width: 400px) {
+
+                    .content-modal-home2 .itensModalHome2 {
+                        padding: 10px;
+                    }
+                    .content-modal-home2 .itensModalHome2 form {
+                        width: 95%;
+                    }
+
+                    .content-modal-home2 .itensModalHome2 .loginAccount {
+                        width: 95%;
+                        margin: 20px 0 0 0;
+                    }
+                    
+                }
+         
+            }
+     
+        }
+ 
+    }
+    
+}

@@ -1,0 +1,164 @@
+﻿.CompanyInfo {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: var(--BorderHover);
+    border-radius: 6px;
+    padding: 10px 10px 10px 10px;
+    margin-top: 20px;
+}
+.CompanyInfo .Head {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.CompanyInfo .Head .image {
+    width: 90px;
+    height: 90px;
+    border-radius: 6px;
+}
+.CompanyInfo .Head .image img {
+    width: 90px;
+    height: 90px;
+    border-radius: 6px;
+}
+
+.CompanyInfo .Head .textHead {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0 10px;
+}
+
+.CompanyInfo .Head .textHead h4 {
+    color: var(--Paragraph);
+    font-weight: 700;
+
+}
+.CompanyInfo .Head .textHead h5 {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    color: var(--Gray);
+    margin: 2px 0;
+}
+.CompanyInfo .Head .textHead h5 span{
+    font-weight: 500;
+    margin-left: 3px;
+}
+.CompanyInfo .Head .textHead h5 svg {
+    color: var(--Primary);
+    margin-right: 2px;
+    font-size: 14px;
+}
+.CompanyInfo .contact {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 10px 0;
+}
+.CompanyInfo .contact .info {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    white-space: pre-line;
+    margin: 3px 0;
+    background-color: var(--BorderHover);
+    padding: 10px;
+    border-radius: 6px;
+}
+
+
+.CompanyInfo .contact .info h5 {
+    color: var(--Paragraph);
+    font-weight: 700;
+    margin-left: 5px;
+    margin: 3px;
+}
+.CompanyInfo .contact .info h5 svg {
+    color: var(--Gray);
+    margin-right: 5px;
+    font-size: 16px;
+}
+
+.CompanyInfo .buttonsContact {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+.CompanyInfo .buttonsContact button {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+    border: none;
+    border-radius: 6px;
+    padding: 15px;
+    background-color: var(--Primary);
+    color: var(--White);
+    font-weight: 700;
+    border: 1px solid var(--Primary);
+}
+.CompanyInfo .buttonsContact button:hover {
+    background-color: var(--Delete);
+    color: var(--White);
+    border: 1px solid var(--Primary);
+}
+
+.CompanyInfo .buttonsContact button svg {
+    margin-right: 5px;
+    font-weight: 700;
+}
+
+.CompanyInfo .buttonsContact .btn-whats {
+    background-color: var(--White);
+    border: 1px solid var(--Primary);
+    color: var(--Primary);
+}
+.CompanyInfo .buttonsContact .btn-whats:hover {
+    background-color: var(--BorderHover);
+    border: 1px solid var(--BorderHover);
+    color: var(--Primary);
+}
+.CompanyInfo .buttonsContact .btn-call {
+    background-color: var(--Secondary);
+}
+
+@media (max-width: 850px) {
+    .CompanyInfo .Head {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+       
+    .CompanyInfo .Head .textHead {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        padding: 0px;
+        margin-top: -10px;
+    }
+
+    
+}

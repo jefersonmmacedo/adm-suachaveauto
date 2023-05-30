@@ -1,0 +1,504 @@
+﻿.Property {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.Property .main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 65px 0;
+}
+.Property .main .data {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 20px 0;
+
+}
+
+
+.Property .main .data .propertyUnic {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    background-color: var(--White);
+    border-radius: 6px;
+    margin: 20px;
+    padding-bottom: 20px;
+}
+
+.Property .main .data .propertyUnic .targets {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+    flex-wrap: wrap;
+}
+
+.Property .main .data .propertyUnic .targets .featured {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--Primary);
+    border-radius: 20px;
+    padding: 10px 40px;
+    margin: 5px;
+}
+
+.Property .main .data .propertyUnic .targets .featured p {
+    color: var(--White);
+    font-weight: 700;
+}
+
+.Property .main .data .propertyUnic .targets .status2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--Primary);
+    border-radius: 6px;
+    padding: 10px 20px;
+    margin: 5px;
+}
+
+.Property .main .data .propertyUnic .targets .status2 p {
+    color: var(--White);
+    font-weight: 700;
+}
+
+
+.Property .main .data .propertyUnic .targets .heart svg {
+    color: var(--Border);
+    font-size: 30px;
+    cursor: pointer;
+}
+.Property .main .data .propertyUnic .targets .heart svg:hover {
+    color: var(--Primary);
+}
+
+
+
+
+.Property .main .data .propertyUnic .text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 100%;
+}
+.Property .main .data .propertyUnic .text h2 {
+    color: var(--Paragraph);
+    font-weight: 700;
+    margin: 20px 10px 5px 10px;
+}
+.Property .main .data .propertyUnic .text h4 {
+    font-weight: 700;
+    color: var(--Paragraph);
+    margin:10px 10px;
+}
+.Property .main .data .propertyUnic .text .description {
+    font-weight: 400;
+    color: var(--Paragraph);
+    margin:5px 10px;
+    white-space: pre-line;
+}
+.Property .main .data .propertyUnic .text h3 {
+    color: var(--Paragraph);
+    font-weight: 700;
+    margin: 20px 10px 5px 10px;
+}
+.Property .main .data .propertyUnic .text h5 {
+    color: var(--Gray);
+    margin: 0 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.Property .main .data .propertyUnic .text .status {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--Secondary);
+    border-radius: 6px;
+    padding: 10px 20px;
+    margin: 5px;
+}
+
+.Property .main .data .propertyUnic .text .status p {
+    color: var(--White);
+    font-weight: 700;
+}
+
+.Property .main .data .propertyUnic .text .heart {
+    margin: 10px;
+}
+
+.Property .main .data .propertyUnic .text .icons {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin: 20px 0;
+    flex-wrap: wrap;
+    border: none;
+    border-top: 1px solid var(--Border);
+    padding-top: 10px;
+}
+
+.Property .main .data .propertyUnic .text .icons .iconUnic {
+    width: 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: center;
+    padding: 5px;
+    margin: 5px;
+    color: var(--Gray);
+}
+
+.Property .main .data .propertyUnic .text .icons .iconUnic svg {
+    font-size: 18px;
+    margin-right: 10px;
+    color: var(--Primary);
+}
+
+
+.Property .main .data .propertyUnic .text .icons .iconUnic .simbol {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.Property .main .data .propertyUnic .text .icons .iconUnic .simbol p {
+    color: var(--Gray);
+    font-weight: 600;
+
+}
+
+
+.Property .main .data .propertyUnic .text .characteristics {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin: 10px 0;
+}
+
+.Property .main .data .propertyUnic .text .characteristics .item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 5px;
+    margin: 5px;
+    color: var(--Paragraph);
+    padding: 5px 10px;
+    border-radius: 6px;
+    background-color: var(--PrimaryCharacteristcs);
+}
+.Property .main .data .propertyUnic .text .characteristics .item svg {
+    color: var(--Primary);
+    margin-right: 3px;
+}
+.Property .main .data .propertyUnic .text .characteristics .item p {
+    color: var(--Paragraph);
+    font-weight: 600;
+}
+
+
+.Property .main .data .propertyUnic .text .infosCompanyMobile {
+    width: 100%;
+    display: none;
+    border-radius: 6px;
+    border: 1px solid var(--Border);
+    margin: 5px;
+    padding: 10px;
+    margin-top: 20px;
+}
+.Property .main .data .propertyUnic .text .pricing {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    text-align: flex-start;
+    margin-bottom: 5px;
+}
+
+.Property .main .data .propertyUnic .text .pricing h5 {
+    color: var(--Gray);
+    font-weight: 800;
+    margin: 5px 10px;
+}
+.Property .main .data .propertyUnic .text .pricing h5 span {
+    font-weight: 500;
+}
+.Property .main .data .propertyUnic .text .pricing h2 {
+    color: var(--Paragraph);
+    font-weight: 400;
+    margin: 0 10px;
+}
+.Property .main .data .propertyUnic .text .pricing h2 span {
+    color: var(--Paragraph);
+    font-weight: 800;
+}
+
+.Property .main .data .propertyUnic .text .otherPrincings {
+    width: 600px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: row;
+    border-bottom: 1px solid var(--Border);
+    padding: 5px 0;
+}
+
+.Property .main .data .propertyUnic .text .otherPrincings h5 {
+    color: var(--Gray);
+    font-weight: 700;
+    margin: 5px 10px;
+}
+
+.Property .main .data .propertyUnic .text .pricingTotal {
+    width: 600px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 5px 0;
+    margin-bottom: 20px;
+}
+
+.Property .main .data .propertyUnic .text .pricingTotal h4 {
+    color: var(--Paragraph);
+    font-weight: 800;
+    margin: 5px 10px;
+}
+
+
+.Property .main .data .propertyUnic .text .video {
+    width: 100%;
+    margin: 20px 0;
+    border-radius: 6px;
+}
+.Property .main .data .propertyUnic .text .map {
+    width: 100%;
+    margin: 20px 0;
+    border-radius: 6px;
+}
+
+
+.Property .main .data .infosCompany {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    background-color: var(--White);
+    border-radius: 6px;
+    border: 1px solid var(--Border);
+    margin: 20px ;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.Property .main .data .infosCompany .pricing {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    text-align: flex-start;
+    margin-bottom: 5px;
+}
+
+.Property .main .data .infosCompany .pricing h5 {
+    color: var(--Gray);
+    font-weight: 800;
+    margin: 5px 10px;
+}
+.Property .main .data .infosCompany .pricing h5 span {
+    font-weight: 500;
+}
+.Property .main .data .infosCompany .pricing h2 {
+    color: var(--Paragraph);
+    font-weight: 400;
+    margin: 0 10px;
+}
+.Property .main .data .infosCompany .pricing h2 span {
+    color: var(--Paragraph);
+    font-weight: 800;
+}
+
+.Property .main .data .infosCompany .otherPrincings {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: row;
+    border-bottom: 1px solid var(--Border);
+    padding: 5px 0;
+}
+
+.Property .main .data .infosCompany .otherPrincings h5 {
+    color: var(--Gray);
+    font-weight: 700;
+    margin: 5px 10px;
+}
+
+.Property .main .data .infosCompany .pricingTotal {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 5px 0;
+}
+
+.Property .main .data .infosCompany .pricingTotal h4 {
+    color: var(--Paragraph);
+    font-weight: 800;
+    margin: 5px 10px;
+    margin-bottom: 20px;
+}
+
+
+
+
+
+.content-modal-Favorite {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    border-radius: 8px;
+    background-color: var(--White);
+}
+.content-modal-Favorite .itensModalFavorite {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 100%;
+    overflow:auto; 
+    max-height: 500px;
+    margin: 20px 10px;
+    padding: 20px;
+}
+
+.content-modal-Favorite .itensModalFavorite svg {
+    color: var(--Primary);
+    font-size: 45px;
+}
+.content-modal-Favorite .itensModalFavorite h1 {
+    font-weight: 800;
+    color: var(--Paragraph);
+    margin: 15px 0;
+}
+.content-modal-Favorite .itensModalFavorite h4 {
+    margin-right: 30px;
+}
+
+.content-modal-Favorite .itensModalFavorite a {
+    width: 150px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    background-color: var(--Primary);
+    color: var(--White);
+    margin: 30px 0 10px 0px;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+
+
+
+
+
+
+@media (max-width: 1000px) {
+    .Property .main .data .propertyUnic {
+        width:100%;
+    }
+
+    .Property .main .data .infosCompany {
+        max-width: 310px;
+        min-width: 310px;
+
+    }
+    
+@media (max-width: 950px) {
+
+    
+@media (max-width: 850px) {
+    .Property .main .data {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        margin: 20px 0;
+        padding: 0 40px;
+    }
+    
+    .Property .main .data .propertyUnic {
+        width: 90%;
+    }
+
+    .Property .main .data .propertyUnic .text .infosCompanyMobile {
+        display: block;
+    }
+    .Property .main .data .infosCompany {
+        display: none;
+    }
+}
+
+@media (max-width: 750px) {
+    .Property .main .data {
+        padding: 0px;
+    }
+    @media (max-width: 750px) {
+        .Property .main .data .propertyUnic .text .otherPrincings {
+            width: 100%;
+        }
+        
+        .Property .main .data .propertyUnic .text .pricingTotal {
+            width: 100%;
+        }
+        
+}
+}
+
+}
+}

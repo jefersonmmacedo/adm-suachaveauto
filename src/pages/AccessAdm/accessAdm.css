@@ -1,0 +1,78 @@
+﻿.AccessAdm {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.AccessAdm .aside {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 170px;
+    padding-top: 80px;
+}
+
+
+.AccessAdm .aside h3 {
+    margin: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+.AccessAdm .AccessList {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin: 10px 10px 100px 10px;
+    padding: 15px;
+    background-color: var(--White);
+    box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.1);
+    border-radius: 6px;
+
+}
+.AccessAdm .AccessList .AccessListUnic {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    background-color: var(--BorderHover);
+    color: var(--Paragraph);
+    border-bottom: 1px solid var(--Border);
+    flex-wrap: wrap;
+}
+.AccessAdm .AccessList .AccessListUnic h5 {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    color: var(--Description);
+    margin: 3px;
+}
+.AccessAdm .AccessList .AccessListUnic h5 a {
+    text-decoration: none;
+    color: var(--Paragraph);
+}
+.AccessAdm .AccessList .AccessListUnic span {
+    color: var(--Gray);
+    margin-right: 5px;
+}
+
+@media (max-width: 870px) {
+    .AccessAdm .AccessList {
+        width: 95%;
+    }
+
+@media (max-width: 700px) {
+
+    .AccessAdm .aside {
+        padding-left: 0px;
+    }
+}
+}

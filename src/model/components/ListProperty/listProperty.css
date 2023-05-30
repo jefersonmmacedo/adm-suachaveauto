@@ -1,0 +1,139 @@
+﻿.ListProperty {
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.ListProperty .searchItens {
+    width: 92%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+.ListProperty .searchItens .searchOptions {
+    width: 550px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.ListProperty .searchItens .searchOptions button {
+    background-color: var(--Primary);
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 6px;
+    color: var(--White);
+    font-size: 20px;
+}
+.ListProperty .searchItens .searchOptions .dataSearchOptions {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 5px;
+}
+.ListProperty .searchItens .searchOptions .dataSearchOptions .dataSelects {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.ListProperty .searchItens .searchOptions .dataSearchOptions .dataSelects input {
+    border: 1px solid var(--Border);
+    background-color: var(--White);
+    color: var(--Paragraph);
+    border-radius: 6px;
+    padding: 5px 10px;
+    width: 100%;
+    margin: 2px;
+}
+.ListProperty .searchItens .searchOptions .dataSearchOptions .dataSelects select {
+    border: 1px solid var(--Border);
+    background-color: var(--White);
+    color: var(--Paragraph);
+    border-radius: 6px;
+    padding: 5px 10px;
+    width: 100%;
+    margin: 2px;
+}
+
+
+
+.ListProperty .itens {
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+
+
+
+@media (max-width: 980px) {
+
+    .ListProperty {
+        width: 100%;
+    }
+    .ListProperty .itens {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        padding: 5px;
+        flex-wrap: wrap;
+    }
+    
+
+@media (max-width: 600px) {
+    .ListProperty .itens {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        padding: 5px;
+        flex-wrap: wrap;
+    }
+
+@media (max-width: 450px) {
+    .ListProperty .searchItens .searchOptions {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .ListProperty .searchItens .searchOptions button {
+        width: 70%;
+        padding: 7px;
+        margin: 5px 0;
+    }
+    .ListProperty .searchItens .textItens{
+        margin: 10px 0;
+    }
+
+    .ListProperty {
+    width: 100%;
+    margin-top: 0px;
+}
+
+}
+}
+}

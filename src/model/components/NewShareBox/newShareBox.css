@@ -1,0 +1,187 @@
+﻿.buttonShareBox {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: var(--White);
+    cursor: pointer;
+    border:none;
+    position: absolute;
+}
+.buttonShareBox svg {
+    color: var(--Border);
+    font-size: 24px;
+    cursor: pointer;
+}
+.buttonShareBox svg:hover {
+    color: var(--Primary);
+}
+
+
+.content-modal-scheduling {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    border-radius: 8px;
+
+}
+.content-modal-scheduling .itensModal-scheduling {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    overflow:auto; 
+    max-height: 500px;
+    padding: 20px;
+}
+.content-modal-scheduling .itensModal-scheduling h2 {
+    font-weight: 700;
+    color: var(--Primary);
+    margin-bottom: 20px;
+}
+
+
+.content-modal-scheduling .itensModal-scheduling .form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 80%;
+    margin-top: 20px;
+}
+
+.content-modal-scheduling .itensModal-scheduling .form select {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    padding: 10px 20px;
+    background-color: var(--White);
+    border: 1px solid var(--Gray2);
+    border-radius: 6px;
+}
+
+.content-modal-scheduling .itensModal-scheduling .form .buttonsDays {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    flex-wrap: wrap;
+    padding: 0 auto;
+}
+
+.content-modal-scheduling .itensModal-scheduling .form .buttonsDays button {
+    width: 32px;
+    height: 32px;
+    background: var(--Background);
+    color: var(--Paragraph);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    border: 1px solid var(--Background);
+}
+.content-modal-scheduling .itensModal-scheduling .form .textModal-scheduling {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 10px;
+    margin-bottom: 3px;
+}
+.content-modal-scheduling .itensModal-scheduling .form .textModal-scheduling p {
+    font-weight: 700;
+}
+
+.content-modal-scheduling .itensModal-scheduling .form .data {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.content-modal-scheduling .itensModal-scheduling .form .data .infosData {
+    width: 49%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.content-modal-scheduling .itensModal-scheduling .form .data .infosData .text {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 10px;
+    margin-bottom: 3px;
+}
+.content-modal-scheduling .itensModal-scheduling .form .data .infosData .textModal-scheduling p {
+    font-weight: 700;
+}
+
+.content-modal-scheduling .itensModal-scheduling .form .btnSubmit {
+    width: 100%;
+    background: var(--Primary);
+    color: var(--White);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding:15px 20px;
+    border: none;
+    border-radius: 6px;
+    margin: 20px 0;
+}
+
+
+.content-modal-scheduling .itensModal-scheduling .form .address {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.content-modal-scheduling .itensModal-scheduling .form .address p {
+    font-weight: 500;
+    font-size: 12px;
+}
+.content-modal-scheduling .itensModal-scheduling .form .address p svg {
+    margin-right: 5px;
+}
+
+
+.content-modal-scheduling .itensModal-scheduling::-webkit-scrollbar {
+    width: 12px;               /* width of the entire scrollbar */
+  }
+  
+  .content-modal-scheduling .itensModal-scheduling::-webkit-scrollbar-track {
+    background: var(--BorderHover);        /* color of the tracking area */
+  }
+  
+  .content-modal-scheduling .itensModal-scheduling::-webkit-scrollbar-thumb {
+    background-color: var(--Border);    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border: 3px solid var(--BorderHover);  /* creates padding around scroll thumb */
+  }
+
+
+  @media (max-width: 550px) {
+    .content-modal-scheduling .itensModal-scheduling .dataProperty {
+        width: 100%;
+    }
+
+    .content-modal-scheduling .itensModal-scheduling .form {
+        width: 100%;
+    }
+    
+  }

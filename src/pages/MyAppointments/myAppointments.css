@@ -1,0 +1,545 @@
+﻿.MyAppointments {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.MyAppointments .aside {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 170px;
+  padding-top: 100px;
+}
+
+.MyAppointments .aside .textHome {
+width: 90%;
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: space-between;
+margin-bottom: 20px;
+}
+
+
+.MyAppointments .aside .textHome h3 {
+  font-weight: bold;
+  text-align: center;
+  color: var(--Paragraph);
+}
+
+.MyAppointments .aside .infoData {
+width: 90%;
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: center;
+flex-wrap: wrap;
+padding: 5px;
+background-color: var(--White);
+border: 1px solid var(--Border);
+border-radius: 20px;
+}
+
+.MyAppointments .aside .infoData .textInfo{
+padding: 10px 20px;
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: center;
+border: 1px solid var(--Border);
+border-radius: 20px;
+margin: 5px;
+
+}
+
+.MyAppointments .aside .infoData .textInfo h5 {
+font-weight: 600;
+text-align: center;
+color: var(--Gray);
+}
+.MyAppointments .aside .infoData .textInfo h5 span {
+font-weight: 900;
+color: var(--Primary);
+}
+
+.MyAppointments .aside .link {
+border: none;
+border-radius: 20px;
+background-color: none;
+color: var(--Primary);
+font-weight: 600;
+text-decoration: none;
+}
+
+
+.MyAppointments .informations {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding:5px;
+  background-color: var(--White);
+  border: 1px solid var(--Border);
+  border-radius: 20px;
+  margin-bottom: 100px;
+}
+.MyAppointments .titleShedulign {
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding:5px;
+}
+.MyAppointments .titleShedulign h3 {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+  padding: 10px 20px;
+  background-color: var(--Secondary);
+  border-radius: 20px;
+  color: var(--White);
+  gont-weight: 700;
+}
+.MyAppointments .titleShedulign2 {
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding:5px;
+}
+.MyAppointments .titleShedulign2 h3 {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+  padding: 10px 20px;
+  background-color: var(--Aproved);
+  border-radius: 20px;
+  color: var(--White);
+  gont-weight: 700;
+}
+.MyAppointments .titleShedulign3 {
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding:5px;
+}
+.MyAppointments .titleShedulign3 h3 {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+  padding: 10px 20px;
+  background-color: var(--Primary);
+  border-radius: 20px;
+  color: var(--White);
+  gont-weight: 700;
+}
+
+.MyAppointments .informations .AppointmentsListAdm{
+  width: 98%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+  border-bottom: 1px solid var(--Border);
+  margin-top: 5px;
+}
+.MyAppointments .informations .AppointmentsListAdm .image{
+  width: 100px;
+  height: 95%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+.MyAppointments .informations .AppointmentsListAdm .image img{
+  width: 100px;
+  height: 95%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.MyAppointments .informations .AppointmentsListAdm .textAppointmentsListAdm{
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  padding: 5px 10px;
+  text-align:left;
+  width: 100%;
+  height: 100%;
+}
+.MyAppointments .informations .AppointmentsListAdm .user{
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  padding: 5px 10px;
+  text-align:left;
+  width: 100%;
+}
+.MyAppointments .informations .AppointmentsListAdm .user .aproved{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+  padding: 5px 10px;
+  background-color: var(--Aproved);
+  border-radius: 20px;
+  color: var(--White);
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.MyAppointments .informations .AppointmentsListAdm .user .cancel{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+  padding: 5px 10px;
+  background-color: var(--Button);
+  border-radius: 20px;
+  color: var(--White);
+  font-weight: 600;
+  font-size: 12px;
+}
+.MyAppointments .informations .AppointmentsListAdm .user .pending{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+  padding: 5px 10px;
+  background-color: var(--Edit);
+  border-radius: 20px;
+  color: var(--White);
+  font-weight: 600;
+  font-size: 12px;
+}
+.MyAppointments .informations .AppointmentsListAdm .user .conclused{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+  padding: 5px 10px;
+  background-color: var(--Secondary);
+  border-radius: 20px;
+  color: var(--White);
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.MyAppointments .informations .AppointmentsListAdm .textAppointmentsListAdm .AppointmentsView {
+display: flex;
+align-items: flex-start;
+justify-content: flex-start;
+flex-direction: row;
+width: 100%;
+padding:5px;
+flex-wrap:  wrap;
+}
+
+.MyAppointments .informations .AppointmentsListAdm .textAppointmentsListAdm .textDataAppointmentsListAdm{
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  text-align:left;
+  width: 100%;
+}
+.MyAppointments .informations .AppointmentsListAdm .textAppointmentsListAdm .textDataAppointmentsListAdm a{
+ text-decoration: none;
+}
+
+
+.MyAppointments .informations .AppointmentsListAdm .textAppointmentsListAdm .textDataAppointmentsListAdm h4 {
+  color: var(--Primary);
+  font-weight: 700;
+  margin: 0 10px;
+  text-align:left;
+}
+
+.MyAppointments .informations .AppointmentsListAdm .textAppointmentsListAdm .textDataAppointmentsListAdm h5 {
+  color: var(--Gray);
+  margin: 2px 9px;
+  text-align:left;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: row;
+  font-weight: 700;
+}
+
+.MyAppointments .informations .AppointmentsListAdm .textAppointmentsListAdm .textDataAppointmentsListAdm h5 svg {
+  margin-right: 2px;
+}
+.MyAppointments .informations .AppointmentsListAdm .textAppointmentsListAdm .textDataAppointmentsListAdm h6 {
+  color: var(--Gray);
+  margin: 5px 10px 0 10px;
+  text-align:left;
+}
+.MyAppointments .informations .AppointmentsListAdm .textAppointmentsListAdm .emphasis {
+  margin: 5px;
+  text-align:center;
+  padding: 5px 10px;
+  background-color: var(--BorderInput);
+  color: var(--Paragraph);
+  border-radius: 20px;
+  font-size: 12px;
+}
+.MyAppointments .informations .AppointmentsListAdm .textAppointmentsListAdm .status1 {
+  margin: 5px;
+  text-align:center;
+  padding: 5px 10px;
+  background-color: var(--Aproved);
+  color: var(--White);
+  border-radius: 20px;
+  font-size: 12px;
+}
+.MyAppointments .informations .AppointmentsListAdm .textAppointmentsListAdm .status2 {
+  margin: 5px 10px 0 10px;
+  text-align:center;
+  padding: 5px 10px;
+  background-color: var(--Secondary);
+  color: var(--White);
+  border-radius: 20px;
+  font-size: 12px;
+}
+.MyAppointments .informations .AppointmentsListAdm .textAppointmentsListAdm .status3 {
+  margin: 5px 10px 0 10px;
+  text-align:center;
+  padding: 5px 10px;
+  background-color: var(--Edit);
+  color: var(--White);
+  border-radius: 20px;
+  font-size: 12px;
+}
+.MyAppointments .informations .AppointmentsListAdm .textAppointmentsListAdm .status4 {
+  margin: 5px 10px 0 10px;
+  text-align:center;
+  padding: 5px 10px;
+  background-color: var(--Primary);
+  color: var(--White);
+  border-radius: 20px;
+  font-size: 12px;
+}
+.MyAppointments .informations .AppointmentsListAdm .infosContactData {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+  padding: 2px 0;
+  width: 100%;
+  flex-wrap: wrap;
+}
+.MyAppointments .informations .AppointmentsListAdm .infosContactData .infoUnicData {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+  padding: 5px 10px;
+  margin: 5px;
+  border-radius: 20px;
+  border: 1px solid var(--Border);
+}
+
+.MyAppointments .informations .AppointmentsListAdm .infosContactData .infoUnicData svg {
+  color: var(--Gray);
+  margin-right: 5px;
+  font-size: 12px;
+}
+.MyAppointments .informations .AppointmentsListAdm .infosContactData .infoUnicData  h6 {
+  font-weight: 600;
+  color: var(--Gray);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+}
+
+.MyAppointments .informations .AppointmentsListAdm .infosContactData .infoUnicData:hover {
+  background-color: var(--BorderInput2);
+}
+
+.MyAppointments .informations .AppointmentsListAdm .buttons{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 5px;
+  border-left: 1px solid var(--Border);
+}
+
+.MyAppointments .informations .AppointmentsListAdm .buttons .btnControl {
+width: 30px;
+height: 30px;
+padding: 8px;
+border: none;
+border-radius: 20px;
+background-color: var(--BorderInput);
+color: var(--Gray2);
+margin: 5px;
+font-weight: 700;
+              display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: row;
+}
+.MyAppointments .informations .AppointmentsListAdm .buttons .btnControl svg {
+margin: 0px;
+}
+
+.MyAppointments .informations .AppointmentsListAdm .buttons .btnControl:hover {
+background-color: var(--Primary);
+color: var(--White);
+}
+
+.MyAppointments .aside .search {
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: row;
+margin: 0px 10px 20px 10px;
+width: 90%;
+padding: 10px;
+background-color: var(--White);
+border: 1px solid var(--Border);
+border-radius: 30px;
+}
+.MyAppointments .aside .search .selection {
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: row;
+width: 100%;
+}
+
+
+.MyAppointments .aside .search input {
+width: 50%;
+height: 40px;
+padding: 10px 20px;
+border: 1px solid var(--Border);
+border-radius: 20px;
+margin: 2px;
+}
+.MyAppointments .aside .search .selection select {
+width: 100%;
+height: 40px;
+padding: 10px 20px;
+border: 1px solid var(--Border);
+border-radius: 20px;
+margin: 2px;
+}
+
+
+@media(max-width: 850px) {
+.MyAppointments .aside .search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 90%;
+}
+
+
+.MyAppointments .aside .search input {
+  width: 100%;
+}
+
+
+@media (max-width: 700px) {
+  .MyAppointments .informations {
+      padding: 0 10px 10px 10px;
+  }
+  .MyAppointments .aside {
+      padding-left: 0px;
+  }
+
+
+
+  @media (max-width: 570px) {
+
+        .MyAppointments .informations .AppointmentsListAdm{
+          width: 100%;
+          margin:20px 5px;
+
+          display: flex;
+          align-items: center;
+          justify-content: flex-start;
+          flex-direction: column;
+      }
+
+      .MyAppointments .informations .AppointmentsListAdm .textAppointmentsListAdm .textDataAppointmentsListAdm h4 {
+        margin:5px 10px;
+      }
+
+          .MyAppointments .informations .AppointmentsListAdm .image{
+          width: 100%;
+          height: 100px;
+      }
+        .MyAppointments .informations .AppointmentsListAdm .image img{
+          width: 100%;
+          height: 100px;
+      }
+
+      .MyAppointments .informations .AppointmentsListAdm .infosContactData .infoUnicData {
+        padding: 5px;
+        margin: 5px 2px
+      }
+    
+
+      .MyAppointments .informations .AppointmentsListAdm .buttons{
+        justify-content: space-evenly;
+        flex-direction: row;
+        width: 100%;
+        border-left:none;
+        border-top: 1px solid var(--Border);
+        padding: 5px;
+    }
+
+      .MyAppointments .informations .AppointmentsListAdm .buttons .linkEdit {
+      width: 100%;
+      heigth: 100%
+    }
+      .MyAppointments .informations .AppointmentsListAdm .buttons .newDocument {
+      width: 100%;
+      heigth: 100%
+    }
+      .MyAppointments .informations .AppointmentsListAdm .buttons .delete {
+      width: 100%;
+      heigth: 100%
+    }
+
+
+    .MyAppointments .aside .search {
+      width: 90%;
+      padding: 10px;
+    }
+
+    .MyAppointments .aside .search .selection {
+      flex-direction: column;
+      width: 100%;
+    }
+
+    .MyAppointments .aside .infoData .textInfo {
+      padding: 5px 10px;
+      margin: 20px;
+    }
+    .MyAppointments .aside .infoData .textInfo h5 {
+      font-size: 12px;
+    }
+    
+  }
+}
+}

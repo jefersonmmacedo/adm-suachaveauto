@@ -1,0 +1,46 @@
+﻿
+.ConversationsList {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+.ConversationsList .link {
+    width: 350px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--Primary);
+    border: none;
+    color: var(--Paragraph);
+    border-radius: 30px;
+    margin: 4px 0;
+    margin-left: -25px;
+    padding: 10px
+}
+
+.ConversationsList .link svg {
+    margin-right: 5px;
+    color: var(--Primary);
+}
+
+@media (max-width: 400px) {
+    .ConversationsList .link {
+        width: 80%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--BorderInput);
+        border: none;
+        color: var(--Paragraph);
+        border-radius: 6px;
+        margin: 4px 0;
+        padding: 10px
+    
+    }
+}
+

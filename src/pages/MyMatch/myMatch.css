@@ -1,0 +1,206 @@
+﻿.MyMatch {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.MyMatch .aside {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 170px;
+    padding-top: 80px;
+}
+.MyMatch .aside h3 {
+    margin: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+.MyMatch .aside .buttons {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.MyMatch .aside .buttons .Select {
+    padding: 10px 20px;
+    background-color: var(--Primary);
+    color: var(--White);
+    border-radius: 20px;
+    border: 1px solid var(--Primary);
+    width: 150px;
+}
+.MyMatch .aside .buttons button {
+    padding: 10px 20px;
+    background-color: var(--BorderInput);
+    color: var(--Paragraph);
+    border-radius: 20px;
+    border: 1px solid var(--White);
+    width: 150px;
+}
+
+.MyMatch .MatchList {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin: 10px 10px 100px 10px;
+    padding: 10px;
+    background-color: var(--White);
+    box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.1);
+    border-radius: 25px;
+
+}
+
+.MyMatch .MatchList .MatchListUnic {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    background-color: var(--BorderHover);
+    margin: 5px 0;
+}
+
+.MyMatch .MatchList .counterMatch {
+    width: 100px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: var(--BorderInput2);
+    border-radius: 0 20px 20px 0;
+    padding: 20px;
+}
+
+.MyMatch .MatchList .counterMatch h6 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 5px 0;
+    font-weight: 700;
+    color: var(--Gray2);
+}
+.MyMatch .MatchList .counterMatch svg{
+    color: var(--Primary)
+}
+.MyMatch .MatchList .MatchListUnic .data {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 5px;
+    color: var(--Paragraph);
+    flex-wrap: wrap;
+}
+.MyMatch .MatchList .MatchListUnic .data h4 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    color: var(--Primary);
+    margin: 3px 10px;
+    font-weight: 700;
+}
+.MyMatch .MatchList .MatchListUnic .data h5 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    color: var(--Description);
+    margin: 3px 10px;
+}
+.MyMatch .MatchList .MatchListUnic .data h6 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    color: var(--Description);
+    margin: 3px 10px;
+}
+.MyMatch .MatchList .MatchListUnic .data h5 a {
+    text-decoration: none;
+    color: var(--Paragraph);
+}
+.MyMatch .MatchList .MatchListUnic .data span {
+    color: var(--Gray);
+    margin: 0px 2px;
+}
+.MyMatch .MatchList .MatchListUnic .data .textDataMatch {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.MyMatch .MatchList .MatchListUnic .data .textDataMatch h5 {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    color: var(--Description);
+    margin: 3px 5px;
+    
+}
+.MyMatch .MatchList .MatchListUnic .data .icons {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+.MyMatch .MatchList .MatchListUnic .data .icons h5 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: var(--Description);
+    margin: 3px 5px;
+    padding: 3px 6px;
+    border-radius: 3px;
+    background-color: var(--BorderInput2);
+    width: 80px;
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--Gray2);
+}
+.MyMatch .MatchList .MatchListUnic .data .icons span {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: var(--Primary);
+    margin-right: 5px;
+}
+
+@media (max-width: 870px) {
+    .MyMatch .MatchList {
+        width: 95%;
+    }
+
+@media (max-width: 700px) {
+
+    .MyMatch .aside {
+        padding-left: 0px;
+    }
+}
+}

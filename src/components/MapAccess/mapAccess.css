@@ -1,0 +1,408 @@
+﻿.link {
+    border: none;
+    border-radius: 6px;
+    background-color: none;
+    color: var(--Primary);
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    background-color: var(--Background)
+  }
+  
+
+  .content-moda-Process {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;    
+    overflow:auto;
+    max-height: 600px;  
+}
+
+  .content-moda-Process::-webkit-scrollbar {
+    width: 12px;               /* width of the entire scrollbar */
+  }
+  
+    .content-moda-Process::-webkit-scrollbar-track {
+    background: var(--BorderHover);        /* color of the tracking area */
+    border-radius: 6px;
+  }
+  
+    .content-moda-Process::-webkit-scrollbar-thumb {
+    background-color: var(--Border);    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border: 3px solid var(--BorderHover);  /* creates padding around scroll thumb */
+  }
+
+
+.content-moda-Process .itensModal-Process {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; 
+    padding: 10px;
+
+}
+
+.content-moda-Process .itensModal-Process .form {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; 
+}
+
+.content-moda-Process .itensModal-Process h3 {
+    margin: 10px;
+    color: var(--Primary);
+    font-weight: 600;
+}
+
+.content-moda-Process .itensModal-Process .form .ProcessData {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: row;
+    padding: 10px; 
+}
+
+.content-moda-Process .itensModal-Process .form .ProcessData .dataUser {
+    width: 50%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: 10px;
+    margin: 5px 3px;
+    box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.1);
+    border-radius: 6px;
+}
+
+.content-moda-Process .itensModal-Process .form .ProcessData .dataUser  h5 {
+    color: var(--Primary);
+    margin: 0px 0px 3px 3px;
+    font-weight: 600;
+}
+
+.content-moda-Process .itensModal-Process .form .ProcessData .searchData {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.content-moda-Process .itensModal-Process .form .ProcessData .dataUser input {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    border-radius: 6px;
+    border: 1px solid var(--Border);
+    background-color: var(--White);
+    padding: 10px;
+    margin: 3px 0;
+}
+
+.content-moda-Process .itensModal-Process .form .ProcessData .dataUser .btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    border-radius: 6px;
+    border: 1px solid var(--Primary);
+    background-color: var(--PrimaryHover);
+    margin: 0 0 0 5px;
+    padding: 9px;
+    color: var(--White);
+}
+
+.content-moda-Process .itensModal-Process .form .ProcessData .dataUser .userInformations {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    border-radius: 6px;
+}
+
+.content-moda-Process .itensModal-Process .form .ProcessData .dataUser .userInformations h4 {
+    margin: 2px 3px;
+    color: var(--Primary);
+    font-weight: 600;
+}
+.content-moda-Process .itensModal-Process .form .ProcessData .dataUser .userInformations h5 {
+    font-weight: 400;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    color: var(--Gray);
+}
+
+.content-moda-Process .itensModal-Process .form .ProcessData .dataUser .userInformations h5 svg {
+    margin-right: 5px;
+}
+
+
+
+
+.content-moda-Process .itensModal-Process .form .ProcessData .dataProperty {
+    width: 50%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: 10px;
+    margin: 5px 3px;
+    box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.1);
+    border-radius: 6px;
+}
+
+.content-moda-Process .itensModal-Process .form .ProcessData .dataProperty   h5 {
+    color: var(--Paragraph);
+    margin: 0px 0px 3px 3px;
+    font-weight: 600;
+}
+
+.content-moda-Process .itensModal-Process .form .ProcessData .dataProperty .image {
+    width: 100%;
+    height: 50px;
+    border-radius: 6px 6px 0 0;
+    object-fit: cover;
+    margin: 5px 0;
+}
+
+.content-moda-Process .itensModal-Process .form .ProcessData .dataProperty .image img {
+    width: 100%;
+    height: 50px;
+    border-radius: 6px 6px 0 0;
+    object-fit: cover;
+}
+
+.content-moda-Process .itensModal-Process .form .ProcessData .dataProperty .btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    border-radius: 6px;
+    border: 1px solid var(--Primary);
+    background-color: var(--PrimaryHover);
+    margin: 5px;
+    padding: 9px;
+    color: var(--White);
+}
+
+.content-moda-Process .itensModal-Process .form .ProcessData .dataProperty .userInformations {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    border-radius: 6px;
+}
+
+.content-moda-Process .itensModal-Process .form .ProcessData .dataProperty .userInformations h4 {
+    margin: 2px 3px;
+    color: var(--Primary);
+    font-weight: 600;
+}
+.content-moda-Process .itensModal-Process .form .ProcessData .dataProperty .userInformations h5 {
+    font-weight: 400;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    color: var(--Gray);
+}
+
+.content-moda-Process .itensModal-Process .form .ProcessData .dataProperty .userInformations h5 svg {
+    margin-right: 5px;
+}
+
+
+
+.content-moda-Process .itensModal-Process .form .DataInputs {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: row;
+    padding: 10px 5px 15px 5px;
+    border: 1px solid var(--Border);
+    margin: 5px 0;
+    border-radius: 6px;
+    flex-wrap: wrap;
+}
+
+.content-moda-Process .itensModal-Process .form .DataInputs .dataInputUnic {
+    width: 33%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: 0 5px;
+}
+
+.content-moda-Process .itensModal-Process .form .DataInputs .dataInputUnic h5 {
+    color: var(--Primary);
+    margin: 10px 10px 5px 10px;
+    font-weight: 600;
+}
+
+.content-moda-Process .itensModal-Process .form .DataInputs .dataInputUnic .doubleInputs {
+    width: 100%;
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    flex-direction: row;
+}
+
+.content-moda-Process .itensModal-Process .form .DataInputs .dataInputUnic input {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    border-radius: 6px;
+    border: 1px solid var(--Border);
+    background-color: var(--White);
+    padding: 10px 20px;
+}
+.content-moda-Process .itensModal-Process .form .DataInputs .dataInputUnic input::placeholder {
+    color: var(--Gray);
+}
+.content-moda-Process .itensModal-Process .form .DataInputs .dataInputUnic select {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    border-radius: 6px;
+    border: 1px solid var(--Border);
+    background-color: var(--White);
+    padding: 10px 20px;
+}
+
+.content-moda-Process .itensModal-Process .form .DataInputs .dataInputUnic .doubleInputs {
+    width: 100%;
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    flex-direction: row;
+}
+
+.content-moda-Process .itensModal-Process .form .DataInputs .dataInputUnic .doubleInputs  input {
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    border-radius: 6px;
+    border: 1px solid var(--Border);
+    background-color: var(--White);
+    padding: 10px;
+    margin: 3px;
+}
+
+.content-moda-Process .itensModal-Process .form .DataInputs .dataInputUnic .doubleInputs select {
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    border-radius: 6px;
+    border: 1px solid var(--Border);
+    background-color: var(--White);
+    padding: 10px 20px;
+}
+
+.content-moda-Process .itensModal-Process .form .ButtonsForm {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    margin: 20px 0;
+}
+.content-moda-Process .itensModal-Process .form .send {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    border-radius: 6px;
+    border: 1px solid var(--Primary);
+    background-color: var(--PrimaryHover);
+    margin: 5px;
+    padding: 10px 20px;
+    color: var(--White);
+}
+.content-moda-Process .itensModal-Process .form .cancel {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    border-radius: 6px;
+    border: 1px solid var(--Primary);
+    background-color: var(--White);
+    margin: 5px;
+    padding: 10px 20px;
+    color: var(--Primary);
+}
+
+@media (max-width: 570px) {
+    
+    .New {
+        width: 100%;
+    }
+    @media (max-width: 550px) {
+
+
+    .content-moda-Process .itensModal-Process .form .ProcessData {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 10px; 
+    }
+    
+    .content-moda-Process .itensModal-Process .form .ProcessData .dataUser {
+        width: 100%;
+    }
+    
+    
+    .content-moda-Process .itensModal-Process .form .ProcessData .dataProperty {
+        width: 100%;
+    }
+    
+
+    .content-moda-Process .itensModal-Process .form .DataInputs {
+        width: 100%;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        flex-direction: column;
+        padding: 5px;
+    }
+
+    .content-moda-Process .itensModal-Process .form .DataInputs .dataInputUnic {
+        width: 100%;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-direction: column;
+        padding: 5px;
+    }
+    
+    
+}
+}

@@ -1,0 +1,318 @@
+﻿
+.SearchPropertyHomeTop2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-left: 40px;
+}
+.SearchPropertyHomeTop2 .viewFilter {
+    width: 100%;
+
+}
+.SearchPropertyHomeTop2 .search {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    border-radius: 0 0 6px 6px;
+    border: 1px solid var(--Border);
+    background-color: var(--White);
+    padding:7px;
+    margin-bottom: 5px;
+}
+.SearchPropertyHomeTop2 .search h3 {
+    display: none;
+}
+.SearchPropertyHomeTop2 .search .primary {
+    width:100%;
+    border-radius: 6px 0 0 6px;
+}
+.SearchPropertyHomeTop2 .search .address {
+    width:100%;
+}
+.SearchPropertyHomeTop2 .search input {
+    width: 100%;
+    background-color: var(--White);
+    color: var(--Paragraph);
+    padding: 10px;
+    font-weight: 700;
+    border:none;
+    border-bottom: 1px solid var(--Border);
+    height: 40px;
+}
+.SearchPropertyHomeTop2 .search select {
+    width:100%;
+    background-color: var(--White);
+    color: var(--Paragraph);
+    padding: 10px;
+    font-weight: 700;
+    border:none;
+    border-bottom: 1px solid var(--Border);
+    height: 40px;
+}
+
+.SearchPropertyHomeTop2 .search input::placeholder {
+    color: var(--Gray);
+    font-weight: 700;
+}
+.SearchPropertyHomeTop2 .search .filter {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0px 2px 0px 2px;
+    border-radius: 6px;
+    background-color: var(--White);
+    color: var(--Gray);
+    font-weight: 500;
+    border: none;
+    height: 30px;
+    width: 120px;
+    margin: 0px 5px;
+    width: 100%;
+}
+.SearchPropertyHomeTop2 .search .filter svg {
+    margin-right: 2px;
+    font-size: 12px;
+}
+.SearchPropertyHomeTop2 .viewFilter .search .btnSearch {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    border-radius: 6px;
+    background-color: var(--Primary);
+    color: var(--White);
+    font-weight: 500;
+    border: none;
+    height: 40px;
+    width: 100%;
+}
+.SearchPropertyHomeTop2 .search .btnSearch {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    border-radius: 6px;
+    background-color: var(--Primary);
+    color: var(--White);
+    font-weight: 500;
+    border: none;
+    height: 40px;
+    width: 100%;
+}
+.SearchPropertyHomeTop2 .search .mobile {
+    display: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    background-color: var(--Primary);
+    color: var(--White);
+    font-weight: 500;
+    border: none;
+    height: 40px;
+    width: 100%;
+}
+
+.SearchPropertyHomeTop2 .selectButtonsHomeTop {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    
+}
+.SearchPropertyHomeTop2 .selectButtonsHomeTop button {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+    padding: 15px 20px;
+    Background-color: var(--White);
+    color: var(--Paragraph);
+    font-weight: 700;
+    border: none;
+    border-top: 1px solid var(--Border);
+}
+.SearchPropertyHomeTop2 .selectButtonsHomeTop button:hover {
+    background-color: var(--Primary);
+    color: var(--White);
+}
+.SearchPropertyHomeTop2 .selectButtonsHomeTop button svg {
+   margin-right: 5px;
+}
+.SearchPropertyHomeTop2 .selectButtonsHomeTop .btn1 {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 15px 20px;
+    Background-color: var(--White);
+    color: var(--Paragraph);
+    font-weight: 700;
+    border-radius: 6px 0 0 0;
+    border-top: 1px solid var(--Border);
+    border-left: 1px solid var(--Border);
+    border-right: 1px solid var(--Border);
+}
+.SearchPropertyHomeTop2 .selectButtonsHomeTop .btn {
+    border-top: 1px solid var(--Border);
+    border-left: 1px solid var(--Border);
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 15px 20px;
+    Background-color: var(--Primary);
+    color: var(--White);
+    font-weight: 700;
+    border-radius: 6px 0 0 0;
+}
+.SearchPropertyHomeTop2 .selectButtonsHomeTop .btn2 {
+    border: 2px solid var(--White);
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 15px 20px;
+    Background-color: var(--Primary);
+    color: var(--White);
+    font-weight: 700;
+}
+.SearchPropertyHomeTop2 .selectButtonsHomeTop .btn3 {
+    border-top: 1px solid var(--Border);
+    border-right: 1px solid var(--Border);
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 15px 20px;
+    Background-color: var(--Primary);
+    color: var(--White);
+    font-weight: 700;
+    border-radius: 0 6px 0 0;
+}
+.SearchPropertyHomeTop2 .selectButtonsHomeTop .btn4 {
+    border-top: 1px solid var(--Border);
+    border-right: 1px solid var(--Border);
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 15px 20px;
+    Background-color: var(--White);
+    color: var(--Paragraph);
+    font-weight: 700;
+    border-radius: 0 6px 0 0;
+}
+.SearchPropertyHomeTop2 .textLocation {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    width: 90%;
+    margin: 10px 0;
+    flex-wrap: wrap;
+}
+
+.SearchPropertyHomeTop2 .textLocation h4 {
+    margin: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: var(--Gray);
+}
+
+.SearchPropertyHomeTop2 .textLocation select {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 10px;
+    Background-color:var(--BorderHover);
+    color: var(--Paragraph);
+    font-weight: 500;
+    border: none;
+    margin: 5px;
+    border-radius: 6px;
+}
+
+.SearchPropertyHomeTop2 .textLocation button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 6px 10px;
+    Background-color:var(--Border);
+    color: var(--Paragraph);
+    font-weight: 500;
+    border: none;
+    margin: 5px 10px;
+    border-radius: 6px;
+}
+
+
+.SearchPropertyHomeTop2 .textLocation .checkDiv {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 0px 5px;
+}
+
+.SearchPropertyHomeTop2 .textLocation .checkDiv h5 {
+    margin: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: var(--Gray);
+}
+
+.SearchPropertyHomeTop2 .textLocation .checkDiv h5 svg {
+    margin-right: 3px;
+}
+
+
+
+
+.SearchPropertyHomeTop2 .icons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 10px 0;
+    flex-wrap: wrap;
+}
+.SearchPropertyHomeTop2 .icons .unic {
+    display: flex;
+    flex-direction: row;
+    align-items:  flex-start;
+    justify-content: center;
+    padding: 10px 20px;
+    border-radius: 20px;
+    margin: 5px;
+    background-color: rgba(99,99,99, 0.5);
+    color: var(--White);
+    cursor: pointer;
+}
+
+.SearchPropertyHomeTop2 .icons .unic svg {
+    margin-right: 5px;
+}
+.SearchPropertyHomeTop2 .icons .unic:hover {
+    background-color: rgba(237,50,55, 0.9);
+}
+
+@media (max-width: 780px) {
+    .SearchPropertyHomeTop2 {
+        margin-left: 25px;
+    }
+}

@@ -1,0 +1,93 @@
+﻿.UpdatesSystem {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.UpdatesSystem .aside {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 100px 0 40px 170px;
+}
+
+.UpdatesSystem .aside .textHome {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+    .UpdatesSystem .aside .textHome h3 {
+      font-weight: bold;
+      text-align: center;
+      color: var(--Paragraph);
+  }
+  
+.UpdatesSystem .aside .listUpdates {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 10px;
+    margin: 5px;
+}
+
+.UpdatesSystem .aside .listUpdates h2{
+    color: var(--Primary);
+    font-weight: 700;
+    text-align: center;
+}
+.UpdatesSystem .aside .listUpdates h4{
+    color: var(--Gray);
+    font-weight: 500;
+    text-align: center;
+    margin: 5px;
+}
+
+
+
+
+@media (max-width: 950px) {
+    .UpdatesSystem .aside .form {
+        width: 95%;
+    }
+
+    @media (max-width: 700px) {
+        .UpdatesSystem .aside {
+            padding-left: 0px;
+            padding-bottom: 80px;
+        }
+
+        @media (max-width: 650px) {
+            .UpdatesSystem .aside .form {
+                width: 95%;
+            }
+
+            .UpdatesSystem .aside .form .data {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+            }
+
+            .UpdatesSystem .aside .solicitation img{
+                width: 90%;
+                margin: 20px 0;
+            }
+            
+
+            
+        }
+    }
+}
+
+

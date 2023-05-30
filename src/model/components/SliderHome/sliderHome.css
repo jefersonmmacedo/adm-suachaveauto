@@ -1,0 +1,188 @@
+﻿
+.each-slide-effect .imageTop {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  height: 600px; /* You must set a specified height */
+}
+
+.each-slide-effect .imageTop .image {
+  width: 100%;
+  height: 600px;
+  object-fit:cover ;
+  
+}
+.each-slide-effect .imageTop .image img {
+  width: 100%;
+  height: 600px;
+  object-fit:cover ;
+}
+
+.each-slide-effect .imageTop .blockSlider {
+  width: 550px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  background-color: var(--White);
+  box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 6px;
+  margin: 50px;
+  padding: 20px;
+  z-index: 1;
+  position: absolute;
+}
+.each-slide-effect .imageTop .blockSlider .featured {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--Primary);
+  border-radius: 20px;
+  margin-top: -35px;
+  padding: 10px 40px;
+}
+
+.each-slide-effect .imageTop .blockSlider .featured p {
+  color: var(--White);
+  font-weight: 700;
+}
+
+.each-slide-effect .imageTop .blockSlider h2 {
+  color: var(--Paragraph);
+  font-weight: 700;
+  margin: 0px 10px 5px 10px;
+}
+.each-slide-effect .imageTop .blockSlider h3 {
+  color: var(--Paragraph);
+  font-weight: 700;
+  margin: 10px 10px 5px 10px;
+}
+.each-slide-effect .imageTop .blockSlider a {
+  text-decoration: none;
+}
+.each-slide-effect .imageTop .blockSlider h4 {
+  color: var(--Gray);
+  margin: 0 10px;
+}
+.each-slide-effect .imageTop .blockSlider h5 {
+  color: var(--Gray);
+  margin: 0 10px;
+}
+.each-slide-effect .imageTop .blockSlider .icons {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin: 5px 3px;
+}
+
+.each-slide-effect .imageTop .blockSlider .icons .iconUnic {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  text-align: center;
+  padding: 5px;
+  margin: 2px;
+  color: var(--Gray);
+}
+.each-slide-effect .imageTop .blockSlider .icons .iconUnic  svg {
+  font-size: 18px;
+  margin-right: 10px;
+  color: var(--Primary);
+}
+
+.each-slide-effect .imageTop .blockSlider .icons .iconUnic .simbol {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: center;
+  margin-top: 5px;
+}
+
+.each-slide-effect .imageTop .blockSlider .icons .iconUnic .simbol p {
+  color: var(--Gray);
+  font-weight: 600;
+}
+
+.each-slide-effect .imageTop .blockSlider .pricing {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  text-align: flex-start;
+}
+
+.each-slide-effect .imageTop .blockSlider .pricing h5 {
+  color: var(--Gray);
+  font-weight: 800;
+  margin: 5px 10px;
+}
+.each-slide-effect .imageTop .blockSlider .pricing span {
+  font-weight: 500;
+}
+.each-slide-effect .imageTop .blockSlider .pricing h2 {
+  color: var(--Paragraph);
+  font-weight: 400;
+  margin: 0 10px;
+  font-size: 20px;
+}
+.each-slide-effect .imageTop .blockSlider .pricing h2 span {
+  font-weight: 800;
+}
+
+
+@media (max-width: 650px) {
+
+  .each-slide-effect .imageTop {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 600px; /* You must set a specified height */
+  }
+  .each-slide-effect .imageTop .blockSlider {
+    width: 500px;
+      margin: 10px;
+      background-color: rgba(255, 255, 255, 0.9);
+  }
+@media (max-width: 530px) {
+  .each-slide-effect .imageTop .blockSlider {
+    width: 450px;
+  }
+  @media (max-width: 500px) {
+
+    .each-slide-effect .imageTop .blockSlider {
+      width: 400px;
+    }
+      .each-slide-effect .imageTop .blockSlider .icons {
+          width: 100%;
+          flex-wrap: wrap;
+      }
+      .each-slide-effect .imageTop .blockSlider .icons .iconUnic {
+          width: 80px;
+      }
+
+      @media (max-width: 430px) {
+        .each-slide-effect .imageTop .blockSlider {
+          width: 350px;
+        }
+
+        @media (max-width: 390px) {
+          .each-slide-effect .imageTop .blockSlider {
+            width: 320px;
+          }
+          }
+        }
+  }
+}
+}

@@ -1,0 +1,146 @@
+﻿.btnControl {
+    width: 30px;
+    height: 30px;
+    padding: 8px;
+    border: none;
+    border-radius: 20px;
+    background-color: var(--BorderInput);
+    color: var(--Gray2);
+    margin: 5px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+  }
+    .btnControl svg {
+    margin: 0px;
+  }
+  
+  .btnControl:hover {
+    background-color: var(--Primary);
+    color: var(--White);
+  }
+
+  .FilterDataEquipe .btnFilter svg {
+    margin: 0px;
+  }
+
+.FilterDataEquipe .viewFilter {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    flex-flow: column nowrap;
+    background: var(--BorderHover);
+    border-left: 1px solid var(--Border);
+    backdrop-filter: blur(4px);
+    position: fixed;
+    transform: translateX(0);
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 650px;
+    transition: transform 0.3s ease-in-out;
+    z-index: 99;
+    box-shadow: 1px 1px 20px 0px rgba(0,0,0,0.3);
+    -webkit-box-shadow: 1px 1px 20px 0px rgba(0,0,0,0.3);
+    -moz-box-shadow: 1px 1px 20px 0px rgba(0,0,0,0.3);
+}
+.FilterDataEquipe .viewFilterNone {
+    transform: translateX(100%);
+    flex-flow: column nowrap;
+    background: var(--White);
+    border-left: 1px solid var(--Border);
+    backdrop-filter: blur(4px);
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 500px;
+    transition: transform 0.3s ease-in-out;
+    z-index: 99;
+}
+.FilterDataEquipe .viewFilter .buttonsFilter {
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.FilterDataEquipe .viewFilter .buttonsFilter .btnFilter {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 7px 15px;
+    Background-color: var(--White);
+    color: var(--Paragraph);
+    font-weight: 500;
+    border: 1px solid var(--Gray);
+    border-radius: 6px;
+    font-size: 12px;
+    margin-top: -50px;
+}
+
+.FilterDataEquipe .viewFilter .dataClient {
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+.FilterDataEquipe .viewFilterNone .dataClient {
+    width: 95%;
+    display: none;
+}
+
+.FilterDataEquipe .viewFilterNone .buttons {
+    width: 95%;
+    display: none;
+}
+
+.FilterDataEquipe .viewFilter .dataClient button svg {
+    margin-right: 0px;
+}
+
+
+.FilterDataEquipe .viewFilter .dataClient .form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 80%
+}
+
+@media(max-width:600px) {
+
+    
+    .FilterDataEquipe .viewFilter {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .FilterDataEquipe .viewFilter .buttons .btnFilter {
+        margin-top: 50px;
+    }
+
+    .FilterDataEquipe .viewFilter .dataClient .form {
+        width: 100%
+    }
+
+   
+    @media(max-width: 450px) { 
+.FilterDataEquipe .viewFilter .dataClient {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+    }
+
+}

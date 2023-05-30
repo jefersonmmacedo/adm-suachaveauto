@@ -1,0 +1,134 @@
+﻿.ProposalUnic {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background-color:  var(--BorderHover);
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.2);
+}
+
+.ProposalUnic .block1 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.ProposalUnic .block1 h3 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-weight: 900;
+    color: var(--Primary)
+}
+.ProposalUnic .block1 h5 {
+    font-weight: 700;
+    color: var(--Description);
+    margin-bottom: 10px;
+}
+
+.ProposalUnic .block1 .professionals {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 10px 0;
+}
+
+.ProposalUnic .block1 .professionals p {
+    color: var(--White);
+    background-color: var(--Gray);
+    padding: 5px 5px;
+    margin: 5px 5px 5px 0;
+    border-radius: 6px;
+    font-size: 10px;
+    font-weight: normal;
+}
+
+.ProposalUnic .block1 p {
+    font-weight: 700;
+    color: var(--Description);
+}
+
+.ProposalUnic .block2 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.ProposalUnic .block2 .status {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.ProposalUnic .block2 .status h4 {
+    color: var(--White);
+    background-color: var(--Aproved);
+    padding: 5px 10px;
+    margin: 5px 5px 5px 0;
+    border-radius: 6px;
+    font-weight: normal;
+}
+
+.ProposalUnic .block2 p {
+    font-weight: 700;
+    color: var(--Paragraph);
+}
+
+.ProposalUnic .block3 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+}
+
+.ProposalUnic .block3 p {
+    font-weight: 700;
+    color: var(--Paragraph);
+}
+
+.ProposalUnic .block3 .infos {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 5px 0;
+}
+
+.ProposalUnic .block3 .infos p {
+    font-weight: 700;
+    color: var(--Description);
+    margin-left: 5px;
+}
+
+.ProposalUnic .block3 .image {
+    width: 30px; 
+}
+.ProposalUnic .block3 .image img {
+ width: 30px;
+}
+
+
+@media (max-width: 750px) {
+    .BudgetPage .ProposalUnic {
+        width: 100%;
+    }
+       
+    .BudgetPage .ProposalUnic .block3 button {
+        width: 100%;
+    }    
+      
+}
+

@@ -1,0 +1,113 @@
+﻿.Faq {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 0px 0px 0px;
+}
+
+
+.Faq h2 {
+    margin-top: 40px;
+    font-weight: 700;
+    color: var(--Primary);
+    text-align: center;
+}
+
+.Faq h2 span {
+    color: var(--Primary);
+}
+
+
+.Faq h4 {
+    color: var(--Paragraph);
+    margin:10px;
+    text-align: center;
+}
+.Faq .blocFaq {
+    width: 750px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 20px 0;
+    padding: 20px;
+}
+
+.Faq .blocFaq input {
+    background-color: var(--White);
+    border: 2px solid var(--Border);
+    border-radius: 10px;
+    padding: 10px 20px;
+    margin: 20px;
+    color: var(--Paragraph);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 700px;
+}
+
+.Faq .blocFaq .faqUnic {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 10px;
+    border-radius: 10px;
+}
+.Faq .blocFaq .faqUnic .Question {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px 20px;
+    border-radius: 6px 6px 0 0;
+    background-color: var(--Primary);
+    color: var(--White);
+}
+
+.Faq .blocFaq .faqUnic .Question h4 {
+    color: var(--White);
+    font-weight: 700;
+    text-align: center;
+    margin: 5px;
+}
+.Faq .blocFaq .faqUnic .Reply {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px 20px;
+    border-radius: 0 0 6px 10px;
+    background-color: var(--White);
+    color: var(--Gray);
+    border: none;
+    border-right: 2px solid var(--Border);
+    border-bottom: 2px solid var(--Border);
+    border-left: 2px solid var(--Border);
+}
+
+.Faq .blocFaq .faqUnic .Reply h5 {
+    color: var(--Paragraph);
+    font-weight: 500;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .Faq .blocFaq {
+        width: 100%;
+    }
+    
+    .Faq .blocFaq input {
+        width: 100%;
+    }
+}

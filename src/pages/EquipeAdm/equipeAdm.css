@@ -1,0 +1,355 @@
+﻿.EquipeAdm {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.EquipeAdm .aside {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 170px;
+  padding-top: 80px;
+}
+.EquipeAdm .aside .textHome {
+width: 90%;
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: space-between;
+}
+
+
+.EquipeAdm .aside .textHome h3 {
+  font-weight: bold;
+  text-align: center;
+  color: var(--Paragraph);
+}
+
+
+.EquipeAdm .aside .infoData {
+width: 90%;
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: center;
+flex-wrap: wrap;
+padding: 10px 15px;
+background-color: var(--White);
+box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.1);
+border-radius: 20px;
+}
+
+.EquipeAdm .aside .infoData .textInfo{
+padding: 10px 20px;
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: center;
+border: 1px solid var(--Border);
+border-radius: 20px;
+margin: 5px;
+}
+
+.EquipeAdm .aside .infoData .textInfo h5 {
+font-weight: 600;
+text-align: center;
+color: var(--Gray);
+}
+.EquipeAdm .aside .infoData .textInfo h5 span {
+font-weight: 900;
+color: var(--Primary);
+}
+
+.EquipeAdm .informationsEquipe {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 100px;
+  padding: 10px 15px;
+  background-color: var(--White);
+  box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+}
+
+.EquipeAdm .informationsEquipe .EquipeListAdm{
+  width: 100%;
+  border-radius:50px;
+  background-color: var(--BorderHover);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+  margin: 5px;
+  padding: 5px;
+  box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.2);
+}
+.EquipeAdm .informationsEquipe .EquipeListAdm .image{
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  margin: 3px;
+}
+.EquipeAdm .informationsEquipe .EquipeListAdm .image img{
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+}
+
+.EquipeAdm .informationsEquipe .EquipeListAdm .textEquipeListAdm{
+
+  background-color: var(--BorderInput);
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 5px 10px;
+  text-align:left;
+  width: 100%;
+  height: 100%;
+  background-color: var(--BorderHover);
+}
+.EquipeAdm .informationsEquipe .EquipeListAdm .textEquipeListAdm .textDataEquipeListAdm{
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  text-align:left;
+  width: 100%;
+  height: 100%;
+}
+.EquipeAdm .informationsEquipe .EquipeListAdm .textEquipeListAdm .textDataEquipeListAdm h4 {
+  color: var(--Primary);
+  font-weight: 700;
+  margin: 0;
+  text-align:left;
+}
+
+.EquipeAdm .informationsEquipe .EquipeListAdm .textEquipeListAdm .textDataEquipeListAdm h6 {
+  color: var(--Gray);
+  margin: 0 0 0 -10px;
+  text-align:left;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: row;
+  font-weight: 700;
+}
+.EquipeAdm .informationsEquipe .EquipeListAdm .textEquipeListAdm .textDataEquipeListAdm h6 svg {
+  margin: 0 3px 0 10px;
+}
+/* .EquipeAdm .informationsEquipe .EquipeListAdm .textEquipeListAdm .textDataEquipeListAdm h6 {
+  color: var(--Gray);
+  margin: 5px 10px 0 10px;
+  text-align:left;
+} */
+.EquipeAdm .informationsEquipe .EquipeListAdm .textEquipeListAdm h5 {
+  margin: 5px 0 0 0;
+  text-align:center;
+  padding: 1px 5px;
+  background-color: var(--Aproved);
+  color: var(--White);
+  border-radius: 3px;
+  font-size: 12px;
+}
+.EquipeAdm .informationsEquipe .EquipeListAdm .infosContactData {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+  padding: 10px 0;
+  width: 100%;
+  flex-wrap: wrap;
+}
+.EquipeAdm .informationsEquipe .EquipeListAdm .infosContactData .infoUnicData {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 20px;
+  border: 1px solid var(--Border);
+}
+
+.EquipeAdm .informationsEquipe .EquipeListAdm .infosContactData .infoUnicData svg {
+  color: var(--Gray);
+  margin-right: 5px;
+}
+.EquipeAdm .informationsEquipe .EquipeListAdm .infosContactData .infoUnicData  h5 {
+  font-weight: 600;
+  color: var(--Gray);
+}
+
+.EquipeAdm .informationsEquipe .EquipeListAdm .infosContactData .infoUnicData:hover {
+  background-color: var(--BorderInput2);
+}
+
+.EquipeAdm .informationsEquipe .EquipeListAdm .buttonsEquipes{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  padding: 10px;
+  border-left: 1px solid var(--Border);
+  height: 100%;
+}
+.EquipeAdm .informationsEquipe .EquipeListAdm .buttonsEquipes .btnControl {
+  width: 30px;
+  height: 30px;
+  padding: 8px;
+  border: none;
+  border-radius: 20px;
+  background-color: var(--BorderInput);
+  color: var(--Gray2);
+  margin: 5px;
+  font-weight: 700;
+                display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: row;
+  }
+  .EquipeAdm .informationsEquipe .EquipeListAdm .buttonsEquipes .btnControl svg {
+  margin: 0px;
+  }
+  
+  .EquipeAdm .informationsEquipe .EquipeListAdm .buttonsEquipes .btnControl:hover {
+  background-color: var(--Primary);
+  color: var(--White);
+  }
+  
+.EquipeAdm .aside .search {
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: row;
+margin: 10px;
+width: 90%;
+padding: 10px 15px;
+background-color: var(--White);
+box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.1);
+border-radius: 30px;
+}
+.EquipeAdm .aside .search .selection {
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: row;
+width: 100%;
+}
+
+
+.EquipeAdm .aside .search input {
+width: 50%;
+height: 40px;
+padding: 10px 20px;
+border: 1px solid var(--Border);
+border-radius: 20px;
+margin: 2px;
+}
+.EquipeAdm .aside .search .selection select {
+width: 100%;
+height: 40px;
+padding: 10px 20px;
+border: 1px solid var(--Border);
+border-radius: 20px;
+margin: 2px;
+}
+
+
+@media(max-width: 850px) {
+.EquipeAdm .aside .search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 90%;
+}
+
+
+.EquipeAdm .aside .search input {
+  width: 100%;
+}
+
+
+@media (max-width: 700px) {
+  .EquipeAdm .informationsEquipe {
+      padding: 0 10px 100px 10px;
+  }
+  .EquipeAdm .aside {
+      padding-left: 0px;
+  }
+
+
+
+  @media (max-width: 570px) {
+
+        .EquipeAdm .informationsEquipe .EquipeListAdm{
+          width: 100%;
+          margin:20px 5px;
+
+          display: flex;
+          align-items: center;
+          justify-content: flex-start;
+          flex-direction: column;
+      }
+
+          .EquipeAdm .informationsEquipe .EquipeListAdm .image{
+         display: none;
+      }
+
+      .EquipeAdm .informationsEquipe .EquipeListAdm .infosContactData .infoUnicData {
+        padding: 5px;
+      }
+    
+
+      .EquipeAdm .informationsEquipe .EquipeListAdm .buttonsEquipes{
+        justify-content: space-evenly;
+        flex-direction: row;
+        width: 100%;
+        border-left:none;
+        border-top: 1px solid var(--Border);
+        padding: 5px;
+    }
+
+      .EquipeAdm .informationsEquipe .EquipeListAdm .buttonsEquipes .linkEdit {
+      width: 100%;
+    }
+      .EquipeAdm .informationsEquipe .EquipeListAdm .buttonsEquipes .delete {
+      width: 100%;
+    }
+      .EquipeAdm .informationsEquipe .EquipeListAdm .buttonsEquipes .notView {
+      width: 100%;
+    }
+
+
+    .EquipeAdm .aside .search {
+      width: 100%;
+      padding: 10px;
+    }
+
+    .EquipeAdm .aside .search .selection {
+      flex-direction: column;
+      width: 100%;
+    }
+
+    .EquipeAdm .aside .infoData .textInfo {
+      padding: 5px 10px;
+      margin: 3px;
+    }
+    .EquipeAdm .aside .infoData .textInfo h5 {
+      font-size: 12px;
+    }
+    
+  }
+}
+}

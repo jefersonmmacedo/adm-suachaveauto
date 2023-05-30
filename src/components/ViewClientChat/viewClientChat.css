@@ -1,0 +1,237 @@
+﻿.ViewClientChat .btnProperty {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:flex-end;
+    border: none;
+    background-color: var(--Primary);
+    color: var(--White);
+}
+
+.ViewClientChat .btnProperty2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:flex-end;
+    border: none;
+    background-color: var(--Primary);
+    color: var(--White);
+    padding: 0px;
+    font-size: 12px;
+    margin-left: 0px;
+}
+
+.ViewClientChat .btnProperty2 svg {
+    font-size: 11px;
+}
+
+
+.ViewClientChat .searchItensFilter {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    flex-flow: column nowrap;
+    background: var(--BorderHover);
+    border-left: 1px solid var(--Border);
+    backdrop-filter: blur(4px);
+    position: fixed;
+    transform: translateX(0);
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 650px;
+    transition: transform 0.3s ease-in-out;
+    z-index: 99;
+    box-shadow: 1px 1px 20px 0px rgba(0,0,0,0.3);
+    -webkit-box-shadow: 1px 1px 20px 0px rgba(0,0,0,0.3);
+    -moz-box-shadow: 1px 1px 20px 0px rgba(0,0,0,0.3);
+}
+.ViewClientChat .searchItensFilterNone {
+    transform: translateX(100%);
+    flex-flow: column nowrap;
+    background: var(--White);
+    border-left: 1px solid var(--Border);
+    backdrop-filter: blur(4px);
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 500px;
+    transition: transform 0.3s ease-in-out;
+    z-index: 99;
+}
+.ViewClientChat .searchItensFilter .buttonsFilter {
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.ViewClientChat .searchItensFilter .buttonsFilter .btnFilter {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 7px 15px;
+    Background-color: var(--White);
+    color: var(--Paragraph);
+    font-weight: 500;
+    border: 1px solid var(--Gray);
+    border-radius: 6px;
+    font-size: 12px;
+}
+
+.ViewClientChat .searchItensFilter .searchOptionsFilter {
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+.ViewClientChat .searchItensFilterNone .searchOptionsFilter {
+    width: 95%;
+    display: none;
+}
+
+.ViewClientChat .searchItensFilterNone .buttons {
+    width: 95%;
+    display: none;
+}
+
+.ViewClientChat .searchItensFilter .searchOptionsFilter button svg {
+    margin-right: 0px;
+}
+
+
+.ViewClientChat .searchItensFilter .searchOptionsFilter .form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 80%;
+    color:var(--Paragraph);
+}
+
+.ViewClientChat .searchItensFilter .searchOptionsFilter .form .imageClient {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border: 2px solid var(--Border);
+    border-radius: 6px;
+}
+
+.ViewClientChat .searchItensFilter .searchOptionsFilter .form .imageClient img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border: 2px solid var(--Border);
+    border-radius: 6px;
+}
+
+.ViewClientChat .searchItensFilter .searchOptionsFilter .form h3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    font-weight: 900;
+    color: var(--Primary);
+    margin: 5px 0;
+}
+
+.ViewClientChat .searchItensFilter .searchOptionsFilter .form h5 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    font-weight: 600;
+    margin: 1px 0;
+}
+.ViewClientChat .searchItensFilter .searchOptionsFilter .form h6 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    font-weight: 700;
+    color: var(--Gray);
+    margin: 10px 0 5px 0;
+    font-size: 14px;
+}
+
+.ViewClientChat .searchItensFilter .searchOptionsFilter .form svg {
+    margin-right: 2px;
+}
+
+.ViewClientChat .searchItensFilter .searchOptionsFilter .form .buttonsContact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    width: 100%;
+    margin: 10px;
+}
+
+.ViewClientChat .searchItensFilter .searchOptionsFilter .form .buttonsContact button {
+    border-radius: 6px;
+    background-color: var(--Primary);
+    color: var(--White);
+    border: none;
+    width: 100%;
+    font-size: 14px;
+    height: 40px;
+}
+
+
+@media(max-width:600px) {
+
+    
+    .ViewClientChat .searchItensFilter {
+        width: 100%;
+        padding: 20px;
+    }
+
+
+    .ViewClientChat .searchItensFilter .searchOptionsFilter .form {
+        width: 100%
+    }
+
+    .ViewClientChat .searchItensFilter .searchOptionsFilter .form .buttonsContact {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        margin: 10px;
+    }
+
+    .ViewClientChat .searchItensFilter .searchOptionsFilter .form .buttonsContact .call {
+        border-radius: 6px;
+        background-color: var(--Black);
+        color: var(--White);
+        border: none;
+        width: 100%;
+        font-size: 14px;
+        height: 40px;
+        text-decoration: none;
+    }
+    
+    
+   
+    @media(max-width: 450px) { 
+.ViewClientChat .searchItensFilter .searchOptionsFilter {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+    }
+
+}

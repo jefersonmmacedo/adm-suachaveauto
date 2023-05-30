@@ -1,0 +1,222 @@
+﻿.ChatAdmList {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.ChatAdmList .aside {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 170px;
+    padding-top: 80px;
+}
+.ChatAdmList .aside h3 {
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.ChatAdmList .aside .textHome {
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  }
+  
+  
+  .ChatAdmList .aside .textHome a {
+    text-decoration: none;
+  }
+  
+  .ChatAdmList .aside .textHome h3 {
+    font-weight: bold;
+    text-align: center;
+    color: var(--Paragraph);
+    text-decoration: none;
+  }
+  
+.ChatAdmList .aside .informations {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 100px;
+  padding: 10px 15px;
+  background-color: var(--White);
+  border: 1px solid var(--Border);
+  border-radius: 20px;
+}
+.ChatAdmList .aside .informations .ListConversations {
+    width: 85px;
+    height:  90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: var(--Primary);
+    border-right: 1px solid var(--Border);
+    overflow: auto;
+    position: fixed;
+    background-color: var(--BorderInput);
+    left: 0;
+}
+
+.ChatAdmList .aside .informations .ListConversations::-webkit-scrollbar {
+  width: 0px;               /* width of the entire scrollbar */
+}
+
+.ChatAdmList .aside .informations .ListConversations::-webkit-scrollbar-track {
+  background: var(--BorderHover);        /* color of the tracking area */
+}
+
+.ChatAdmList .aside .informations .ListConversations::-webkit-scrollbar-thumb {
+  background-color: var(--Border);    /* color of the scroll thumb */
+  border-radius: 20px;       /* roundness of the scroll thumb */
+  border: 3px solid var(--BorderHover);  /* creates padding around scroll thumb */
+}
+
+
+.ChatAdmList .aside .informations .ListConversations .UserConversarion {
+  width: 100%;
+    height: 100%;
+    padding: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid var(--Border);
+}
+.ChatAdmList .aside .informations .ListConversations .UserConversarion .ImageProperty {
+    width: 45px;
+    height: 45px;
+    object-fit: cover;
+    border-radius: 50%;
+    position: absolute;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+.ChatAdmList .aside .informations .ListConversations .UserConversarion .ImageProperty img {
+    width: 45px;
+    height: 45px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.ChatAdmList .aside .informations .ListConversations .UserConversarion .ImageClient {
+    width: 45px;
+    height: 45px;
+    object-fit: cover;
+    border-radius: 50%;
+    position: absolute;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.ChatAdmList .aside .informations .ListConversations .UserConversarion .ImageClient img {
+    width: 45px;
+    height: 45px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.ChatAdmList .aside .informations .ListChatMobile {
+  display: none;
+}
+
+.ChatAdmList .messagesChat {
+  width: 100%;
+}
+
+
+
+@media (max-width: 700px) {
+  .ChatAdmList .aside {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 0px;
+    padding-top: 80px;
+}
+
+.ChatAdmList .aside .informations {
+  width: 100%;
+}
+.ChatAdmList .aside .informations .ListConversations {
+    display: none;
+}
+  .ChatAdmList .messagesChat {
+    display: none;
+}
+
+.ChatAdmList .aside .informations .ListChatMobile {
+  display: block;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 10px 5px 100px 5px;
+}
+
+
+.ChatAdmList .aside .informations .ListChatMobile .chat{
+  width: 95%;
+  border-radius: 10px;
+  background-color: var(--BorderInput);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+  margin: 10px auto;
+  box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.2);
+}
+.ChatAdmList .aside .informations .ListChatMobile .chat .image{
+  border-radius: 10px 0 0 10px;
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+}
+.ChatAdmList .aside .informations .ListChatMobile .chat .image img{
+  border-radius: 10px 0 0 10px;
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+}
+
+.ChatAdmList .aside .informations .ListChatMobile .chat .textChat{
+  border-radius: 10px;
+  background-color: var(--BorderInput);
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  margin: 10px;
+  text-align:left;
+}
+.ChatAdmList .aside .informations .ListChatMobile .chat .textChat h3 {
+  color: var(--Primary);
+  font-weight: 700;
+  margin: 0 10px;
+  text-align:left;
+}
+
+.ChatAdmList .aside .informations .ListChatMobile .chat .textChat h5 {
+  color: var(--Paragraph);
+  margin: 0 10px;
+  text-align:left;
+  font-size: 12px;
+
+}
+.ChatAdmList .aside .informations .ListChatMobile .chat .textChat h6 {
+  color: var(--Gray);
+  margin: 5px 10px 0 10px;
+  text-align:left;
+}
+
+}

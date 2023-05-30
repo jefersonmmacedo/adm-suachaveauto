@@ -1,0 +1,53 @@
+﻿.NotFound {
+    width: 100%;
+    display: flex;
+    text-align: center;
+    align-itens: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.NotFound .MainAbout{
+    width: 95%;
+    display: flex;
+    text-align: center;
+    align-itens: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 80px;
+    margin-bottom: 50px;
+}
+
+.NotFound .MainAbout img {
+    width: 650px;
+    margin: 40px auto;
+}
+
+.NotFound .MainAbout h1 {
+    font-weight: 700;
+    text-align: center;
+    color: var(--Paragraph);
+    margin: 10px 10px;
+}
+.NotFound .MainAbout h5 {
+    font-weight: 500;
+    text-align: center;
+    color: var(--Gray);
+    margin: 0 20px;
+}
+
+
+@media (max-width: 750px) {
+    .NotFound .MainAbout img {
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    @media (max-width: 550px) {
+        .NotFound .MainAbout img {
+            width: 85%;
+            margin: 0 auto;
+        }
+    }
+}
+
+

@@ -1,0 +1,234 @@
+﻿.PropertyUnicBlockLoader {
+    width: 255px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    background-color: var(--White);
+    border: 1px solid var(--Border);
+    border-radius: 6px;
+    margin: 20px;
+    padding-bottom: 10px;
+}
+
+.PropertyUnicBlockLoader .image {
+    width: 100%; 
+    background-color: var(--Border);
+    height: 150px;
+    border-radius: 6px 6px 0 0;
+}
+
+
+.PropertyUnicBlockLoader .featured {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--Primary);
+    border-radius: 20px;
+    position: absolute;
+    margin-top: -15px;
+    margin-left: 10px;
+    padding: 10px 40px;
+}
+
+.PropertyUnicBlockLoader .featured p {
+    color: var(--White);
+    font-weight: 700;
+}
+
+
+
+.PropertyUnicBlockLoader .status {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--PrimaryRGBA);
+    border-radius: 6px;
+    position: absolute;
+    margin-top: 115px;
+    margin-left: 10px;
+    padding: 7px 15px;
+}
+
+.PropertyUnicBlockLoader .status p {
+    color: var(--White);
+    font-weight: 700;
+}
+
+.PropertyUnicBlockLoader .heart {
+    position: absolute;
+    margin-top: 115px;
+    margin-left: 210px;
+}
+
+.PropertyUnicBlockLoader .heart svg {
+    font-size: 24px;
+}
+
+.PropertyUnicBlockLoader .heart2 {
+    position: absolute;
+    margin-top: 115px;
+    margin-left: 210px;
+}
+
+.PropertyUnicBlockLoader .heart2 svg {
+    color: var(--Primary);
+    font-size: 24px;
+    cursor: pointer;
+}
+.PropertyUnicBlockLoader .heart svg:hover {
+    color: var(--Primary);
+}
+
+
+
+
+.PropertyUnicBlockLoader .text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 100%;
+}
+.PropertyUnicBlockLoader .text h2 {
+    color: var(--Paragraph);
+    font-weight: 700;
+    margin: 20px 10px 5px 10px;
+    width: 80%; 
+    background-color: var(--Border);
+}
+.PropertyUnicBlockLoader .text h3 {
+    color: var(--Paragraph);
+    font-weight: 700;
+    margin: 10px 10px 5px 10px;
+}
+
+.PropertyUnicBlockLoader .text a {
+    text-decoration: none;
+}
+.PropertyUnicBlockLoader .text h4 {
+    color: var(--Border);
+    font-weight: 700;
+    margin: 10px 10px 5px 10px;
+    width: 90%; 
+    background-color: var(--Border);
+}
+.PropertyUnicBlockLoader .text h5 {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    color: var(--Border);
+    margin: 0 10px;
+    width: 100%; 
+    background-color: var(--Border);
+}
+.PropertyUnicBlockLoader .text h6 {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    color: var(--Border);
+    margin: 0 8px;
+    font-weight: 700;
+    width: 90%; 
+    background-color: var(--Border);
+}
+.PropertyUnicBlockLoader .text .icons {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.PropertyUnicBlockLoader .text .icons .iconUnic {
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: center;
+    padding: 5px;
+    margin: 5px;
+    color: var(--Border);
+}
+.PropertyUnicBlockLoader .text .icons .iconUnic svg {
+    font-size: 18px;
+    margin-right: 10px;
+    color: var(--Border);
+}
+
+.PropertyUnicBlockLoader .text .icons .iconUnic .simbol {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+    margin-top: 3px;
+}
+.PropertyUnicBlockLoader .text .icons .iconUnic .simbol  p {
+    color: var(--Border);
+    font-weight: 600;
+    font-size: 10px;
+    width: 100%; 
+    background-color: var(--Border);
+}
+
+.PropertyUnicBlockLoader .text .pricing {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    text-align: flex-start;
+}
+
+.PropertyUnicBlockLoader .text .pricing h6 {
+    color: var(--Border);
+    font-weight: 800;
+    margin: 0 10px;
+}
+.PropertyUnicBlockLoader .text .pricing h6 span {
+    font-weight: 500;
+    color: var(--Border);
+    width: 100%; 
+    background-color: var(--Border);
+}
+.PropertyUnicBlockLoader .text .pricing h3 {
+    color: var(--Paragraph);
+    font-weight: 400;
+    margin: 2px 10px 5px 10px;
+}
+.PropertyUnicBlockLoader .text .pricing span {
+    color: var(--Border);
+    font-weight: 800;
+    width: 100%; 
+    background-color: var(--Border);
+}
+
+
+@media (max-width: 750px) {
+    .Featured {
+        margin: 350px 0 50px 0;
+    }
+
+    @media (max-width: 572px) {
+        .Featured {
+            margin: 400px 0 50px 0;
+        }
+
+        .PropertyUnicBlockLoader {
+            width: 80%;
+        }
+        @media (max-width: 450px) {
+
+        .PropertyUnicBlockLoader {
+            width: 95%;
+        }
+    }
+}
+}

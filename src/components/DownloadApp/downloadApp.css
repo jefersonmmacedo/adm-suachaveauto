@@ -1,0 +1,203 @@
+﻿.DownloadApp {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    width: 90%;
+    border-radius: 20px;
+    height: 250px;
+    background-image: url("../../assets/images/background2.jpg"); /* The image used */
+    background-color: #cccccc; /* Used if the image is unavailable */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+    margin: 50px auto;
+}
+
+.DownloadApp .back {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    background-color: rgba(170,0,0, 0.8);
+    padding: 0 40px;
+}
+
+.DownloadApp .textSession {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.DownloadApp .textSession h1 {
+    color: var(--White);
+    font-weight: 700;
+    margin:  0 10px;
+}
+.DownloadApp .textSession h4 {
+    color: var(--White);
+    font-weight: 700;
+    margin: 10px;
+}
+
+.DownloadApp .textSession .Apps {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    margin: 10px 0;
+}
+.DownloadApp .textSession .Apps .buttonsApps {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    width: 200px;
+    height: 60px;
+    border-radius: 6px;
+    border: 1px solid var(--White);
+    background-color: rgba(255,255,255, 0.2);
+    margin: 10px;
+    cursor: pointer;
+}
+.DownloadApp .textSession .Apps .buttonsApps:hover {
+    background-color: rgba(237,50,55, 0.5);
+}
+.DownloadApp .textSession .Apps .buttonsApps .iconApp {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    border: none;
+    border-right: 1px solid var(--White);
+    height: 60px;
+    width: 60px;
+}
+
+
+.DownloadApp .textSession .Apps .buttonsApps .iconApp svg {
+    font-size: 24px;
+    color: var(--White);
+}
+.DownloadApp .textSession .Apps .buttonsApps .TextApp {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    padding: 10px;
+}
+
+.DownloadApp .textSession .Apps .buttonsApps .TextApp h4 {
+    color: var(--White);
+    font-weight: 700;
+    margin: 0px;
+}
+.DownloadApp .textSession .Apps .buttonsApps .TextApp h6 {
+    color: var(--White);
+    margin: 0px;
+}
+
+.DownloadApp .imageApp {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: column;
+    width: 200px;
+    height: 100%;
+    padding: 20px 10px;
+}
+
+.DownloadApp .imageApp img {
+    width: 180px;
+    margin: 0 40px;
+}
+
+@media (max-width: 1280px) {
+    /* .DownloadApp .imageApp img {
+        width: 35%;
+        margin: 0 20px;
+    }
+
+    @media (max-width: 1200px) {
+        .DownloadApp .imageApp img {
+            width: 40%;
+            margin: 0 20px;
+        }
+    } */
+
+    
+    @media (max-width: 1120px) {
+        .DownloadApp {
+            width: 95%;
+            height: 250px;
+
+        }
+
+
+        @media (max-width: 1035px) {
+            /* .DownloadApp .imageApp img {
+                width: 40%;
+                margin: 0 20px;
+            } */
+            .DownloadApp .imageApp {
+                width: 180px;
+            }
+            
+            .DownloadApp .imageApp img {
+                width: 180px;
+                margin: 0 40px;
+            }
+
+            
+        }
+
+       
+        
+        @media (max-width: 900px) {
+            .DownloadApp .imageApp {
+                display: none;
+            }
+            .DownloadApp .textSession {
+                padding: 10px;
+            }
+            @media (max-width: 830px) {
+             }
+
+                @media (max-width: 650px) {
+
+                    .DownloadApp {
+                        width: 95%;
+                        height: 100%;
+                    }
+                   
+                      .DownloadApp .textSession {
+                        width: 100%;
+                        text-align: center;
+                    }
+                      .DownloadApp .textSession h1 {
+                        text-align: center;
+                    }
+                      .DownloadApp .textSession h4 {
+                        text-align: center;
+                    }
+
+                    .DownloadApp .textSession .Apps {
+                        flex-wrap: wrap;
+                    }
+                                
+                }
+            }
+
+            
+            
+        }
+        }
+
+
+

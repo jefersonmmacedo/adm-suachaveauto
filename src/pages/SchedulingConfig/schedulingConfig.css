@@ -1,0 +1,303 @@
+﻿.SchedulingConfig {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.SchedulingConfig .aside {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 170px;
+    padding-top: 80px;
+}
+.SchedulingConfig .aside h3 {
+    margin: 20px 0;
+    font-weight: bold;
+    text-align: center;
+}
+.SchedulingConfig .informations {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+.SchedulingConfig .informations .Schedulings {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.SchedulingConfig .informations .Schedulings .day {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    border: 1px solid var(--BorderInput2);
+    border-radius: 10px;
+    padding: 10px;
+    margin: 5px;
+    background-color: var(--White);
+}
+.SchedulingConfig .informations .Schedulings .day h4 {
+    font-weight: 700;
+    color: var(--Primary);
+}
+.SchedulingConfig .informations .Schedulings .day .service {
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 10px;
+}
+.SchedulingConfig .informations .Schedulings .day .service h5 {
+  font-weight: 500;
+  color: var(--Gray2);
+  margin: 5px 0;
+}
+.SchedulingConfig .informations .Schedulings .day .service select {
+margin-bottom: 5px;
+width: 100%;
+border: 1px solid var(--Border);
+border-radius: 6px;
+padding: 5px 10px;
+}
+.SchedulingConfig .informations .Schedulings .day .service .doubleSelect {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.SchedulingConfig .informations .Schedulings .day .service .doubleSelect select {
+    margin: 0px 1px;
+    width: 100%;
+    border: 1px solid var(--Border);
+    border-radius: 6px;
+    padding: 5px 10px;
+    }
+.SchedulingConfig .informations .Schedulings .day .service button {
+    margin: 10px 5px;
+    width: 100%;
+    border: 1px solid var(--Border);
+    background-color: var(--Primary);
+    color: var(--White);
+    border-radius: 6px;
+    padding: 5px 10px;
+}
+
+.SchedulingConfig .informations .SchedulingsInfos {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    border: 1px solid var(--BorderInput2);
+    background-color: var(--White);
+    border-radius: 10px;
+    padding: 10px;
+    margin: 5px;
+}
+.SchedulingConfig .informations .SchedulingsInfos .infos {
+    width: 98%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin: 5px;
+}
+.SchedulingConfig .informations .SchedulingsInfos .infos h4 {
+    font-weight: 700;
+    color: var(--Primary);
+    margin: 3px;
+}
+.SchedulingConfig .informations .SchedulingsInfos .infos .infoList {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.SchedulingConfig .informations .SchedulingsInfos .infos .infoList h5 {
+    font-weight: 500;
+    color: var(--Gray2);
+    margin: 3px 5px;
+}
+
+.SchedulingConfig .informations .SchedulingsInfos .infos .infoList h6 {
+    font-weight: 500;
+    color: var(--Description);
+    margin: 3px 5px;
+    font-size: 12px;
+  }
+
+
+.SchedulingConfig .informations .SchedulingsInfos .infos .infoList .listUnicShift {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    background-color: var(--Border);
+    margin: 3px;
+    padding:3px 5px;
+}
+
+
+
+.SchedulingConfig .informations .SchedulingsInfos .infos .infoList .listUnicShift h5 {
+  font-weight: 500;
+  color: var(--Description);
+  margin: 3px;
+  font-size: 12px;
+}
+.SchedulingConfig .informations .SchedulingsInfos .infos .infoList .listUnicShift h6 {
+  font-weight: 500;
+  color: var(--Description);
+  margin: 3px;
+  font-size: 12px;
+}
+
+.SchedulingConfig .informations .SchedulingsInfos .infos .infoList .listUnicShift input[type='checkbox'] {
+    background:none;
+    color: var(--White);
+    border-radius: 6px;
+    padding: 5px 7px;
+    font-size: 10px;
+    margin:3px;
+}
+
+.SchedulingConfig .informations .SchedulingsInfos .infos .infoList .listUnicShift button {
+    background:none;
+    color: var(--White);
+    border-radius: 6px;
+    padding: 5px 7px;
+    font-size: 10px;
+    background-color: var(--Gray);
+}
+
+
+
+.SchedulingConfig .informations .SchedulingsInfos .infos .infoList .listUnic {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    background-color: var(--PrimaryRGBA);
+    margin: 3px;
+    padding:3px;
+}
+
+
+
+.SchedulingConfig .informations .SchedulingsInfos .infos .infoList .listUnic h5 {
+  font-weight: 500;
+  color: var(--Description);
+  margin: 3px;
+  font-size: 12px;
+}
+.SchedulingConfig .informations .SchedulingsInfos .infos .infoList .listUnic h6 {
+  font-weight: 500;
+  color: var(--Description);
+  margin: 3px;
+  font-size: 12px;
+}
+
+.SchedulingConfig .informations .SchedulingsInfos .infos .infoList .listUnic input[type='checkbox'] {
+    background:none;
+    color: var(--White);
+    border-radius: 6px;
+    padding: 5px 7px;
+    font-size: 10px;
+    margin:3px;
+}
+
+.SchedulingConfig .informations .SchedulingsInfos .infos .infoList .listUnic button {
+    background:none;
+    color: var(--White);
+    border-radius: 6px;
+    padding: 5px 7px;
+    font-size: 10px;
+    background-color: var(--PrimaryRGBA);
+}
+
+
+
+@media (max-width: 700px) {
+    .SchedulingConfig .informations {
+        padding: 0 10px 100px 10px;
+    }
+    .SchedulingConfig .aside {
+        padding-left: 0px;
+    }
+
+    .SchedulingConfig .informations .SchedulingProperty .property .image{
+        border-radius: 10px 10px 0 0;
+        width: 100%;
+        height: 70px;
+        object-fit: cover;    
+    }
+    .SchedulingConfig .informations .SchedulingProperty .property .image img{
+        border-radius: 10px 10px 0 0;
+        width: 100%;
+        height: 70px;
+        object-fit: cover;    
+    }
+
+    @media (max-width: 600px) {
+
+        .SchedulingConfig .informations .SchedulingProperty {
+            width: 100%;
+            padding: 10px;
+            margin: 5px;
+        }
+
+        .SchedulingConfig .informations .SchedulingProperty .textDataHours {
+            width: 100%;
+            display: flex;
+            align-items: flex-start;
+            justify-content: flex-start;
+            flex-direction: column;
+            margin-bottom: 10px;
+            }
+
+            @media (max-width: 550px) {
+                .SchedulingConfig .informations .SchedulingProperty .property{
+                    width: 100%;
+                    border-radius: 10px;
+                    background-color: var(--BorderInput);
+                    display: flex;
+                    align-items: flex-start;
+                    justify-content: flex-start;
+                    flex-direction: column;
+                    margin: 10px 0;
+                }
+
+                .SchedulingConfig .informations .Schedulings .day {
+                    width: 300px;
+                }
+
+                @media (max-width: 425px) {
+                    .SchedulingConfig .informations .Schedulings .day {
+                        width: 100%;
+                    }
+            }
+            }
+    }
+    
+    }

@@ -1,0 +1,247 @@
+﻿
+.infoUnicData {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 20px;
+    border: 1px solid var(--Border);
+    cursor: pointer;
+  }
+
+  .infoUnicData svg {
+    color: var(--Gray);
+    margin-right: 5px;
+    font-size: 12px;
+  }
+  .infoUnicData  h6 {
+    font-weight: 600;
+    color: var(--Gray);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+  }
+
+  .infoUnicData:hover {
+    background-color: var(--BorderInput2);
+  }
+
+.SearchProperty .viewSearch {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    flex-flow: column nowrap;
+    background: var(--BorderHover);
+    border-left: 1px solid var(--Border);
+    backdrop-filter: blur(4px);
+    position: fixed;
+    transform: translateX(0);
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 650px;
+    transition: transform 0.3s ease-in-out;
+    z-index: 99;
+    box-shadow: 1px 1px 20px 0px rgba(0,0,0,0.3);
+    -webkit-box-shadow: 1px 1px 20px 0px rgba(0,0,0,0.3);
+    -moz-box-shadow: 1px 1px 20px 0px rgba(0,0,0,0.3);
+}
+.SearchProperty .viewSearchNone {
+    transform: translateX(100%);
+    flex-flow: column nowrap;
+    background: var(--White);
+    border-left: 1px solid var(--Border);
+    backdrop-filter: blur(4px);
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 500px;
+    transition: transform 0.3s ease-in-out;
+    z-index: 99;
+}
+.SearchProperty .viewSearch .buttonsSearch {
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.SearchProperty .viewSearch .buttonsSearch .btnSearch {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 7px 15px;
+    Background-color: var(--White);
+    color: var(--Paragraph);
+    font-weight: 500;
+    border: 1px solid var(--Gray);
+    border-radius: 6px;
+    font-size: 12px;
+}
+
+.SearchProperty .viewSearch .dataSearch {
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    overflow: auto !important;
+}
+
+.SearchProperty .viewSearch .dataSearch::-webkit-scrollbar {
+    width: 12px;       
+    border-radius: 6px;        /* width of the entire scrollbar */
+  }
+  
+    .SearchProperty .viewSearch .dataSearch::-webkit-scrollbar-track {
+    background: var(--BorderHover);        /* color of the tracking area */
+    border-radius: 6px;
+  }
+  
+    .SearchProperty .viewSearch .dataSearch::-webkit-scrollbar-thumb {
+    background-color: var(--Border);    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border: 3px solid var(--BorderHover);  /* creates padding around scroll thumb */
+  }
+.SearchProperty .viewSearch .dataSearch .user {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    background-color: var(--BorderInput);
+    border-radius: 10px;
+    padding: 5px 10px;
+    margin: 3px;
+}
+
+.SearchProperty .viewSearch .dataSearch .user .text {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.SearchProperty .viewSearch .dataSearch .user h4{
+    color: var(--Primary);
+    font-weight: 700;
+     text-align: center;
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     justify-content: center;
+ } 
+
+.SearchProperty .viewSearch .dataSearch .user .text h5{
+    color: var(--Paragraph);
+    font-weight: 500;
+     text-align: center;
+     margin: 3px;
+     display: flex;
+     flex-direction: row;
+     align-items: flex-end;
+     justify-content: center;
+ } 
+
+ .SearchProperty .viewSearch .dataSearch .user .text h5 svg {
+    color: var(--Primary);
+ }
+ 
+
+.SearchProperty .viewSearch .dataSearch h3{
+   color: var(--Primary);
+   font-weight: 700;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+} 
+.SearchProperty .viewSearch .dataSearch h4{
+   color: var(--Paragraph);
+   font-weight: 700;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+} 
+.SearchProperty .viewSearch .dataSearch h5{
+   color: var(--Paragraph);
+   font-weight: 500;
+    text-align: center;
+    margin: 2px 0px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+} 
+
+.SearchProperty .viewSearch .dataSearch h5 span {
+    font-weight: 700;
+    margin: 5px 3px 0px 3px;
+}
+.SearchProperty .viewSearch .dataSearch h5 svg {
+    margin: 5px 3px 0px 3px;
+}
+
+
+.SearchProperty .viewSearchNone .dataSearch {
+    width: 95%;
+    display: none;
+}
+
+.SearchProperty .viewSearchNone .buttons {
+    width: 95%;
+    display: none;
+}
+
+.SearchProperty .viewSearch .dataSearch button svg {
+    margin-right: 0px;
+}
+
+
+@media(max-width:650px) {
+
+    
+    .SearchProperty .viewSearch {
+        width: 100%;
+        padding: 10px 5px;
+    }
+
+    .SearchProperty .viewSearch .buttons .btnSearch {
+        margin-top: 50px;
+    }
+
+
+
+   
+    @media(max-width: 570px) { 
+        .SearchProperty .btnAtiveFilter {
+            width: 100%;
+          }
+
+    @media(max-width: 450px) { 
+.SearchProperty .viewSearch .dataSearch {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+    }
+    }
+
+}

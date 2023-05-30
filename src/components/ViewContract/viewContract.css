@@ -1,0 +1,173 @@
+﻿
+
+.ViewContract .btnControl {
+    width: 30px;
+    height: 30px;
+    padding: 8px;
+    border: none;
+    border-radius: 20px;
+    background-color: var(--BorderInput);
+    color: var(--Gray2);
+    margin: 5px;
+    font-weight: 700;
+                  display: flex;
+              align-items: center;
+              justify-content: center;
+              flex-direction: row;
+  }
+  .ViewContract .btnControl svg {
+    margin: 0px;
+  }
+  
+  .ViewContract .btnControl:hover {
+    background-color: var(--Primary);
+    color: var(--White);
+  }
+  
+    .ViewContract .btnAtiveFilter {
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    background-color: var(--Aproved);
+    color: var(--White);
+    margin: 3px;
+    font-size: 16px;
+    font-weight: 700;
+                  display: flex;
+              align-items: center;
+              justify-content: center;
+              flex-direction: row;
+  }
+
+  .ViewContract .btnFilter svg {
+    margin: 0px;
+  }
+
+.ViewContract .viewFilter {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    flex-flow: column nowrap;
+    background: var(--BorderHover);
+    border-left: 1px solid var(--Border);
+    backdrop-filter: blur(4px);
+    position: fixed;
+    transform: translateX(0);
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 650px;
+    transition: transform 0.3s ease-in-out;
+    z-index: 99;
+    box-shadow: 1px 1px 20px 0px rgba(0,0,0,0.3);
+    -webkit-box-shadow: 1px 1px 20px 0px rgba(0,0,0,0.3);
+    -moz-box-shadow: 1px 1px 20px 0px rgba(0,0,0,0.3);
+}
+.ViewContract .viewFilterNone {
+    transform: translateX(100%);
+    flex-flow: column nowrap;
+    background: var(--White);
+    border-left: 1px solid var(--Border);
+    backdrop-filter: blur(4px);
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 500px;
+    transition: transform 0.3s ease-in-out;
+    z-index: 99;
+}
+.ViewContract .viewFilter .buttonsFilter {
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.ViewContract .viewFilter .buttonsFilter .btnFilter {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 7px 15px;
+    Background-color: var(--White);
+    color: var(--Paragraph);
+    font-weight: 500;
+    border: 1px solid var(--Gray);
+    border-radius: 6px;
+    font-size: 12px;
+}
+
+.ViewContract .viewFilter .dataClient {
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+.ViewContract .viewFilterNone .dataClient {
+    width: 95%;
+    display: none;
+}
+
+.ViewContract .viewFilterNone .buttons {
+    width: 95%;
+    display: none;
+}
+
+.ViewContract .viewFilter .dataClient button svg {
+    margin-right: 0px;
+}
+
+
+.ViewContract .viewFilter .dataClient .form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 80%
+}
+
+@media(max-width:600px) {
+    .ViewContract .viewFilter {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .ViewContract .viewFilter .buttons .btnFilter {
+        margin-top: 50px;
+    }
+
+    .ViewContract .viewFilter .dataClient .form {
+        width: 100%
+    }
+
+
+
+   
+    @media(max-width: 570px) { 
+        .ViewContract {
+            width: 100%;
+            margin: 0 3px;
+        }
+
+        .ViewContract .btnView {
+            width: 100%;
+          }
+        @media(max-width: 450px) { 
+        
+.ViewContract .viewFilter .dataClient {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        }     
+
+    }
+
+}

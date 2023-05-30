@@ -1,0 +1,147 @@
+﻿.ChooseYourAccount {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.ChooseYourAccount .client {
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-image: url("../../assets/images/background4.jpg"); /* The image used */
+    background-color: var(--Primary); /* Used if the image is unavailable */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+.ChooseYourAccount .professional {
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-image: url("../../assets/images/background7.jpg"); /* The image used */
+    background-color: var(--Primary); /* Used if the image is unavailable */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+.ChooseYourAccount .client .block{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(237, 50, 55, 0.3);
+}
+
+.ChooseYourAccount .professional .block {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(237, 50, 55, 0.3);
+}
+
+.ChooseYourAccount .client .block button {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--Button);
+    color: var(--White);
+    border: none;
+    border-radius: 6px;
+    padding: 10px 20px;
+    font-weight: 700;
+    margin: 20px 0;
+}
+.ChooseYourAccount .professional .block button {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--Button);
+    color: var(--White);
+    border: none;
+    border-radius: 6px;
+    padding: 10px 20px;
+    font-weight: 700;
+    margin: 20px 0;
+}
+
+
+
+
+.ChooseYourAccount .client .block:hover{
+    background-color: rgba(237, 50, 55, 0.7);
+}
+
+.ChooseYourAccount .professional .block:hover {
+    background-color: rgba(237, 50, 55, 0.7);
+}
+
+.ChooseYourAccount .client .block button:hover {
+    background-color: var(--White);
+    color: var(--Primary);
+}
+.ChooseYourAccount .professional .block button:hover {
+    background-color: var(--White);
+    color: var(--Primary);
+}
+
+
+
+@media (max-width: 750px) {
+    .ChooseYourAccount {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .ChooseYourAccount .client {
+        width: 100%;
+        height: 100vh;
+    }
+    
+    .ChooseYourAccount .professional {
+        width: 100%;
+        height: 100vh;
+    }
+    
+    .ChooseYourAccount .client .block{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba(237, 50, 55, 0.3);
+    }
+    
+    .ChooseYourAccount .professional .block {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba(237, 50, 55, 0.3);
+    }
+    
+}

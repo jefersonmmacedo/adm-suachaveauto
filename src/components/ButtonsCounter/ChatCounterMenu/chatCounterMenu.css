@@ -1,0 +1,42 @@
+﻿.buttonCounterMenu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center; 
+    width: 40px;
+    height: 40px;
+    margin-right: -15px;
+    z-index: 2;
+    position: absolute;
+}
+
+.couterChatMenu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 50%;
+    padding: 10px;
+    background-color: var(--Primary);
+    font-weight:600;
+    color: var(--White);
+    font-size:10px;
+    width: 20px;
+    height: 20px;
+    margin-top: -25px;
+    margin-right: -15px;
+    z-index: 2;
+}
+
+@media(max-width: 900px) {
+    .buttonCounterMenu {
+        width: 80px;
+    }
+    
+    .couterChatMenu {
+        margin-left: -95px;
+
+    }
+    
+}

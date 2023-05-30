@@ -1,0 +1,386 @@
+﻿.Simulator {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.Simulator .topImageSimulator {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    width: 100%;
+    height: 500px;
+    background-image: url("../../assets/images/background9.jpg"); /* The image used */
+    background-color: #cccccc; /* Used if the image is unavailable */
+    background-position: top; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+    color: var(--White);
+}
+
+.Simulator .topImageSimulator .back {
+    padding: 100px 200px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    background-image: linear-gradient(rgba(0,0,0, 0.01), rgba(0,0,0, 0.6));
+}
+
+.Simulator .topImageSimulator .back h1 {
+    font-size: 42px;
+    color: var(--White);
+    text-align: left;
+    font-weight: 700;
+}
+.Simulator .topImageSimulator .back h3 {
+    color: var(--White);
+    text-align: left;
+    font-size: 28px;
+    font-weight: 400;
+    margin: 10px 0;
+}
+
+.Simulator .financer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 40px 10px;
+}
+
+.Simulator .financer h2 {
+    margin-top: 40px;
+    font-weight: bold;
+    color: var(--Description);
+    text-align: center;
+}
+
+.Simulator .financer span {
+    color: var(--Primary);
+}
+
+
+.Simulator .financer h4 {
+    color: var(--Paragraph);
+    margin:10px;
+    text-align: center;
+}
+.Simulator .financer .benefits {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 900px;
+    flex-wrap: wrap;
+}
+.Simulator .financer .benefits .benefitUnic {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    width: 350px;
+    padding: 10px;
+    margin: 10px;
+}
+.Simulator .financer .benefits .benefitUnic svg {
+    font-size: 34px;
+    color: var(--Primary);
+}
+
+.Simulator .financer .benefits .benefitUnic .text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 5px;
+}
+
+.Simulator .financer .benefits .benefitUnic .text h5 {
+    color: var(--Paragraph);
+    font-weight: 700;
+}
+.Simulator .financer .benefits .benefitUnic .text h6 {
+    margin: 5px 0;
+}
+
+
+
+
+.Simulator .stepesFinances {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 20px 0 40px 0;
+    background-color: var(--BorderHover);
+}
+
+.Simulator .stepesFinances h2 {
+    margin-top: 40px;
+    font-weight: bold;
+    color: var(--Description);
+    text-align: center;
+}
+.Simulator .stepesFinances span {
+    color: var(--Primary);
+}
+.Simulator .stepesFinances h4 {
+    color: var(--Paragraph);
+    margin:10px;
+    text-align: center;
+}
+.Simulator .stepesFinances .stepesList {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    flex-wrap: wrap;
+}
+
+.Simulator .stepesFinances .stepeUnic {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 450px;
+    padding: 10px;
+    margin: 10px;
+}
+.Simulator .stepesFinances .stepeUnic2 {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 450px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.Simulator .stepesFinances .stepeUnic h1 {
+    font-weight: 900;
+    font-size: 65px;
+    color: var(--PrimaryCharacteristcs);
+}
+.Simulator .stepesFinances .stepeUnic2 h1 {
+    font-weight: 900;
+    font-size: 65px;
+    color: var(--PrimaryCharacteristcs);
+}
+
+.Simulator .stepesFinances .stepeUnic .textStepe {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.Simulator .stepesFinances .stepeUnic2 .textStepe2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.Simulator .stepesFinances .stepeUnic .textStepe h4 {
+    color: var(--Primary);
+    font-weight: 800;
+    text-align: left;
+}
+.Simulator .stepesFinances .stepeUnic .textStepe h5 {
+    margin:-10px 10px;
+    text-align: left;
+}
+.Simulator .stepesFinances .stepeUnic2 .textStepe2 h4 {
+    color: var(--Primary);
+    font-weight: 800;
+    text-align: right;
+}
+.Simulator .stepesFinances .stepeUnic2 .textStepe2 h5 {
+    margin:-10px 10px;
+    text-align: right;
+}
+
+
+
+.Simulator .bank {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 400px;
+    background-image: url("../../assets/images/background12.jpg"); /* The image used */
+    background-color: #cccccc; /* Used if the image is unavailable */
+    background-position: top; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+    color: var(--White);
+}
+
+.Simulator .bank .back2 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0, 0.9));
+}
+
+.Simulator .bank .back2 h2 {
+    margin-top: 40px;
+    font-weight: bold;
+    color: var(--White);
+    text-align: center;
+}
+.Simulator .bank .back2 h4 {
+    color: var(--White);
+    margin:10px;
+    text-align: center;
+}
+
+.Simulator .bank .back2 .logosBank {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.Simulator .bank .back2 .logosBank .logoUnicBank {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    padding: 20px;
+    background-color: var(--White);
+    border-radius: 6px;
+    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.2);
+}
+
+.Simulator .bank .back2 .logosBank .logoUnicBank .imageBank{
+   width: 80px;
+}
+
+@media (max-width: 1200px) {
+    .Simulator .stepesFinances .stepesList {
+        width: 90%;
+    }
+@media (max-width: 1050px) {
+    .Simulator .topImageSimulator .back {
+        padding: 50px 100px;
+    }
+
+    .Simulator .stepesFinances .stepesList {
+        width: 100%;
+    }
+
+    .Simulator .stepesFinances .stepeUnic {
+        width: 350px;
+    }
+    .Simulator .stepesFinances .stepeUnic2 {
+        width: 350px;
+    }
+    
+
+    @media (max-width: 900px) {
+        .Simulator .financer .benefits {
+            width: 100%;
+            justify-content: center;
+        }
+
+        .Simulator .financer .benefits .benefitUnic {
+            width: 300px;
+            padding: 5px;
+            margin: 5px;
+        }
+
+    @media (max-width: 800px) {
+        .Simulator .topImageSimulator .back {
+            padding: 50px;
+        }
+
+        .Simulator .stepesFinances .stepeUnic {
+
+            width: 350px;
+            padding: 5px;
+            margin: 5px;
+        }
+        .Simulator .stepesFinances .stepeUnic2 {
+
+            width: 350px;
+            padding: 5px;
+            margin: 5px;
+        }
+        
+
+        @media (max-width: 750px) {
+
+            .Simulator .stepesFinances .stepeUnic {
+                width: 300px;
+            }
+            .Simulator .stepesFinances .stepeUnic2 {
+                width: 300px;
+            }
+
+
+        @media (max-width: 650px) {
+
+            .Simulator .topImageSimulator {
+                height: 350px;
+            }
+            .Simulator .topImageSimulator .back {
+                padding: 50px;
+            }
+            
+            .Simulator .topImageSimulator .back h1 {
+                font-size: 32px;
+            }
+            .Simulator .topImageSimulator .back h3 {
+
+                font-size: 18px;
+            }
+
+            .Simulator .stepesFinances .stepeUnic {
+                width: 350px;
+            }
+            .Simulator .stepesFinances .stepeUnic2 {
+                width: 350px;
+            }
+
+            @media (max-width: 480px) {
+                .Simulator .topImageSimulator .back {
+                    padding: 40px 10px;
+                }
+
+                .Simulator .bank {
+                    height: 100%;
+                }
+
+                .Simulator .bank .back2 {
+                    padding: 20px;
+                    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0, 0.99));
+                }
+            }
+        }   
+    }
+    }
+    }
+    }
+    
+}

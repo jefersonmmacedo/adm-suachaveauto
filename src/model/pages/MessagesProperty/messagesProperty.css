@@ -1,0 +1,161 @@
+﻿.MessagesProperty {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+
+.MessagesProperty .main {
+    width: 100%;
+    margin-top: 80px;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+}
+.MessagesProperty .main .text {
+    width: 80%;
+    padding: 20px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    margin: 10px;
+}
+
+.MessagesProperty .main .text h2 {
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.MessagesProperty .main .text h3 {
+    font-weight: 700;
+    color: var(--Paragraph);
+    text-align: center;
+}
+.MessagesProperty .main .text h3 svg{
+    font-size: 45px;
+    font-weight: 900;
+    color: var(--Primary)
+}
+.MessagesProperty .main .text a{
+    border-radius: 6px;
+    background-color: var(--Primary);
+    color: var(--White);
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    margin: 20px 0;
+}
+.MessagesProperty .main .text .chat{
+    width: 550px;
+    border-radius: 10px;
+    background-color: var(--BorderInput);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    margin: 10px;
+}
+.MessagesProperty .main .text .chat .image{
+    border-radius: 10px 0 0 10px;
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+}
+.MessagesProperty .main .text .chat .image img{
+    border-radius: 10px 0 0 10px;
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+}
+
+.MessagesProperty .main .text .chat .textChat{
+    border-radius: 10px;
+    background-color: var(--BorderInput);
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    margin: 10px;
+    text-align:left;
+}
+.MessagesProperty .main .text .chat .textChat h3 {
+    color: var(--Primary);
+    font-weight: 700;
+    margin: 0 10px;
+    text-align:left;
+  }
+
+  .MessagesProperty .main .text .chat .textChat h5 {
+    color: var(--Paragraph);
+    margin: 0 10px;
+    text-align:left;
+  }
+  .MessagesProperty .main .text .chat .textChat h6 {
+    color: var(--Gray);
+    margin: 5px 10px 0 10px;
+    text-align:left;
+  }
+
+@media (max-width: 800px) {
+    .MessagesProperty .main .text .chat{
+        width: 500px;
+        margin: 5px;
+    }
+
+    @media (max-width: 700px) {
+        .MessagesProperty .main {
+            margin-top: 50px;
+            margin-bottom: 100px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+        }
+
+        .MessagesProperty .main .text {
+            width: 100%;
+            padding: 0px;
+        }
+        
+        @media (max-width: 530px) {
+
+            .MessagesProperty .main .text .chat{
+                width: 100%;
+            }
+    
+            .MessagesProperty .main .text .chat .textChat h3 {
+                font-size: 16px;
+              }
+            
+              .MessagesProperty .main .text .chat .textChat h5 {
+                font-size: 12px;
+              }
+              .MessagesProperty .main .text .chat .textChat h6 {
+                font-size: 10px;
+              }
+
+              .MessagesProperty .main .text .chat .image{
+                width: 80px;
+                height: 100px;
+            }
+            .MessagesProperty .main .text .chat .image img{
+                width: 80px;
+                height: 100px;
+            }
+        }
+
+
+    }
+}
+

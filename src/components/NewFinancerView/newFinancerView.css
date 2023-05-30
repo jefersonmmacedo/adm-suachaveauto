@@ -1,0 +1,65 @@
+﻿button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--BorderInput2);
+    border: none;
+    color: var(--Gray);
+    padding: 7px;
+    border-radius: 6px;
+    margin: 3px;
+}
+
+
+  
+
+
+  .react-modal-content .content-modal-home-Search .itensModalHome-Search .form {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 80%;
+    height: 100%;
+}
+
+.react-modal-content .content-modal-home-Search .itensModalHome-Search .form h3 {
+    color: var(--Paragraph);
+    font-weight: 700;
+    margin: 5px 0;
+}
+
+.react-modal-content .content-modal-home-Search .itensModalHome-Search .form .typeReceita {
+    color: var(--White);
+    background-color: var(--Aproved);
+    padding: 5px 10px;
+    border-radius: 3px;
+    margin-bottom: 5px;
+}
+.react-modal-content .content-modal-home-Search .itensModalHome-Search .form .typeDespesa {
+    color: var(--White);
+    background-color: var(--Primary);
+    padding: 5px 10px;
+    border-radius: 3px;
+    margin-bottom: 5px;
+}
+
+.react-modal-content .content-modal-home-Search .itensModalHome-Search .form h4 {
+    color: var(--Gray);
+    font-weight: 400;
+    margin: 3px 0;
+}
+
+
+@media (max-width: 700px) {
+    .react-modal-content .content-modal-home-Search .itensModalHome-Search .form {
+        width: 100%
+    }
+    @media (max-width: 500px) {
+        .react-modal-content .content-modal-home-Search .itensModalHome-Search .form .btnDocuments {
+            width: 80%;
+        }
+        
+}
+}

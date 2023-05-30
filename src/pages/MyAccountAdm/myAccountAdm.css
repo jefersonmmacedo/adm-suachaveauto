@@ -1,0 +1,337 @@
+﻿.MyAccountAdm {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.MyAccountAdm .aside {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 80px 0 40px 170px;
+}
+
+    .MyAccountAdm .aside .link {
+        border: none;
+        border-radius: 6px;
+        background-color: none;
+        color: var(--Primary);
+        font-size: 16px;
+        font-weight: 600;
+        text-decoration: none;
+
+      }
+      
+      .MyAccountAdm .aside .textHome {
+        width: 90%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 20px;
+        } 
+    
+    .MyAccountAdm .aside .textHome h3 {
+      font-weight: bold;
+      text-align: center;
+      color: var(--Paragraph);
+    }
+
+    .MyAccountAdm .aside .textHome h4 {
+      font-weight: 500;
+      text-align: center;
+      margin: 10px 5px;
+      color: var(--Paragraph);
+    }
+
+.MyAccountAdm .buttonAccount{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    background-color: var(--Primary);
+    color: var(--White);
+    border-radius: 20px;
+   border: none;
+   margin: 10px 0;
+}
+
+.MyAccountAdm .buttonAccountDisabled{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    background-color: var(--ButtonDisabled);
+    color: var(--White);
+    border-radius: 20px;
+   border: none;
+   margin: 10px 0;
+}
+
+.MyAccountAdm .aside .form {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    border-radius: 20px;
+    padding: 10px 15px;
+    background-color: var(--White);
+    box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.1);
+   border: none;
+   margin: 10px;
+}
+
+.MyAccountAdm .aside .form .textHome {
+    width: 98%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+    } 
+
+.MyAccountAdm .aside .form .textHome h3 {
+  font-weight: bold;
+  text-align: center;
+  color: var(--Paragraph);
+}
+.MyAccountAdm .aside .form .textHome h4 {
+  font-weight: 700;
+  text-align: center;
+  margin: 5px;
+  color: var(--Paragraph);
+}
+
+
+
+.MyAccountAdm .aside .form .label-avatar{
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    cursor: pointer;
+    margin: 30px 0 0 0;
+}
+
+.MyAccountAdm .aside .form .label-avatar input {
+    display: none;
+}
+
+.MyAccountAdm .aside .form .label-avatar span {
+    z-index: 99;
+    position: absolute;
+    opacity: 0.7;
+    transition: all .5s;
+}
+
+.MyAccountAdm .aside .form .label-avatar span:hover{
+    opacity: 1;
+    transform: scale(1.4);
+}
+
+.MyAccountAdm .aside .form .label-avatar img{
+    margin-bottom: 1em;
+    border-radius: 20px;
+    object-fit: cover;
+    width: 100px;
+    height: 100px;
+    box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+.MyAccountAdm .aside .form input{
+    width: 99%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 20px;
+    background-color: var(--White);
+    border: 1px solid var(--Border);
+    font-weight: 500;
+    color: var(--Description);
+}
+
+
+.MyAccountAdm .aside .form input::placeholder{
+    color: var(--Gray);
+}
+.MyAccountAdm .aside .form textarea::placeholder{
+    color: var(--Gray);
+}
+.MyAccountAdm .aside .form select{
+    width: 99%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 6px;
+    background-color: var(--White);
+    border: 1px solid var(--Border);
+    font-weight: 500;
+    color: var(--Gray);
+}
+.MyAccountAdm .aside .form .select{
+    width: 99%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 6px;
+    background-color: var(--White);
+    border: 1px solid var(--Primary);
+    font-weight: 500;
+    color: var(--Primary);
+}
+
+.MyAccountAdm .aside .form .data .select{
+    width: 99%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 6px;
+    background-color: var(--White);
+    border: 1px solid var(--Primary);
+    font-weight: 500;
+    color: var(--Primary);
+}
+
+
+.MyAccountAdm .aside .form select option {
+    margin: 40px;
+    background: var(--White);
+    color: var(--Primary);
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
+    border-radius: 1px;
+    border: none;
+  }
+.MyAccountAdm .aside .form textarea{
+    width: 99%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 20px;
+    background-color: var(--White);
+    border: 1px solid var(--Border);
+    font-weight: 500;
+    resize: none;
+    color: var(--Description);
+}
+
+.MyAccountAdm .aside .form textarea::placeholder{
+    color: var(--Gray);
+}
+
+.MyAccountAdm .aside .form .data {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin: 5px 0;
+    border-bottom: 1px solid var(--Border);
+    padding-bottom: 20px;
+}
+
+.MyAccountAdm .aside .form span{
+    font-size: 12px;
+    color: var(--Gray);
+    font-weight: 700;
+}
+.MyAccountAdm .aside .form .data input{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 12px;
+    margin: 5px;
+    border-radius: 20px;
+    background-color: var(--White);
+    border: 1px solid var(--Border);
+    font-weight: 500;
+}
+.MyAccountAdm .aside .form .data select{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 20px;
+    background-color: var(--White);
+    border: 1px solid var(--Border);
+    font-weight: 500;
+}
+.MyAccountAdm .aside .form .data .select{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 20px;
+    background-color: var(--White);
+    border: 1px solid var(--Primary);
+    font-weight: 500;
+    color: var(--Primary);
+}
+
+
+
+@media (max-width: 950px) {
+    .MyAccountAdm .aside .form {
+        width: 95%;
+    }
+
+    @media (max-width: 700px) {
+        .MyAccountAdm .aside {
+            padding-left: 0px;
+            padding-bottom: 80px;
+        }
+
+        @media (max-width: 510px) {
+            .MyAccountAdm .aside .form {
+                width: 95%;
+            }
+
+            .MyAccountAdm .aside .form .data {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+            }
+
+            
+        }
+    }
+}
+
+

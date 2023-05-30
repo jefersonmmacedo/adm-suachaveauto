@@ -1,0 +1,461 @@
+﻿.BrokerList {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.BrokerList .searchBrokers {
+    width: 700px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.BrokerList .searchBrokers input {
+    width: 100%;
+    height: 40px;
+    padding: 10px 20px;
+    border: 1px solid var(--Border);
+    border-radius: 6px;
+    margin: 2px;
+}
+.BrokerList .searchBrokers select {
+    width: 100%;
+    height: 40px;
+    padding: 10px 20px;
+    border: 1px solid var(--Border);
+    border-radius: 6px;
+    margin: 2px;
+}
+
+.BrokerList .listBroker {
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 20px;
+}
+
+.BrokerList .listBroker .BrokerUnicFavorite {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    background-color: var(--White);
+    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 6px;
+    margin: 10px 0;
+    height: 150px;
+}
+
+.BrokerList .listBroker .BrokerUnicFavorite .image {
+    width: 150px; 
+    height: 150px;
+    border-radius: 6px 0 0 6px;
+    object-fit: cover;
+}
+.BrokerList .listBroker .BrokerUnicFavorite .image img {
+    width: 150px; 
+    height: 150px;
+    border-radius: 6px 0 0 6px;
+    object-fit: cover;
+}
+
+
+.BrokerList .listBroker .BrokerUnicFavorite .featured {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--Primary);
+    border-radius: 20px;
+    position: absolute;
+    margin-top: -15px;
+    margin-left: 10px;
+    padding: 10px 40px;
+}
+
+.BrokerList .listBroker .BrokerUnicFavorite .featured p {
+    color: var(--White);
+    font-weight: 700;
+}
+
+.BrokerList .listBroker .BrokerUnicFavorite .status {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--Secondary);
+    border-radius: 6px;
+    position: absolute;
+    margin-top: 160px;
+    margin-left: 5px;
+    padding: 10px 20px;
+}
+
+.BrokerList .listBroker .BrokerUnicFavorite .status p {
+    color: var(--White);
+    font-weight: 700;
+}
+
+
+
+
+
+.BrokerList .listBroker .BrokerUnicFavorite .text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+.BrokerList .listBroker .BrokerUnicFavorite .text2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 100%;
+}
+
+.BrokerList .listBroker .BrokerUnicFavorite .text2 .heartFavorite {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100%;
+}
+
+.BrokerList .listBroker .BrokerUnicFavorite .text2 .heartFavorite svg {
+    color: var(--White);
+    font-size: 30px;
+    cursor: pointer;
+}
+.BrokerList .listBroker .BrokerUnicFavorite .text2 .heartFavorite svg:hover {
+    color: var(--Primary);
+}
+.BrokerList .listBroker .BrokerUnicFavorite .text2 .heartFavorite2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 10%;
+    height: 100%;
+}
+
+.BrokerList .listBroker .BrokerUnicFavorite .text2 .heartFavorite2 svg {
+    color: var(--Primary);
+    font-size: 30px;
+    cursor: pointer;
+    margin-right: 5px;
+}
+.BrokerList .listBroker .BrokerUnicFavorite .text2 .heartFavorite svg:hover {
+    color: var(--Primary);
+}
+
+.BrokerList .listBroker .BrokerUnicFavorite .text h2 {
+    color: var(--Primary);
+    font-weight: 700;
+    margin: 5px 10px;
+}
+.BrokerList .listBroker .BrokerUnicFavorite .text h4 {
+    color: var(--Gray);
+    margin: 0 10px;
+}
+.BrokerList .listBroker .BrokerUnicFavorite .text h3 {
+    color: var(--Primary);
+    font-weight: 700;
+    margin: 5px 10px;
+}
+.BrokerList .listBroker .BrokerUnicFavorite .text h5 {
+    color: var(--Gray);
+    margin: 0 10px;
+}
+.BrokerList .listBroker .BrokerUnicFavorite .text .iconsBroker {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin: 5px 0;
+    flex-wrap: wrap;
+}
+
+.BrokerList .listBroker .BrokerUnicFavorite .text .iconsBroker .iconBrokerUnic {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: center;
+    margin: 0 10px;
+}
+
+.BrokerList .listBroker .BrokerUnicFavorite .text .iconsBroker .iconBrokerUnic p {
+    color: var(--Paragraph);
+    font-weight: 700;
+}
+.BrokerList .listBroker .BrokerUnicFavorite .text .iconsBroker .iconBrokerUnic .simbolBroker {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+    margin-top: 5px;
+}
+.BrokerList .listBroker .BrokerUnicFavorite .text .iconsBroker .iconBrokerUnic .simbolBroker p {
+    font-size: 13px;
+    color: var(--Paragraph);
+    font-weight: 700;
+}
+
+.BrokerList .listBroker .BrokerUnicFavorite .text .iconsBroker .iconBrokerUnic .simbolBroker svg {
+    margin-right: 3px;
+    color: var(--Gray);
+}
+.BrokerList .listBroker .BrokerUnicFavorite .text .pricing {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    text-align: flex-start;
+}
+
+.BrokerList .listBroker .BrokerUnicFavorite .text .pricing h5 {
+    color: var(--Paragraph);
+    font-weight: 700;
+    margin: 0 10px;
+}
+.BrokerList .listBroker .BrokerUnicFavorite .text .pricing h2 {
+    color: var(--Primary);
+    font-weight: 700;
+    margin: 0 10px;
+}
+
+@media (max-width: 900px) {
+    .BrokerList .listBroker .BrokerUnicFavorite {
+        width: 90%;
+    }
+
+    .BrokerList .searchBrokers {
+        width: 85%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin: 10px 0;
+    }
+
+    @media (max-width: 800px) {
+        .BrokerList .listBroker {
+            width: 97%;
+            margin: 0 20px;
+        }
+
+        @media (max-width: 711px) {
+            .BrokerList .listBroker .BrokerUnicFavorite {
+                width: 100%;
+            }
+
+            .BrokerList .searchBrokers {
+                width: 98%;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                margin: 10px 0;
+            }
+
+
+            @media (max-width: 585px) {
+                .BrokerList .listBroker .BrokerUnicFavorite .text .iconsBroker .iconBrokerUnic {
+                    width: 100%;
+                }
+
+                .BrokerList .listBroker .BrokerUnicFavorite .image {
+                    width: 100px; 
+                    height: 150px;
+                }
+                .BrokerList .listBroker .BrokerUnicFavorite .image img {
+                    width: 100px; 
+                    height: 150px;
+                }
+
+                .BrokerList .listBroker .BrokerUnicFavorite .text2 .heartFavorite2 svg {
+                    font-size: 24px;
+                }
+
+                .BrokerList .listBroker .BrokerUnicFavorite .text2 {
+                    width: 30px;
+                }
+
+                @media (max-width: 515px) {
+
+                    .BrokerList .searchBrokers {
+                        width: 98%;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+                        margin: 10px 0;
+                    }
+
+                    .BrokerList .listBroker .BrokerUnicFavorite .text {
+                        justify-content: flex-start;
+                    }
+
+                    
+                    .BrokerList .listBroker .BrokerUnicFavorite .text .pricing h5 {
+                        display: none;
+                    }
+
+                    .BrokerList .listBroker .BrokerUnicFavorite .text h2 {
+                        font-size: 24px;
+                    }
+
+                    @media (max-width: 450px) {
+                        .BrokerList .listBroker .BrokerUnicFavorite .text h2 {
+                            font-size: 20px;
+                        }
+                        .BrokerList .listBroker .BrokerUnicFavorite .text h4 {
+                            font-size: 14px;
+                        }
+
+                        @media (max-width: 450px) {
+                            .BrokerList .listBroker .BrokerUnicFavorite .text h4 {
+                                font-size: 12px;
+                            }                            
+                            
+                            .BrokerList .listBroker .BrokerUnicFavorite .text .iconsBroker .iconBrokerUnic p {
+                                font-size: 12px;
+                            }
+                            
+                            .BrokerList .listBroker .BrokerUnicFavorite .text .iconsBroker .iconBrokerUnic .simbolBroker svg {
+                                font-size: 14px;
+                                margin-right: 5px;
+                            }
+                        }
+                    }
+                }
+            }
+            }
+        }
+    }
+
+
+
+/* 
+
+@media (max-width: 880px) {
+    .BrokerList .listBroker {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: center;
+        padding: 5px;
+        flex-wrap: wrap;
+    }
+    
+    .BrokerList .listBroker .BrokerUnicFavorite {
+        width: 250px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        background-color: var(--White);
+        box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.2);
+        border-radius: 6px;
+        margin:20px;
+        padding-bottom: 20px;
+    }
+
+    .BrokerList .listBroker .BrokerUnicFavorite .image {
+        width: 100%; 
+        height: 150px;
+        border-radius: 6px 6px 0 0;
+    }
+    .BrokerList .listBroker .BrokerUnicFavorite .image img {
+        width: 100%; 
+        height: 150px;
+        border-radius: 6px 6px 0 0;
+    }
+    
+    
+.BrokerList .listBroker .BrokerUnicFavorite .featured {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--Primary);
+    border-radius: 20px;
+    position: absolute;
+    margin-top: -15px;
+    margin-left: 10px;
+    padding: 10px 40px;
+}
+
+.BrokerList .listBroker .BrokerUnicFavorite .featured p {
+    color: var(--White);
+    font-weight: 700;
+}
+
+.BrokerList .listBroker .BrokerUnicFavorite .status {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--Secondary);
+    border-radius: 6px;
+    position: absolute;
+    margin-top: 110px;
+    margin-left: 10px;
+    padding: 10px 20px;
+}
+
+.BrokerList .listBroker .BrokerUnicFavorite .status p {
+    color: var(--White);
+    font-weight: 700;
+}
+
+.BrokerList .listBroker .BrokerUnicFavorite .heartFavorite {
+    position: absolute;
+    margin-top: 115px;
+    margin-left: 215px;
+}
+
+.BrokerList .listBroker .BrokerUnicFavorite .heartFavorite svg {
+    color: var(--White);
+    font-size: 24px;
+    cursor: pointer;
+}
+.BrokerList .listBroker .BrokerUnicFavorite .heartFavorite svg:hover {
+    color: var(--Primary);
+}
+.BrokerList .listBroker .BrokerUnicFavorite .heartFavorite2 {
+    position: absolute;
+    margin-top: 115px;
+    margin-left: 215px;
+}
+
+.BrokerList .listBroker .BrokerUnicFavorite .heartFavorite2 svg {
+    color: var(--Primary);
+    font-size: 24px;
+    cursor: pointer;
+}
+.BrokerList .listBroker .BrokerUnicFavorite .heartFavorite svg:hover {
+    color: var(--Primary);
+}
+
+} */

@@ -1,0 +1,96 @@
+﻿.Properties {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 80px 0px 0px 0px;
+}
+
+
+.Properties .listPage {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding:20px 0px;
+}
+
+
+
+.Properties .listPage .ButtomView {
+    display: none;
+}
+
+
+.Properties .listPage .topScroll {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    color: var(--Primary);
+    border-radius: 50%;
+    font-size: 20px;
+    padding:5px;
+    border: none;
+    background-color: var(--BorderHover);
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    top: 650px;
+    right: 25px;
+    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.2);
+  }
+
+@media (max-width: 880px)  {
+    .Properties .listPage {
+        padding:40px 0px;
+}
+
+.Properties .listPage .topScroll {
+    right: 5px;
+  }
+@media (max-width: 700px)  {
+    .Properties .listPage {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        padding:10px 0;
+    }
+
+    .Properties .listPage .SearchView {
+        display: none;
+    }
+
+    .Properties .listPage .ButtomView {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .Properties .listPage .ButtomView button {
+        border: 3px solid var(--White);
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        padding: 15px 20px;
+        Background-color: var(--Primary);
+        color: var(--White);
+        font-weight: 700;
+        border-radius: 6px;
+        width: 70%;
+        box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.2);
+    }
+
+    .Properties .listPage .ButtomView button svg {
+        margin-right: 5px;
+        font-size: 16px;
+    }
+}
+}

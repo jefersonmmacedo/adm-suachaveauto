@@ -1,0 +1,779 @@
+﻿.Dashboard {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.Dashboard .aside {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 170px;
+    padding-top: 65px;
+}
+.Dashboard .aside .textHome {
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+    }
+    
+    
+    .Dashboard .aside .textHome h3 {
+      font-weight: bold;
+      text-align: center;
+      margin: 10px;
+      color: var(--Paragraph);
+    }
+    
+    .Dashboard .aside .textHome h5 {
+      margin: 10px;
+      color: var(--Gray);
+    }
+    
+    .Dashboard .aside .textHome h5 a {
+      text-decoration: none;
+      color: var(--PrimaryRGBA);
+    }
+    
+.Dashboard .aside .topInfomations {
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 10px;
+    padding: 10px 0;
+}
+
+.Dashboard .aside .topInfomations .properties {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 32%;
+    background-color: var(--BorderHover);
+    box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    margin: 5px;
+    padding: 10px;
+    color: var(--Gray);
+    height: 220px;
+}
+.Dashboard .aside .topInfomations .properties .infosProperty {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px 5px;
+    color: var(--Gray);
+}
+.Dashboard .aside .topInfomations .properties .infosProperty .totalProperties {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 40%;
+    color: var(--Gray);
+}
+.Dashboard .aside .topInfomations .properties .infosProperty .totalProperties h2 {
+    color: var(--Gray);
+    margin-bottom: 5px;
+    font-weight: 500;
+    font-size: 35px;
+}
+.Dashboard .aside .topInfomations .properties .infosProperty .totalProperties h5 {
+    color: var(--Gray);
+    margin-bottom: 5px;
+    font-weight: 700;
+}
+.Dashboard .aside .topInfomations .properties .infosProperty .qtdProperties {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-start;
+    width: 60%;
+    color: var(--Gray);
+}
+
+.Dashboard .aside .topInfomations .properties .infosProperty .qtdProperties h5 {
+    color: var(--Gray);
+    margin-bottom: 5px;
+    font-weight: 700;
+}
+.Dashboard .aside .topInfomations .properties .infosProperty .qtdProperties .rent {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    padding: 5px;
+    color: var(--White);
+    background-color: var(--Aproved);
+    margin: 3px 0px;
+    border-radius: 20px;
+}
+.Dashboard .aside .topInfomations .properties .infosProperty .qtdProperties .rent h6 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.Dashboard .aside .topInfomations .properties .infosProperty .qtdProperties .sale {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    padding: 5px;
+    color: var(--White);
+    background-color: var(--Secondary);
+    margin: 3px 0px;
+    border-radius: 20px;
+}
+.Dashboard .aside .topInfomations .properties .infosProperty .qtdProperties .sale h6 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.Dashboard .aside .topInfomations .properties .availability {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 7px 0px;
+    border-top: 1px solid var(--Border);
+    flex-wrap: wrap;
+}
+.Dashboard .aside .topInfomations .properties .availability h6 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 45%;
+    padding: 5px 10px;
+    border-radius: 20px;
+    background-color: var(--BorderInput2);
+    margin: 2px;
+    font-weight: 700;
+}
+.Dashboard .aside .topInfomations .properties .buttonsProperty {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    border-top: 1px solid var(--Border);
+    background-color: var(--BorderHover);
+    padding: 7px 5px;
+    color: var(--Primary);
+}
+
+.Dashboard .aside .topInfomations .properties .buttonsProperty a {
+    color: var(--Primary);
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    font-size: 12px;
+}
+.Dashboard .aside .topInfomations .funel {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 32%;
+    background-color: var(--BorderHover);
+    box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    margin: 5px;
+    padding: 10px;
+    color: var(--Gray);
+    height: 220px;
+}
+.Dashboard .aside .topInfomations .funel .infosFunel h5 {
+    color: var(--Gray);
+    margin-bottom: 5px;
+    font-weight: 700;
+}
+.Dashboard .aside .topInfomations .funel .infosFunel {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+    padding: 10px;
+    color: var(--Gray);
+}
+.Dashboard .aside .topInfomations .funel .infosFunel .typefunel {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+
+}
+.Dashboard .aside .topInfomations .funel .infosFunel .typefunel .funelUnic {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 2px 0px;
+}
+
+.Dashboard .aside .topInfomations .funel .infosFunel .typefunel .funelUnic .lead {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    padding: 10px 7px;
+    border-radius: 20px 20px 50px 20px;
+    margin: 3px 0;
+    background-color: #FF4500;
+    border: 1px solid #FF4500;
+    color: var(--White);
+}
+.Dashboard .aside .topInfomations .funel .infosFunel .typefunel .funelUnic .lead-text h5 {
+    color: var(--Gray);
+    margin: 0px;
+    font-weight: 700;
+}
+.Dashboard .aside .topInfomations .funel .infosFunel .typefunel .funelUnic .lead-text {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    border-bottom: 1px solid #FF4500;
+    color: #FF4500;
+    padding: 0px 5px 0px 10px;
+}
+
+.Dashboard .aside .topInfomations .funel .infosFunel .typefunel .funelUnic .sheduling {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    width: 80%;
+    padding: 10px 7px;
+    border-radius: 20px 20px 50px 20px;
+    margin: 3px 0;
+    background-color: #FFD700;
+    border: 1px solid #FFD700;
+}
+.Dashboard .aside .topInfomations .funel .infosFunel .typefunel .funelUnic .sheduling-text h5 {
+    color: var(--Gray);
+    margin: 0px;
+    font-weight: 700;
+}
+
+.Dashboard .aside .topInfomations .funel .infosFunel .typefunel .funelUnic .sheduling-text {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    border-bottom: 1px solid #FFD700;
+    color: #FFD700;
+    padding: 0px 5px 0px 10px;
+}
+
+.Dashboard .aside .topInfomations .funel .infosFunel .typefunel .funelUnic .completed {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    width: 60%;
+    padding: 10px 7px;
+    border-radius: 20px 20px 50px 20px;
+    margin: 3px 0;
+    background-color: var(--Secondary);
+    border: 1px solid var(--Secondary);
+}
+.Dashboard .aside .topInfomations .funel .infosFunel .typefunel .funelUnic .completed-text h5 {
+    color: var(--Gray);
+    margin: 0px;
+    font-weight: 700;
+}
+
+.Dashboard .aside .topInfomations .funel .infosFunel .typefunel .funelUnic .completed-text {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    border-bottom: 1px solid var(--Secondary);
+    color: var(--Secondary);
+    padding: 0px 5px 0px 10px;
+}
+
+.Dashboard .aside .topInfomations .funel .infosFunel .typefunel .funelUnic .proposals {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    width: 40%;
+    padding: 10px 7px;
+    border-radius: 20px 20px 50px 20px;
+    margin: 3px 0;
+    background-color: #87CEFA;
+    border: 1px solid #87CEFA;
+}
+.Dashboard .aside .topInfomations .funel .infosFunel .typefunel .funelUnic .proposals-text h5 {
+    color: var(--Gray);
+    margin: 0px;
+    font-weight: 700;
+}
+
+.Dashboard .aside .topInfomations .funel .infosFunel .typefunel .funelUnic .proposals-text {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    border-bottom: 1px solid #87CEFA;
+    color: #87CEFA;
+    padding: 0px 5px 0px 10px;
+}
+
+.Dashboard .aside .topInfomations .funel .infosFunel .typefunel .funelUnic .status {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    width: 20%;
+    padding: 10px 7px;
+    border-radius: 20px 20px 50px 20px;
+    margin: 3px 0;
+    background-color: var(--Aproved);
+    border: 1px solid var(--Aproved);
+}
+
+.Dashboard .aside .topInfomations .funel .infosFunel .typefunel .funelUnic .status-text {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    border-bottom: 1px solid var(--Aproved);
+    color: var(--Aproved);
+    padding: 0px 5px 0px 10px;
+}
+
+.Dashboard .aside .topInfomations .funel .infosFunel .typefunel .funelUnic .status-text h5 {
+    color: var(--Gray);
+    margin: 0px;
+    font-weight: 700;
+}
+
+
+.Dashboard .aside .topInfomations .invoicing {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+    width: 32%;
+    background-color: var(--BorderHover);
+    box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    margin: 5px;
+    padding: 10px;
+    color: var(--Gray);
+    height: 220px;
+}
+
+
+.Dashboard .aside .topInfomations .invoicing .infosInvoicing {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+    padding: 10px;
+    color: var(--Gray);
+}
+
+.Dashboard .aside .topInfomations .invoicing .infosInvoicing h5 {
+    color: var(--Gray);
+    margin-bottom: 5px;
+    font-weight: 700;
+}
+.Dashboard .aside .topInfomations .invoicing .infosInvoicing .valuesInvoicing {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    color: var(--Gray);
+    flex-wrap: wrap;
+}
+.Dashboard .aside .topInfomations .invoicing .infosInvoicing .valuesInvoicing .sales {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 50%;
+    margin: 5px 0px 10px 0px;
+    color: var(--Secondary);
+}
+
+.Dashboard .aside .topInfomations .invoicing .infosInvoicing .valuesInvoicing .sales  h5 {
+    color: var(--Secondary);
+    margin-bottom: 0px;
+    font-weight: 500;
+}
+.Dashboard .aside .topInfomations .invoicing .infosInvoicing .valuesInvoicing .sales  h4 {
+    color: var(--Secondary);
+    margin-bottom: 0px;
+    font-weight: 800;
+}
+.Dashboard .aside .topInfomations .invoicing .infosInvoicing .valuesInvoicing .rents {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+    width: 50%;
+    margin: 5px 0px 10px 0px;
+    color: var(--Aproved);
+}
+.Dashboard .aside .topInfomations .invoicing .infosInvoicing .valuesInvoicing .rents  h5 {
+    color: var(--Aproved);
+    margin-bottom: 0px;
+    font-weight: 500;
+}
+.Dashboard .aside .topInfomations .invoicing .infosInvoicing .valuesInvoicing .rents  h4 {
+    color: var(--Aproved);
+    margin-bottom: 0px;
+    font-weight: 800;
+}
+
+.Dashboard .aside .topInfomations .invoicing .infosInvoicing .valuesInvoicing .total {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 50%;
+    margin: 5px 0px 10px 0px;
+    color: var(--Gray2);
+}
+
+.Dashboard .aside .topInfomations .invoicing .infosInvoicing .valuesInvoicing .total  h5 {
+    color: var(--Gray2);
+    margin-bottom: 0px;
+    font-weight: 500;
+}
+.Dashboard .aside .topInfomations .invoicing .infosInvoicing .valuesInvoicing .total  h4 {
+    color: var(--Gray2);
+    margin-bottom: 0px;
+    font-weight: 800;
+}
+
+
+.Dashboard .aside .topInfomations .invoicing .infosInvoicing .valuesInvoicing .futures {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+    width: 50%;
+    margin: 5px 0px 10px 0px;
+    color: var(--Gray2);
+}
+
+.Dashboard .aside .topInfomations .invoicing .infosInvoicing .valuesInvoicing .futures   h5 {
+    color: var(--Gray2);
+    margin-bottom: 0px;
+    font-weight: 500;
+}
+.Dashboard .aside .topInfomations .invoicing .infosInvoicing .valuesInvoicing .futures   h4 {
+    color: var(--Gray2);
+    margin-bottom: 0px;
+    font-weight: 800;
+}
+.Dashboard .aside .topInfomations .invoicing .infosInvoicing .valuesInvoicing .commissions {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 50%;
+    margin: 5px 0;
+    padding: 10px 0;
+    color: var(--Gray);
+    border-top: 1px solid var(--Border);
+}
+
+.Dashboard .aside .topInfomations .invoicing .infosInvoicing .valuesInvoicing .commissions   h5 {
+    color: var(--Gray);
+    margin-bottom: 0px;
+    font-weight: 500;
+}
+.Dashboard .aside .topInfomations .invoicing .infosInvoicing .valuesInvoicing .commissions   h4 {
+    color: var(--Gray);
+    margin-bottom: 0px;
+    font-weight: 800;
+}
+.Dashboard .aside .topInfomations .invoicing .infosInvoicing .valuesInvoicing .business {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+    width: 50%;
+    margin: 5px 0;
+    padding: 10px 0;
+    color: var(--Gray);
+    border-top: 1px solid var(--Border);
+}
+
+.Dashboard .aside .topInfomations .invoicing .infosInvoicing .valuesInvoicing .business   h5 {
+    color: var(--Gray);
+    margin-bottom: 0px;
+    font-weight: 500;
+}
+.Dashboard .aside .topInfomations .invoicing .infosInvoicing .valuesInvoicing .business   h4 {
+    color: var(--Gray);
+    margin-bottom: 0px;
+    font-weight: 800;
+}
+
+
+
+.Dashboard .aside .informations {
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: var(--White);
+    box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    border-radius: 10px;
+    padding: 10px 0;
+}
+.Dashboard .aside .informations .dataSheduling {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 32%;
+    height: 80px;
+    background-color: var(--BorderHover);
+    box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    margin: 5px;
+    padding: 10px;
+    color: var(--Gray);
+}
+.Dashboard .aside .informations .dataSheduling .shedulingInfo {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 100%;
+    height: 80px;
+    margin: 5px;
+    padding: 10px;
+    color: var(--Gray);
+}
+
+.Dashboard .aside .informations .infoData {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+    width: 145px;
+    height: 80px;
+    background-color: var(--BorderHover);
+    box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    margin: 5px;
+    padding: 10px;
+    color: var(--Gray);
+}
+
+.Dashboard .aside .informations .infoData .topInfo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 5px;
+}
+
+.Dashboard .aside .informations .infoData h5 {
+    font-weight: 500;
+    text-align: right;
+}
+.Dashboard .aside .informations .infoData .topInfo h3 {
+    font-weight: 700;
+}
+.Dashboard .aside .informations .infoData .topInfo svg {
+    font-size: 24px;
+    color: var(--Primary);
+}
+.Dashboard .aside .PlainDashboard {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 95%;
+    background-color: rgba(220,20,60, 0.5);
+    padding: 10px 20px;
+    margin-top: 10px;
+    border-radius: 20px;
+    color: var(--White);
+}
+
+.Dashboard .aside .PlainDashboard h4 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.Dashboard .aside .PlainDashboard h4 svg {
+    margin-right: 5px;
+}
+.Dashboard .aside .PlainDashboard a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: var(--White);
+    border-radius: 20px;
+    padding: 5px 10px;
+    text-decoration: none;
+    border: 1px solid var(--White);
+    font-size: 14px;
+}
+.Dashboard .aside .PlainDashboard2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 95%;
+    background-color: rgba(30,144,255, 0.5);
+    padding: 10px 20px;
+    margin-top: 10px;
+    border-radius: 20px;
+    color: var(--White);
+}
+
+.Dashboard .aside .PlainDashboard2 h4 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.Dashboard .aside .PlainDashboard2 h4 svg {
+    margin-right: 5px;
+}
+.Dashboard .aside .PlainDashboard2 a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: var(--White);
+    border-radius: 20px;
+    padding: 5px 10px;
+    text-decoration: none;
+    border: 1px solid var(--White);
+    font-size: 14px;
+}
+
+@media (max-width: 1070px) {
+
+    .Dashboard .aside .topInfomations .properties {
+        width: 48%;
+    }
+    .Dashboard .aside .topInfomations .funel {
+        width: 48%;
+    }
+    .Dashboard .aside .topInfomations .invoicing {
+        width: 48%;
+    }
+
+@media (max-width: 950px) {
+
+    .Dashboard .aside .PlainDashboard {
+        width: 95%;
+    }
+    .Dashboard .aside .informations .infoData {
+        width: 30%;
+    }
+@media (max-width: 850px) {
+    .Dashboard .aside .topInfomations .properties {
+        width: 100%;
+    }
+    .Dashboard .aside .topInfomations .funel {
+        width: 100%;
+    }
+    .Dashboard .aside .topInfomations .invoicing {
+        width: 100%;
+    }
+
+@media (max-width: 700px) {
+    .Dashboard .aside {
+        padding-bottom: 100px;
+    }
+    .Dashboard .aside {
+        padding-left: 0px;
+    }
+
+    .Dashboard .aside .informations {
+        padding: 5px;
+    }
+
+    .Dashboard .aside .informations .infoData {
+        width: 30%;
+    }
+
+    @media (max-width: 600px) {
+        .Dashboard .aside .informations .infoData {
+            width: 45%;
+        }
+    @media (max-width: 500px) {
+
+        .Dashboard .aside .textHome {
+            width: 95%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+            margin-top: 20px;
+            }
+    
+            
+            
+        .Dashboard .aside .PlainDashboard {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .Dashboard .aside .PlainDashboard a {
+            margin-top: 10px;
+        }
+        
+    }
+}
+}
+}
+}
+}

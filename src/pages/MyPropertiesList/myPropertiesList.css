@@ -1,0 +1,437 @@
+﻿.MyPropertiesList {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.MyPropertiesList .aside {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 170px;
+    padding-top: 100px;
+}
+
+.MyPropertiesList .aside .textHome {
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+
+.MyPropertiesList .aside .textHome h3 {
+    font-weight: bold;
+    text-align: center;
+    color: var(--Paragraph);
+}
+.MyPropertiesList .aside .textHome h4 {
+    font-weight: bold;
+    text-align: center;
+    color: var(--Gray2);
+}
+
+.MyPropertiesList .aside .infoData {
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 5px;
+  background-color: var(--White);
+  border: 1px solid var(--Border);
+  border-radius: 20px;
+}
+
+.MyPropertiesList .aside .infoData .textInfo{
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--Border);
+  border-radius: 20px;
+  margin: 5px;
+  
+}
+
+.MyPropertiesList .aside .infoData .textInfo h5 {
+  font-weight: 600;
+  text-align: center;
+  color: var(--Gray);
+}
+.MyPropertiesList .aside .infoData .textInfo h5 span {
+  font-weight: 900;
+  color: var(--Primary);
+}
+
+.MyPropertiesList .aside .link {
+  border: none;
+  border-radius: 20px;
+  background-color: none;
+  color: var(--Primary);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+
+.MyPropertiesList .informations {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding:5px;
+    background-color: var(--White);
+    border: 1px solid var(--Border);
+    border-radius: 20px;
+    margin-bottom: 100px;
+}
+
+.MyPropertiesList .informations .propertyListAdm{
+    width: 98%;
+    background-color: var(--White);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    border-bottom: 1px solid var(--Border);
+    margin-top: 5px;
+}
+.MyPropertiesList .informations .propertyListAdm .image{
+    width: 100px;
+    height: 95%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+.MyPropertiesList .informations .propertyListAdm .image img{
+    width: 100px;
+    height: 95%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.MyPropertiesList .informations .propertyListAdm .textpropertyListAdm{
+
+    background-color: var(--BorderInput);
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 5px 10px;
+    text-align:left;
+    width: 100%;
+    height: 100%;
+    background-color: var(--White);
+}
+
+.MyPropertiesList .informations .propertyListAdm .textpropertyListAdm .propertyView {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: row;
+  width: 100%;
+  padding:5px;
+  flex-wrap:  wrap;
+}
+
+.MyPropertiesList .informations .propertyListAdm .textpropertyListAdm .textDatapropertyListAdm{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    text-align:left;
+    width: 100%;
+    height: 100%;
+}
+
+
+.MyPropertiesList .informations .propertyListAdm .textpropertyListAdm .textDatapropertyListAdm h4 {
+    color: var(--Primary);
+    font-weight: 700;
+    margin: 0 10px;
+    text-align:left;
+  }
+
+  .MyPropertiesList .informations .propertyListAdm .textpropertyListAdm .textDatapropertyListAdm h5 {
+    color: var(--Gray);
+    margin: 2px 9px;
+    text-align:left;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: row;
+    font-weight: 500;
+  }
+
+  .MyPropertiesList .informations .propertyListAdm .textpropertyListAdm .textDatapropertyListAdm h5 svg {
+    margin-right: 2px;
+  }
+  .MyPropertiesList .informations .propertyListAdm .textpropertyListAdm .textDatapropertyListAdm h6 {
+    color: var(--Gray);
+    margin: 5px 10px 0 10px;
+    text-align:left;
+  }
+  .MyPropertiesList .informations .propertyListAdm .textpropertyListAdm .emphasis {
+    margin: 5px;
+    text-align:center;
+    padding: 5px 10px;
+    background-color: var(--BorderInput);
+    color: var(--Paragraph);
+    border-radius: 20px;
+    font-size: 12px;
+  }
+  .MyPropertiesList .informations .propertyListAdm .textpropertyListAdm .status1 {
+    margin: 5px;
+    text-align:center;
+    padding: 5px 10px;
+    background-color: var(--Aproved);
+    color: var(--White);
+    border-radius: 20px;
+    font-size: 12px;
+  }
+  .MyPropertiesList .informations .propertyListAdm .textpropertyListAdm .status2 {
+    margin: 5px 10px 0 10px;
+    text-align:center;
+    padding: 5px 10px;
+    background-color: var(--Secondary);
+    color: var(--White);
+    border-radius: 20px;
+    font-size: 12px;
+  }
+  .MyPropertiesList .informations .propertyListAdm .textpropertyListAdm .status3 {
+    margin: 5px 10px 0 10px;
+    text-align:center;
+    padding: 5px 10px;
+    background-color: var(--Edit);
+    color: var(--White);
+    border-radius: 20px;
+    font-size: 12px;
+  }
+  .MyPropertiesList .informations .propertyListAdm .textpropertyListAdm .status4 {
+    margin: 5px 10px 0 10px;
+    text-align:center;
+    padding: 5px 10px;
+    background-color: var(--Primary);
+    color: var(--White);
+    border-radius: 20px;
+    font-size: 12px;
+  }
+  .MyPropertiesList .informations .propertyListAdm .infosContactData {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    padding: 2px 0;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  .MyPropertiesList .informations .propertyListAdm .infosContactData .infoUnicData {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 20px;
+    border: 1px solid var(--Border);
+  }
+
+  .MyPropertiesList .informations .propertyListAdm .infosContactData .infoUnicData svg {
+    color: var(--Gray);
+    margin-right: 5px;
+    font-size: 12px;
+  }
+  .MyPropertiesList .informations .propertyListAdm .infosContactData .infoUnicData  h6 {
+    font-weight: 600;
+    color: var(--Gray);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+  }
+
+  .MyPropertiesList .informations .propertyListAdm .infosContactData .infoUnicData:hover {
+    background-color: var(--BorderInput2);
+  }
+
+  .MyPropertiesList .informations .propertyListAdm .buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 5px;
+    border-left: 1px solid var(--Border);
+}
+
+.MyPropertiesList .informations .propertyListAdm .buttons .btnControl {
+  width: 30px;
+  height: 30px;
+  padding: 8px;
+  border: none;
+  border-radius: 20px;
+  background-color: var(--BorderInput);
+  color: var(--Gray2);
+  margin: 5px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+.MyPropertiesList .informations .propertyListAdm .buttons .btnControl svg {
+  margin: 0px;
+}
+
+.MyPropertiesList .informations .propertyListAdm .buttons .btnControl:hover {
+  background-color: var(--Primary);
+  color: var(--White);
+}
+
+.MyPropertiesList .aside .search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  margin: 0px 10px 20px 10px;
+  width: 90%;
+  padding: 10px;
+  background-color: var(--White);
+  border: 1px solid var(--Border);
+  border-radius: 30px;
+}
+.MyPropertiesList .aside .search .selection {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  width: 100%;
+}
+
+
+.MyPropertiesList .aside .search input {
+  width: 50%;
+  height: 40px;
+  padding: 10px 20px;
+  border: 1px solid var(--Border);
+  border-radius: 20px;
+  margin: 2px;
+}
+.MyPropertiesList .aside .search .selection select {
+  width: 100%;
+  height: 40px;
+  padding: 10px 20px;
+  border: 1px solid var(--Border);
+  border-radius: 20px;
+  margin: 2px;
+}
+
+
+@media(max-width: 850px) {
+  .MyPropertiesList .aside .search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 90%;
+  }
+  
+  
+  .MyPropertiesList .aside .search input {
+    width: 100%;
+  }
+
+
+@media (max-width: 700px) {
+    .MyPropertiesList .informations {
+        padding: 0 10px 10px 10px;
+    }
+    .MyPropertiesList .aside {
+        padding-left: 0px;
+    }
+
+
+
+    @media (max-width: 570px) {
+
+          .MyPropertiesList .informations .propertyListAdm{
+            width: 100%;
+            margin:20px 5px;
+
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            flex-direction: column;
+        }
+
+        .MyPropertiesList .informations .propertyListAdm .textpropertyListAdm .textDatapropertyListAdm h4 {
+          margin:5px 10px;
+        }
+
+            .MyPropertiesList .informations .propertyListAdm .image{
+            width: 100%;
+            height: 100px;
+        }
+          .MyPropertiesList .informations .propertyListAdm .image img{
+            width: 100%;
+            height: 100px;
+        }
+
+        .MyPropertiesList .informations .propertyListAdm .infosContactData .infoUnicData {
+          padding: 5px;
+          margin: 5px 2px
+        }
+      
+
+        .MyPropertiesList .informations .propertyListAdm .buttons{
+          justify-content: space-evenly;
+          flex-direction: row;
+          width: 100%;
+          border-left:none;
+          border-top: 1px solid var(--Border);
+          padding: 5px;
+      }
+
+        .MyPropertiesList .informations .propertyListAdm .buttons .linkEdit {
+        width: 100%;
+        heigth: 100%
+      }
+        .MyPropertiesList .informations .propertyListAdm .buttons .newDocument {
+        width: 100%;
+        heigth: 100%
+      }
+        .MyPropertiesList .informations .propertyListAdm .buttons .delete {
+        width: 100%;
+        heigth: 100%
+      }
+
+
+      .MyPropertiesList .aside .search {
+        width: 90%;
+        padding: 10px;
+      }
+
+      .MyPropertiesList .aside .search .selection {
+        flex-direction: column;
+        width: 100%;
+      }
+
+      .MyPropertiesList .aside .infoData .textInfo {
+        padding: 5px 10px;
+        margin: 20px;
+      }
+      .MyPropertiesList .aside .infoData .textInfo h5 {
+        font-size: 12px;
+      }
+      
+    }
+}
+}

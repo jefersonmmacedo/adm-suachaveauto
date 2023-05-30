@@ -1,0 +1,399 @@
+﻿.Plains {
+    width: 1200px !important;
+    margin: 20px 0 20px 0;
+}
+
+.Plains .plain {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: 20px;
+    margin: 10px auto;
+    border-radius: 20px;
+    background-color: var(--White);
+    color: var(--Description);
+    width: 300px;
+    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.2);
+}
+
+.Plains .plain h3 {
+    font-weight: 800;
+}
+
+.Plains .plain p{
+    font-weight: 500;
+    color: var(--Description);
+    margin: 5px 0;
+}
+
+
+.Plains .plain .title {
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    flex-direction: row; 
+}
+
+.Plains .plain .title h1 {
+    font-weight: 700;
+    color: var(--Primary);
+}
+.Plains .plain .title h3 {
+    font-weight: 900;
+    color: var(--Primary);
+}
+
+.Plains .plain .title h4 {
+    font-weight: 700;
+    margin-left: 5px;
+    color: var(--Primary);
+    margin-right: 5px;
+}
+.Plains .plain .title2 {
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    flex-direction: row; 
+}
+
+.Plains .plain .title2 h1 {
+    font-weight: 700;
+    color: var(--Gray);
+    text-decoration: line-through;
+    font-size: 20px;
+}
+
+.Plains .plain .title2 h6 {
+    font-weight: 700;
+    margin-left: 2px;
+    color: var(--Gray);
+    margin-right: 5px;
+}
+
+.Plains .plain .text {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin: 5px 0;
+    text-align: left;
+}
+
+
+.Plains .plain .text p {
+    font-size: 12px;
+    font-weight: 600;
+    margin: 2px 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    text-align: left;
+    width: 100%;
+    padding: 3px 10px;
+    border: none;
+    border-bottom: 1px solid var(--Border);
+}
+
+.Plains .plain .aditionalUser {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin: 5px 0;
+    text-align: left;
+}
+
+.Plains .plain .aditionalUser h5 {
+    font-weight: 600;
+    margin: 2px 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    text-align: left;
+    width: 100%;
+    padding: 3px 10px;
+    border: none;
+}
+
+.Plains .plain .aditionalUser h5 span {
+    font-weight: 600;
+    margin-left: 5px;
+    color: var(--Gray2);
+}
+.Plains .plain .aditionalUser h5 svg {
+    margin-right: 5px;
+    color: var(--Gray2);
+    font-size: 16px;
+}
+
+
+
+.Plains .plain .text svg {
+    color: var(--AprovedHover);
+    font-size: 16px;
+    margin-right: 5px;
+}
+
+.Plains .plain a {
+    text-decoration: none;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--Primary);
+    border: none;
+    border-radius: 25px;
+    padding: 10px 20px;
+    color: var(--White);
+    font-weight: 700;
+    margin: 10px 0 2px 0;
+}
+.Plains .plain button {
+    text-decoration: none;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--Button);
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    color: var(--White);
+    font-weight: 700;
+    margin: 10px 0 5px 0;
+}
+
+
+
+.Plains .plain2 {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: 20px;
+    margin: 10px auto;
+    border-radius: 20px;
+    background-color: var(--Primary);
+    width: 300px;
+    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.2);
+}
+.Plains .plain2 .featured {
+    width: 290px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: row;
+    position: absolute;
+    margin-top: -10px;
+}
+
+.Plains .plain2 .featured h5 {
+    background-color: var(--White);
+    color: var(--Primary);
+    padding: 10px 15px;
+    border-radius: 6px 0 0  6px;
+    font-weight: 700;
+}
+
+.Plains .plain2 h3 {
+    font-weight: 700;
+    color: var(--White);
+}
+.Plains .plain2 p{
+    font-weight: 500;
+    color: var(--White);
+}
+
+.Plains .plain2 .title {
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    flex-direction: row;   
+}
+
+.Plains .plain2 .title h1 {
+    font-weight: 700;
+    color: var(--White);
+}
+.Plains .plain2 .title h4 {
+    font-weight: 700;
+    color: var(--White);
+    margin-left: 5px;
+}
+
+.Plains .plain2 .title2 {
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    flex-direction: row; 
+}
+
+.Plains .plain2 .title2 h1 {
+    font-weight: 700;
+    color: var(--Gray);
+    text-decoration: line-through;
+    font-size: 20px;
+}
+
+.Plains .plain2 .title2 h6 {
+    font-weight: 700;
+    margin-left: 2px;
+    color: var(--Gray);
+    margin-right: 5px;
+}
+
+
+.Plains .plain2 .text {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin: 5px 0;
+    text-align: left;
+}
+
+.Plains .plain2 .text p {
+    font-weight: 600;
+    font-size: 12px;
+    margin: 2px 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;;
+    flex-direction: row;
+    text-align: left;
+    color: var(--White);
+    width: 100%;
+    padding: 3px 10px;
+    border: none;
+    border-bottom: 1px solid var(--PrimaryHover);
+}
+
+
+.Plains .plain2 .text svg {
+    color: var(--AprovedHover);
+    font-size: 16px;
+    margin-right: 5px;
+}
+
+.Plains .plain2 a {
+    text-decoration: none;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--White);
+    border: none;
+    border-radius: 25px;
+    padding: 10px 20px;
+    color: var(--Primary);
+    font-weight: 700;
+    margin: 10px 0 5px 0;
+}
+
+
+
+.Plains .plain3 {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: 00px;
+    margin: 5px;
+    border-radius: 10px;
+    background-color: var(--Primary);
+    width: 300px;
+}
+
+.Plains .plain3 h3 {
+    font-weight: 700;
+    color: var(--White);
+}
+
+.Plains .plain3 .title {
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    flex-direction: row;   
+}
+
+.Plains .plain3 .title h1 {
+    font-weight: 700;
+    color: var(--White);
+}
+.Plains .plain3 .title h4 {
+    font-weight: 700;
+    color: var(--White);
+}
+
+.Plains .plain3 .text {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin: 5px 0;
+    text-align: left;
+}
+
+.Plains .plain3 .text p {
+    font-size: 12px;
+    font-weight: 700;
+    margin: 2px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    color: var(--White);
+    text-align: left;
+}
+
+
+.Plains .plain3 .text svg {
+    color: var(--AprovedHover);
+    font-size: 16px;
+    margin-right: 5px;
+}
+
+.Plains .plain3 a {
+    text-decoration: none;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--White);
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    color: var(--Primary);
+    font-weight: 700;
+    margin: 10px 0 5px 0;
+}
+
+
+@media (max-width: 1220px) {
+    .Plains {
+        width: 95% !important;
+        margin: 20px 0 20px 0;
+    }
+@media (max-width: 650px) {
+    .Plains {
+        width: 100%;
+    }
+}
+}
+

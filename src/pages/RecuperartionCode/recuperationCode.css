@@ -1,0 +1,308 @@
+﻿.RecuperationCode {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.RecuperationCode .login {
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--Black);
+}
+
+.RecuperationCode .login form {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.RecuperationCode .login form img {
+    height: 50px;
+    margin-bottom: 40px;
+}
+
+.RecuperationCode .login form .data {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+    padding: 10px;
+}
+
+.RecuperationCode .login form .data input {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    color: var(--Border);
+    background-color: var(--Black);
+    border: 1px solid var(--Border);
+    padding: 10px 20px;
+    border-radius: 20px;
+    margin: 5px 0;
+    font-weight: bold;
+}
+
+.RecuperationCode .login form .data input::placeholder {
+    color: var(--Gray);
+}
+
+.RecuperationCode .login form .data .message {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--BorderHover);
+    font-weight: bold;
+    margin: 10px 0;
+    background-color: var(--Black2);
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.RecuperationCode .login form .data .message h5 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    text-align: center;
+}
+
+.RecuperationCode .login form .data .message h5 svg {
+    margin-right: 5px;
+}
+
+
+
+.RecuperationCode .login form .data .links {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    color: var(--Border);
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.RecuperationCode .login form .data button {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--Button);
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    color: var(--White);
+    font-weight: 700;
+    margin: 20px 0;
+}
+.RecuperationCode .login form .data a {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--Black2);
+    border: none;
+    border-radius: 6px;
+    padding: 10px 20px;
+    color: var(--Border);
+    font-weight: 700;
+    margin: 20px 0;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.RecuperationCode .professional {
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-image: url("../../assets/images/background12.jpg"); /* The image used */
+    background-color: var(--Primary); /* Used if the image is unavailable */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+.RecuperationCode .professional .block {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(237, 50, 55, 0.3);
+}
+
+.RecuperationCode .professional .block button {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--Button);
+    color: var(--White);
+    border: none;
+    border-radius: 6px;
+    padding: 10px 20px;
+    font-weight: 700;
+    margin: 20px 0;
+}
+
+
+
+@media (max-width: 950px) {
+    .RecuperationCode .login form {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .RecuperationCode .login form .data input {
+        width: 90%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        border: none;
+        border-bottom: 2px solid var(--Border);
+        padding: 5px;
+        margin: 5px 0;
+        font-weight: bold;
+    }
+
+    .RecuperationCode .login form .data button {
+        width: 90%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--Button);
+        border: none;
+        border-radius: 6px;
+        padding: 10px 20px;
+        color: var(--White);
+        font-weight: 700;
+        margin: 20px 0;
+    }
+    
+    @media (max-width: 700px) {
+
+        .RecuperationCode .login form {
+            width: 90%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .RecuperationCode .login {
+            width: 100%;
+            height: 100vh;
+        }
+        
+        .RecuperationCode .professional {
+            display: none;
+        }
+
+        .RecuperationCode .login form .data {
+            width: 70%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 20px 0;
+            padding: 10px;
+        }
+        
+        .RecuperationCode .login form .data input {
+            width: 90%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            border: none;
+            border-bottom: 2px solid var(--Border);
+            padding: 5px;
+            margin: 5px 0;
+            font-weight: bold;
+        }
+        
+        .RecuperationCode .login form .data input::placeholder {
+            color: var(--Gray);
+        }
+
+        .RecuperationCode .login form .data .message {
+            width: 90%;
+        }
+
+        .RecuperationCode .login form .data .links {
+            width: 90%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: flex-end;
+            color: var(--Gray);
+            font-weight: bold;
+            margin: 10px 0;
+        }
+        
+        .RecuperationCode .login form .data button {
+            width: 90%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            background-color: var(--Button);
+            border: none;
+            border-radius: 6px;
+            padding: 10px 20px;
+            color: var(--White);
+            font-weight: 700;
+            margin: 20px 0;
+        }
+        
+        @media (max-width: 500px) {
+            .RecuperationCode .login form {
+                width: 90%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+            .RecuperationCode .login form .data {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                margin: 20px 0;
+                padding: 10px;
+            }
+            
+        }
+    }
+}
