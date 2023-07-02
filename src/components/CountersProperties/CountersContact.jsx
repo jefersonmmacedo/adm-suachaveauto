@@ -1,7 +1,7 @@
 ﻿import { useFetch } from "../../hooks/useFetch"
 
 export function CountersContact({id}) {
-    const {data} = useFetch(`/contact/property/${id}`);
+    const {data} = useFetch(`/contact/autos/${id}`);
 
     const Contact = data?.filter((contactUser) => contactUser.type === "Ligação" )
 

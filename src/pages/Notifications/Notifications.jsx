@@ -5,7 +5,7 @@ import { Footer } from "../../components/Footer/Footer";
 import { useFetch } from "../../hooks/useFetch";
 
 export function Notifications() {
-    const Local = localStorage.getItem("adm-suachave");
+    const Local = localStorage.getItem("adm-suachaveauto");
     const user = JSON.parse(Local);
 
     const {data} = useFetch(`/notification/${user.id}`)

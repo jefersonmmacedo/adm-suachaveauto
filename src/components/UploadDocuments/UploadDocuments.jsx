@@ -4,7 +4,7 @@ import "./uploadDocuments.css"
 import { IoArrowUpCircle } from "react-icons/io5";
 import {v4 as uuidv4} from 'uuid';
 
-const Local = localStorage.getItem("adm-suachave");
+const Local = localStorage.getItem("adm-suachaveauto");
 const user = JSON.parse(Local);
 // Get production API keys from Upload.io
 
@@ -35,7 +35,7 @@ export const MyButtonDocument = ({uploadFiles2}) => {
             }
           },
           path: {   // Each supports path variables (e.g. {ORIGINAL_FILE_EXT}). See your
-           folderPath: `/uploads/suachave/documents/${user.id}/Documents | ${new Date().getDate()}-${new Date().getMonth()+1}-${new Date().getFullYear()} | ${new Date().getHours()}:${new Date().getMinutes()}`     // API key's config in the Upload Dashboard for all path variables.
+           folderPath: `/uploads/suachaveauto/documents/${user.id}/Documents | ${new Date().getDate()}-${new Date().getMonth()+1}-${new Date().getFullYear()} | ${new Date().getHours()}:${new Date().getMinutes()}`     // API key's config in the Upload Dashboard for all path variables.
           },
      }
 

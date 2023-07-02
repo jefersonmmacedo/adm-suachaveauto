@@ -8,8 +8,8 @@ import ReactTooltip from 'react-tooltip';
 import api from "../../services/api";
 import { useEffect } from "react";
 
-export function DeleteProposal({id, idProperty, nameClient, cpfCnpjClient}) {
-    const Local = localStorage.getItem("adm-suachave");
+export function DeleteProposal({id, idAuto, nameClient, cpfCnpjClient}) {
+    const Local = localStorage.getItem("adm-suachaveauto");
     const user = JSON.parse(Local);
 
     const { deleteProposalCompany } = useContext(AuthContext)
@@ -37,7 +37,7 @@ export function DeleteProposal({id, idProperty, nameClient, cpfCnpjClient}) {
         useEffect(() => {
           async function propertyInfoLoaded() {
 
-            await api.get(`/property/${idProperty}`).then((res) => {
+            await api.get(`/property/${idAuto}`).then((res) => {
                 setTitle(res.data[0]?.title)
                 setType(res.data[0]?.type)
                 setSubType(res.data[0]?.subType)

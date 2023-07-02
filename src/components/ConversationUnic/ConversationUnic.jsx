@@ -5,7 +5,7 @@ import { DateFormat2 } from "../../components/DateFormat2/DateFormat2";
 import { MessageUnicConversation } from "../MessageUnicConversation/MessageUnicConversation";
 import { MessagesCounter } from "../ButtonsCounter/MessagesCounter/MessagesCounter";
 
-export function ConversationUnic({idProperty, idClient, idCompany, room,roomLink}) {
+export function ConversationUnic({idAuto, idClient, idCompany, room,roomLink}) {
     const [client, setClient] = useState([])
     const [messages, setMessages] = useState([])
 
@@ -33,7 +33,7 @@ export function ConversationUnic({idProperty, idClient, idCompany, room,roomLink
     },[])
     const profile = "https://firebasestorage.googleapis.com/v0/b/foursome4-b925c.appspot.com/o/avatar.png?alt=media&token=f3b1f0bc-3885-4296-8363-ec1c3d43e240"
     return (
-        <a className={"direction"} href={`/chat/${room}/${idProperty}/${idCompany}/${idClient}`}>
+        <a className={"direction"} href={`/chat/${room}/${idAuto}/${idCompany}/${idClient}`}>
             <div className={roomLink === room ? "select": "conversationUnic"}>
             <div className="imageUnic">
             <img src={client?.avatar} alt="" />

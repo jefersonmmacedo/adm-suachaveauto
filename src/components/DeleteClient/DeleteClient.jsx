@@ -7,7 +7,7 @@ import { AuthContext } from "../../contexts/Auth";
 import ReactTooltip from 'react-tooltip';
 
 export function DeleteClient({id, name, fantasyName, cpfCnpj, address, typeClient}) {
-    const Local = localStorage.getItem("adm-suachave");
+    const Local = localStorage.getItem("adm-suachaveauto");
     const user = JSON.parse(Local);
 
     const {deleteClientCompany } = useContext(AuthContext)

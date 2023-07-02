@@ -6,7 +6,7 @@ import { useContext } from "react";
 import { AuthContext } from "../../../contexts/Auth";
 
 export function TestingPeriodInitial() {
-    const Local = localStorage.getItem("adm-suachave");
+    const Local = localStorage.getItem("adm-suachaveauto");
     const user = JSON.parse(Local);
 
     

@@ -8,7 +8,7 @@ import { useEffect } from "react";
 import { MessagesCounter } from "../ButtonsCounter/MessagesCounter/MessagesCounter";
 
 export function ConversationsList({roomLink}) {
-    const Local = localStorage.getItem("adm-suachave");
+    const Local = localStorage.getItem("adm-suachaveauto");
     const user = JSON.parse(Local);
 
     const [dateMessage, setDateMessage] = useState([])
@@ -41,7 +41,7 @@ export function ConversationsList({roomLink}) {
                         room: chatLists.room,
                         idCompany: chatLists.idCompany,
                         idClient: chatLists.idClient,
-                        idProperty: chatLists.idProperty,
+                        idAuto: chatLists.idAuto,
                         imageProperty: chatLists.imageProperty,
                         created_at: chatLists.created_at
                     } 
@@ -84,7 +84,7 @@ if(dateMessage) {
             {dateMessage?.map((chat) => {
                 return (
                         <>
-                        <ConversationUnic idProperty={chat.idProperty} idClient={chat.idClient} idCompany={chat.idCompany} roomLink={roomLink} room={chat.room} key={chat.id}/>
+                        <ConversationUnic idAuto={chat.idAuto} idClient={chat.idClient} idCompany={chat.idCompany} roomLink={roomLink} room={chat.room} key={chat.id}/>
                         </>
                 )
             })}

@@ -6,7 +6,7 @@ import { useContext } from "react";
 import { AuthContext } from "../../../contexts/Auth";
 
 export function TestingPeriodFinal() {
-    const Local = localStorage.getItem("adm-suachave");
+    const Local = localStorage.getItem("adm-suachaveauto");
     const user = JSON.parse(Local);
 
     const { logout } = useContext(AuthContext);
@@ -24,7 +24,7 @@ export function TestingPeriodFinal() {
             </div>
             
             <h2>Olá, {user.fantasyName}</h2>
-            <h4>Seu período de testes terminou.</h4>
+            <h4>Você ainda não escolheu seu plano. Vamos fazer isso agora?</h4>
 
             <img src={cancel} alt="Carinha triste" />
 

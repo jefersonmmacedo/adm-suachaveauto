@@ -6,7 +6,7 @@ import { useEffect, useState } from "react";
 import api from "../../services/api";
 
 export function Partners() {
-    const Local = localStorage.getItem("adm-suachave");
+    const Local = localStorage.getItem("adm-suachaveauto");
     const user = JSON.parse(Local);
 
     const [plain, setPlain] = useState();

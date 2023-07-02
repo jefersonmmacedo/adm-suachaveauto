@@ -16,17 +16,17 @@ import { IoArrowBackOutline, IoAttachOutline, IoBusinessOutline, IoChatboxOutlin
 import { ConversationUnic } from '../../components/ConversationUnic/ConversationUnic';
 import { ConversationsList } from '../../components/ConversationsList/ConversationsList';
 import { UserTopBarChat } from '../../components/UserTopBarChat/UserTopBarChat';
-import { PropertyTopBarChat } from '../../components/PropertyTopBarChat/PropertyTopBarChat';
-import { ViewPropertyChat } from '../../components/ViewPropertyChat/ViewPropertyChat';
+import { AutoTopBarChat } from '../../components/AutoTopBarChat/AutoTopBarChat';
+import { ViewAutoChat } from '../../components/ViewAutoChat/ViewAutoChat';
 import { ViewClientChat } from '../../components/ViewClientChat/ViewClientChat';
 import { DeletemessageChat } from '../../components/DeletemessageChat/DeletemessageChat';
 import { useEffect } from 'react';
 
    
 export function ChatMessage() {
-    const Local = localStorage.getItem("adm-suachave");
+    const Local = localStorage.getItem("adm-suachaveauto");
     const user = JSON.parse(Local);
-  const {room,idProperty, idCompany, idClient} = useParams();
+  const {room,idAuto, idCompany, idClient} = useParams();
   const messageRef = useRef(null);
 
 //   const { deleteConversation} = useContext(AuthContext);
@@ -278,11 +278,11 @@ const profile = "https://firebasestorage.googleapis.com/v0/b/foursome4-b925c.app
                 </a>
 
                <UserTopBarChat idClient={idClient}/>
-               <PropertyTopBarChat idProperty={idProperty}/>
+               <AutoTopBarChat idAuto={idAuto}/>
 
                 <div className="LinksMobile">
                 <div className="buttonLinksMobile">
-                <ViewPropertyChat id={idProperty} />
+                <ViewAutoChat id={idAuto} />
                 </div>
                 <div className="buttonLinksMobile">
                 <ViewClientChat id={idClient} mobile={false}/>

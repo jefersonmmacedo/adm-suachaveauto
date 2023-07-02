@@ -7,7 +7,7 @@ import { DateFormat2 } from "../../components/DateFormat2/DateFormat2";
 import { MiniMenu } from "../../components/MiniMenu/MiniMenu";
 
 export function AccessAdm() {
-    const Local = localStorage.getItem("adm-suachave");
+    const Local = localStorage.getItem("adm-suachaveauto");
     const user = JSON.parse(Local);
 
     const {data} = useFetch(`/acess/company/${user.id}`)

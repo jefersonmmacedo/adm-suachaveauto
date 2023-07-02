@@ -12,7 +12,7 @@ import { AuthContext } from "../../contexts/Auth";
 import {toast} from 'react-toastify';
 
 export function NewNegotiations({idProperty}) {
-    const Local = localStorage.getItem("adm-suachave");
+    const Local = localStorage.getItem("adm-suachaveauto");
     const user = JSON.parse(Local);
 
     const [isOpenModalProcess, setIsOpenModaProcess] = useState(false);

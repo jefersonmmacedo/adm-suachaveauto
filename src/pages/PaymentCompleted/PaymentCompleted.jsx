@@ -9,10 +9,11 @@ import { DateFormat } from "../../components/DateFormat/DateFormat";
 import Confirmed from "../../assets/images/svg/confirmed2.svg"
 
 export function PaymentCompleted() {
-  const Local = localStorage.getItem("adm-suachave");
+  const Local = localStorage.getItem("adm-suachaveauto");
   const user = JSON.parse(Local);
 
   const [myPayment, setMyPayment] = useState();
+  const [myPlain, setMyPlain] = useState();
 
   useEffect(() => {
     async function loadPayments() {
@@ -25,12 +26,30 @@ export function PaymentCompleted() {
     loadPayments()
 
 
+  }, []);
+
+  useEffect(() => {
+    async function loadPlains() {
+      await api.get(`/myPlain/${user.id}`).then((res) => {
+        setMyPlain(res.data[0]);
+        console.log(res.data[0]);
+      })
+    }
+
+    loadPlains()
+
+
   }, [])
 
   function hadleDirection(e) {
     e.preventDefault();
 
     window.open("/meus-planos", "_self");
+  }
+  function hadleDirectionDashboard(e) {
+    e.preventDefault();
+
+    window.open("/home", "_self");
   }
 
   const idFormat = myPayment?.id.substring(0, 13);
@@ -39,6 +58,28 @@ export function PaymentCompleted() {
             <Navbar2 />
             
             <div className="Payment">
+              {myPlain?.namePlain === "Free" ?
+                          <div className="PlainSelected">
+                          <h3><IoCheckmarkCircle />Plano criado com sucesso</h3>
+                        <div className="pricePlain">
+                          <h5>Data:</h5>
+                          <h4><DateFormat date={myPlain?.created_at}/></h4>
+                      </div>
+                        <div className="pricePlain">
+                          <h5>Total</h5>
+                          <h4>{myPlain?.value}</h4>
+                      </div>
+                      <div className="pricePlain">
+                          <h5>Tipo de pagamento</h5>
+                          <h4>Plano/Mensal</h4>
+                      </div>
+                        <div className="pricePlain">
+                          <h5>Forma de pagamento:</h5>
+                          <h4>Plano {myPlain?.namePlain}</h4>
+                      </div>
+      
+                  </div>
+            :
             <div className="PlainSelected">
                     <h3><IoCheckmarkCircle />Pagamento Finalizado</h3>
                   <div className="pricePlain">
@@ -63,8 +104,20 @@ export function PaymentCompleted() {
                 </div>
 
             </div>
+            }
 
-            <div className="PaymentPlayn">
+            {myPlain?.namePlain === "Free" ? 
+              <div className="PaymentPlayn">
+                <img src={Confirmed} alt="Imagem de confirmação de pagamento e criação de conta" />
+                  <h3>Seja bem-vindo!</h3>
+                  <h5>Estamos muito felizes que você faça parte de nosso time. <br />
+                  Estamos trabalhando duro para trazer melhorias e facilitar o contato das imobiliárias com mais clientes a cada dia.</h5>
+                  <br />
+           
+                  <button onClick={hadleDirectionDashboard}>Ir para o meu painel</button>
+               </div>
+            :
+             <div className="PaymentPlayn">
               <img src={Confirmed} alt="Imagem de confirmação de pagamento e criação de conta" />
                 <h3>Obrigado por sua compra</h3>
                 <h5>Estamos muito felizes que você faça parte de nosso time. <br />
@@ -75,6 +128,7 @@ export function PaymentCompleted() {
 
                 <button onClick={hadleDirection}>Ir para o meu painel</button>
             </div>
+            }
             </div>
         </div>
     )

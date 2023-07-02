@@ -7,7 +7,7 @@ import { useParams } from "react-router-dom";
 
 export function PrintInfosFinancer() {
     const {type} = useParams()
-    const Local = localStorage.getItem("suachave-dados");
+    const Local = localStorage.getItem("suachaveauto-dados");
     const dados = JSON.parse(Local);
 
 

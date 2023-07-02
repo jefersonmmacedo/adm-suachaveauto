@@ -14,20 +14,20 @@ import api from "../../services/api";
 import { useParams } from "react-router-dom";
 import { NewClient } from "../../components/NewClient/NewClient";
 import { NewGuarantor } from "../../components/NewGuarantor/NewGuarantor";
-import { SelectProperty } from "../../components/SelectProperty/SelectProperty";
+import { SelectAuto } from "../../components/SelectAuto/SelectAuto";
 import { SelectClient } from "../../components/SelectClient/SelectClient";
 import { SelectGuarantor } from "../../components/SelectGuarantor/SelectGuarantor";
 
 export function EditContract() {
     const {id} = useParams();
-    const Local = localStorage.getItem("adm-suachave");
+    const Local = localStorage.getItem("adm-suachaveauto");
     const user = JSON.parse(Local);
 
     const {EditContract, newFeature} = useContext(AuthContext);
     
 
     const [status, setStatus] = useState("Ativo");
-    const [idProperty, setIdProperty] = useState("");
+    const [idAuto, setIdAuto] = useState("");
     const [title, setTitle] = useState("");
     const [type, setType] = useState("");
     const [subType, setSubType] = useState("");
@@ -73,7 +73,7 @@ export function EditContract() {
         async function loadContract() {
             await api.get(`/contracts/${id}`).then((res) => {
                 console.log(res.data);
-                setIdProperty(res.data[0]?.idProperty)
+                setIdAuto(res.data[0]?.idAuto)
                 setTitle(res.data[0]?.title)
                 setIdLocator(res.data[0]?.idLocator)
                 setValueContract(res.data[0]?.priceRent)
@@ -118,9 +118,9 @@ export function EditContract() {
     },[])
 
 
-    async function propertyInfoLoaded(data) {
-        await api.get(`/property/${data}`).then((res) => {
-            setIdProperty(data)
+    async function AutoInfoLoaded(data) {
+        await api.get(`/autos/${data}`).then((res) => {
+            setIdAuto(data)
             setTitle(res.data[0]?.title)
             setIdLocator(res.data[0]?.idLocator)
             setValueContract(res.data[0]?.priceRent)
@@ -205,7 +205,7 @@ function handleReadjustmentIndex(e) {
 
     function handleEditContract() {
         EditContract({
-            id, idProperty,title, idCompany: user.id, idLocator, nameLocator, cpfCnpjLocator, idClient, nameClient, cpfCnpjClient, idGuarantor,
+            id, idAuto,title, idCompany: user.id, idLocator, nameLocator, cpfCnpjLocator, idClient, nameClient, cpfCnpjClient, idGuarantor,
             nameGuarantor, cpfCnpjGuarantor, type, subType, assurance, securityDeposit, typeNegotiation: "Alguel de Imóvel", newContract, status,
             startContract, endContract, parcels, maturityContract, valueContract, condominium, iptu, otherPrices, adjustment,
             readjustedRentDate, transfer, transferAmount, proportionalRent, firstProportionalInstallment, fireInsurance, valueFireInsurance,
@@ -252,7 +252,7 @@ function handleReadjustmentIndex(e) {
                 <div className="textHome">
                       <h4>Imóvel / Proprietário</h4>
                       <div className="newInfo">
-                    <SelectProperty propertyInfoLoaded={propertyInfoLoaded}/>
+                    <SelectAuto AutoInfoLoaded={AutoInfoLoaded}/>
                     </div>
                 </div>
                 <div className="data">

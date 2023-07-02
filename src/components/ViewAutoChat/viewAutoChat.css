@@ -1,0 +1,351 @@
+﻿.ViewAutoChat .btnAuto {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:flex-end;
+    border: none;
+    background-color: var(--Primary);
+    color: var(--White);
+    padding: 5px;
+}
+.ViewAutoChat .btnAuto2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:flex-end;
+    border: none;
+    background-color: var(--Primary);
+    color: var(--White);
+    padding: 0px;
+    font-size: 12px;
+    margin-left: 0px;
+}
+.ViewAutoChat .btnAuto3 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:flex-end;
+    border: none;
+    background-color: var(--BorderInput2);
+    color: var(--Paragraph);
+    padding: 6px 10px;
+    font-size: 12px;
+    margin-left: 0px;
+}
+
+.ViewAutoChat .btnAuto2 svg {
+    font-size: 11px;
+}
+.ViewAutoChat .btnAuto3 svg {
+    font-size: 12px;
+}
+
+
+.ViewAutoChat .searchItensFilter {
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    flex-flow: column nowrap;
+    background: var(--BorderHover);
+    border-left: 1px solid var(--Border);
+    backdrop-filter: blur(4px);
+    position: fixed;
+    transform: translateX(0);
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 650px;
+    transition: transform 0.3s ease-in-out;
+    z-index: 99;
+    box-shadow: 1px 1px 20px 0px rgba(0,0,0,0.3);
+    -webkit-box-shadow: 1px 1px 20px 0px rgba(0,0,0,0.3);
+    -moz-box-shadow: 1px 1px 20px 0px rgba(0,0,0,0.3);
+}
+.ViewAutoChat .searchItensFilterNone {
+    transform: translateX(100%);
+    flex-flow: column nowrap;
+    background: var(--White);
+    border-left: 1px solid var(--Border);
+    backdrop-filter: blur(4px);
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 500px;
+    transition: transform 0.3s ease-in-out;
+    z-index: 99;
+}
+.ViewAutoChat .searchItensFilter .buttonsFilter {
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.ViewAutoChat .searchItensFilter .buttonsFilter .btnFilter {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 7px 15px;
+    Background-color: var(--White);
+    color: var(--Paragraph);
+    font-weight: 500;
+    border: 1px solid var(--Gray);
+    border-radius: 6px;
+    font-size: 12px;
+}
+
+.ViewAutoChat .searchItensFilter .searchOptionsFilter {
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+.ViewAutoChat .searchItensFilterNone .searchOptionsFilter {
+    width: 95%;
+    display: none;
+}
+
+.ViewAutoChat .searchItensFilterNone .buttons {
+    width: 95%;
+    display: none;
+}
+
+.ViewAutoChat .searchItensFilter .searchOptionsFilter button svg {
+    margin-right: 0px;
+}
+
+
+.ViewAutoChat .searchItensFilter .searchOptionsFilter .form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    color:var(--Paragraph);
+}
+
+.ViewAutoChat .searchItensFilter .searchOptionsFilter .form .imageClient {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border: 2px solid var(--Border);
+    border-radius: 6px;
+}
+
+.ViewAutoChat .searchItensFilter .searchOptionsFilter .form .imageClient img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border: 2px solid var(--Border);
+    border-radius: 6px;
+}
+
+.ViewAutoChat .searchItensFilter .searchOptionsFilter .form h3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    font-weight: 900;
+    color: var(--Primary);
+    margin: 5px 0;
+}
+
+.ViewAutoChat .searchItensFilter .searchOptionsFilter .form h5 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    font-weight: 600;
+    margin: 1px 0;
+}
+.ViewAutoChat .searchItensFilter .searchOptionsFilter .form h6 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    font-weight: 700;
+    color: var(--Gray);
+    margin: 10px 0 5px 0;
+    font-size: 14px;
+}
+
+.ViewAutoChat .searchItensFilter .searchOptionsFilter .form svg {
+    margin-right: 2px;
+}
+
+.ViewAutoChat .searchItensFilter .searchOptionsFilter .form .buttonsContact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    width: 100%;
+    margin: 10px;
+}
+
+.ViewAutoChat .searchItensFilter .searchOptionsFilter .form .buttonsContact button {
+    border-radius: 6px;
+    background-color: var(--Primary);
+    color: var(--White);
+    border: none;
+    width: 100%;
+    padding: 10px 20px;
+}
+
+.ViewAutoChat .searchItensFilter .searchOptionsFilter .form .iconsBox {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0px; 
+    flex-wrap: wrap;
+}
+
+.ViewAutoChat .searchItensFilter .searchOptionsFilter .form .iconsBox .iconUnicBox {
+    width: 78px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: center;
+    padding: 0px 5px;
+    margin: 0px 5px;
+    color: var(--Gray);
+}
+.ViewAutoChat .searchItensFilter .searchOptionsFilter .form .iconsBox .iconUnicBox svg {
+    font-size: 16px;
+    margin-right: 10px;
+    color: var(--Primary);
+}
+
+.ViewAutoChat .searchItensFilter .searchOptionsFilter .form .iconsBox .iconUnicBox .simbolBox {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+    margin-top: 3px;
+}
+.ViewAutoChat .searchItensFilter .searchOptionsFilter .form .iconsBox .iconUnicBox .simbolBox  p {
+    color: var(--Gray);
+    font-weight: 600;
+    font-size: 12px;
+}
+
+
+.ViewAutoChat .searchItensFilter .searchOptionsFilter .form .infosCompany {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    border-radius: 6px;
+    border: 1px solid var(--Border);
+    margin: 20px ;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.ViewAutoChat .searchItensFilter .searchOptionsFilter .form .infosCompany .pricing {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    text-align: flex-start;
+    margin-bottom: 5px;
+}
+
+.ViewAutoChat .searchItensFilter .searchOptionsFilter .form .infosCompany .pricing h5 {
+    color: var(--Gray);
+    font-weight: 800;
+    margin: 5px 10px;
+}
+.ViewAutoChat .searchItensFilter .searchOptionsFilter .form .infosCompany .pricing h5 span {
+    font-weight: 500;
+}
+.ViewAutoChat .searchItensFilter .searchOptionsFilter .form .infosCompany .pricing h2 {
+    color: var(--Paragraph);
+    font-weight: 400;
+    margin: 0 10px;
+}
+.ViewAutoChat .searchItensFilter .searchOptionsFilter .form .infosCompany .pricing h2 span {
+    color: var(--Paragraph);
+    font-weight: 800;
+}
+
+.ViewAutoChat .searchItensFilter .searchOptionsFilter .form .infosCompany .otherPrincings {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: row;
+    border-bottom: 1px solid var(--Border);
+    padding: 5px 0;
+}
+
+.ViewAutoChat .searchItensFilter .searchOptionsFilter .form .infosCompany .otherPrincings h5 {
+    color: var(--Gray);
+    font-weight: 700;
+    margin: 5px 10px;
+}
+
+.ViewAutoChat .searchItensFilter .searchOptionsFilter .form .infosCompany .pricingTotal {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 5px 0;
+}
+
+.ViewAutoChat .searchItensFilter .searchOptionsFilter .form .infosCompany .pricingTotal h4 {
+    color: var(--Paragraph);
+    font-weight: 800;
+    margin: 5px 10px;
+    margin-bottom: 20px;
+}
+
+@media(max-width:600px) {
+
+    
+    .ViewAutoChat .searchItensFilter {
+        width: 100%;
+        padding: 20px;
+    }
+
+
+    .ViewAutoChat .searchItensFilter .searchOptionsFilter .form {
+        width: 100%
+    }
+
+   
+    @media(max-width: 450px) { 
+.ViewAutoChat .searchItensFilter .searchOptionsFilter {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .ViewAutoChat .searchItensFilter .searchOptionsFilter .form .infosCompany {
+            width: 100%;
+        }
+        
+
+    }
+
+}

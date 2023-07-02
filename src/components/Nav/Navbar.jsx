@@ -189,10 +189,10 @@ const Nav = styled.nav`
 
 
 const NavbarAdm = () => {
-  const Local = localStorage.getItem("adm-suachave");
+  const Local = localStorage.getItem("adm-suachaveauto");
   const user = JSON.parse(Local);
 
-  const LocalClient = localStorage.getItem("suachave");
+  const LocalClient = localStorage.getItem("suachaveauto");
   const userClient = JSON.parse(LocalClient);
 
 

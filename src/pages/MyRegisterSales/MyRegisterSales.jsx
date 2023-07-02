@@ -14,7 +14,7 @@ import { ViewContract } from "../../components/ViewContract/ViewContract";
 import { DeleteRegisterSale } from "../../components/DeleteRegisterSale/DeleteRegisterSale";
 
 export function MyRegisterSales() {
-    const Local = localStorage.getItem("adm-suachave");
+    const Local = localStorage.getItem("adm-suachaveauto");
     const user = JSON.parse(Local);
 
     const {data} = useFetch(`/negotiations/company/${user.id}`);
@@ -66,7 +66,7 @@ export function MyRegisterSales() {
                                 </div>
                                 <div className="dataContractsUnic">
                                     <h6>ID Imóvel</h6>
-                                    <h5>{register.idProperty}</h5>
+                                    <h5>{register.idAuto}</h5>
                                 </div>
                                 <div className="dataContractsUnic">
                                     <h6>Cliente</h6>
@@ -99,7 +99,7 @@ export function MyRegisterSales() {
                         </ReactTooltip>
 
     
-                        <DeleteRegisterSale id={register.id} idProperty={`${register.idProperty} `} nameClient={register.nameClient} cpfCnpjClient={register.cpfCnpjClient} />
+                        <DeleteRegisterSale id={register.id} idAuto={`${register.idAuto} `} nameClient={register.nameClient} cpfCnpjClient={register.cpfCnpjClient} />
     
 
     

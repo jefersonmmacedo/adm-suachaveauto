@@ -14,12 +14,12 @@ import api from "../../services/api";
 import { useParams } from "react-router-dom";
 import { NewClient } from "../../components/NewClient/NewClient";
 import { NewGuarantor } from "../../components/NewGuarantor/NewGuarantor";
-import { SelectProperty } from "../../components/SelectProperty/SelectProperty";
+import { SelectAuto } from "../../components/SelectAuto/SelectAuto";
 import { SelectClient } from "../../components/SelectClient/SelectClient";
 import { SelectGuarantor } from "../../components/SelectGuarantor/SelectGuarantor";
 
 export function NewContract() {
-    const Local = localStorage.getItem("adm-suachave");
+    const Local = localStorage.getItem("adm-suachaveauto");
     const user = JSON.parse(Local);
 
     const {newContract, newFeature} = useContext(AuthContext);
@@ -71,10 +71,10 @@ export function NewContract() {
     const readjustedRentDate = new Date(date2.setFullYear(date2.getFullYear() + 1))
 
 
-    async function propertyInfoLoaded(data) {
+    async function AutoInfoLoaded(data) {
         console.log(data);
        
-        await api.get(`/property/${data}`).then((res) => {
+        await api.get(`/autos/${data}`).then((res) => {
             console.log(data)
             setId(data)
             setTitle(res.data[0]?.title)
@@ -168,7 +168,7 @@ function handleReadjustmentIndex(e) {
 
     function handleNewContract() {
         newContract({
-            idProperty: id,title, idCompany: user.id, idLocator, nameLocator, cpfCnpjLocator, idClient, nameClient, emailClient, phoneClient, whatsappClient, cpfCnpjClient, idGuarantor,
+            idAuto: id,title, idCompany: user.id, idLocator, nameLocator, cpfCnpjLocator, idClient, nameClient, emailClient, phoneClient, whatsappClient, cpfCnpjClient, idGuarantor,
             nameGuarantor, cpfCnpjGuarantor, type, subType, assurance, securityDeposit, typeNegotiation: "Alguel de Imóvel", newContract: contractNew, status,
             startContract, endContract, parcels, maturityContract, valueContract, condominium, iptu, otherPrices, adjustment,
             readjustedRentDate, transfer, transferAmount, proportionalRent, firstProportionalInstallment, fireInsurance, valueFireInsurance,
@@ -217,7 +217,7 @@ function handleReadjustmentIndex(e) {
                 <div className="textHome">
                       <h4>Imóvel / Proprietário</h4>
                       <div className="newInfo">
-                    <SelectProperty propertyInfoLoaded={propertyInfoLoaded}/>
+                    <SelectAuto AutoInfoLoaded={AutoInfoLoaded}/>
                     </div>
                 </div>
                 <div className="data">

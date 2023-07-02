@@ -11,7 +11,7 @@ import 'react-slideshow-image/dist/styles.css';
 import ReactTooltip from 'react-tooltip';
 
 export function NewScheduling({idEvaluation, image, title, email, phone, whatsapp, name, address}) {
-  const Local = localStorage.getItem("adm-suachave");
+  const Local = localStorage.getItem("adm-suachaveauto");
   const user = JSON.parse(Local);
 
     const [view, setView] = useState("")
@@ -30,11 +30,11 @@ export function NewScheduling({idEvaluation, image, title, email, phone, whatsap
     const [shift, setShift] = useState();
     const [hour, setHour] = useState();
     const [ownACar, setOwnACar] = useState();
-    const [similarProperties, setSimilarProperties] = useState();
+    const [similarAutos, setSimilarAutos] = useState();
     const [amountOfPeople, setAmountOfPeople] = useState();
     const [meet, setMeet] = useState();
 
-    const [property, setProperty] = useState();
+    const [auto, setAuto] = useState();
     const [company, setCompany] = useState();
   
     const [nameNew, setNameNew] = useState("");
@@ -431,13 +431,13 @@ export function NewScheduling({idEvaluation, image, title, email, phone, whatsap
     function handleNewScheduling() {
         const status = "Aprovado"
         newScheduling({
-          idEvaluation, idCompany: user.id,  titleProperty: title, imageProperty: image, email: email, phone: phone,
+          idEvaluation, idCompany: user.id,  titleAuto: title, imageAuto: image, email: email, phone: phone,
             whatsapp: whatsapp, status, meet,
             day: new Date(dateSelected).getDate(), month: new Date(dateSelected).getMonth()+1, year: new Date(dateSelected).getFullYear(),
             shift, hour, ownACar, location: meet === "Imobiliária" ? user.fantasyName : "No local do imóvel",
             address: meet === "Imobiliária" ? `${user.road} - Nº ${user.number} - ${user.district} - ${user.city} - ${user.uf}` : address,
             amountOfPeople, nameClient: name,
-            similarProperties, dateCompleted: new Date(dateSelected), type: "Avaliação de imóvel"
+            similarAutos, dateCompleted: new Date(dateSelected), type: "Avaliação de imóvel"
         })
 
     }

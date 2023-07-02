@@ -15,7 +15,7 @@ import { DeleteContract } from "../../components/DeleteContract/DeleteContract";
 import { PaymentRent } from "../../components/PaymentRent/PaymentRent";
 
 export function MyContracts() {
-    const Local = localStorage.getItem("adm-suachave");
+    const Local = localStorage.getItem("adm-suachaveauto");
     const user = JSON.parse(Local);
 
     const {data} = useFetch(`/contracts/company/${user.id}`);
@@ -70,7 +70,7 @@ export function MyContracts() {
                                 </div>
                                 <div className="dataContractsUnic">
                                     <h6>ID Imóvel</h6>
-                                    <h5>{contract.idProperty}</h5>
+                                    <h5>{contract.idAuto}</h5>
                                 </div>
                                 <div className="dataContractsUnic">
                                     <h6>Cliente</h6>
@@ -110,7 +110,7 @@ export function MyContracts() {
                         </ReactTooltip>
 
     
-                        <DeleteContract id={contract.id} idProperty={`${contract.idProperty} `} nameClient={contract.nameClient} cpfCnpjClient={contract.cpfCnpjClient} />
+                        <DeleteContract id={contract.id} idAuto={`${contract.idAuto} `} nameClient={contract.nameClient} cpfCnpjClient={contract.cpfCnpjClient} />
                        
     
 

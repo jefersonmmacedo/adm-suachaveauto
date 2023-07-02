@@ -18,7 +18,7 @@ import { DeleteLocator } from "../../components/DeleteLocator/DeleteLocator";
 
 export function LocadorAdm() {
 
-    const Local = localStorage.getItem("adm-suachave");
+    const Local = localStorage.getItem("adm-suachaveauto");
     const user = JSON.parse(Local);
 
     const [city, setCity] = useState("");

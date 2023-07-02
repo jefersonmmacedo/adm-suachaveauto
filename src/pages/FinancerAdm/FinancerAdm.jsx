@@ -11,7 +11,7 @@ import { FilterData } from "../../components/FilterData/FilterData";
 import { useFetch } from "../../hooks/useFetch";
 
 export function FinancerAdm() {
-    const Local = localStorage.getItem("adm-suachave");
+    const Local = localStorage.getItem("adm-suachaveauto");
     const user = JSON.parse(Local);
     const [verify, setVerify] = useState(false);
     const [newPeriod, setNewPeriod] = useState("");
@@ -108,7 +108,7 @@ export function FinancerAdm() {
 
       function handlePrint(e) {
         e.preventDefault();
-        localStorage.setItem("suachave-dados", JSON.stringify(listFinancer));
+        localStorage.setItem("suachaveauto-dados", JSON.stringify(listFinancer));
         window.open(`/imprimir/financeiro`)
       }
 

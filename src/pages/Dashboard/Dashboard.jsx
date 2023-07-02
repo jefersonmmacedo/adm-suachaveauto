@@ -2,18 +2,8 @@
 import NavbarAdm from "../../components/Nav/Navbar"
 import { ToolBar } from "../../components/ToolBar/ToolBar"
 import "./dashboard.css";
-import {IoHomeOutline, IoCalendarOutline, IoLogoWhatsapp, IoCallOutline,IoAlertCircle,
-    IoHeartOutline, IoKeyOutline, IoRocketOutline, IoSearchOutline} from 'react-icons/io5'
 import { PropertiesCount } from "../../components/ItensDashboard/PropertiesCount";
-import { PropertiesCountSale } from "../../components/ItensDashboard/PropertiesCountSale";
-import { PropertiesCountRent } from "../../components/ItensDashboard/PropertiesCountRent";
-import { EvaluationCount } from "../../components/ItensDashboard/EvaluationCount";
-import { SchedulingCount } from "../../components/ItensDashboard/SchedulingCount";
-import { ContactWhatsappCount } from "../../components/ItensDashboard/ContactWhatsappCount";
-import { ContactPhoneCount } from "../../components/ItensDashboard/ContactPhoneCount";
-import { FavoriteCount } from "../../components/ItensDashboard/FavoriteCount";
 import { useEffect, useState } from "react";
-import api from "../../services/api";
 import { PropertiesCountAvailability } from "../../components/ItensDashboard/PropertiesCountAvailability";
 import { ContactLeadCount } from "../../components/ItensDashboard/ContactLeadCount";
 import { SchedulingAllCompleted } from "../../components/ItensDashboard/SchedulingAllCompleted";
@@ -24,11 +14,12 @@ import { Commissions } from "../../components/ItensDashboard/Commissions";
 import { SalesProperties } from "../../components/ItensDashboard/SalesProperties";
 import { RentProperties } from "../../components/ItensDashboard/RentProperties";
 import { TotalRevenue } from "../../components/ItensDashboard/TotalRevenue";
+import api from "../../services/api";
 
 
 export function Dashboard() {
 
-    const Local = localStorage.getItem("adm-suachave");
+    const Local = localStorage.getItem("adm-suachaveauto");
     const user = JSON.parse(Local);
 
     const [myPayments, setMyPayments] = useState([])
@@ -48,8 +39,21 @@ export function Dashboard() {
 
             //Dados de plano
             const plains =  await api.get(`/myplain/${user.id}`)
-            console.log(plains.data)
-            setMyPlain(plains.data)
+            console.log(plains.data);
+            
+            if(plains.data.length === 0) {
+                window.open("/escolher-plano", "_self");
+                return;
+            }
+
+            setMyPlain(plains.data[0].namePlain)
+
+            if(plains.data[0].namePlain === "Free") {
+                console.log("Free Plano");
+                return
+            } else {
+                console.log(plains.data);
+            }
             //Dados de pagamentos
             const payment =  await api.get(`/payments/${user.id}`)
             console.log(payment.data)
@@ -63,18 +67,20 @@ export function Dashboard() {
             const paymentdiffInDays = parseInt(paymentdiffInMs / (1000 * 60 * 60 * 24));
             setDaysPayments(paymentdiffInDays)
 
-            if(diffInDays < 8) {
-                return;
-            }
-            if(payment.data.length > 0) {
-                return;
-            }
-            if(payment.data.length === 0) {
-                window.open("/fim-periodo-teste", "_self");
-                return;
-            }
+           
 
-            if(payment.data[0]?.status === "Pendente" && paymentdiffInDays >= 6) {
+            if(diffInDays < 8 ) {
+                return;
+            }
+            // if(payment.data.length > 0) {
+            //     return;
+            // }
+            // if(payment.data.length === 0) {
+            //    window.open("/fim-periodo-teste", "_self");
+            //     return;
+            // }
+
+            if(payment.data[0]?.status === "Pendente" && paymentdiffInDays >= 6 ) {
                 window.open("/pagamento-pendente", "_self");
                 return;
             }
@@ -82,6 +88,8 @@ export function Dashboard() {
 
         verifyPaymentStatus()
     },[])
+
+
 
 
 
@@ -95,14 +103,27 @@ export function Dashboard() {
                 <h5>Última atualização: 02/05/2023. <a href="/atualizacoes">Veja as atualizações</a></h5>
                 </div>
 
+
                 {days < 8 && myPlain?.length === 0 ?
             <div className="PlainDashboard2">
                 <h4>Período de testes: Faltam {7 - days} dias para finalizar seu teste. Aproveite da melhor maneira!</h4>
                 {/* <a href="/planos">Renovar agora</a> */}
             </div>
+            : myPlain === "Free" ?
+                ""
+            : new Date(myPayments[0]?.created_at) < new Date() ?
+            <div className="PlainDashboard">
+                <h4>Seu plano: {myPlain}, venceu no ultimo dia {new Date(myPayments[0]?.created_at).getDate()}. Não se preocupe, você pode pagar até 5 dias após o vencimento. </h4>
+                <a href="/meus-planos">Efetuar pagamento</a>
+            </div>
+            : daysPayments >= 27 ?
+            <div className="PlainDashboard">
+                <h4>Seu plano: {myPlain}, vence no próximo dia {new Date(myPayments[0]?.created_at).getDate()}. Não se preocupe, você pode pagar até 5 dias após o vencimento. </h4>
+                <a href="/meus-planos">Efetuar pagamento</a>
+            </div>
             : myPlain.length > 0 && myPayments[0]?.status === "Pendente" ?
             <div className="PlainDashboard2">
-                <h4>Seu plano: {myPlain[0]?.namePlain}, ainda está com pagamento {myPayments[0]?.status}. (Em caso de pagamento efetuado, desconsidere esta mensagem) </h4>
+                <h4>Seu plano: {myPlain}, ainda está com pagamento {myPayments[0]?.status}. (Em caso de pagamento efetuado, desconsidere esta mensagem) </h4>
                 <a href="/meus-planos">Efetuar pagamento</a>
             </div>
             : ""
@@ -119,16 +140,16 @@ export function Dashboard() {
                         <div className="qtdProperties">
                             <h5>Mais informações</h5>
                             <div className="rent">
-                                <h6><PropertiesCountRent /> Imóveis para aluguel</h6>
+                                <h6>Anuncios disponíveis <PropertiesCountAvailability availability={"Disponível"} /></h6>
                             </div>
                             <div className="sale">
-                                <h6><PropertiesCountSale /> Imóveis à venda</h6>
+                                <h6>Anuncios indisponíveis <PropertiesCountAvailability availability={"Indisponível"} /></h6>
                             </div>
                         </div>
                        </div>
                        <div className="availability">
                         <h6>Disponíveis: <PropertiesCountAvailability availability={"Disponível"} /></h6>
-                        <h6>Alugados: <PropertiesCountAvailability availability={"Alugado"} /></h6>
+                        <h6>Reservados: <PropertiesCountAvailability availability={"Reservado"} /></h6>
                         <h6>Vendidos: <PropertiesCountAvailability availability={"Vendido"} /></h6>
                         <h6>Indisponíveis: <PropertiesCountAvailability availability={"Indisponível"} /></h6>
                        </div>
@@ -220,54 +241,9 @@ export function Dashboard() {
                     </div>
                 </div>
 
-            {/* <div className="informations">
+        
 
-            <div className="dataSheduling">
-                <div className="shedulingInfo">
-                        <IoCalendarOutline />
-                        <h3><SchedulingCount /></h3>
-                    </div>
-                    <h5>Agendamentos de hoje</h5>
-                </div>
- 
-                <div className="infoData">
-                <div className="topInfo">
-                        <IoSearchOutline />
-                        <h3><EvaluationCount /></h3>
-                    </div>
-                    <h5>Imóveis para avaliar</h5>
-                </div>
-
-                <div className="infoData">
-                <div className="topInfo">
-                        <IoLogoWhatsapp />
-                        <h3><ContactWhatsappCount /></h3>
-                    </div>
-                    <h5>Contatos de Whatsapp</h5>
-                </div>
-                <div className="infoData">
-                <div className="topInfo">
-                        <IoCallOutline />
-                        <h3><ContactPhoneCount /></h3>
-                    </div>
-                    <h5>Contatos via ligação</h5>
-                </div>
-                <div className="infoData">
-                <div className="topInfo">
-                        <IoHeartOutline />
-                        <h3><FavoriteCount /></h3>
-                    </div>
-                    <h5>Salvos no favoritos</h5>
-                </div>
-
-            </div> */}
-            {/* <div className="PlainDashboard2">
-                <h4><IoAlertCircle /> Serviço de upload de imagens reestabelecido.</h4>
-                <a href="/planos">Renovar agora</a>
-            </div> */}
-
-
-            <DownloadApp />
+            {/* <DownloadApp /> */}
             </div>
         </div>
     )

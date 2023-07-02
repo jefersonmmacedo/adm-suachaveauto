@@ -11,7 +11,7 @@ import { MiniMenu } from "../../components/MiniMenu/MiniMenu";
 
 export function EquipeAdm() {
 
-    const Local = localStorage.getItem("adm-suachave");
+    const Local = localStorage.getItem("adm-suachaveauto");
     const user = JSON.parse(Local);
 
 

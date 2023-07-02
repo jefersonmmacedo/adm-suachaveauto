@@ -17,7 +17,7 @@ import api from "../../services/api";
 import { HiOutlineClipboardDocumentCheck } from "react-icons/hi2";
 import { FaRegHandshake } from "react-icons/fa";
 export function ToolBar() {
-    const Local = localStorage.getItem("adm-suachave");
+    const Local = localStorage.getItem("adm-suachaveauto");
     const user = JSON.parse(Local);
     
   const [plain, setPlain] = useState();

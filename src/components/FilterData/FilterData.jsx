@@ -9,7 +9,7 @@ import { toNumber } from "vanilla-masker";
 import { MyButtonDocument } from "../UploadDocuments/UploadDocuments";
 
 export function FilterData({id}) {
-    const Local = localStorage.getItem("adm-suachave");
+    const Local = localStorage.getItem("adm-suachaveauto");
     const user = JSON.parse(Local);
 
     const {editFinancer} = useContext(AuthContext);

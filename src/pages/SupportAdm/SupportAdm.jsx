@@ -4,7 +4,7 @@ import {IoCallOutline, IoLogoWhatsapp, IoChatbubbleEllipsesOutline, IoMailOutlin
 import "./supportAdm.css"
 
 export function SupportAdm() {
-    const Local = localStorage.getItem("adm-suachave");
+    const Local = localStorage.getItem("adm-suachaveauto");
     const user = JSON.parse(Local);
 
     return (

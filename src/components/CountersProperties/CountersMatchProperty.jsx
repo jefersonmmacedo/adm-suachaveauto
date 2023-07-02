@@ -2,13 +2,13 @@
 
 
 export function CountersMatchProperty({status,type,subType,uf,city,district,bedroom,restroom,garage,suite,pets,furnished}) {
-    const Local = localStorage.getItem("adm-suachave");
+    const Local = localStorage.getItem("adm-suachaveauto");
     const user = JSON.parse(Local);
     // const {data} = useFetch(
     //     `/property/list/match/${status}?type=${type}&subType=${subType}&uf=${uf}&city=${city}&district=${district}&bedroom=${bedroom}&restroom=${restroom}&garage=${garage}&suite=${suite}&pets=${pets}&furnished=${furnished}`
     //     );
 
-    const {data} = useFetch(`/property/company/${user.id}`);
+    const {data} = useFetch(`/autos/company/${user.id}`);
 
     if(!data) {
         return (

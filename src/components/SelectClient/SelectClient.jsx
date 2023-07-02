@@ -6,7 +6,7 @@ import { useFetch } from "../../hooks/useFetch";
 import { IoCheckboxOutline, IoSearchOutline } from "react-icons/io5";
 
 export function SelectClient({clientInfoLoaded}) {
-    const Local = localStorage.getItem("adm-suachave");
+    const Local = localStorage.getItem("adm-suachaveauto");
     const user = JSON.parse(Local);
 
      const [isOpenModalProcess, setIsOpenModaProcess] = useState(false);
@@ -51,18 +51,18 @@ export function SelectClient({clientInfoLoaded}) {
             <div className="form">
                 <input type="search" placeholder="Digite o título do imóvel" value={search} onChange={e => setSearch(e.target.value)} />
                 
-                <div className="listProperty">
-                    {searchFilter?.map((property) => {
+                <div className="listAuto">
+                    {searchFilter?.map((auto) => {
                         return (
-                            <div className="dataProperty">
+                            <div className="dataAuto">
                                 <div className="dataText">
-                                <h5>{property.id} - {property.name} | {property.fantasyName}</h5>
-                                <h6>{property.cpf_Cnpj} - {property.rg}</h6>
-                                <h6>{property.city} - {property.uf}</h6>
+                                <h5>{auto.id} - {auto.name} | {auto.fantasyName}</h5>
+                                <h6>{auto.cpf_Cnpj} - {auto.rg}</h6>
+                                <h6>{auto.city} - {auto.uf}</h6>
                                 </div>
 
 
-                                <button onClick={() => selectClient(property.id)}> <IoCheckboxOutline /> </button>
+                                <button onClick={() => selectClient(auto.id)}> <IoCheckboxOutline /> </button>
                             </div>
                         )
                     })}

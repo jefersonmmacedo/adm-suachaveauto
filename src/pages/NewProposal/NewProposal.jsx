@@ -14,12 +14,12 @@ import api from "../../services/api";
 import { useParams } from "react-router-dom";
 import { NewClient } from "../../components/NewClient/NewClient";
 import { NewGuarantor } from "../../components/NewGuarantor/NewGuarantor";
-import { SelectProperty } from "../../components/SelectProperty/SelectProperty";
+import { SelectAuto } from "../../components/SelectAuto/SelectAuto";
 import { SelectClient } from "../../components/SelectClient/SelectClient";
 import { SelectGuarantor } from "../../components/SelectGuarantor/SelectGuarantor";
 
 export function NewProposal() {
-    const Local = localStorage.getItem("adm-suachave");
+    const Local = localStorage.getItem("adm-suachaveauto");
     const user = JSON.parse(Local);
 
     const {newProposal, newFeature} = useContext(AuthContext);
@@ -50,10 +50,10 @@ export function NewProposal() {
 
 
 
-    async function propertyInfoLoaded(data) {
+    async function AutoInfoLoaded(data) {
         console.log(data);
        
-        await api.get(`/property/${data}`).then((res) => {
+        await api.get(`/autos/${data}`).then((res) => {
             console.log(data)
             setId(data)
             setTitle(res.data[0]?.title)
@@ -87,9 +87,9 @@ export function NewProposal() {
 
     function handleNewProposal() {
         newProposal({
-            typeProposal, idProperty: id,title, idCompany: user.id, type, subType, condominium, iptu, otherPrices,
+            typeProposal, idAuto: id,title, idCompany: user.id, type, subType, condominium, iptu, otherPrices,
             idClient, nameClient, cpfCnpjClient, email: emailClient, phone: phoneClient, whatsapp: whatsappClient,
-            status, valueProperty: typeProposal === "Venda de imóvel" ? priceSale : priceRent, formOfpayment, expirationDate, contactReminder, 
+            status, valueAuto: typeProposal === "Venda de imóvel" ? priceSale : priceRent, formOfpayment, expirationDate, contactReminder, 
         })
     }
 
@@ -157,7 +157,7 @@ export function NewProposal() {
                 <div className="textHome">
                       <h4>Imóvel / Proprietário</h4>
                       <div className="newInfo">
-                    <SelectProperty propertyInfoLoaded={propertyInfoLoaded}/>
+                    <SelectAuto AutoInfoLoaded={AutoInfoLoaded}/>
                     </div>
                 </div>
                 <div className="data">

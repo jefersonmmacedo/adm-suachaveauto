@@ -6,7 +6,7 @@ import { AuthContext } from "../../../contexts/Auth";
 import { IoLogOutOutline } from "react-icons/io5";
 
 export function PaymentNotFound() {
-    const Local = localStorage.getItem("adm-suachave");
+    const Local = localStorage.getItem("adm-suachaveauto");
     const user = JSON.parse(Local);
 
     const { logout } = useContext(AuthContext);

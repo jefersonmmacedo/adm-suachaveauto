@@ -8,7 +8,7 @@ import { DateFormat2 } from "../../components/DateFormat2/DateFormat2";
 import { NewScheduling } from "../../components/NewScheduling/NewScheduling";
 
 export function MyAssessments() {
-    const Local = localStorage.getItem("adm-suachave");
+    const Local = localStorage.getItem("adm-suachaveauto");
     const user = JSON.parse(Local);
 
     const {data} = useFetch(`/evaluation/company/${user.id}`);

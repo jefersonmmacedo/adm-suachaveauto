@@ -14,7 +14,7 @@ import { ViewContract } from "../../components/ViewContract/ViewContract";
 import { DeleteProposal } from "../../components/DeleteProposal/DeleteProposal";
 
 export function MyProposals() {
-    const Local = localStorage.getItem("adm-suachave");
+    const Local = localStorage.getItem("adm-suachaveauto");
     const user = JSON.parse(Local);
 
     const {data} = useFetch(`/negotiations/company/${user.id}`);
@@ -66,7 +66,7 @@ export function MyProposals() {
                                 </div>
                                 <div className="dataContractsUnic">
                                     <h6>ID Imóvel</h6>
-                                    <h5>{proposal.idProperty}</h5>
+                                    <h5>{proposal.idAuto}</h5>
                                 </div>
                                 <div className="dataContractsUnic">
                                     <h6>Cliente</h6>
@@ -99,7 +99,7 @@ export function MyProposals() {
                         </ReactTooltip>
 
     
-                        <DeleteProposal id={proposal.id} idProperty={`${proposal.idProperty} `} nameClient={proposal.nameClient} cpfCnpjClient={proposal.cpfCnpjClient} />
+                        <DeleteProposal id={proposal.id} idAuto={`${proposal.idAuto} `} nameClient={proposal.nameClient} cpfCnpjClient={proposal.cpfCnpjClient} />
                         
     
 

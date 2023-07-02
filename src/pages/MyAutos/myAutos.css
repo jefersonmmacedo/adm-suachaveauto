@@ -1,0 +1,442 @@
+﻿.MyAutos {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.MyAutos .aside {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 170px;
+    padding-top: 100px;
+}
+
+.MyAutos .aside .textHome {
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+
+.MyAutos .aside .textHome h3 {
+    font-weight: bold;
+    text-align: center;
+    color: var(--Paragraph);
+}
+.MyAutos .aside .textHome h4 {
+    font-weight: bold;
+    text-align: center;
+    color: var(--Gray2);
+}
+
+.MyAutos .aside .infoData {
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 5px;
+  background-color: var(--White);
+  border: 1px solid var(--Border);
+  border-radius: 20px;
+}
+
+.MyAutos .aside .infoData .textInfo{
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--Border);
+  border-radius: 20px;
+  margin: 5px;
+  
+}
+
+.MyAutos .aside .infoData .textInfo h5 {
+  font-weight: 600;
+  text-align: center;
+  color: var(--Gray);
+}
+.MyAutos .aside .infoData .textInfo h5 span {
+  font-weight: 900;
+  color: var(--Primary);
+}
+
+.MyAutos .aside .link {
+  border: none;
+  border-radius: 20px;
+  background-color: none;
+  color: var(--Primary);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+
+.MyAutos .informations {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding:5px;
+    background-color: var(--White);
+    border: 1px solid var(--Border);
+    border-radius: 20px;
+    margin-bottom: 100px;
+}
+
+.MyAutos .informations .AutoListAdm{
+    width: 98%;
+    background-color: var(--White);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    border-bottom: 1px solid var(--Border);
+    margin-top: 5px;
+}
+.MyAutos .informations .AutoListAdm .image{
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+.MyAutos .informations .AutoListAdm .image img{
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.MyAutos .informations .AutoListAdm .textAutoListAdm{
+    background-color: var(--BorderInput);
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 5px 10px;
+    text-align:left;
+    width: 100%;
+    height: 100%;
+    background-color: var(--White);
+}
+
+.MyAutos .informations .AutoListAdm .textAutoListAdm .AutoView {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: row;
+  width: 100%;
+  padding:5px;
+  flex-wrap:  wrap;
+}
+
+.MyAutos .informations .AutoListAdm .textAutoListAdm .textDataAutoListAdm{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    text-align:left;
+    width: 100%;
+    height: 100%;
+}
+
+
+.MyAutos .informations .AutoListAdm .textAutoListAdm .textDataAutoListAdm h4 {
+    color: var(--Primary);
+    font-weight: 700;
+    margin: 0 10px;
+    text-align:left;
+  }
+
+  .MyAutos .informations .AutoListAdm .textAutoListAdm .textDataAutoListAdm h5 {
+    color: var(--Gray);
+    margin: 2px 9px;
+    text-align:left;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: row;
+    font-weight: 500;
+  }
+
+  .MyAutos .informations .AutoListAdm .textAutoListAdm .textDataAutoListAdm h5 svg {
+    margin-right: 2px;
+  }
+  .MyAutos .informations .AutoListAdm .textAutoListAdm .textDataAutoListAdm h6 {
+    color: var(--Gray);
+    margin: 5px 10px 0 10px;
+    text-align:left;
+  }
+  .MyAutos .informations .AutoListAdm .textAutoListAdm .emphasis {
+    margin: 5px;
+    text-align:center;
+    padding: 5px 10px;
+    background-color: var(--BorderInput);
+    color: var(--Paragraph);
+    border-radius: 20px;
+    font-size: 12px;
+  }
+  .MyAutos .informations .AutoListAdm .textAutoListAdm .status1 {
+    margin: 5px;
+    text-align:center;
+    padding: 5px 10px;
+    background-color: var(--Aproved);
+    color: var(--White);
+    border-radius: 20px;
+    font-size: 12px;
+  }
+  .MyAutos .informations .AutoListAdm .textAutoListAdm .status2 {
+    margin: 5px 10px 0 10px;
+    text-align:center;
+    padding: 5px 10px;
+    background-color: var(--Secondary);
+    color: var(--White);
+    border-radius: 20px;
+    font-size: 12px;
+  }
+  .MyAutos .informations .AutoListAdm .textAutoListAdm .status3 {
+    margin: 5px 10px 0 10px;
+    text-align:center;
+    padding: 5px 10px;
+    background-color: var(--Edit);
+    color: var(--White);
+    border-radius: 20px;
+    font-size: 12px;
+  }
+  .MyAutos .informations .AutoListAdm .textAutoListAdm .status4 {
+    margin: 5px 10px 0 10px;
+    text-align:center;
+    padding: 5px 10px;
+    background-color: var(--Primary);
+    color: var(--White);
+    border-radius: 20px;
+    font-size: 12px;
+  }
+  .MyAutos .informations .AutoListAdm .infosContactData {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    padding: 2px 0;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  .MyAutos .informations .AutoListAdm .infosContactData .infoUnicData {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 20px;
+    border: 1px solid var(--Border);
+  }
+
+  .MyAutos .informations .AutoListAdm .infosContactData .infoUnicData svg {
+    color: var(--Gray);
+    margin-right: 5px;
+    font-size: 12px;
+  }
+  .MyAutos .informations .AutoListAdm .infosContactData .infoUnicData  h6 {
+    font-weight: 600;
+    color: var(--Gray);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+  }
+
+  .MyAutos .informations .AutoListAdm .infosContactData .infoUnicData:hover {
+    background-color: var(--BorderInput2);
+  }
+
+  .MyAutos .informations .AutoListAdm .buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 5px;
+    border-left: 1px solid var(--Border);
+}
+
+.MyAutos .informations .AutoListAdm .buttons .btnControl {
+  width: 30px;
+  height: 30px;
+  padding: 8px;
+  border: none;
+  border-radius: 20px;
+  background-color: var(--BorderInput);
+  color: var(--Gray2);
+  margin: 5px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+.MyAutos .informations .AutoListAdm .buttons .btnControl svg {
+  margin: 0px;
+}
+
+.MyAutos .informations .AutoListAdm .buttons .btnControl:hover {
+  background-color: var(--Primary);
+  color: var(--White);
+}
+
+.MyAutos .aside .search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  margin: 0px 10px 20px 10px;
+  width: 90%;
+  padding: 10px;
+  background-color: var(--White);
+  border: 1px solid var(--Border);
+  border-radius: 30px;
+}
+.MyAutos .aside .search .selection {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  width: 100%;
+}
+
+
+.MyAutos .aside .search input {
+  width: 50%;
+  height: 40px;
+  padding: 10px 20px;
+  border: 1px solid var(--Border);
+  border-radius: 20px;
+  margin: 2px;
+}
+.MyAutos .aside .search .selection select {
+  width: 100%;
+  height: 40px;
+  padding: 10px 20px;
+  border: 1px solid var(--Border);
+  border-radius: 20px;
+  margin: 2px;
+}
+
+
+@media(max-width: 850px) {
+  .MyAutos .aside .search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 90%;
+  }
+  
+  
+  .MyAutos .aside .search input {
+    width: 100%;
+  }
+
+
+@media (max-width: 700px) {
+    .MyAutos .informations {
+        padding: 0 10px 10px 10px;
+    }
+    .MyAutos .aside {
+        padding-left: 0px;
+    }
+
+
+
+    @media (max-width: 570px) {
+
+          .MyAutos .informations .AutoListAdm{
+            width: 100%;
+            margin:20px 5px;
+
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            flex-direction: column;
+        }
+
+        .MyAutos .informations .AutoListAdm .textAutoListAdm .textDataAutoListAdm h4 {
+          margin:5px 10px;
+        }
+
+            .MyAutos .informations .AutoListAdm .image{
+            width: 100%;
+            height: 100px;
+        }
+          .MyAutos .informations .AutoListAdm .image img{
+            width: 100%;
+            height: 100px;
+        }
+
+        .MyAutos .informations .AutoListAdm .textAutoListAdm{
+          padding: 5px 0px;
+      }
+
+      
+
+        .MyAutos .informations .AutoListAdm .infosContactData .infoUnicData {
+          padding: 5px;
+          margin: 5px 2px
+        }
+      
+
+        .MyAutos .informations .AutoListAdm .buttons{
+          justify-content: space-evenly;
+          flex-direction: row;
+          width: 100%;
+          border-left:none;
+          border-top: 1px solid var(--Border);
+          padding: 5px;
+      }
+
+        .MyAutos .informations .AutoListAdm .buttons .linkEdit {
+        width: 100%;
+        heigth: 100%
+      }
+        .MyAutos .informations .AutoListAdm .buttons .newDocument {
+        width: 100%;
+        heigth: 100%
+      }
+        .MyAutos .informations .AutoListAdm .buttons .delete {
+        width: 100%;
+        heigth: 100%
+      }
+
+
+      .MyAutos .aside .search {
+        width: 90%;
+        padding: 10px;
+      }
+
+      .MyAutos .aside .search .selection {
+        flex-direction: column;
+        width: 100%;
+      }
+
+      .MyAutos .aside .infoData .textInfo {
+        padding: 5px 10px;
+        margin: 20px;
+      }
+      .MyAutos .aside .infoData .textInfo h5 {
+        font-size: 12px;
+      }
+      
+    }
+}
+}

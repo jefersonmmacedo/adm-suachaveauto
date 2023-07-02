@@ -7,8 +7,9 @@ import { useFetch } from "../../hooks/useFetch";
 import { DateFormat2 } from "../../components/DateFormat2/DateFormat2";
 import { NewClient } from "../../components/NewClient/NewClient";
 
+
 export function MyLeads() {
-    const Local = localStorage.getItem("adm-suachave");
+    const Local = localStorage.getItem("adm-suachaveauto");
     const user = JSON.parse(Local);
 
     const profile = "https://www.forestcom.com.br/wp-content/uploads/2018/09/blank-profile-picture-973460_640.png";
@@ -69,8 +70,8 @@ export function MyLeads() {
 
                                 <div className="dataUnic">
                                     <h5> <b>Imóvel:</b> </h5>
-                                    <a href={`https://www.suachave.com.br/imovel/${client.idProperty}`} target="_blank" rel="noreferrer">
-                                      <h5><IoHomeOutline /> {client.idProperty} </h5>
+                                    <a href={`https://www.suachaveauto.com.br/auto/${client.idAuto}`} target="_blank" rel="noreferrer">
+                                      <h5><IoHomeOutline /> {client.idAuto} </h5>
                                     </a>
                                 </div>
 
@@ -92,7 +93,15 @@ export function MyLeads() {
     
    
                         <div className="buttonsClients">
-                            <NewClient pageProp="lead" nameLead={client.name} emailLead={client.email} phoneLead={client.phone} whatsappLead={client.whatsapp} idProperty={client.idProperty} />
+                            <a href={`https://api.whatsapp.com/send?phone=55${client.whatsapp}&text=Olá. ${client.name}, somos da ${user.fantasyName}. Gostaria de mais detalhes sobre o seguinte imóvel? http://www.suachaveauto.com.br/imovel/${client.idAuto}`}
+                                className="btnNewClient" target="_blank" rel="noopener noreferrer" data-tip data-for='Entrar em contato'><IoLogoWhatsapp/></a>
+
+                                <ReactTooltip id='Entrar em contato' place="bottom" type="dark" effect="solid">
+                                <span>Entrar em contato</span>
+                                </ReactTooltip>
+
+
+                            <NewClient pageProp="lead" nameLead={client.name} emailLead={client.email} phoneLead={client.phone} whatsappLead={client.whatsapp} idAuto={client.idAuto} />
                         </div> 
                     </div>  
                     )

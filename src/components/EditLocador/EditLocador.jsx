@@ -9,7 +9,7 @@ import { useContext } from "react";
 import api from "../../services/api";
 
 export function EditLocador({idLocator}) {
-    const Local = localStorage.getItem("adm-suachave");
+    const Local = localStorage.getItem("adm-suachaveauto");
     const user = JSON.parse(Local);
 
     const {updateLocador} = useContext(AuthContext)

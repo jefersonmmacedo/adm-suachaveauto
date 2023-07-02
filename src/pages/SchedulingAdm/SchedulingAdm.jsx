@@ -58,12 +58,12 @@ export function SchedulingAdm() {
                     <div className="listPropertiesScheduling">
                     <div className="property">
                     <div className="image">
-                    <a href={`https://www.suachave.com.br/imovel/${data[0].idProperty} `} target="_blank" rel="noreferrer">
+                    <a href={`https://www.suachave.com.br/imovel/${data[0].idAuto} `} target="_blank" rel="noreferrer">
                        <img src={data[0].imageProperty} alt="" />
                        </a>
                     </div>
                     <div className="textProperty">
-                        <a href={`https://www.suachave.com.br/imovel/${data[0].idProperty} `} target="_blank" rel="noreferrer">
+                        <a href={`https://www.suachave.com.br/imovel/${data[0].idAuto} `} target="_blank" rel="noreferrer">
                     <h4><IoHome /> {data[0].titleProperty}</h4>
                         </a>
                     </div>

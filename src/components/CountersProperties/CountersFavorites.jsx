@@ -2,7 +2,7 @@
 
 export function CountersFavorites({id}) {
 
-    const {data} = useFetch(`/favorite/property/${id}`)
+    const {data} = useFetch(`/favorite/autos/${id}`)
 
     if(!data) {
         return (

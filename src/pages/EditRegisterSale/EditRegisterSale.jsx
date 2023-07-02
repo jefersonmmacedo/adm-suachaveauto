@@ -9,7 +9,7 @@ import { SelectProperty } from "../../components/SelectProperty/SelectProperty";
 import { SelectClient } from "../../components/SelectClient/SelectClient";
 
 export function EditRegisterSale() {
-    const Local = localStorage.getItem("adm-suachave");
+    const Local = localStorage.getItem("adm-suachaveauto");
     const user = JSON.parse(Local);
 
     const {EditRegisterSale, EditFeature} = useContext(AuthContext);
@@ -77,7 +77,7 @@ export function EditRegisterSale() {
 
     function handleEditRegisterSale() {
         EditRegisterSale({
-            typeProposal, idProperty: id,title, idCompany: user.id, type, subType, condominium, iptu, otherPrices,
+            typeProposal, idAuto: id,title, idCompany: user.id, type, subType, condominium, iptu, otherPrices,
             idClient, nameClient, cpfCnpjClient, email: emailClient, phone: phoneClient, whatsapp: whatsappClient,
             status, valueProperty: typeProposal === "Venda de imóvel" ? priceSale : priceRent, formOfpayment, expirationDate, contactReminder, 
         })

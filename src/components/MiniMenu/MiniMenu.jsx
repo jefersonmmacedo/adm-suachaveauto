@@ -6,7 +6,7 @@ import { IoCalendarOutline, IoCloseCircle, IoExtensionPuzzleOutline, IoLaptopOut
 
 
 export function MiniMenu() {
-  const Local = localStorage.getItem("adm-suachave");
+  const Local = localStorage.getItem("adm-suachaveauto");
   const user = JSON.parse(Local);
   
 const [plain, setPlain] = useState();

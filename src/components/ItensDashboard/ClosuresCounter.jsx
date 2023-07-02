@@ -1,7 +1,7 @@
 ﻿import { useFetch } from "../../hooks/useFetch";
 
 export function ClosuresCounter() {
-    const Local = localStorage.getItem("adm-suachave");
+    const Local = localStorage.getItem("adm-suachaveauto");
     const user = JSON.parse(Local);
 
     const {data} = useFetch(`/proposals/company/${user.id}`);

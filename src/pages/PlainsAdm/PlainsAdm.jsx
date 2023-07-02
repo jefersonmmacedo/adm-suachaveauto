@@ -11,7 +11,7 @@ import "./plainsAdm.css"
 import { MiniMenu } from "../../components/MiniMenu/MiniMenu";
 
 export function PlainsAdm() {
-    const Local = localStorage.getItem("adm-suachave");
+    const Local = localStorage.getItem("adm-suachaveauto");
     const user = JSON.parse(Local);
 
     const [isOpenModalSearch, setIsOpenModaSearch] = useState(false);
@@ -73,7 +73,7 @@ export function PlainsAdm() {
 
         const valuePlain = plain?.valueNew === "" ? plain?.value : plain?.valueNew
         //const valorNumber = parseInt(plain?.valueNew.replace(/[^0-9]/gi, ""));
-        const valorNumberFormat = parseFloat(valuePlain) + 0.99;
+        const valorNumberFormat = plain?.name === "Free" ? + 0.00 : parseFloat(valuePlain) + 0.99;
     
         const valueHost = plain?.name === "Start" ? 0.00 : 5.99
     

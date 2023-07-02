@@ -13,7 +13,7 @@ import { MiniMenuAccounts } from "../../components/MiniMenuAccounts/MiniMenuAcco
 import { DeleteGuarantor } from "../../components/DeleteGuarantor/DeleteGuarantor";
 
 export function MyGuarantor() {
-    const Local = localStorage.getItem("adm-suachave");
+    const Local = localStorage.getItem("adm-suachaveauto");
     const user = JSON.parse(Local);
 
     const [city, setCity] = useState("");
@@ -112,7 +112,7 @@ export function MyGuarantor() {
 
             <div className="textHome">
                 <h3>Fiadores</h3>
-                <NewGuarantor pageProp="client" nameLead="" emailLead="" phoneLead="" whatsappLead="" idProperty="" />
+                <NewGuarantor pageProp="client" nameLead="" emailLead="" phoneLead="" whatsappLead="" idAuto="" />
                 </div>            
 
                 <div className="search">

@@ -19,7 +19,7 @@ import slugify from 'react-slugify';
 export function SignUpProfessional() {
   const {idComercialTeam} = useParams();
     const {createAccountCompany} = useContext(AuthContext);
-    const [account, setAccount] = useState("Imobiliária")
+    const [account, setAccount] = useState("Agência")
     const [data, setData] = useState("1");
     const [avatarUrl, setAvatarUrl] = useState(null);
     const [imageAvatar, setImageAvatar] = useState('');
@@ -28,7 +28,7 @@ export function SignUpProfessional() {
     const [passwordView, setPasswordView] = useState(false)
     const [aceptTerms, setAceptTerms] = useState(false)
 
-    const [type, setType] = useState("Imobiliária");
+    const [type, setType] = useState("Agência");
     const [selectDocument, setSelectDocument] = useState("CNPJ");
     const [creciValidate, setCreciValidate] = useState("");
     const [cnpj, setCnpj] = useState("");
@@ -95,7 +95,7 @@ export function SignUpProfessional() {
     }
     function handleNex(e) {
       e.preventDefault();
-        setData("2")
+        setData("3")
     }
 
     function handleSelectDocument(e) {
@@ -262,8 +262,8 @@ export function SignUpProfessional() {
                           <div className="dataInfo">
                           <h5>Tipo de conta</h5>
                         <select value={account} onChange={handleSelectAccount}>
-                        <option value="Imobiliária">Sou Imobiliária</option>
-                        <option value="Corretor">Sou Corretor</option>
+                        <option value="Agência">Sou Agência</option>
+                        <option value="Consultor">Sou Consultor</option>
                          </select>
                       
                            <select value={selectDocument} onChange={handleSelectDocument}>
@@ -312,44 +312,6 @@ export function SignUpProfessional() {
       
                        
                          </div>
-                        : data === "2" ?
-                        <div className="data">
-                            <div className="dataInfo">
-                            <h5>Informe seu CRECI?</h5>
-                        <select value={creciValidate} onChange={handleSelectCreciValidate}>
-                        <option value="">Selecione</option>
-                        <option value="Sim">Sim.Eu tenho CRECI</option>
-                        <option value="Não">Não. Não possuo</option>
-                         </select>
-
-                         {creciValidate === "Sim" ?
-                         <input type="text" placeholder="Digite o CRECI" value={creci} onChange={(e) => setCreci(e.target.value)} />
-                         :
-                         <>
-                         <br />
-                         <h6>É necesário ter um CRECI para continuar o cadastro</h6>
-                         </>
-                         }
-                            </div>
-
-                         {creciValidate === "Sim" ?
-                         <>
-                         <div className="buttons">
-                         {creci === "" ? "" :
-                         <button className="btn" onClick={() => handleSelectStepe("3")}>Avançar</button>
-                          }
-                         <button className="btn3" onClick={() => handleSelectStepe("1")}>Voltar</button>
-                         </div>
-                         </>
-                         :
-                         <div className="buttons">
-                           <button className="btn1" onClick={handleRedirectAfterError}>Sair</button>
-                           </div>
-                         }
-
-                        
-                       
-                        </div>
                         :data === "3" ?
                         <div className="data">
                             <div className="dataInfo">
@@ -391,7 +353,7 @@ export function SignUpProfessional() {
                         <button className="btn" onClick={() => handleSelectStepe("4")}>Avançar</button>
                          : ""                        
                           }
-                        <button className="btn3" onClick={() => handleSelectStepe("2")}>Voltar</button>
+                        <button className="btn3" onClick={() => handleSelectStepe("1")}>Voltar</button>
                         </div>
                        
                         </div>
@@ -470,7 +432,7 @@ export function SignUpProfessional() {
                         </>
                         : ""
                         } 
-                        {account === "Corretor" ?
+                        {account === "Consultor" ?
                         <select value={viewAddress} onChange={handleViewAddress}>
                           <option value={true}>Deixar meu endereço visível</option>
                           <option value={false}>Não deixar meu endereço visível</option>

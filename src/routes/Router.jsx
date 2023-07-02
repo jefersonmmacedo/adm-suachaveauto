@@ -2,7 +2,7 @@ import {Route, Routes, Navigate} from 'react-router-dom';
 import { Pricing } from '../pages/Pricing/Pricing';
 import { SignInCompany } from '../pages/SignInCompany/SignInCompany';
 import { Dashboard } from '../pages/Dashboard/Dashboard';
-import { NewProperty } from '../pages/NewProperty/NewProperty';
+import { NewAuto } from '../pages/NewAuto/NewAuto';
 import { PlainsAdm } from '../pages/PlainsAdm/PlainsAdm';
 import { NotificationsAdm } from '../pages/NotificationsAdm/NotificationsAdm';
 import { EquipeAdm } from '../pages/EquipeAdm/EquipeAdm';
@@ -11,12 +11,10 @@ import { MenuAdm } from '../pages/MenuAdm/MenuAdm';
 import { SchedulingAdm } from '../pages/SchedulingAdm/SchedulingAdm';
 import { Checkout } from '../pages/Checkout/Checkout';
 import { PaymentCompleted } from '../pages/PaymentCompleted/PaymentCompleted';
-import { MyPropertiesList } from '../pages/MyPropertiesList/MyPropertiesList';
-import { EditProperty } from '../pages/EditProperty/EditProperty';
+import { MyAutos } from '../pages/MyAutos/MyAutos';
+import { EditAuto } from '../pages/EditAuto/EditAuto';
 import { ChatAdmList } from '../pages/ChatAdmList/ChatAdmList';
 import { MyAppointments } from '../pages/MyAppointments/MyAppointments';
-import { MyRents } from '../pages/MyRents/MyRents';
-import { MySales } from '../pages/MySales/MySales';
 import { MyAssessments } from '../pages/MyAssessments/MyAssessments';
 import { FinancerAdm } from '../pages/FinancerAdm/FinancerAdm';
 import { AccessAdm } from '../pages/AccessAdm/AccessAdm';
@@ -28,7 +26,7 @@ import { ChatMessage } from '../pages/ChatMessage/ChatMessage';
 import { SignUpProfessional } from '../pages/SignUpProfessional/SignUpProfessional';
 import { MyContracts } from '../pages/MyContracts/MyContracts';
 import { LocadorAdm } from '../pages/LocadorAdm/LocadorAdm';
-import { MyChargesProperty } from '../pages/MyChargesProperty/MyChargesProperty';
+import { MyChargesAuto } from '../pages/MyChargesAuto/MyChargesAuto';
 import { PrintInfosFinancer } from '../pages/PrintInfosFinancer/PrintInfosFinancer';
 import { ChooseYourAccount } from '../pages/ChooseYourAccount/ChooseYourAccount';
 import { SignUpBroker } from '../pages/SignUpBroker/SignUpBroker';
@@ -49,28 +47,34 @@ import { PaymentNotFound } from '../pages/TestingPeriod/PaymentNotFound/PaymentN
 import { NewProposal } from '../pages/NewProposal/NewProposal';
 import { MyProposals } from '../pages/MyProposals/MyProposals';
 import { SchedulingConfig } from '../pages/SchedulingConfig/SchedulingConfig';
-import { NewChargeProperty } from '../pages/NewChargeProperty/NewChargeProperty';
-import { InspectionProperty } from '../pages/InspectionProperty/InspectionProperty';
+import { NewChargeAuto } from '../pages/NewChargeAuto/NewChargeAuto';
+import { InspectionAuto } from '../pages/InspectionAuto/InspectionAuto';
 import { UpdatesSystem } from '../pages/UpdatesSystem/UpdatesSystem';
 import { UpgradePlain } from '../pages/UpgradePlain/UpgradePlain';
-import { Home2 } from '../model/pages/Home2/Home2';
-import { Home3 } from '../model/pages/Home3/Home3';
 import { EditContract } from '../pages/EditContract/EditContract';
 import { NewRegisterSale } from '../pages/NewRegisterSale/NewRegisterSale';
 import { MyRegisterSales } from '../pages/MyRegisterSales/MyRegisterSales';
+import { SuspendedAccount } from '../pages/TestingPeriod/SuspendedAccount/SuspendedAccount';
 
 
 
 function Router () {
 const {logout} = useContext(AuthContext);
 
-const Local = localStorage.getItem("adm-suachave");
-const userLocal = JSON.parse(Local)
-const LocalClient = localStorage.getItem("suachave");
-const userLocalClient = JSON.parse(LocalClient)
+const Local = localStorage.getItem("adm-suachaveauto");
+const userLocal = JSON.parse(Local);
 
+const LocalClient = localStorage.getItem("suachaveauto");
+const userLocalClient = JSON.parse(LocalClient);
+
+const LocalClientSuachave = localStorage.getItem("adm-suachave");
+const userLocalClientSuachave = JSON.parse(LocalClientSuachave);
+
+if(userLocalClientSuachave !== null) {
+        localStorage.removeItem("adm-suachave");
+}
 if(userLocalClient !== null) {
-        localStorage.removeItem("suachave");
+        localStorage.removeItem("suachaveauto");
 }
 
 function PrivateRoute({children} ) {
@@ -92,26 +96,24 @@ function PrivateRoute({children} ) {
 
             <Route path="/home"
                     element={ <PrivateRoute> <Dashboard /> </PrivateRoute>} />
-            <Route path="/meusite"
-                    element={ <PrivateRoute> <Home2 /> </PrivateRoute>} />
-            <Route path="/meusite/model2"
-                    element={ <PrivateRoute> <Home3 /> </PrivateRoute>} />
             <Route path="/periodo-teste"
                     element={ <PrivateRoute> <TestingPeriodInitial /> </PrivateRoute>} />
-            <Route path="/fim-periodo-teste"
+            <Route path="/escolher-plano"
                     element={ <PrivateRoute> <TestingPeriodFinal /> </PrivateRoute>} />
             <Route path="/cancelar-conta"
                     element={ <PrivateRoute> <CancelAccount /> </PrivateRoute>} />
+            <Route path="/conta-suspensa"
+                    element={ <PrivateRoute> <SuspendedAccount /> </PrivateRoute>} />
             <Route path="/atualizar-plano/:plainName"
                     element={ <PrivateRoute> <UpgradePlain /> </PrivateRoute>} />
             <Route path="/pagamento-pendente"
                     element={ <PrivateRoute> <PaymentNotFound /> </PrivateRoute>} />
             <Route path="/novoauto"
-                    element={ <PrivateRoute> <NewProperty /> </PrivateRoute>} />
+                    element={ <PrivateRoute> <NewAuto /> </PrivateRoute>} />
             <Route path="/editarauto/:id"
-                    element={ <PrivateRoute> <EditProperty /> </PrivateRoute>} />
+                    element={ <PrivateRoute> <EditAuto /> </PrivateRoute>} />
             <Route path="/autos"
-                    element={ <PrivateRoute> <MyPropertiesList /> </PrivateRoute>} />
+                    element={ <PrivateRoute> <MyAutos /> </PrivateRoute>} />
             <Route path="/plano/:id"
                     element={ <PrivateRoute> <Checkout /> </PrivateRoute>} />
             <Route path="/meus-planos"
@@ -122,7 +124,7 @@ function PrivateRoute({children} ) {
                     element={ <PrivateRoute> <PaymentCompleted /> </PrivateRoute>} />
             <Route path="/mensagens"
                     element={ <PrivateRoute> <ChatAdmList /> </PrivateRoute>} />
-            <Route path="/chat/:room/:idProperty/:idCompany/:idClient"
+            <Route path="/chat/:room/:idAuto/:idCompany/:idClient"
                     element={ <PrivateRoute> <ChatMessage /> </PrivateRoute>} />
             <Route path="/notificacoes"
                     element={ <PrivateRoute> <NotificationsAdm /> </PrivateRoute>} />
@@ -173,17 +175,17 @@ function PrivateRoute({children} ) {
             <Route path="/clientes"
                     element={ <PrivateRoute> <MyClientsList /> </PrivateRoute>} />
             <Route path="/encargos"
-                    element={ <PrivateRoute> <MyChargesProperty /> </PrivateRoute>} />
+                    element={ <PrivateRoute> <MyChargesAuto /> </PrivateRoute>} />
             <Route path="/novo-encargo"
-                    element={ <PrivateRoute> <NewChargeProperty /> </PrivateRoute>} />
+                    element={ <PrivateRoute> <NewChargeAuto /> </PrivateRoute>} />
             <Route path="/imprimir/:type"
                     element={ <PrivateRoute> <PrintInfosFinancer /> </PrivateRoute>} />
             <Route path="/leads"
                     element={ <PrivateRoute> <MyLeads /> </PrivateRoute>} />
             <Route path="/vistorias"
-                    element={ <PrivateRoute> <InspectionProperty /> </PrivateRoute>} />
+                    element={ <PrivateRoute> <InspectionAuto /> </PrivateRoute>} />
             <Route path="/nova-vistoria"
-                    element={ <PrivateRoute> <InspectionProperty /> </PrivateRoute>} />
+                    element={ <PrivateRoute> <InspectionAuto /> </PrivateRoute>} />
             <Route path="/atualizacoes"
                     element={ <PrivateRoute> <UpdatesSystem /> </PrivateRoute>} />
 

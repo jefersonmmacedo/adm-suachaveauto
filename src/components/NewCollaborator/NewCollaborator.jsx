@@ -12,7 +12,7 @@ import { IoSearchOutline } from "react-icons/io5";
 import { useContext } from "react";
 import Switch from "react-switch";
 export function NewCollaborator() {
-    const Local = localStorage.getItem("adm-suachave");
+    const Local = localStorage.getItem("adm-suachaveauto");
     const user = JSON.parse(Local);
 
     const {newCollaborator} = useContext(AuthContext)

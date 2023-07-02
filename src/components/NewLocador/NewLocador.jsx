@@ -8,7 +8,7 @@ import { IoSearchOutline } from "react-icons/io5";
 import { useContext } from "react";
 
 export function NewLocador() {
-    const Local = localStorage.getItem("adm-suachave");
+    const Local = localStorage.getItem("adm-suachaveauto");
     const user = JSON.parse(Local);
 
     const {newLocador} = useContext(AuthContext)

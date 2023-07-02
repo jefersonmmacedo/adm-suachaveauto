@@ -13,8 +13,8 @@ import ReactTooltip from 'react-tooltip';
 import { useEffect } from "react";
 import api from "../../services/api";
 
-export function NewClient({pageProp, nameLead, emailLead, phoneLead, whatsappLead, avatarLead, idProperty }) {
-    const Local = localStorage.getItem("adm-suachave");
+export function NewClient({pageProp, nameLead, emailLead, phoneLead, whatsappLead, avatarLead, idAuto }) {
+    const Local = localStorage.getItem("adm-suachaveauto");
     const user = JSON.parse(Local);
 
     const {newClientCompany} = useContext(AuthContext)
@@ -53,7 +53,7 @@ export function NewClient({pageProp, nameLead, emailLead, phoneLead, whatsappLea
 
     useEffect(() => {
         async function loadproperty() {
-            await api.get(`/property/${idProperty}`).then((res) => {
+            await api.get(`/property/${idAuto}`).then((res) => {
                 setInterest(res.data[0].status)
                 setType(res.data[0].type)
                 setSubtype(res.data[0].subType)

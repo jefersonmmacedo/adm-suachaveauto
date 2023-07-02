@@ -9,7 +9,7 @@ import { useContext, useState } from "react";
 import { AuthContext } from "../../contexts/Auth";
 
 export function MyAppointments() {
-    const Local = localStorage.getItem("adm-suachave");
+    const Local = localStorage.getItem("adm-suachaveauto");
     const user = JSON.parse(Local);
 
     const {updateStatusSchedule} = useContext(AuthContext);

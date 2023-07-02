@@ -13,7 +13,7 @@ import { DeleteClient } from "../../components/DeleteClient/DeleteClient";
 import { MiniMenuAccounts } from "../../components/MiniMenuAccounts/MiniMenuAccounts";
 
 export function MyClientsList() {
-    const Local = localStorage.getItem("adm-suachave");
+    const Local = localStorage.getItem("adm-suachaveauto");
     const user = JSON.parse(Local);
 
     const [city, setCity] = useState("");
@@ -113,7 +113,7 @@ export function MyClientsList() {
 
             <div className="textHome">
                 <h3>Clientes</h3>
-                <NewClient pageProp="client" nameLead="" emailLead="" phoneLead="" whatsappLead="" idProperty="" />
+                <NewClient pageProp="client" nameLead="" emailLead="" phoneLead="" whatsappLead="" idAuto="" />
                 </div>            
 
                 <div className="search">

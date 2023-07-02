@@ -17,7 +17,7 @@ export function ConfirmedAccount() {
                 <h4><IoAlarmOutline />Comece a publicar seus imóveis!</h4>
 
                 <div className="buttons">
-                    <a href="/">Ir para o meu painel</a>
+                <a href="/">Fazer primeiro login</a>
                 </div>
             </div>
             

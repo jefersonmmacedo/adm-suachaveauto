@@ -13,7 +13,7 @@ import { toast } from 'react-toastify';
 import { AuthContext } from "../../contexts/Auth";
 
 export function WebApp() {
-    const Local = localStorage.getItem("adm-suachave");
+    const Local = localStorage.getItem("adm-suachaveauto");
     const user = JSON.parse(Local);
 
     const {newWebSite} = useContext(AuthContext)

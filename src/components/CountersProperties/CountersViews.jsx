@@ -1,7 +1,7 @@
 ﻿import { useFetch } from "../../hooks/useFetch"
 
 export function CountersViews({id}) {
-    const {data} = useFetch(`/viewproperty/property/${id}`)
+    const {data} = useFetch(`/viewproperty/autos/${id}`)
 
     if(!data) {
         return (

@@ -7,10 +7,10 @@ import { AuthContext } from "../../contexts/Auth";
 import ReactTooltip from 'react-tooltip';
 
 export function DeleteLocator({id, name, fantasyName, cpfCnpj, address, typeLocator}) {
-    const Local = localStorage.getItem("adm-suachave");
+    const Local = localStorage.getItem("adm-suachaveauto");
     const user = JSON.parse(Local);
 
-    const { deleteLocatorCompany } = useContext(AuthContext)
+    const { deleteLocatorCompany } = useContext(AuthContext); 
 
     const [isOpenModalProcess, setIsOpenModaProcess] = useState(false);
 

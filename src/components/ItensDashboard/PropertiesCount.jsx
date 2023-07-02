@@ -1,10 +1,10 @@
 ﻿import { useFetch } from "../../hooks/useFetch";
 
 export function PropertiesCount() {
-    const Local = localStorage.getItem("adm-suachave");
+    const Local = localStorage.getItem("adm-suachaveauto");
     const user = JSON.parse(Local);
 
-    const {data} = useFetch(`/property/company/${user.id}`);
+    const {data} = useFetch(`/autos/company/${user.id}`);
     
     return (
         <div className="PropertiesCount">

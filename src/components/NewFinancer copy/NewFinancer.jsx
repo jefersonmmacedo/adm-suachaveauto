@@ -12,14 +12,14 @@ import api from "../../services/api";
 
 
 export function NewFinancer() {
-    const Local = localStorage.getItem("adm-suachave");
+    const Local = localStorage.getItem("adm-suachaveauto");
     const user = JSON.parse(Local);
     const [locators, setLocators] = useState([]);
     const [selectLocator, setSelectLocator] = useState("");
     const [nameLocator, setNameLocator] = useState("");
-    const [properties, setProperties] = useState([]);
-    const [selectProperty, setSelectProperty] = useState("");
-    const [nameProperty, setNameProperty] = useState("");
+    const [autos, setAutos] = useState([]);
+    const [selectAuto, setSelectAuto] = useState("");
+    const [nameAuto, setNameAuto] = useState("");
 
 
     const {newFinancer} = useContext(AuthContext);
@@ -47,28 +47,28 @@ export function NewFinancer() {
     
 function handleSelectLocator(e) {
     setSelectLocator(e.target.value)
-    loadProperties(e.target.value)
+    loadAutos(e.target.value)
     console.log(e.target.value)
 }
-async function loadProperties(id) {
+async function loadAutos(id) {
     console.log(id)
-    await api.get(`/property/locator/${id}`).then((res) => {
-        setProperties(res.data)
+    await api.get(`/auto/locator/${id}`).then((res) => {
+        setAutos(res.data)
         console.log(res.data)
     }).catch((error) => {
         console.log(error)
     })
 }
 
-function handleSelectProperty(e) {
-    setSelectProperty(e.target.value)
+function handleSelectAuto(e) {
+    setSelectAuto(e.target.value)
     console.log(e.target.value)
 }
 
     function handleNewFincancer(e) {
         e.preventDefault();
         const idTransaction = ""
-       newFinancer({idCompany: user.id, idTransaction: idTransaction,idLocator: selectLocator, nameLocator, idProperty: selectProperty, nameProperty, title, description, type: typeButton, value: valueFinance, document})
+       newFinancer({idCompany: user.id, idTransaction: idTransaction,idLocator: selectLocator, nameLocator, idAuto: selectAuto, nameAuto, title, description, type: typeButton, value: valueFinance, document})
     }
 
     function uploadFiles2(data) {
@@ -168,12 +168,12 @@ function handleSelectProperty(e) {
                         })}
                     </datalist>
 
-                    <input type="text" placeholder="Digite titulo do imóvel" list="brow2" value={selectProperty} onChange={handleSelectProperty} />
+                    <input type="text" placeholder="Digite titulo do imóvel" list="brow2" value={selectAuto} onChange={handleSelectAuto} />
                     <datalist id="brow2" >
-                    {properties?.map((property) => {
+                    {autos?.map((auto) => {
                             return (
                                 <>
-                                <option autocomplete="off" key={property.id} value={property.id}>{property.title} - {property.status}  - {property.city} - {property.uf}</option>
+                                <option autocomplete="off" key={auto.id} value={auto.id}>{auto.title} - {auto.status}  - {auto.city} - {auto.uf}</option>
                                 </>
                             )
                         })}

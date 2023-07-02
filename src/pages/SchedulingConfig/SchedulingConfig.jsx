@@ -5,7 +5,7 @@ import "./schedulingConfig.css"
 import { useState } from "react";
 
 export function SchedulingConfig() {
-    const Local = localStorage.getItem("adm-suachave");
+    const Local = localStorage.getItem("adm-suachaveauto");
     const user = JSON.parse(Local);
    
     const [day, setDay] = useState("")

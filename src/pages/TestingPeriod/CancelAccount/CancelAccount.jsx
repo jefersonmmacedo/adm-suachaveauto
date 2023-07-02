@@ -7,7 +7,7 @@ import { IoCloseCircle, IoLogOutOutline } from "react-icons/io5";
 import api from "../../../services/api";
 
 export function CancelAccount() {
-    const Local = localStorage.getItem("adm-suachave");
+    const Local = localStorage.getItem("adm-suachaveauto");
     const user = JSON.parse(Local);   
     
     const { logout } = useContext(AuthContext);

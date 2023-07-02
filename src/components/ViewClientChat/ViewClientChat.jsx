@@ -4,7 +4,7 @@ import { IoCallOutline, IoCellularOutline, IoHomeOutline, IoLocationOutline, IoL
 import { useFetch } from "../../hooks/useFetch";
 
 export function ViewClientChat({id, mobile}) {
-    const Local = localStorage.getItem("adm-suachave");
+    const Local = localStorage.getItem("adm-suachaveauto");
     const user = JSON.parse(Local);
 
     const [filter, setFilter] = useState(false);

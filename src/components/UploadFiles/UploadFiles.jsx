@@ -4,7 +4,7 @@ import "./uploadFiles.css"
 import { IoArrowUpCircle } from "react-icons/io5";
 import {v4 as uuidv4} from 'uuid';
 
-const Local = localStorage.getItem("adm-suachave");
+const Local = localStorage.getItem("adm-suachaveauto");
 const user = JSON.parse(Local);
 // Get production API keys from Upload.io
 
@@ -31,7 +31,10 @@ export const MyButtonComponent = ({id, uploadFiles2}) => {
         multi: true,
         editor: {
             images: {
-              crop: false      // "rect" | "circ"
+              preview: false,
+              crop: true,        
+              cropRatio: 4 / 3,
+              cropShape: "circ",      // "rect" | "circ"
             }
           },
           path: {   // Each supports path variables (e.g. {ORIGINAL_FILE_EXT}). See your

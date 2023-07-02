@@ -72,7 +72,7 @@ function AuthProvider({children}) {
         await api.patch(`/company/updateAccount/${id}`, data).then(() => {
             toast.info(`Cadastro atualizado com sucesso!`);
             mailUpdateAccount({email, name: fantasyName})
-            localStorage.setItem("adm-suachave", JSON.stringify(data2));
+            localStorage.setItem("adm-suachaveauto", JSON.stringify(data2));
 
             window.open(`/minhaconta`, "_self")
 
@@ -93,16 +93,15 @@ function AuthProvider({children}) {
     async function loginSessionCompany({email, password, device, browser, latitude, longitude, ipDevice}) {     
 
             await api.post("/session/company", {email, password}).then((result) => {
-                if(result.data.status === "blocked") {
-                    toast.error(`Olá, ${result.data.fantasyName}. Precisamos confirmar alguns dados de sua conta. Um de nossos colaboradores entrará em contato!`);
-                    return
+                if(result.data.status === "Inativo") {
+                    window.open("/conta-bloqueada", "_self")
                 }
 
                 console.log(result.data)
-                localStorage.setItem("adm-suachave", JSON.stringify(result.data));
+                localStorage.setItem("adm-suachaveauto", JSON.stringify(result.data));
                newAccess({idCompany: result.data.id, idTeam: "", device, browser, latitude, longitude, ipDevice});
 
-                ferifyStatusAccount(result.data.id, result.data.date)
+               verifyPaymentStatus(result.data.id)
                 toast.success(`Entrando...`);
             }).catch(error => {
                 console.log("Login não foi realizado" + error);
@@ -111,25 +110,39 @@ function AuthProvider({children}) {
     }  
 
 
-        async function ferifyStatusAccount(id, data) {
-            const d1  = new Date(data);
-            const d2 = new Date();
-            const diffInMs   = new Date(d2) - new Date(d1);
-            const diffInDays = parseInt(diffInMs / (1000 * 60 * 60 * 24));
+        // async function ferifyStatusAccount(id, data) {
+        //     const d1  = new Date(data);
+        //     const d2 = new Date();
+        //     const diffInMs   = new Date(d2) - new Date(d1);
+        //     const diffInDays = parseInt(diffInMs / (1000 * 60 * 60 * 24));
 
-            if(diffInDays >= 8) {
-                verifyPaymentStatus(id)
-                return;
-            }
+        //     if(diffInDays >= 8) {
+        //         verifyPaymentStatus(id)
+        //         return;
+        //     }
 
-            if(diffInDays < 8) {
-                window.open("/periodo-teste", "_self");
-                return;
-            }
+        //     if(diffInDays < 8) {
+        //         window.open("/periodo-teste", "_self");
+        //         return;
+        //     }
 
-        }
+        // }
 
         async function verifyPaymentStatus(id) {
+            const plains =  await api.get(`/myplain/${id}`)
+
+            if(plains.data.length === 0) {
+                window.open("/escolher-plano", "_self");
+                return;
+            }
+
+
+            
+            if(plains.data[0].namePlain === "Free") {
+                console.log("Free Plano");
+                window.open("/home", "_self");
+                return
+            }
             const payment =  await api.get(`/payments/${id}`)
 
             const d1  = new Date(payment.data[0]?.created_at);
@@ -138,7 +151,7 @@ function AuthProvider({children}) {
             const diffInDays = parseInt(diffInMs / (1000 * 60 * 60 * 24));
 
             if(payment.data.length === 0) {
-                window.open("/fim-periodo-teste", "_self");
+                window.open("//escolher-planoe", "_self");
                 return;
             }
 
@@ -236,12 +249,36 @@ function AuthProvider({children}) {
 
     // Fim da Sessão grupos
     async function logout() {
-        localStorage.removeItem("adm-suachave");
+        localStorage.removeItem("adm-suachaveauto");
         window.open("/", "_self");
     }
 
     //payments
-    async function createPayment({id, idPlain, idCompany, email, namePlain, value, period, linvoice_link, aceptTerms, status, status2, maturity, users, emphasis}) {
+
+    async function createMyPlain({idPlain, idCompany, email, namePlain, value, status2, maturity, users, emphasis, nameCompany}) {
+        const data = {idPlain, idCompany, status: status2, namePlain, value, maturity, users, emphasis}
+
+        const res = await api.get(`/myplain/${idCompany}`);
+
+        if(res.data[0]?.idPlain !== idPlain) {
+           
+                await api.post("/myplain/", data).then((res) => {
+                    toast.success("Novo plano criado com sucesso")
+                   mailPayment(nameCompany, namePlain, value);
+                   setTimeout(() => {
+                    window.open(`/pagamentofinalizado/`, "_self")
+                  }, "5000")
+                }).catch((error) => {
+                    console.log(error)
+                })
+
+        } else {
+            toast.success("Este é seu plano atual")
+        }
+
+    }
+
+    async function createPayment({id, idPlain, idCompany, email, namePlain, value, period, linvoice_link, aceptTerms, status, status2, maturity, users, emphasis, nameCompany}) {
         const data = {idPlain, idCompany, status: status2, namePlain, value, maturity, users, emphasis}
 
         const res = await api.get(`/myplain/${idCompany}`);
@@ -251,14 +288,30 @@ function AuthProvider({children}) {
                 await api.post("/myplain/", data).then((res) => {
                     toast.success("Novo plano criado com sucesso")
                    handleNewPayment({id, idPlain, idCompany, email, namePlain, value, period, linvoice_link, aceptTerms, status})
+                   mailPayment(nameCompany, namePlain, value)
                 }).catch((error) => {
                     console.log(error)
                 })
 
         } else {
            handleNewPayment({id, idPlain, idCompany, email, namePlain, value, period, linvoice_link, aceptTerms, status})
+           mailPayment(nameCompany, namePlain, value)
         }
 
+    }
+
+    async function mailPayment(nameCompany, namePlain, value) {
+        const data = {
+            nameClient:nameCompany,
+            plain:namePlain,
+            value:value,
+        }
+
+        await apiMail.post("/mail/newPayment", data).then((res) => {
+            console.log("E-mail enviado");
+        }).catch((error) => {
+            console.log(error)
+        });
     }
 
     async function handleNewPayment({id, idPlain, idCompany, email, namePlain, value, period, linvoice_link, aceptTerms, status}) {
@@ -282,8 +335,8 @@ function AuthProvider({children}) {
         })
     }
     
-    async function newFinancer({idCompany, idTransaction, idLocator, nameLocator, idProperty, nameProperty, title, description, type, value, document}) {
-        const data = {idCompany, idTransaction, idLocator, nameLocator, idProperty, nameProperty, title, description, type, value, document};
+    async function newFinancer({idCompany, idTransaction, idLocator, nameLocator, idAuto, nameProperty, title, description, type, value, document}) {
+        const data = {idCompany, idTransaction, idLocator, nameLocator, idAuto, nameProperty, title, description, type, value, document};
 
 
         await api.post("/financer/", data).then((res) => {
@@ -296,8 +349,8 @@ function AuthProvider({children}) {
             console.log(error)  
         })
 }
-    async function editFinancer({idCompany, idTransaction, idLocator, nameLocator, idProperty, nameProperty, title, description, type, value, document}) {
-        const data = {idCompany, idTransaction, idLocator, nameLocator, idProperty, nameProperty, title, description, type, value, document};
+    async function editFinancer({idCompany, idTransaction, idLocator, nameLocator, idAuto, nameProperty, title, description, type, value, document}) {
+        const data = {idCompany, idTransaction, idLocator, nameLocator, idAuto, nameProperty, title, description, type, value, document};
 
 
         await api.post("/financer/", data).then((res) => {
@@ -345,9 +398,9 @@ async function deleteClientCompany({id}) {
                     console.log(err)
                 });
     }
-async function deletePropertyCompany({id}) {
-                await api.delete(`/property/${id}`).then((res) => {
-                    window.open("/imoveis", "_self")
+async function deleteAutoCompany({id}) {
+                await api.delete(`/autos/${id}`).then((res) => {
+                    window.open("/autos", "_self")
                 }).catch(err => {
                     console.log(err)
                 });
@@ -442,25 +495,25 @@ async function newCollaborator({idCompany, avatar, profession, name, schooling, 
         });
     }
 
-    async function mewNegociation({ idCompany, nameCompany ,idTeam, idClient, nameClient, emailClient,cpfClient, idProperty, titleProperty, typeNegotiation, status, deadline,
+    async function mewNegociation({ idCompany, nameCompany ,idTeam, idClient, nameClient, emailClient,cpfClient, idAuto, titleProperty, typeNegotiation, status, deadline,
         parcel, valueProperty, amountofCharges, valueTotal, typeOfInsurance }) {
 
-            console.log({ idCompany, nameCompany ,idTeam, idClient, nameClient, emailClient,cpfClient, idProperty, titleProperty, typeNegotiation, status, deadline,
+            console.log({ idCompany, nameCompany ,idTeam, idClient, nameClient, emailClient,cpfClient, idAuto, titleProperty, typeNegotiation, status, deadline,
                 parcel, valueProperty, amountofCharges, valueTotal, typeOfInsurance });
 
-                const data = ({idCompany, idTeam, idClient, nameClient, cpfClient, idProperty, typeNegotiation, status, deadline,
+                const data = ({idCompany, idTeam, idClient, nameClient, cpfClient, idAuto, typeNegotiation, status, deadline,
                     parcel, valueProperty, amountofCharges, valueTotal, typeOfInsurance})
 
                     await api.post("/negotiations", data).then((res) => {
                         mailProcess({email: emailClient, name: nameClient, company: nameCompany,  status: typeNegotiation,
-                            website: "http://suachave.com.br/imovel/", title: titleProperty, idProperty})
+                            website: "http://suachaveauto.com.br/autos/", title: titleProperty, idAuto})
                     }).catch(err => {
                         console.log(err)
                     });
             } 
 
-            async function mailProcess({email, name, company,  status, website, title, idProperty}) {
-                const dataProcess = {email, name, company,  status, website, title, idProperty}
+            async function mailProcess({email, name, company,  status, website, title, idAuto}) {
+                const dataProcess = {email, name, company,  status, website, title, idAuto}
                 await api.post("/mail/newContract", dataProcess).then((res) => {
                     window.open("/contratos", "_self")
                 }).catch((err) => {})
@@ -468,16 +521,16 @@ async function newCollaborator({idCompany, avatar, profession, name, schooling, 
 
 
     async function updateAccount({id, avatar, cover, city, uf, relationship, nickname, cep, latitude, longitude, país, username, role, status, type, email, phone, online, patron}){
-        const Local = localStorage.getItem("adm-suachave");
+        const Local = localStorage.getItem("adm-suachaveauto");
         const user = JSON.parse(Local)
-        const Local2 = localStorage.getItem("informations-suachave");
+        const Local2 = localStorage.getItem("informations-suachaveauto");
         const userInformations = JSON.parse(Local2)
         const data = {avatar, cover, city, uf, relationship, nickname, cep, latitude, longitude, país, username, role, status, type, email, phone, online, patron};
         const data2 = {avatar, cover, city, uf, relationship, nickname, cep, latitude, longitude, país, username, role, status, type, email, phone, online, patron, date:user.date , token:user.token  , expiresIn:user.expiresIn };
         console.log(id)
 
         await api.patch(`/accounts/${id}`, data).then(res => {
-            localStorage.setItem("adm-suachave", JSON.stringify(data2));
+            localStorage.setItem("adm-suachaveauto", JSON.stringify(data2));
             window.open("/feed", "_self")
         }).catch(error => {
             console.log(error)
@@ -487,7 +540,7 @@ async function newCollaborator({idCompany, avatar, profession, name, schooling, 
 
 async function deleteAccount(id) {
     toast.success("Deletando sua conta")
-    const Local = localStorage.getItem("informations-suachave");
+    const Local = localStorage.getItem("informations-suachaveauto");
     const user = JSON.parse(Local);
      toast.success("Deletando conta de usuário")
     console.log("Deletando conta de usuário")
@@ -553,14 +606,14 @@ async function recuperationUserForEmail(email) {
 
 //Novo ontrato
 async function updateContract({
-    id, idProperty,title, idCompany, idLocator, nameLocator, cpfCnpjLocator, idClient, nameClient, cpfCnpjClient, idGuarantor,
+    id, idAuto,title, idCompany, idLocator, nameLocator, cpfCnpjLocator, idClient, nameClient, cpfCnpjClient, idGuarantor,
     nameGuarantor, cpfCnpjGuarantor, type, subType, assurance, securityDeposit, typeNegotiation, newContract, status,
     startContract, endContract, parcels, maturityContract, valueContract, condominium, iptu, otherPrices, adjustment,
     readjustedRentDate, transfer, transferAmount, proportionalRent, firstProportionalInstallment, fireInsurance, valueFireInsurance,
     readjustmentIndex, fireInsuranceExpiration
 }) {
     const data = {
-        idProperty,title, idCompany, idLocator, nameLocator, cpfCnpjLocator, idClient, nameClient, cpfCnpjClient, idGuarantor,
+        idAuto,title, idCompany, idLocator, nameLocator, cpfCnpjLocator, idClient, nameClient, cpfCnpjClient, idGuarantor,
     nameGuarantor, cpfCnpjGuarantor, type, subType, assurance, securityDeposit, typeNegotiation, newContract, status,
     startContract, endContract, parcels, maturityContract, valueContract, condominium, iptu, otherPrices, adjustment,
     readjustedRentDate, transfer, transferAmount, proportionalRent, firstProportionalInstallment, fireInsurance, valueFireInsurance,
@@ -581,12 +634,12 @@ async function updateContract({
     })
 }
 async function newContract({
-    idProperty, title, idCompany, idLocator, nameLocator, cpfCnpjLocator, idClient, nameClient, cpfCnpjClient, emailClient, phoneClient, whatsappClient, idGuarantor,
+    idAuto, title, idCompany, idLocator, nameLocator, cpfCnpjLocator, idClient, nameClient, cpfCnpjClient, emailClient, phoneClient, whatsappClient, idGuarantor,
     nameGuarantor, cpfCnpjGuarantor, type, subType, assurance, securityDeposit, typeNegotiation, newContract, status,
     startContract, endContract, parcels, maturityContract, valueContract, condominium, iptu, otherPrices, adjustment,
     readjustedRentDate, transfer, transferAmount, proportionalRent, firstProportionalInstallment, fireInsurance, valueFireInsurance, readjustmentIndex, fireInsuranceExpiration
 }) {
-    const data = {idProperty, title, idCompany, idLocator, nameLocator, cpfCnpjLocator, idClient, nameClient, cpfCnpjClient, emailClient, phoneClient, whatsappClient, idGuarantor,
+    const data = {idAuto, title, idCompany, idLocator, nameLocator, cpfCnpjLocator, idClient, nameClient, cpfCnpjClient, emailClient, phoneClient, whatsappClient, idGuarantor,
         nameGuarantor, cpfCnpjGuarantor, type, subType, assurance, securityDeposit, typeNegotiation, newContract, status,
         startContract, endContract, parcels, maturityContract, valueContract, condominium, iptu, otherPrices, adjustment,
         readjustedRentDate, transfer, transferAmount, proportionalRent, firstProportionalInstallment, fireInsurance, valueFireInsurance, readjustmentIndex, fireInsuranceExpiration}
@@ -594,7 +647,7 @@ async function newContract({
     await api.post("/contracts", data).then((res) => {
         
         toast.success("Contrato criado com sucesso!");
-        updateStatusProperty({id: idProperty, availability: "Alugado"});
+        updateStatusAuto({id: idAuto, availability: "Alugado"});
 
         window.setTimeout(() =>{
             window.open("/contratos", "_self");
@@ -607,10 +660,10 @@ async function newContract({
 
 //Novo agendamento
 async function newScheduling({
-    idClient, idProperty, idCompany,idEvaluation, titleProperty, imageProperty, email, phone, whatsapp, status, meet, nameClient,
+    idClient, idAuto, idCompany,idEvaluation, titleProperty, imageProperty, email, phone, whatsapp, status, meet, nameClient,
   day, month, year, shift, hour, ownACar, location, address, similarProperties, amountOfPeople, dateCompleted, type
 }) {
-    const data = {idClient, idProperty, idCompany, idEvaluation, titleProperty, imageProperty, email, phone, whatsapp, status, meet, nameClient,
+    const data = {idClient, idAuto, idCompany, idEvaluation, titleProperty, imageProperty, email, phone, whatsapp, status, meet, nameClient,
         day, month, year, shift, hour, ownACar, location, address, similarProperties, amountOfPeople, dateCompleted, type}
 
     await api.post("/scheduling/", data).then((res) => {
@@ -706,49 +759,46 @@ async function newVisit(idAccount, username, idFriend) {
 }
 
 // Propriedade
-async function newProperty({
-    id, idCompany,avatarCompany, nameCompany, title, number, cep, road, district, city, uf, description, type, subType, status,
-    availability, bedroom, garage, suite, restroom, priceSale, priceRent, textRent, condominium, pets, furnished, newProperty, firstLease,
-    iptu, otherPrices, buildingArea, siglaBuildingArea, totalArea, siglaTotalArea, yearOfConstruction,
-    images, featuredImage, platformVideo, video, slider, financing, characteristcs, emphasis, idLocator,
-    codeIptu, codeEnergy, codeWater, informations,
+async function newAuto({
+    id, idCompany, avatarCompany, nameCompany, plate, chassi, brand, model, version,
+    segment, subsegment, doors, color, year, yearModel, mileage, march, engineCapacity, direction, fuel, endOfBoard, value, valueFipe,
+    state, financing, city, uf, cityCompany, ufCompany, characteristcs, informations, description, horses, video,
+     platformVideo, images, featuredImage, emphasis, characteristcs, licensingInfos, availability, type, bodywork, eletricCar
 }) {
 
     const data  = {
-        id, idCompany,avatarCompany, nameCompany, title, number, cep, road, district, city, uf, description, type, subType, status,
-        availability, bedroom, garage, suite, restroom, priceSale, priceRent, textRent, condominium, pets, furnished, newProperty, firstLease,
-        iptu, otherPrices, buildingArea, siglaBuildingArea, totalArea, siglaTotalArea, yearOfConstruction,
-        images, featuredImage, platformVideo, video, slider, financing, characteristcs, emphasis, idLocator,
-        codeIptu, codeEnergy, codeWater, informations,
+        id, idCompany, avatarCompany, nameCompany, plate, chassi, brand, model, version,
+        segment, subsegment, doors, color, year, yearModel, mileage, march, engineCapacity, direction, fuel, endOfBoard, value, valueFipe,
+        state, financing, city, uf, cityCompany, ufCompany, characteristcs, informations, description, horses, video,
+         platformVideo, images, featuredImage, emphasis, characteristcs, licensingInfos, availability, type, bodywork, eletricCar
         }
-    await api.post("/property", data).then(() => {
-        toast.success("Imóvel cadastrado com sucesso!");
+    await api.post("/autos", data).then(() => {
+        toast.success("Anúncio cadastrado com sucesso!");
         setTimeout(() => {
-            window.open("/imoveis", "_self")
+            window.open("/autos", "_self")
           }, "2000")
     }).catch(err => {
         console.log(err);
     })
 }
-async function updateProperty({
-    id, idCompany,avatarCompany, nameCompany, title, number, cep, road, district, city, uf, complement, reference, description, type, subType, status,
-    availability, bedroom, garage, suite, restroom, priceSale, priceRent, textRent, condominium, pets, furnished, newProperty, firstLease,
-    iptu, otherPrices, buildingArea, siglaBuildingArea, totalArea, siglaTotalArea, yearOfConstruction,
-    images, featuredImage, platformVideo, video, slider, financing, characteristcs, emphasis, idLocator,
-    codeIptu, codeEnergy, codeWater, informations, }) {
+async function updateAuto({
+    id, idCompany, avatarCompany, nameCompany, plate, chassi, brand, model, version,
+    segment, subsegment, doors, color, year, yearModel, mileage, march, engineCapacity, direction, fuel, endOfBoard, value, valueFipe,
+    state, financing, city, uf, cityCompany, ufCompany, characteristcs, informations, description, horses, video,
+     platformVideo, images, featuredImage, emphasis, characteristcs, licensingInfos, availability, type, bodywork, eletricCar
+    }) {
 
     const data  = {
-        idCompany,avatarCompany, nameCompany, title, number, cep, road, district, city, uf, complement, reference, description, type, subType, status,
-        availability, bedroom, garage, suite, restroom, priceSale, priceRent, textRent, condominium, pets, furnished, newProperty, firstLease,
-        iptu, otherPrices, buildingArea, siglaBuildingArea, totalArea, siglaTotalArea, yearOfConstruction,
-        images, featuredImage, platformVideo, video, slider, financing, characteristcs, emphasis, idLocator,
-        codeIptu, codeEnergy, codeWater, informations,
+        id, idCompany, avatarCompany, nameCompany, plate, chassi, brand, model, version,
+        segment, subsegment, doors, color, year, yearModel, mileage, march, engineCapacity, direction, fuel, endOfBoard, value, valueFipe,
+        state, financing, city, uf, cityCompany, ufCompany, characteristcs, informations, description, horses, video,
+         platformVideo, images, featuredImage, emphasis, characteristcs, licensingInfos, availability, type, bodywork, eletricCar
         }
 
-    await api.patch(`/property/${id}`, data).then(() => {
-        toast.success("Imóvel Atualizado com sucesso!");
+    await api.patch(`/autos/${id}`, data).then(() => {
+        toast.success("Anúncio Atualizado com sucesso!");
         setTimeout(() => {
-            window.open("/imoveis", "_self")
+            window.open("/autos", "_self")
           }, "2000")
     }).catch(err => {
         console.log(err);
@@ -761,13 +811,20 @@ async function newFeature({feature}) {
         console.log(err);
     })
 }
+async function newLicensing({licensing}) {
+    const data  = {licensing}
+    await api.post("/licensings", data).then(() => {
+    }).catch(err => {
+        console.log(err);
+    })
+}
 
 
-async function updateStatusProperty({id, availability}){
+async function updateStatusAuto({id, availability}){
     const data = {availability};
-    await api.patch(`/property/availability/${id}`, data).then(res => {
-        toast.success("Imóvel atualizado com sucesso")
-        // window.open("/imoveis", "_self")
+    await api.patch(`/autos/availability/${id}`, data).then(res => {
+        toast.success("Anúncio atualizado com sucesso")
+        // window.open("/autos", "_self")
     }).catch(error => {
         console.log(error)
     });
@@ -804,7 +861,7 @@ async function newWebSite({ idCompany, status,website,websiteAddress, hosting, d
        document.onclick = resetTimer;
        document.onchange = resetTimer;
        function doSomething() {
-        const DataUser = localStorage.getItem("adm-suachave");
+        const DataUser = localStorage.getItem("adm-suachaveauto");
         const user = JSON.parse(DataUser);
 
             if(user !== null || user !== undefined || user !== "") {
@@ -841,10 +898,11 @@ async function newWebSite({ idCompany, status,website,websiteAddress, hosting, d
             recoverPasswordNew,
             inactivityTime,
             createPayment,
+            createMyPlain,
             deleteConversation,
-            newProperty,
-            updateProperty,
-            updateStatusProperty,
+            newAuto,
+            updateAuto,
+            updateStatusAuto,
             newClientCompany,
             updateClientCompany,
             deleteClientCompany,
@@ -860,7 +918,7 @@ async function newWebSite({ idCompany, status,website,websiteAddress, hosting, d
             newGuarantor,
             updateGuarantor,
             deleteGuarantorCompany,
-            deletePropertyCompany,
+            deleteAutoCompany,
             deleteContractCompany,
             newScheduling,
             newContract,

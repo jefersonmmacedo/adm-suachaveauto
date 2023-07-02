@@ -7,7 +7,7 @@ import {IoEyeOutline, IoEyeOffOutline, IoAlertCircleOutline} from 'react-icons/i
 import apiIpUser from "../../services/api-ipUser";
 
 export function SignInCompany() {
-    const Local = localStorage.getItem("adm-suachave");
+    const Local = localStorage.getItem("adm-suachaveauto");
     const user = JSON.parse(Local);
  
   

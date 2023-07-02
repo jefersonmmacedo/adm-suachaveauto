@@ -7,7 +7,7 @@ import { AuthContext } from "../../contexts/Auth";
 import ReactTooltip from 'react-tooltip';
 
 export function DeleteGuarantor({id, name, fantasyName, cpfCnpj, address, typeGuarantor}) {
-    const Local = localStorage.getItem("adm-suachave");
+    const Local = localStorage.getItem("adm-suachaveauto");
     const user = JSON.parse(Local);
 
     const {deleteGuarantorCompany } = useContext(AuthContext)

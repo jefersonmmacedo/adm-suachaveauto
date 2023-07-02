@@ -10,7 +10,7 @@ import api from "../../services/api";
 
 export function EditGuarantor({id}) {
     console.log(id)
-    const Local = localStorage.getItem("adm-suachave");
+    const Local = localStorage.getItem("adm-suachaveauto");
     const user = JSON.parse(Local);
 
      const {updateGuarantor} = useContext(AuthContext)

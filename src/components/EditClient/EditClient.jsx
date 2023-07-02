@@ -10,7 +10,7 @@ import { useEffect } from "react";
 import api from "../../services/api";
 
 export function EditClient({id}) {
-    const Local = localStorage.getItem("adm-suachave");
+    const Local = localStorage.getItem("adm-suachaveauto");
     const user = JSON.parse(Local);
 
     const {updateClientCompany} = useContext(AuthContext)

@@ -5,7 +5,7 @@ import "./notificationsAdm.css"
 import { useFetch } from "../../hooks/useFetch";
 
 export function NotificationsAdm() {
-    const Local = localStorage.getItem("adm-suachave");
+    const Local = localStorage.getItem("adm-suachaveauto");
     const user = JSON.parse(Local);
 
     const {data} = useFetch(`/notification/${user.id}`)

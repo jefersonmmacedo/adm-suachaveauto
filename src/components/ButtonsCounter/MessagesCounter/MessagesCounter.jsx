@@ -5,7 +5,7 @@ import api from "../../../services/api";
 
 
 export function MessagesCounter({room}) {
-  const Local = localStorage.getItem("adm-suachave");
+  const Local = localStorage.getItem("adm-suachaveauto");
   const user = JSON.parse(Local);
 
   const [dateReadyRooms, setDateReadyRooms] = useState([]);

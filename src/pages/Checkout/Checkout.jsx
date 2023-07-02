@@ -13,9 +13,9 @@ import { AuthContext } from "../../contexts/Auth";
 
 export function Checkout() {
     const {id} = useParams();
-    const {createPayment} = useContext(AuthContext);
+    const {createPayment, createMyPlain} = useContext(AuthContext);
 
-    const Local = localStorage.getItem("adm-suachave");
+    const Local = localStorage.getItem("adm-suachaveauto");
     const user = JSON.parse(Local);
 
     const [plain, setPlain] = useState();
@@ -56,7 +56,7 @@ export function Checkout() {
 
     const valuePlain = plain?.valueNew === "" ? plain?.value : plain?.valueNew
     //const valorNumber = parseInt(plain?.valueNew.replace(/[^0-9]/gi, ""));
-    const valorNumberFormat = parseFloat(valuePlain) + 0.99;
+    const valorNumberFormat = plain?.name === "Free" ? + 0.00 : parseFloat(valuePlain) + 0.99;
     const valuePlainFormated = valorNumberFormat.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'});
     const valueUsers = accountBrokerCounter * 29.99
     const usersValueFormated = valueUsers.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'});
@@ -83,11 +83,25 @@ console.log(ValueBOLETO)
             idPlain: plain?.id, idCompany: user.id, email: user.email,
             namePlain: plain?.name, value: ValueBRL, period: plain?.period,
             linvoice_link: "", aceptTerms, status, status2, voucher: "", type: "",
-            users, maturity: new Date().getDate(), emphasis
+            users, maturity: new Date().getDate(), emphasis, nameCompany: user.fantasyName
         })
     }
 
-    
+    function handleNewPaymentFree() {
+        const status2 = "Ativo"
+        const aceptTerms = "Sim"
+
+        toast.info("Criando plano...")
+
+        createMyPlain({
+            idPlain: plain?.id, idCompany: user.id, email: user.email,
+            namePlain: plain?.name, value: ValueBRL, period: plain?.period,
+            linvoice_link: "", aceptTerms, status2, 
+            users, maturity: new Date().getDate(), emphasis, nameCompany: user.fantasyName
+        })
+    }
+
+
 
     Modal.setAppElement('#root');
     return (
@@ -146,7 +160,11 @@ console.log(ValueBOLETO)
                 <p>Escolha o melhor método de pagamento para você</p>
             <div className="buttons">
                 {/* <button className="btn-pix" onClick={handleOpenModalSearch}>Pagar com PIX</button> */}
+                {plain?.name === "Free" ?
+                <button className="btn-pix" onClick={handleNewPaymentFree}>Ativar Plano</button>
+                :
                 <button className="btn-pix" onClick={handleNewPayment}>Pagar com Bolix (Boleto com PIX)</button>
+                }
                 </div>
                 <p>Ao finalizar o pagamento você confirma que está de acordo com nossos termos de uso e política de privacidade</p>
             </div>
