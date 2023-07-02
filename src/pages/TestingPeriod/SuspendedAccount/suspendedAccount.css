@@ -114,7 +114,6 @@
     font-size: 14px;
 }
 
-
 @media (max-width: 600px) {
 
     .SuspendedAccount h2 {
@@ -132,7 +131,6 @@
         margin-top: 63px;
         margin-left: 1px;
     }
-
 
     .SuspendedAccount .coming {
         width: 200px;
