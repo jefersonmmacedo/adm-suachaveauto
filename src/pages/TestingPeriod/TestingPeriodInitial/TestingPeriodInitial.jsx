@@ -21,8 +21,6 @@ export function TestingPeriodInitial() {
 const d2 = new Date();
 const diffInMs   = new Date(d2) - new Date(d1)
 const diffInDays = parseInt(diffInMs / (1000 * 60 * 60 * 24));
-console.log(diffInDays)
-    
 
     return (
         

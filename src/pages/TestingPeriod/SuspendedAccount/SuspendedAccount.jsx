@@ -18,7 +18,6 @@ export function SuspendedAccount() {
     return (
         
         <div className="SuspendedAccount">
-
             <div className="logo">
               <img src={Logo} alt="Logo sua chave" />
             </div>

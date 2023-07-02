@@ -27,6 +27,7 @@ export function CancelAccount() {
     const [locators, setLocators] = useState("");
     const [guarantors, setGuarantors] = useState("");
 
+    
     useEffect(() => {
         async function loadProperties() {
             await api.get(`/property/company/${user.id}`).then((res) => {

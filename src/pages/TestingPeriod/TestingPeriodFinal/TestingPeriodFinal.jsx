@@ -18,7 +18,6 @@ export function TestingPeriodFinal() {
     return (
         
         <div className="TestingPeriodFinal">
-
             <div className="logo">
               <img src={Logo} alt="Logo sua chave" />
             </div>

@@ -14,7 +14,6 @@ export function PaymentNotFound() {
     function handleLogOut() {
       logout()
     }
-
  
     return (
         <div className="PaymentNotFound">
