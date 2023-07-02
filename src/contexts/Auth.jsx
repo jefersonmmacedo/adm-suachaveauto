@@ -763,14 +763,14 @@ async function newAuto({
     id, idCompany, avatarCompany, nameCompany, plate, chassi, brand, model, version,
     segment, subsegment, doors, color, year, yearModel, mileage, march, engineCapacity, direction, fuel, endOfBoard, value, valueFipe,
     state, financing, city, uf, cityCompany, ufCompany, characteristcs, informations, description, horses, video,
-     platformVideo, images, featuredImage, emphasis, characteristcs, licensingInfos, availability, type, bodywork, eletricCar
+     platformVideo, images, featuredImage, emphasis, licensingInfos, availability, type, bodywork, eletricCar
 }) {
 
     const data  = {
         id, idCompany, avatarCompany, nameCompany, plate, chassi, brand, model, version,
         segment, subsegment, doors, color, year, yearModel, mileage, march, engineCapacity, direction, fuel, endOfBoard, value, valueFipe,
         state, financing, city, uf, cityCompany, ufCompany, characteristcs, informations, description, horses, video,
-         platformVideo, images, featuredImage, emphasis, characteristcs, licensingInfos, availability, type, bodywork, eletricCar
+         platformVideo, images, featuredImage, emphasis, licensingInfos, availability, type, bodywork, eletricCar
         }
     await api.post("/autos", data).then(() => {
         toast.success("Anúncio cadastrado com sucesso!");
@@ -785,14 +785,14 @@ async function updateAuto({
     id, idCompany, avatarCompany, nameCompany, plate, chassi, brand, model, version,
     segment, subsegment, doors, color, year, yearModel, mileage, march, engineCapacity, direction, fuel, endOfBoard, value, valueFipe,
     state, financing, city, uf, cityCompany, ufCompany, characteristcs, informations, description, horses, video,
-     platformVideo, images, featuredImage, emphasis, characteristcs, licensingInfos, availability, type, bodywork, eletricCar
+     platformVideo, images, featuredImage, emphasis, licensingInfos, availability, type, bodywork, eletricCar
     }) {
 
     const data  = {
         id, idCompany, avatarCompany, nameCompany, plate, chassi, brand, model, version,
         segment, subsegment, doors, color, year, yearModel, mileage, march, engineCapacity, direction, fuel, endOfBoard, value, valueFipe,
         state, financing, city, uf, cityCompany, ufCompany, characteristcs, informations, description, horses, video,
-         platformVideo, images, featuredImage, emphasis, characteristcs, licensingInfos, availability, type, bodywork, eletricCar
+         platformVideo, images, featuredImage, emphasis, licensingInfos, availability, type, bodywork, eletricCar
         }
 
     await api.patch(`/autos/${id}`, data).then(() => {
