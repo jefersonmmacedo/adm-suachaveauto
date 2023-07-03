@@ -72,13 +72,6 @@ export function Dashboard() {
             if(diffInDays < 8 ) {
                 return;
             }
-            // if(payment.data.length > 0) {
-            //     return;
-            // }
-            // if(payment.data.length === 0) {
-            //    window.open("/fim-periodo-teste", "_self");
-            //     return;
-            // }
 
             if(payment.data[0]?.status === "Pendente" && paymentdiffInDays >= 6 ) {
                 window.open("/pagamento-pendente", "_self");
@@ -104,19 +97,20 @@ export function Dashboard() {
                 </div>
 
 
-                {days < 8 && myPlain?.length === 0 ?
-            <div className="PlainDashboard2">
-                <h4>Período de testes: Faltam {7 - days} dias para finalizar seu teste. Aproveite da melhor maneira!</h4>
-                {/* <a href="/planos">Renovar agora</a> */}
-            </div>
-            : myPlain === "Free" ?
+                {
+            myPlain === "Free" ?
                 ""
-            : new Date(myPayments[0]?.created_at) < new Date() ?
+            : new Date(myPayments[0]?.created_at).getMonth() === new Date().getMonth() && new Date(myPayments[0]?.created_at).getDate() === new Date().getDate() ?
             <div className="PlainDashboard">
-                <h4>Seu plano: {myPlain}, venceu no ultimo dia {new Date(myPayments[0]?.created_at).getDate()}. Não se preocupe, você pode pagar até 5 dias após o vencimento. </h4>
+                <h4>Seu plano: {myPlain}, vence hoje. Clique no botão ao lado para efetuar o pagamento. Não se preocupe, você pode pagar até 5 dias após o vencimento. </h4>
                 <a href="/meus-planos">Efetuar pagamento</a>
             </div>
-            : daysPayments >= 27 ?
+            : new Date(myPayments[0]?.created_at) < new Date() && new Date(myPayments[0]?.created_at) < new Date() && myPayments[0]?.status === "Pendente" ?
+            <div className="PlainDashboard">
+                <h4>Seu plano: {myPlain}, venceu no último dia {new Date(myPayments[0]?.created_at).getDate()}. Clique no botão ao lado para efetuar o pagamento. Não se preocupe, você pode pagar até 5 dias após o vencimento. </h4>
+                <a href="/meus-planos">Efetuar pagamento</a>
+            </div>
+            : daysPayments >= 25 ?
             <div className="PlainDashboard">
                 <h4>Seu plano: {myPlain}, vence no próximo dia {new Date(myPayments[0]?.created_at).getDate()}. Não se preocupe, você pode pagar até 5 dias após o vencimento. </h4>
                 <a href="/meus-planos">Efetuar pagamento</a>
@@ -128,7 +122,6 @@ export function Dashboard() {
             </div>
             : ""
             }
-
 
                 <div className="topInfomations">
                     <div className="properties">
