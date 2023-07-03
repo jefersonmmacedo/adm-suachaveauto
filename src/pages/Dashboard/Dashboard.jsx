@@ -26,20 +26,10 @@ export function Dashboard() {
     const [myPlain, setMyPlain] = useState([])
     const [daysPayments, setDaysPayments] = useState()
 
-    const [days, setDays] = useState()
-
     useEffect(() => {
         async function verifyPaymentStatus() {
-            //Criação de conta e período de testes
-            const d1  = new Date(user.date);
-            const d2 = new Date();
-            const diffInMs   = new Date(d2) - new Date(d1)
-            const diffInDays = parseInt(diffInMs / (1000 * 60 * 60 * 24));
-            setDays(diffInDays)
-
             //Dados de plano
-            const plains =  await api.get(`/myplain/${user.id}`)
-            console.log(plains.data);
+            const plains =  await api.get(`/myplain/${user.id}`);
             
             if(plains.data.length === 0) {
                 window.open("/escolher-plano", "_self");
@@ -49,31 +39,19 @@ export function Dashboard() {
             setMyPlain(plains.data[0].namePlain)
 
             if(plains.data[0].namePlain === "Free") {
-                console.log("Free Plano");
                 return
-            } else {
-                console.log(plains.data);
             }
             //Dados de pagamentos
             const payment =  await api.get(`/payments/${user.id}`)
-            console.log(payment.data)
             setMyPayments(payment.data)
 
-
-
-            const paymentd1  = new Date(payment.data[0]?.created_at);
-            const paymentd2 = new Date();
-            const paymentdiffInMs   = new Date(paymentd2) - new Date(paymentd1);
-            const paymentdiffInDays = parseInt(paymentdiffInMs / (1000 * 60 * 60 * 24));
-            setDaysPayments(paymentdiffInDays)
-
+            const date1 = new Date(payment.data[0]?.created_at);
+            const date2 = new Date();
+            const timeDiffPayments = Math.abs(date2.getTime() - date1.getTime());
+            const diffDaysPayments = Math.ceil(timeDiffPayments / (1000 * 3600 * 24)); 
+            setDaysPayments(diffDaysPayments);
            
-
-            if(diffInDays < 8 ) {
-                return;
-            }
-
-            if(payment.data[0]?.status === "Pendente" && paymentdiffInDays >= 6 ) {
+            if(payment.data[0]?.status === "Pendente" && diffDaysPayments >= 6 ) {
                 window.open("/pagamento-pendente", "_self");
                 return;
             }
@@ -100,24 +78,32 @@ export function Dashboard() {
                 {
             myPlain === "Free" ?
                 ""
+            : daysPayments - 15 && myPayments[0]?.status === "Aprovado" ?
+            ""
             : new Date(myPayments[0]?.created_at).getMonth() === new Date().getMonth() && new Date(myPayments[0]?.created_at).getDate() === new Date().getDate() ?
             <div className="PlainDashboard">
-                <h4>Seu plano: {myPlain}, vence hoje. Clique no botão ao lado para efetuar o pagamento. Não se preocupe, você pode pagar até 5 dias após o vencimento. </h4>
+                <div className="text">
+                <h4>Seu plano, vence hoje. Não se preocupe, você pode pagar até 5 dias após o vencimento. </h4>
+                <h5>Caso ja tenha pago. Desconsidere a mensagem</h5>
+                </div>
                 <a href="/meus-planos">Efetuar pagamento</a>
             </div>
-            : new Date(myPayments[0]?.created_at) < new Date() && new Date(myPayments[0]?.created_at) < new Date() && myPayments[0]?.status === "Pendente" ?
+            : new Date(myPayments[0]?.created_at) < new Date() && new Date(myPayments[0]?.created_at) < new Date()?
             <div className="PlainDashboard">
-                <h4>Seu plano: {myPlain}, venceu no último dia {new Date(myPayments[0]?.created_at).getDate()}. Clique no botão ao lado para efetuar o pagamento. Não se preocupe, você pode pagar até 5 dias após o vencimento. </h4>
+                <div className="text">
+                <h4>Seu plano, venceu no último dia {new Date(myPayments[0]?.created_at).getDate()}. Não se preocupe, você pode pagar até 5 dias após o vencimento. </h4>
+                <h5>Caso ja tenha pago. Desconsidere a mensagem</h5>
+                </div>
                 <a href="/meus-planos">Efetuar pagamento</a>
             </div>
             : daysPayments >= 25 ?
             <div className="PlainDashboard">
-                <h4>Seu plano: {myPlain}, vence no próximo dia {new Date(myPayments[0]?.created_at).getDate()}. Não se preocupe, você pode pagar até 5 dias após o vencimento. </h4>
+                <h4>Seu plano, vence no próximo dia {new Date(myPayments[0]?.created_at).getDate()}. Não se preocupe, você pode pagar até 5 dias após o vencimento. </h4>
                 <a href="/meus-planos">Efetuar pagamento</a>
             </div>
             : myPlain.length > 0 && myPayments[0]?.status === "Pendente" ?
             <div className="PlainDashboard2">
-                <h4>Seu plano: {myPlain}, ainda está com pagamento {myPayments[0]?.status}. (Em caso de pagamento efetuado, desconsidere esta mensagem) </h4>
+                <h4>Seu plano, ainda está com pagamento {myPayments[0]?.status}. (Em caso de pagamento efetuado, desconsidere esta mensagem) </h4>
                 <a href="/meus-planos">Efetuar pagamento</a>
             </div>
             : ""
