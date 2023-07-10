@@ -60,7 +60,7 @@ export const MyButtonComponent = ({id, uploadFiles2}) => {
         editor: {
             images: {
               preview: false,
-              crop: true,        
+              crop: false,        
               cropRatio: 4 / 3,
               cropShape: "circ",      // "rect" | "circ"
             }
