@@ -70,13 +70,13 @@ export function ToolBar() {
                     <IoCalendarOutline /><p>Agenda</p>
                     </a>
                 </div>
-                <div className="ToolUnic2">
-                   <a href={myPayment?.namePlain === undefined || myPayment?.namePlain === "Start" ?
+                {/* <div className="ToolUnic2">
+                   <a href={myPayment?.namePlain === "Free" || myPayment?.namePlain === "Start" ?
                             "/atualizar-plano/Lite"
                             : "/avaliacoes"}>
                     <IoSearchOutline /><p>Avaliações</p>
                     </a>
-                </div>
+                </div> */}
                 <div className="ToolUnic2">
                    <a href="/match">
                    <ImConnection /><p>Match</p>
@@ -88,21 +88,21 @@ export function ToolBar() {
                     </a>
                 </div>
                 <div className="ToolUnic2">
-                   <a href={myPayment?.namePlain === undefined || myPayment?.namePlain === "Start" ?
+                   <a href={myPayment?.namePlain === "Free" || myPayment?.namePlain === "Start" ?
                             "/atualizar-plano/Lite"
                             : "/propostas" }>
                     <HiOutlineClipboardDocumentCheck /><p>Propostas</p>
                     </a>
                 </div>
                 <div className="ToolUnic2">
-                   <a href={myPayment?.namePlain === undefined || myPayment?.namePlain === "Start" ?
+                   <a href={myPayment?.namePlain === "Free" || myPayment?.namePlain === "Start" ?
                             "/atualizar-plano/Lite"
                             : "/vendas" }>
                     <RiExchangeDollarLine /><p>Vendas</p>
                     </a>
                 </div>
                 {/* <div className="ToolUnic2">
-                   <a href={myPayment?.namePlain === undefined || myPayment?.namePlain === "Start" ?
+                   <a href={myPayment?.namePlain === "Free" || myPayment?.namePlain === "Start" ?
                             "/atualizar-plano/Lite"
                             : "/contratos"}>
                     <IoDocumentTextOutline /><p>Contratos</p>
@@ -114,14 +114,14 @@ export function ToolBar() {
                     </a>
                 </div>
                 <div className="ToolUnic2">
-                   <a href={myPayment?.namePlain === undefined || myPayment?.namePlain === "Start"?
+                   <a href={myPayment?.namePlain === "Free" || myPayment?.namePlain === "Start"?
                             "/atualizar-plano/Lite"
                             : "/encargos"}>
                     <RiExchangeDollarLine /><p>Encargos</p>
                     </a>
                 </div> */}
                 <div className="ToolUnic2">
-                   <a href={myPayment?.namePlain === undefined || myPayment?.namePlain === "Start" ?
+                   <a href={myPayment?.namePlain === "Free" || myPayment?.namePlain === "Start" ?
                             "/atualizar-plano/Lite"
                             : "/financeiro"}>
                     <TbCurrencyDollar /><p>Financeiro</p>

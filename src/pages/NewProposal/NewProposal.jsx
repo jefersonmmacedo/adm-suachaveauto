@@ -27,22 +27,22 @@ export function NewProposal() {
     const [status, setStatus] = useState("Ativo");
     const [typeProposal, setTypeProposal] = useState("Ativo");
     const [id, setId] = useState("");
-    const [title, setTitle] = useState("");
-    const [priceRent, setPriceRent] = useState("");
-    const [priceSale, setPriceSale] = useState("");
+    const [brand, setBrand] = useState("");
+    const [model, setModel] = useState("");
+    const [version, setVersion] = useState("");
     const [type, setType] = useState("");
-    const [subType, setSubType] = useState("");
-    const [idClient, setIdClient] = useState("");
+    const [value, setValue] = useState("");
+    const [valueFipe, setValueFipe] = useState("");
     const [nameClient, setNameClient] = useState("");
     const [cpfCnpjClient, setCpfCnpjClient] = useState("");
     const [emailClient, setEmailClient] = useState("");
     const [phoneClient, setPhoneClient] = useState("");
     const [whatsappClient, setWhatsappClient] = useState("");
     const [valueProposal, setValueProposal] = useState("");
-    const [condominium, setCondominium] = useState("");
-    const [iptu, setIptu] = useState("");
-    const [otherPrices, setOtherPrices] = useState("");
-    const [fireInsurance, setFireInsurance] = useState("");
+    const [year, setYear] = useState("");
+    const [yearModel, setYearModel] = useState("");
+    const [ipva, setIpva] = useState("");
+    const [plate, setPlate] = useState("");
     const [formOfpayment,setFormOfpayment] = useState("");
     const [expirationDate, setExpirationDate] = useState("");
     const [contactReminder, setContactReminder] = useState("");
@@ -53,17 +53,19 @@ export function NewProposal() {
     async function AutoInfoLoaded(data) {
         console.log(data);
        
-        await api.get(`/autos/${data}`).then((res) => {
+        await api.get(`/autos/unicauto/${data}`).then((res) => {
             console.log(data)
             setId(data)
-            setTitle(res.data[0]?.title)
-            setPriceRent(res.data[0]?.priceRent)
-            setPriceSale(res.data[0]?.priceSale)
-            setCondominium(res.data[0]?.condominium)
-            setIptu(res.data[0]?.iptu)
-            setOtherPrices(res.data[0]?.otherPrices)
+            setBrand(res.data[0]?.brand)
+            setModel(res.data[0]?.model)
+            setVersion(res.data[0]?.version)
+            setYear(res.data[0]?.year)
+            setYearModel(res.data[0]?.yearModel)
+            setIpva(res.data[0]?.ipva)
+            setPlate(res.data[0]?.plate)
             setType(res.data[0]?.type)
-            setSubType(res.data[0]?.subType)
+            setValue(res.data[0]?.value)
+            setValueFipe(res.data[0]?.value)
         }).catch((error) => {
             console.log(error)
         })
@@ -73,7 +75,7 @@ export function NewProposal() {
        
         await api.get(`/clientCompany/unic/${data}`).then((res) => {
             console.log(data)
-            setIdClient(data)
+            setValueFipe(data)
             setNameClient(res.data[0]?.name)
             setCpfCnpjClient(res.data[0]?.cpf_Cnpj)
             setEmailClient(res.data[0]?.email)
@@ -87,9 +89,9 @@ export function NewProposal() {
 
     function handleNewProposal() {
         newProposal({
-            typeProposal, idAuto: id,title, idCompany: user.id, type, subType, condominium, iptu, otherPrices,
-            idClient, nameClient, cpfCnpjClient, email: emailClient, phone: phoneClient, whatsapp: whatsappClient,
-            status, valueAuto: typeProposal === "Venda de imóvel" ? priceSale : priceRent, formOfpayment, expirationDate, contactReminder, 
+            typeProposal, idAuto: id,brand, idCompany: user.id, type, value, year, ipva, plate,
+            valueFipe, nameClient, cpfCnpjClient, email: emailClient, phone: phoneClient, whatsapp: whatsappClient,
+            status, valueAuto: typeProposal === "Venda de imóvel" ? version : model, formOfpayment, expirationDate, contactReminder, 
         })
     }
 
@@ -155,55 +157,59 @@ export function NewProposal() {
 
 
                 <div className="textHome">
-                      <h4>Imóvel / Proprietário</h4>
+                      <h4>Dados do auto</h4>
                       <div className="newInfo">
                     <SelectAuto AutoInfoLoaded={AutoInfoLoaded}/>
                     </div>
                 </div>
                 <div className="data">
                 <div className="dataInfo">
-                    <span>Imóvel</span>
-                    <input type="text" value={id == "" ? "" : `${id} - ${title}`} />
+                    <span>Marca</span>
+                    <input type="text" value={brand} />
                     </div>
                     <div className="dataInfo">
-                    <span>Tipo do Imóvel</span>
-                    <input type="text" className={type === "" ? "" : "select"} value={type}/>
+                    <span>Modelo</span>
+                    <input type="text" className={model === "" ? "" : "select"} value={model}/>
                     </div>
                     <div className="dataInfo">
-                    <span>Subtipo do imóvel</span>
-                    <input type="text" className={subType === "" ? "" : "select"} value={subType}/>
+                    <span>Placa</span>
+                    <input type="text" className={plate === "" ? "" : "select"} value={plate}/>
+                    </div>
+                    <div className="dataInfo2">
+                    <span>Versão</span>
+                    <input type="text" className={version === "" ? "" : "select"} value={version} />
                     </div>
                     <div className="dataInfo">
-                    <span>Valor proposta</span>
-                    <input type="text" className={valueProposal === "" ? "" : "select"} value={typeProposal === "Venda de imóvel" ? priceSale : priceRent} />
+                    <span>Ano/Modelo</span>
+                    <input type="text" className={plate === "" ? "" : "select"} value={`${year}/${yearModel}`}/>
                     </div>
                    
                     </div>
 
 
             <div className="textHome">
-            <h4>Encargos</h4>
+            <h4>Valores</h4>
                 </div>
 
                     <div className="data">
 
 
                     <div className="dataInfo">
-                    <span>IPTU</span>
-                    <input type="text" className={iptu === "" ? "" : "select"} value={iptu} />
+                    <span>Valor</span>
+                    <input type="text" className={value === "" ? "" : "select"} value={value}/>
                     </div>
                     <div className="dataInfo">
-                    <span>Condomínio</span>
-                    <input type="text" className={condominium === "" ? "" : "select"} value={condominium}/>
+                    <span>Fipe</span>
+                    <input type="text" className={valueFipe === "" ? "" : "select"} value={valueFipe}/>
                     </div>
                     <div className="dataInfo">
-                    <span>Outros Encargos</span>
-                    <input type="text" className={otherPrices === "" ? "" : "select"} value={otherPrices}/>
+                    <span>ipva</span>
+                    <input type="text" className={ipva === "" ? "" : "select"} value={ipva} />
                     </div>
-                          <div className="dataInfo">
-                        <span>Valor Seguro incêncio</span>
-                        <input type="text" className={fireInsurance === "" ? "" : "select"} value={fireInsurance} onChange={e => setFireInsurance(e.target.value)}/>
-                        </div>
+                    <div className="dataInfo">
+                    <span>Valor da proposta</span>
+                    <input type="text" className={valueProposal === "" ? "" : "select"} value={valueProposal}  onChange={e => setValueProposal(e.target.value)}/>
+                    </div>
                     </div>
                   
   
@@ -253,6 +259,14 @@ export function NewProposal() {
                         <option value="Á Vista">Á Vista</option>
                         <option value="Financiamento">Financiamento</option>
                     </select>
+                    </div>
+                <div className="dataInfo">
+                    <span>Entrada</span>
+                    <input type="text" value={whatsappClient} />
+                    </div>
+                <div className="dataInfo">
+                    <span>Nº Parcelas</span>
+                    <input type="text" value={whatsappClient} />
                     </div>
                     <div className="dataInfo">
                     <span>Expiração de proposta</span>

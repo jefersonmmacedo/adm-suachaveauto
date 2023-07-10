@@ -1,7 +1,7 @@
 ﻿import { useFetch } from "../../hooks/useFetch"
 
 export function CountersViews({id}) {
-    const {data} = useFetch(`/viewproperty/autos/${id}`)
+    const {data} = useFetch(`/viewAuto/auto/${id}`)
 
     if(!data) {
         return (
@@ -9,8 +9,8 @@ export function CountersViews({id}) {
                 0
             </div>
         )
-
     }
+
     return (
         <div className="CountersViews" style={{marginRight: '2px'}}>
             {data.length} 

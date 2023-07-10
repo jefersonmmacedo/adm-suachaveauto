@@ -1,7 +1,7 @@
 ﻿import { useFetch } from "../../hooks/useFetch"
 
 export function CountersWhatsapp({id}) {
-    const {data} = useFetch(`/contact/autos/${id}`);
+    const {data} = useFetch(`/contact/auto/${id}`);
 
     const Contact = data?.filter((contactUser) => contactUser.type === "Whatsapp" )
 
@@ -15,7 +15,7 @@ export function CountersWhatsapp({id}) {
     }
     return (
         <div className="CountersWhatsapp" style={{marginRight: '2px'}}>
-            {Contact.length}
+            {Contact.length} 
         </div>
     )
 }

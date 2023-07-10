@@ -38,7 +38,7 @@ export function MatchAuto({id}) {
         </div>
         <div className="dataMatch">
             <h3>Alertas criados a partir deste auto</h3>
-            {data.length === 0 ? "" :
+            {data.length === 0 ? "0" :
             
             data?.map((user) => {
                 return (

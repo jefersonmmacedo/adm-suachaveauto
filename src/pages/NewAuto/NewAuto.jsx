@@ -54,6 +54,7 @@ export function NewAuto() {
     const [segment, setSegment] = useState("");
     const [subsegment, setSubsegment] = useState("");
     const [doors, setDoors] = useState("");
+    const [gnv, setGnv] = useState("");
     const [color, setColor] = useState("");
     const [year, setYear] = useState("");
     const [yearModel, setYearModel] = useState("");
@@ -98,7 +99,7 @@ export function NewAuto() {
 
 
 
-        await api.post("/fipe", data).then((res) => {
+        await apiFipe.post("/fipe", data).then((res) => {
             setCarsFipe(res.data);
             console.log(res.data);
             if(carsFipe.fipe?.length === 0) {
@@ -205,7 +206,7 @@ function handleNewAuto() {
         id:idAuto, idCompany: user.id, avatarCompany: user.logo, nameCompany: user.fantasyName, plate: placa, chassi, brand, model, version,
         segment, subsegment, doors, color, year, yearModel, mileage, march, engineCapacity, direction, fuel, endOfBoard, value, valueFipe,
         state, financing, city: cityCar, uf: ufCar, cityCompany: user.city, ufCompany: user.uf, characteristcs: feature, informations, description, horses, video,
-         platformVideo, images, featuredImage, emphasis, characteristcs, licensingInfos, availability: "Disponível", type, bodywork, eletricCar
+         platformVideo, images, featuredImage, emphasis, characteristcs, licensingInfos, availability: "Disponível", type, bodywork, eletricCar, gnv
     })
 }
 
@@ -323,6 +324,10 @@ const searchLicensingFilter = allLicensings?.filter((licensingInfos) => licensin
 
 
 
+function handleSelectGng(e) {
+    setGnv(e.target.value)
+    console.log(e.target.value)
+}
 function handleSelectDoors(e) {
     setDoors(e.target.value)
     console.log(e.target.value)
@@ -531,7 +536,7 @@ function handleNewLicensing() {
                     {segment === "MOTO" ? "" :
                     <div className="dataInfo">
                     <span>Posssui GNV?</span>
-                    <select value={"direction"} onChange={"handleSelectDirection"} className={"direction" === "" ? "" : "select"}>
+                    <select value={gnv} onChange={handleSelectGng} className={gnv === "" ? "" : "select"}>
                         <option value="">Selecione</option>
                         <option value="Sim">Sim</option>
                         <option value="Não">Não</option>

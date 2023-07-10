@@ -3,6 +3,9 @@ import { UploadButton } from "react-uploader";
 import "./uploadFiles.css"
 import { IoArrowUpCircle } from "react-icons/io5";
 import {v4 as uuidv4} from 'uuid';
+import api from "../../services/api";
+import { useState } from "react";
+import { useEffect } from "react";
 
 const Local = localStorage.getItem("adm-suachaveauto");
 const user = JSON.parse(Local);
@@ -11,6 +14,31 @@ const user = JSON.parse(Local);
 
 // Render the file upload button:
 export const MyButtonComponent = ({id, uploadFiles2}) => {
+  const [countFiles, setCountFiles] = useState(0)
+
+  useEffect(() => {
+    async function loadMyPlain() {
+      await api.get(`/myplain/${user.id}`).then((res) => {
+        console.log(res.data[0].namePlain)
+        if(res.data[0].namePlain === "Free") {
+          setCountFiles(10)
+        } else if(res.data[0].namePlain === "Start") {
+          setCountFiles(25)
+        } else if(res.data[0].namePlain === "Lite") {
+          setCountFiles(35)
+        } else if(res.data[0].namePlain === "Pro") {
+          setCountFiles(35)
+        }
+        
+      })
+
+    }
+
+    loadMyPlain()
+  },[]);
+
+  console.log(countFiles)
+
     const uploader = Uploader({
       apiKey: "public_W142hX67PwCeWgQq4jxqKL5gQYu7"
     });
@@ -27,7 +55,7 @@ export const MyButtonComponent = ({id, uploadFiles2}) => {
               base: 16
             }
           },
-        maxFileCount: 50,
+        maxFileCount: countFiles,
         multi: true,
         editor: {
             images: {

@@ -9,41 +9,44 @@ export function SelectAuto({AutoInfoLoaded}) {
     const Local = localStorage.getItem("adm-suachaveauto");
     const user = JSON.parse(Local);
 
-     const [isOpenModalProcess, setIsOpenModaProcess] = useState(false);
+     const [isOpenModalAuto, setIsOpenModaAuto] = useState(false);
    
      const [search, setSearch] = useState("");
      const searchLower = search.toLowerCase();
 
     const {data} = useFetch(`/autos/company/${user.id}`);
 
-    function handleOpenModalProcess(e) {
+    function handleOpenModalAuto(e) {
         e.preventDefault();
-          setIsOpenModaProcess(true)
+          setIsOpenModaAuto(true)
         }
       
-        function handleCloseModalProcess(e) {
+        function handleCloseModalAuto(e) {
           e.preventDefault();
-          setIsOpenModaProcess(false);
+          setIsOpenModaAuto(false);
         }
 
-        function selectAuto(data) {
+        function selectAutoUnic(data) {
             AutoInfoLoaded(data)
-            setIsOpenModaProcess(false);
+            setIsOpenModaAuto(false);
         }
 
-        const searchFilter = data?.filter((companies) => companies.title.toLowerCase().includes(searchLower) || companies.id.toLowerCase().includes(searchLower))
+        const searchFilter = data?.filter((companies) => companies.brand?.toLowerCase().includes(searchLower)
+                                        || companies.version?.toLowerCase().includes(searchLower)
+                                        || companies.plate?.toLowerCase().includes(searchLower)
+                                        || companies.model?.toLowerCase().includes(searchLower))
 
         Modal.setAppElement('#root');
     return (
         <>
-         <button className="link" onClick={handleOpenModalProcess}>Selecinar imóvel</button>
+         <button className="link" onClick={handleOpenModalAuto}>Selecionar Auto</button>
 
-        <Modal isOpen={isOpenModalProcess} onRequestClose={handleCloseModalProcess}
+        <Modal isOpen={isOpenModalAuto} onRequestClose={handleCloseModalAuto}
         overlayClassName="react-modal-overlay"
         className="react-modal-content">
 
-        <div className="content-moda-Process">
-        <div className="itensModal-Process">
+        <div className="content-moda-Auto">
+        <div className="itensModal-Auto">
             <h3>Selecionar imóvel</h3>
 
             <div className="form">
@@ -58,13 +61,13 @@ export function SelectAuto({AutoInfoLoaded}) {
                                 </div>
 
                                 <div className="dataText">
-                                <h5>{Auto.id} - {Auto.title}</h5>
-                                <h6>{Auto.status} - {Auto.type} - {Auto.subType}</h6>
-                                <h6>{Auto.district} - {Auto.city} - {Auto.uf}</h6>
+                                <h5>{Auto.brand} - {Auto.model} - Placa:{Auto.plate}</h5>
+                                <h6>{Auto.version} - {Auto.year}/{Auto.yearModel}</h6>
+                                <h6>{Auto.city} - {Auto.uf}</h6>
                                 </div>
 
 
-                                <button onClick={() => selectAuto(Auto.id)}> <IoCheckboxOutline /> </button>
+                                <button onClick={() => selectAutoUnic(Auto.id)}> <IoCheckboxOutline /> </button>
                             </div>
                         )
                     })}
@@ -73,7 +76,7 @@ export function SelectAuto({AutoInfoLoaded}) {
 
                 <div className="ButtonsForm">
                 {/* <button className="send" onClick="">inclur no contrato</button> */}
-                <button className="cancel" onClick={handleCloseModalProcess}>X Cancelar</button>
+                <button className="cancel" onClick={handleCloseModalAuto}>X Cancelar</button>
                 </div>
             </div>
         </div>

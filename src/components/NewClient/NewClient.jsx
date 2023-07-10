@@ -51,21 +51,21 @@ export function NewClient({pageProp, nameLead, emailLead, phoneLead, whatsappLea
     const newCityPreference =  cityPreference.toLowerCase().replace(/(?:^|\s)(?!da|de|do)\S/g, l => l.toUpperCase());
     const newRoad =  road.toLowerCase().replace(/(?:^|\s)(?!da|de|do)\S/g, l => l.toUpperCase());
 
-    useEffect(() => {
-        async function loadproperty() {
-            await api.get(`/property/${idAuto}`).then((res) => {
-                setInterest(res.data[0].status)
-                setType(res.data[0].type)
-                setSubtype(res.data[0].subType)
-                setCityPreference(res.data[0].city)
-                setUfPreference(res.data[0].uf)
-            }).catch((err) => {
-                console.log(err)
-            })
-        }
+    // useEffect(() => {
+    //     async function loadproperty() {
+    //         await api.get(`/autos/unicauto/${idAuto}`).then((res) => {
+    //             setInterest(res.data[0].status)
+    //             setType(res.data[0].type)
+    //             setSubtype(res.data[0].subType)
+    //             setCityPreference(res.data[0].city)
+    //             setUfPreference(res.data[0].uf)
+    //         }).catch((err) => {
+    //             console.log(err)
+    //         })
+    //     }
 
-        loadproperty()
-    }, [])
+    //     loadproperty()
+    // }, [])
 
     function handleOpenModalProcess(e) {
         e.preventDefault();

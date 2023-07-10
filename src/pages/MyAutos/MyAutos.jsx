@@ -112,13 +112,13 @@ export function MyAutos() {
     const availabilityFilterType = data?.filter((companies) => companies.availability === availability && companies.type === type )
     const typeFilter = data?.filter((companies) => companies.type === type)
     const subTypeFilter = data?.filter((companies) => companies.type === type && companies.subType === subType)
-    const searchFilter = data?.filter((companies) => companies.brand.toLowerCase().includes(searchLower)
-                                    || companies.model.toLowerCase().includes(searchLower)
-                                    || companies.version.toLowerCase().includes(searchLower)
-                                    || companies.plate.toLowerCase().includes(searchLower)
-                                    || companies.year.toLowerCase().includes(searchLower)
-                                    || companies.yearModel.toLowerCase().includes(searchLower)
-                                    || companies.id.toLowerCase().includes(searchLower))
+    const searchFilter = data?.filter((companies) => companies.brand?.toLowerCase().includes(searchLower)
+                                    || companies.model?.toLowerCase().includes(searchLower)
+                                    || companies.version?.toLowerCase().includes(searchLower)
+                                    || companies.plate?.toLowerCase().includes(searchLower)
+                                    || companies.year?.toLowerCase().includes(searchLower)
+                                    || companies.yearModel?.toLowerCase().includes(searchLower)
+                                    || companies.id?.toLowerCase().includes(searchLower))
 
 
     const filterData = search !== "" && status === "" && availability === "" && type === "" && subType === "" && emphasis === false ? searchFilter
@@ -146,20 +146,20 @@ export function MyAutos() {
                 <h3>Meus autos</h3>
 
                 <h4>{data?.length}
-                {plains?.namePlain === undefined ? "/10 " :
+                {plains?.namePlain === "Free" ? "/5 " :
                     plains?.namePlain === "Start" ? "/50 " :
                     plains?.namePlain === "Lite" ? "/200 " :
-                    plains?.namePlain === "Tour" ? " " :
+                    plains?.namePlain === "Pro" ? " " :
 
                     "" 
                  }
                   autos publicados
                  </h4>
 
-                <h3><a className="link" href={plains?.namePlain === undefined && data?.length >= 10 ? "/atualizar-plano/Start" :
+                <h3><a className="link" href={plains?.namePlain === "Free" && data?.length >= 5 ? "/atualizar-plano/Start" :
                     plains?.namePlain === "Start" && data?.length >= 50 ? "/atualizar-plano/Lite" :
                     plains?.namePlain === "Lite" && data?.length >= 200 ? "/atualizar-plano/Tour" :
-                    plains?.namePlain === "Tour" ? "/novoauto" :
+                    plains?.namePlain === "Pro" ? "/novoauto" :
                     "/novoauto"
                  }>+ Novo anúncio</a></h3>
                 </div>
@@ -198,7 +198,7 @@ export function MyAutos() {
                         </div>
                         <div className="textAutoListAdm">
                             <div className="textDataAutoListAdm">
-                        <h4>{auto?.brand} - {auto?.model}  | ID: {auto?.id}</h4>
+                        <h4>ID: {auto?.id} | {auto?.brand} - {auto?.model}</h4>
                         <h5><IoCarOutline />{auto?.version} - {auto?.year}/{auto?.yearModel} - Placa: {auto?.plate}</h5>
                         <h5><IoLocationOutline />{auto?.city} - {auto?.uf} | {auto?.fuel}</h5>
                         <h6>Cadastrado em <DateFormat2 date={auto?.created_at} /></h6>
@@ -233,12 +233,12 @@ export function MyAutos() {
                                 <h6><CountersContact id={auto?.id}/> Ligações</h6>
                             </div>
 
-                             <MatchAuto id={auto?.id}/>
+                             {/* <MatchAuto id={auto?.id}/> */}
 
-                            <MatchAutoSearch  status={auto?.status} type={auto?.type} subType={auto?.subType}
+                            {/* <MatchAutoSearch  status={auto?.status} type={auto?.type} subType={auto?.subType}
                              uf={auto?.uf} city={auto?.city} district={auto?.district} 
                              bedroom={auto?.bedroom} restroom={auto?.restroom} garage={auto?.garage}
-                             suite={auto?.suite} pets={auto?.pets} furnished={auto?.furnished}/>
+                             suite={auto?.suite} pets={auto?.pets} furnished={auto?.furnished}/> */}
 
                         
                         </div>
@@ -249,7 +249,7 @@ export function MyAutos() {
 
                         <ViewAutoList id={auto?.id}/>
 
-                        <a href={`/editarimovel/${auto?.id}`} className="btnControl" data-tip data-for='Editar'><IoCreateOutline /></a>
+                        <a href={`/editar-auto/${auto?.id}`} className="btnControl" data-tip data-for='Editar'><IoCreateOutline /></a>
     
                         <DeleteAuto id={auto?.id} brand={`${auto?.brand}`} model={`${auto?.model}`} version={`${auto?.version}`}
                                         plate={`${auto?.plate}`} year={`${auto?.year}/${auto?.yearModel}`}

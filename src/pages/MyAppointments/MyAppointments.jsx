@@ -67,7 +67,11 @@ export function MyAppointments() {
     const filterPassed = data?.filter((filterData) => new Date(filterData.created_at) < new Date());
     const filterStatus = data?.filter((filterData) => filterData.status === status);
     const filterShifts = data?.filter((filterData) => filterData.shift === shifts);
-    const searchFilter = data?.filter((companies) => companies.titleProperty.toLowerCase().includes(searchLower) || companies.nameClient.toLowerCase().includes(searchLower))
+    const searchFilter = data?.filter((companies) => companies.brand?.toLowerCase().includes(searchLower)
+                                                 || companies.model?.toLowerCase().includes(searchLower)
+                                                 || companies.version?.toLowerCase().includes(searchLower)
+                                                 || companies.plate?.toLowerCase().includes(searchLower)
+                                                 || companies.nameClient?.toLowerCase().includes(searchLower))
 
     
     const filterData = search !== "" && status === "" && periods === "" && shifts === ""  ? searchFilter
@@ -121,15 +125,16 @@ export function MyAppointments() {
                     return (
                         <div className="AppointmentsListAdm">
                         <div className="image">
-                            <a  href={`/agendamento/${scheduling.id}`} >
-                            <img src={scheduling.imageProperty} alt="" />
-                            </a>
+                            {/* <a  href={`/agendamento/${scheduling.id}`} > */}
+                            <img src={scheduling.imageAuto} alt="" />
+                            {/* </a> */}
                         </div>
                         <div className="textAppointmentsListAdm">
                             <div className="textDataAppointmentsListAdm">
-                            <a  href={`/agendamento/${scheduling.id}`} >
-                        <h4>{scheduling.titleProperty} | {scheduling.type}</h4>
-                            </a>
+                            {/* <a  href={`/agendamento/${scheduling.id}`} > */}
+                        <h4>{scheduling.dataCar?.brand} -  {scheduling.dataCar?.model} - {scheduling.dataCar?.year}</h4>
+                        <h6>{scheduling.dataCar?.version} - Placa: {scheduling.dataCar?.plate?.toUpperCase()} </h6>
+                            {/* </a> */}
                         <h5>Cliente: {scheduling.nameClient}</h5>
                         <h6><IoCalendarOutline /> {scheduling.day} /{scheduling.month}/{scheduling.year}  {scheduling.hour}  | {scheduling.shift} </h6>
                             </div>
@@ -142,17 +147,17 @@ export function MyAppointments() {
                                         }>{scheduling.status}</h5>
                             </div>
                         <div className="infosContactData">
-                            <div className="infoUnicData">
+                            {/* <div className="infoUnicData">
                             <IoPersonOutline />
                                 <h6>{scheduling.amountOfPeople} Pessoas</h6>
-                            </div>
+                            </div> */}
                             <div className="infoUnicData">
                             <IoCarOutline />
-                                <h6> Possui carro? {scheduling.ownACar}</h6>
+                                <h6> Possui CNH? {scheduling.ownACar}</h6>
                             </div>
                             <div className="infoUnicData">
                             <IoHomeOutline />
-                                <h6> Deseja ver outros imóveis? {scheduling.similarProperties}</h6>
+                                <h6> Deseja ver outros autos? {scheduling.similarProperties}</h6>
                             </div>
                         </div>
                         </div>

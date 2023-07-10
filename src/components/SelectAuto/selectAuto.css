@@ -1,6 +1,6 @@
 ﻿.link {
     border: none;
-    border-radius: 6px;
+    border-radius: 25px;
     background-color: none;
     color: var(--Primary);
     font-size: 16px;
@@ -10,7 +10,7 @@
   }
   
 
-  .content-moda-Process {
+  .content-moda-Auto {
     width: 100%;
     display: flex;
     align-items: center;
@@ -20,23 +20,23 @@
     max-height: 600px;  
 }
 
-  .content-moda-Process::-webkit-scrollbar {
+  .content-moda-Auto::-webkit-scrollbar {
     width: 12px;               /* width of the entire scrollbar */
   }
   
-    .content-moda-Process::-webkit-scrollbar-track {
+    .content-moda-Auto::-webkit-scrollbar-track {
     background: var(--BorderHover);        /* color of the tracking area */
-    border-radius: 6px;
+    border-radius: 25px;
   }
   
-    .content-moda-Process::-webkit-scrollbar-thumb {
+    .content-moda-Auto::-webkit-scrollbar-thumb {
     background-color: var(--Border);    /* color of the scroll thumb */
     border-radius: 20px;       /* roundness of the scroll thumb */
     border: 3px solid var(--BorderHover);  /* creates padding around scroll thumb */
   }
 
 
-.content-moda-Process .itensModal-Process {
+.content-moda-Auto .itensModal-Auto {
     width: 100%;
     display: flex;
     align-items: center;
@@ -46,7 +46,7 @@
 
 }
 
-.content-moda-Process .itensModal-Process .form {
+.content-moda-Auto .itensModal-Auto .form {
     width: 100%;
     display: flex;
     align-items: center;
@@ -54,25 +54,25 @@
     flex-direction: column; 
 }
 
-.content-moda-Process .itensModal-Process h3 {
+.content-moda-Auto .itensModal-Auto h3 {
     margin: 10px;
     color: var(--Primary);
     font-weight: 600;
 }
-.content-moda-Process .itensModal-Process input {
+.content-moda-Auto .itensModal-Auto input {
     width: 80%;
     display: flex;
     align-items: center;
     justify-content: flex-start;
     flex-direction: row;
-    border-radius: 6px;
+    border-radius: 25px;
     border: 1px solid var(--Border);
     background-color: var(--White);
     padding: 10px;
     margin: 3px 0;
 }
 
-.content-moda-Process .itensModal-Process .form .listAuto {
+.content-moda-Auto .itensModal-Auto .form .listAuto {
     width: 80%;
     height: 300px;
     display: flex;
@@ -83,48 +83,48 @@
     overflow:auto;
 }
 
-.content-moda-Process .itensModal-Process .form .listAuto::-webkit-scrollbar {
+.content-moda-Auto .itensModal-Auto .form .listAuto::-webkit-scrollbar {
     width: 12px;               /* width of the entire scrollbar */
   }
   
-    .content-moda-Process .itensModal-Process .form .listAuto::-webkit-scrollbar-track {
+    .content-moda-Auto .itensModal-Auto .form .listAuto::-webkit-scrollbar-track {
     background: var(--BorderHover);        /* color of the tracking area */
-    border-radius: 6px;
+    border-radius: 25px;
   }
   
-    .content-moda-Process .itensModal-Process .form .listAuto::-webkit-scrollbar-thumb {
+    .content-moda-Auto .itensModal-Auto .form .listAuto::-webkit-scrollbar-thumb {
     background-color: var(--Border);    /* color of the scroll thumb */
     border-radius: 20px;       /* roundness of the scroll thumb */
     border: 3px solid var(--BorderHover);  /* creates padding around scroll thumb */
   }
 
-  .content-moda-Process .itensModal-Process .form .listAuto .dataAuto {
+  .content-moda-Auto .itensModal-Auto .form .listAuto .dataAuto {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-direction: row;
-    border-radius: 6px;
+    border-radius: 25px;
     border: 1px solid var(--Border);
     background-color: var(--White);
     padding: 5px;
     margin: 3px 0;
   }
 
-  .content-moda-Process .itensModal-Process .form .listAuto .dataAuto .image {
+  .content-moda-Auto .itensModal-Auto .form .listAuto .dataAuto .image {
     width: 50px;
     height: 50px;
     onject-fit: cover;
   }
 
-  .content-moda-Process .itensModal-Process .form .listAuto .dataAuto .image img {
+  .content-moda-Auto .itensModal-Auto .form .listAuto .dataAuto .image img {
     width: 50px;
     height: 50px;
     onject-fit: cover;
-    border-radius: 6px;
+    border-radius: 50%;
   }
 
-  .content-moda-Process .itensModal-Process .form .listAuto .dataAuto .dataText {
+  .content-moda-Auto .itensModal-Auto .form .listAuto .dataAuto .dataText {
     width: 100%;
     display: flex;
     align-items: flex-start;
@@ -133,21 +133,21 @@
     padding: 5px;
     margin: 0 3px;
   }
-  .content-moda-Process .itensModal-Process .form .listAuto .dataAuto .dataText h5 {
+  .content-moda-Auto .itensModal-Auto .form .listAuto .dataAuto .dataText h5 {
     font-weight: 700;
     color: var(--Gray2);
   }
-  .content-moda-Process .itensModal-Process .form .listAuto .dataAuto .dataText h6 {
+  .content-moda-Auto .itensModal-Auto .form .listAuto .dataAuto .dataText h6 {
     font-weight: 500;
     color: var(--Gray);
   }
 
-  .content-moda-Process .itensModal-Process .form .listAuto .dataAuto button {
+  .content-moda-Auto .itensModal-Auto .form .listAuto .dataAuto button {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: row;
-    border-radius: 6px;
+    border-radius: 25px;
     border: 1px solid var(--Primary);
     background-color: var(--PrimaryHover);
     margin: 5px;
@@ -155,11 +155,11 @@
     color: var(--White);
   }
 
-  .content-moda-Process .itensModal-Process .form .listAuto .dataAuto button svg {
+  .content-moda-Auto .itensModal-Auto .form .listAuto .dataAuto button svg {
     margin: 0px;
   }
 
-.content-moda-Process .itensModal-Process .form .ProcessData .dataUser {
+.content-moda-Auto .itensModal-Auto .form .AutoData .dataUser {
     width: 50%;
     display: flex;
     align-items: flex-start;
@@ -168,16 +168,16 @@
     padding: 10px;
     margin: 5px 3px;
     box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.1);
-    border-radius: 6px;
+    border-radius: 25px;
 }
 
-.content-moda-Process .itensModal-Process .form .ProcessData .dataUser  h5 {
+.content-moda-Auto .itensModal-Auto .form .AutoData .dataUser  h5 {
     color: var(--Paragraph);
     margin: 0px 0px 3px 3px;
     font-weight: 600;
 }
 
-.content-moda-Process .itensModal-Process .form .ProcessData .searchData {
+.content-moda-Auto .itensModal-Auto .form .AutoData .searchData {
     width: 100%;
     display: flex;
     align-items: center;
@@ -185,25 +185,25 @@
     flex-direction: row;
 }
 
-.content-moda-Process .itensModal-Process .form .ProcessData .dataUser input {
+.content-moda-Auto .itensModal-Auto .form .AutoData .dataUser input {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: flex-start;
     flex-direction: row;
-    border-radius: 6px;
+    border-radius: 25px;
     border: 1px solid var(--Border);
     background-color: var(--White);
     padding: 10px;
     margin: 3px 0;
 }
 
-.content-moda-Process .itensModal-Process .form .ProcessData .dataUser .btn {
+.content-moda-Auto .itensModal-Auto .form .AutoData .dataUser .btn {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: row;
-    border-radius: 6px;
+    border-radius: 25px;
     border: 1px solid var(--Primary);
     background-color: var(--PrimaryHover);
     margin: 0 0 0 5px;
@@ -211,21 +211,21 @@
     color: var(--White);
 }
 
-.content-moda-Process .itensModal-Process .form .ProcessData .dataUser .userInformations {
+.content-moda-Auto .itensModal-Auto .form .AutoData .dataUser .userInformations {
     width: 100%;
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
     flex-direction: column;
-    border-radius: 6px;
+    border-radius: 25px;
 }
 
-.content-moda-Process .itensModal-Process .form .ProcessData .dataUser .userInformations h4 {
+.content-moda-Auto .itensModal-Auto .form .AutoData .dataUser .userInformations h4 {
     margin: 2px 3px;
     color: var(--Primary);
     font-weight: 600;
 }
-.content-moda-Process .itensModal-Process .form .ProcessData .dataUser .userInformations h5 {
+.content-moda-Auto .itensModal-Auto .form .AutoData .dataUser .userInformations h5 {
     font-weight: 400;
     width: 100%;
     display: flex;
@@ -235,14 +235,14 @@
     color: var(--Gray);
 }
 
-.content-moda-Process .itensModal-Process .form .ProcessData .dataUser .userInformations h5 svg {
+.content-moda-Auto .itensModal-Auto .form .AutoData .dataUser .userInformations h5 svg {
     margin-right: 5px;
 }
 
 
 
 
-.content-moda-Process .itensModal-Process .form .ProcessData .dataAuto {
+.content-moda-Auto .itensModal-Auto .form .AutoData .dataAuto {
     width: 50%;
     display: flex;
     align-items: flex-start;
@@ -251,16 +251,16 @@
     padding: 10px;
     margin: 5px 3px;
     box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.1);
-    border-radius: 6px;
+    border-radius: 25px;
 }
 
-.content-moda-Process .itensModal-Process .form .ProcessData .dataAuto   h5 {
+.content-moda-Auto .itensModal-Auto .form .AutoData .dataAuto   h5 {
     color: var(--Paragraph);
     margin: 0px 0px 3px 3px;
     font-weight: 600;
 }
 
-.content-moda-Process .itensModal-Process .form .ProcessData .dataAuto .image {
+.content-moda-Auto .itensModal-Auto .form .AutoData .dataAuto .image {
     width: 100%;
     height: 50px;
     border-radius: 6px 6px 0 0;
@@ -268,19 +268,19 @@
     margin: 5px 0;
 }
 
-.content-moda-Process .itensModal-Process .form .ProcessData .dataAuto .image img {
+.content-moda-Auto .itensModal-Auto .form .AutoData .dataAuto .image img {
     width: 100%;
     height: 50px;
     border-radius: 6px 6px 0 0;
     object-fit: cover;
 }
 
-.content-moda-Process .itensModal-Process .form .ProcessData .dataAuto .btn {
+.content-moda-Auto .itensModal-Auto .form .AutoData .dataAuto .btn {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: row;
-    border-radius: 6px;
+    border-radius: 25px;
     border: 1px solid var(--Primary);
     background-color: var(--PrimaryHover);
     margin: 5px;
@@ -288,21 +288,21 @@
     color: var(--White);
 }
 
-.content-moda-Process .itensModal-Process .form .ProcessData .dataAuto .userInformations {
+.content-moda-Auto .itensModal-Auto .form .AutoData .dataAuto .userInformations {
     width: 100%;
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
     flex-direction: column;
-    border-radius: 6px;
+    border-radius: 25px;
 }
 
-.content-moda-Process .itensModal-Process .form .ProcessData .dataAuto .userInformations h4 {
+.content-moda-Auto .itensModal-Auto .form .AutoData .dataAuto .userInformations h4 {
     margin: 2px 3px;
     color: var(--Primary);
     font-weight: 600;
 }
-.content-moda-Process .itensModal-Process .form .ProcessData .dataAuto .userInformations h5 {
+.content-moda-Auto .itensModal-Auto .form .AutoData .dataAuto .userInformations h5 {
     font-weight: 400;
     width: 100%;
     display: flex;
@@ -312,13 +312,13 @@
     color: var(--Gray);
 }
 
-.content-moda-Process .itensModal-Process .form .ProcessData .dataAuto .userInformations h5 svg {
+.content-moda-Auto .itensModal-Auto .form .AutoData .dataAuto .userInformations h5 svg {
     margin-right: 5px;
 }
 
 
 
-.content-moda-Process .itensModal-Process .form .DataInputs {
+.content-moda-Auto .itensModal-Auto .form .DataInputs {
     width: 100%;
     display: flex;
     align-items: flex-start;
@@ -327,10 +327,10 @@
     padding: 10px 5px 15px 5px;
     border: 1px solid var(--Border);
     margin: 10px 0;
-    border-radius: 6px;
+    border-radius: 25px;
     flex-wrap: wrap;
 }
-.content-moda-Process .itensModal-Process .form .DataInputs .Avatar {
+.content-moda-Auto .itensModal-Auto .form .DataInputs .Avatar {
     width: 100%;
     display: flex;
     align-items: center;
@@ -339,12 +339,12 @@
     padding: 5px;
 }
 
-.content-moda-Process .itensModal-Process .form .DataInputs .Avatar h5 {
+.content-moda-Auto .itensModal-Auto .form .DataInputs .Avatar h5 {
     color: var(--Paragraph);
     font-weight: 600;
 }
 
-.content-moda-Process .itensModal-Process .form .DataInputs .Avatar .label-avatar{
+.content-moda-Auto .itensModal-Auto .form .DataInputs .Avatar .label-avatar{
     width: 100px;
     height: 100px;
     display: flex;
@@ -355,32 +355,32 @@
     margin: 5px;
 }
 
-.content-moda-Process .itensModal-Process .form .DataInputs .Avatar .label-avatar input {
+.content-moda-Auto .itensModal-Auto .form .DataInputs .Avatar .label-avatar input {
     display: none;
 }
 
-.content-moda-Process .itensModal-Process .form .DataInputs .Avatar .label-avatar span {
+.content-moda-Auto .itensModal-Auto .form .DataInputs .Avatar .label-avatar span {
     z-index: 99;
     position: absolute;
     opacity: 0.7;
     transition: all .5s;
 }
 
-.content-moda-Process .itensModal-Process .form .DataInputs .Avatar .label-avatar span:hover{
+.content-moda-Auto .itensModal-Auto .form .DataInputs .Avatar .label-avatar span:hover{
     opacity: 1;
     transform: scale(1.4);
 }
 
-.content-moda-Process .itensModal-Process .form .DataInputs .Avatar .label-avatar img{
+.content-moda-Auto .itensModal-Auto .form .DataInputs .Avatar .label-avatar img{
     margin-bottom: 1em;
-    border-radius: 6px;
+    border-radius: 25px;
     object-fit: cover;
     width: 100px;
     height: 100px;
     box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.2);
 }
 
-.content-moda-Process .itensModal-Process .form .DataInputs .dataInputUnic {
+.content-moda-Auto .itensModal-Auto .form .DataInputs .dataInputUnic {
     width: 33%;
     display: flex;
     align-items: flex-start;
@@ -389,13 +389,13 @@
     padding: 0 5px;
 }
 
-.content-moda-Process .itensModal-Process .form .DataInputs .dataInputUnic h5 {
+.content-moda-Auto .itensModal-Auto .form .DataInputs .dataInputUnic h5 {
     color: var(--Paragraph);
     margin: 10px 10px 5px 10px;
     font-weight: 600;
 }
 
-.content-moda-Process .itensModal-Process .form .DataInputs .searchInputs {
+.content-moda-Auto .itensModal-Auto .form .DataInputs .searchInputs {
     width: 100%;
     display: flex;
     align-items:center;
@@ -403,24 +403,24 @@
     flex-direction: row;
 }
 
-.content-moda-Process .itensModal-Process .form .DataInputs .searchInputs input {
+.content-moda-Auto .itensModal-Auto .form .DataInputs .searchInputs input {
     width: 50%;
     display: flex;
     align-items: center;
     justify-content: flex-start;
     flex-direction: row;
-    border-radius: 6px;
+    border-radius: 25px;
     border: 1px solid var(--Border);
     background-color: var(--White);
     padding: 10px 20px;
     margin: 5px 0;
 }
-.content-moda-Process .itensModal-Process .form .DataInputs .searchInputs button {
+.content-moda-Auto .itensModal-Auto .form .DataInputs .searchInputs button {
     background-color: var(--Primary);
     color: var(--White);
 }
 
-.content-moda-Process .itensModal-Process .form .DataInputs .dataInputUnic .doubleInputs {
+.content-moda-Auto .itensModal-Auto .form .DataInputs .dataInputUnic .doubleInputs {
     width: 100%;
     display: flex;
     align-items:center;
@@ -428,33 +428,33 @@
     flex-direction: row;
 }
 
-.content-moda-Process .itensModal-Process .form .DataInputs .dataInputUnic input {
+.content-moda-Auto .itensModal-Auto .form .DataInputs .dataInputUnic input {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: flex-start;
     flex-direction: row;
-    border-radius: 6px;
+    border-radius: 25px;
     border: 1px solid var(--Border);
     background-color: var(--White);
     padding: 10px 20px;
 }
-.content-moda-Process .itensModal-Process .form .DataInputs .dataInputUnic input::placeholder {
+.content-moda-Auto .itensModal-Auto .form .DataInputs .dataInputUnic input::placeholder {
     color: var(--Gray);
 }
-.content-moda-Process .itensModal-Process .form .DataInputs .dataInputUnic select {
+.content-moda-Auto .itensModal-Auto .form .DataInputs .dataInputUnic select {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: flex-start;
     flex-direction: row;
-    border-radius: 6px;
+    border-radius: 25px;
     border: 1px solid var(--Border);
     background-color: var(--White);
     padding: 10px 20px;
 }
 
-.content-moda-Process .itensModal-Process .form .DataInputs .dataInputUnic .doubleInputs {
+.content-moda-Auto .itensModal-Auto .form .DataInputs .dataInputUnic .doubleInputs {
     width: 100%;
     display: flex;
     align-items:center;
@@ -462,32 +462,32 @@
     flex-direction: row;
 }
 
-.content-moda-Process .itensModal-Process .form .DataInputs .dataInputUnic .doubleInputs  input {
+.content-moda-Auto .itensModal-Auto .form .DataInputs .dataInputUnic .doubleInputs  input {
     width: 30%;
     display: flex;
     align-items: center;
     justify-content: flex-start;
     flex-direction: row;
-    border-radius: 6px;
+    border-radius: 25px;
     border: 1px solid var(--Border);
     background-color: var(--White);
     padding: 10px;
     margin: 3px;
 }
 
-.content-moda-Process .itensModal-Process .form .DataInputs .dataInputUnic .doubleInputs select {
+.content-moda-Auto .itensModal-Auto .form .DataInputs .dataInputUnic .doubleInputs select {
     width: 70%;
     display: flex;
     align-items: center;
     justify-content: flex-start;
     flex-direction: row;
-    border-radius: 6px;
+    border-radius: 25px;
     border: 1px solid var(--Border);
     background-color: var(--White);
     padding: 10px 20px;
 }
 
-.content-moda-Process .itensModal-Process .form .ButtonsForm {
+.content-moda-Auto .itensModal-Auto .form .ButtonsForm {
     width: 100%;
     display: flex;
     align-items: center;
@@ -495,26 +495,26 @@
     flex-direction: row;
     margin: 20px 0;
 }
-.content-moda-Process .itensModal-Process .form .send {
+.content-moda-Auto .itensModal-Auto .form .send {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: row;
-    border-radius: 6px;
+    border-radius: 25px;
     border: 1px solid var(--Primary);
     background-color: var(--PrimaryHover);
     margin: 5px;
     padding: 10px 20px;
     color: var(--White);
 }
-.content-moda-Process .itensModal-Process .form .cancel {
+.content-moda-Auto .itensModal-Auto .form .cancel {
     width: 80%;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: row;
-    border-radius: 6px;
+    border-radius: 25px;
     border: 1px solid var(--Primary);
     background-color: var(--White);
     margin: 5px;
@@ -530,7 +530,7 @@
     @media (max-width: 550px) {
 
 
-    .content-moda-Process .itensModal-Process .form .ProcessData {
+    .content-moda-Auto .itensModal-Auto .form .AutoData {
         width: 100%;
         display: flex;
         align-items: center;
@@ -539,17 +539,17 @@
         padding: 10px; 
     }
     
-    .content-moda-Process .itensModal-Process .form .ProcessData .dataUser {
+    .content-moda-Auto .itensModal-Auto .form .AutoData .dataUser {
         width: 100%;
     }
     
     
-    .content-moda-Process .itensModal-Process .form .ProcessData .dataAuto {
+    .content-moda-Auto .itensModal-Auto .form .AutoData .dataAuto {
         width: 100%;
     }
     
 
-    .content-moda-Process .itensModal-Process .form .DataInputs {
+    .content-moda-Auto .itensModal-Auto .form .DataInputs {
         width: 100%;
         display: flex;
         align-items: flex-start;
@@ -558,7 +558,7 @@
         padding: 5px;
     }
 
-    .content-moda-Process .itensModal-Process .form .DataInputs .dataInputUnic {
+    .content-moda-Auto .itensModal-Auto .form .DataInputs .dataInputUnic {
         width: 100%;
         display: flex;
         align-items: flex-start;

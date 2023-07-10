@@ -1,7 +1,7 @@
 ﻿import { useFetch } from "../../hooks/useFetch"
 
 export function CountersAlert({id}) {
-    const {data} = useFetch(`/alertClient/autos/${id}`);
+    const {data} = useFetch(`/alertClient/auto/${id}`);
 
 
     if(!data) {

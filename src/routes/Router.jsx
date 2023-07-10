@@ -110,7 +110,7 @@ function PrivateRoute({children} ) {
                     element={ <PrivateRoute> <PaymentNotFound /> </PrivateRoute>} />
             <Route path="/novoauto"
                     element={ <PrivateRoute> <NewAuto /> </PrivateRoute>} />
-            <Route path="/editarauto/:id"
+            <Route path="/editar-auto/:id"
                     element={ <PrivateRoute> <EditAuto /> </PrivateRoute>} />
             <Route path="/autos"
                     element={ <PrivateRoute> <MyAutos /> </PrivateRoute>} />

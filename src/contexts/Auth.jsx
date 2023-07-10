@@ -785,15 +785,17 @@ async function updateAuto({
     id, idCompany, avatarCompany, nameCompany, plate, chassi, brand, model, version,
     segment, subsegment, doors, color, year, yearModel, mileage, march, engineCapacity, direction, fuel, endOfBoard, value, valueFipe,
     state, financing, city, uf, cityCompany, ufCompany, characteristcs, informations, description, horses, video,
-     platformVideo, images, featuredImage, emphasis, licensingInfos, availability, type, bodywork, eletricCar
+     platformVideo, images, featuredImage, emphasis, licensingInfos, availability, type, bodywork, eletricCar, gnv
     }) {
 
     const data  = {
-        id, idCompany, avatarCompany, nameCompany, plate, chassi, brand, model, version,
+        idCompany, avatarCompany, nameCompany, plate, chassi, brand, model, version,
         segment, subsegment, doors, color, year, yearModel, mileage, march, engineCapacity, direction, fuel, endOfBoard, value, valueFipe,
         state, financing, city, uf, cityCompany, ufCompany, characteristcs, informations, description, horses, video,
-         platformVideo, images, featuredImage, emphasis, licensingInfos, availability, type, bodywork, eletricCar
+         platformVideo, images, featuredImage, emphasis, licensingInfos, availability, type, bodywork, eletricCar, gnv
         }
+
+        console.log(data)
 
     await api.patch(`/autos/${id}`, data).then(() => {
         toast.success("Anúncio Atualizado com sucesso!");

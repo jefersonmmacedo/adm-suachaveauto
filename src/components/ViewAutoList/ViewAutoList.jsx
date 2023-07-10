@@ -16,7 +16,7 @@ export function ViewAutoList({id}) {
             setFilter(!filter)
         }
 
-        const {data} = useFetch(`/autos/${id}`)
+        const {data} = useFetch(`/autos/unicauto/${id}`)
 
         if(!data) {
             return (
