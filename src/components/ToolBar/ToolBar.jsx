@@ -72,7 +72,7 @@ export function ToolBar() {
                 </div>
                 {/* <div className="ToolUnic2">
                    <a href={myPayment?.namePlain === "Free" || myPayment?.namePlain === "Start" ?
-                            "/atualizar-plano/Lite"
+                            "/atualizar-plano/Start"
                             : "/avaliacoes"}>
                     <IoSearchOutline /><p>Avaliações</p>
                     </a>
@@ -89,21 +89,21 @@ export function ToolBar() {
                 </div>
                 <div className="ToolUnic2">
                    <a href={myPayment?.namePlain === "Free" || myPayment?.namePlain === "Start" ?
-                            "/atualizar-plano/Lite"
+                            "/atualizar-plano/Start"
                             : "/propostas" }>
                     <HiOutlineClipboardDocumentCheck /><p>Propostas</p>
                     </a>
                 </div>
                 <div className="ToolUnic2">
                    <a href={myPayment?.namePlain === "Free" || myPayment?.namePlain === "Start" ?
-                            "/atualizar-plano/Lite"
+                            "/atualizar-plano/Start"
                             : "/vendas" }>
                     <RiExchangeDollarLine /><p>Vendas</p>
                     </a>
                 </div>
                 {/* <div className="ToolUnic2">
                    <a href={myPayment?.namePlain === "Free" || myPayment?.namePlain === "Start" ?
-                            "/atualizar-plano/Lite"
+                            "/atualizar-plano/Start"
                             : "/contratos"}>
                     <IoDocumentTextOutline /><p>Contratos</p>
                     </a>
@@ -115,14 +115,14 @@ export function ToolBar() {
                 </div>
                 <div className="ToolUnic2">
                    <a href={myPayment?.namePlain === "Free" || myPayment?.namePlain === "Start"?
-                            "/atualizar-plano/Lite"
+                            "/atualizar-plano/Start"
                             : "/encargos"}>
                     <RiExchangeDollarLine /><p>Encargos</p>
                     </a>
                 </div> */}
                 <div className="ToolUnic2">
                    <a href={myPayment?.namePlain === "Free" || myPayment?.namePlain === "Start" ?
-                            "/atualizar-plano/Lite"
+                            "/atualizar-plano/Start"
                             : "/financeiro"}>
                     <TbCurrencyDollar /><p>Financeiro</p>
                     </a>
@@ -133,7 +133,9 @@ export function ToolBar() {
                     </a>
                 </div>
                 <div className="ToolUnic2">
-                   <a href="/meu-site">
+                <a href={myPayment?.namePlain === "Free" || myPayment?.namePlain === "Start" ?
+                            "/atualizar-plano/Lite"
+                            : "/meu-site" }>
                     <IoLaptopOutline /><p>Meu site</p>
                     </a>
                 </div>
