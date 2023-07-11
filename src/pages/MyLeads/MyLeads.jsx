@@ -1,7 +1,7 @@
 ﻿import NavbarAdm from "../../components/Nav/Navbar"
 import { ToolBar } from "../../components/ToolBar/ToolBar"
 import "./myLeads.css";
-import {IoFileTrayFullOutline, IoTrashOutline, IoCreateOutline, IoLocationOutline, IoEyeOutline, IoHeartOutline, IoLogoWhatsapp, IoCallOutline, IoMailOutline, IoHomeOutline} from 'react-icons/io5';
+import {IoFileTrayFullOutline, IoTrashOutline, IoCreateOutline, IoLocationOutline, IoEyeOutline, IoHeartOutline, IoLogoWhatsapp, IoCallOutline, IoMailOutline, IoHomeOutline, IoCarSportOutline} from 'react-icons/io5';
 import ReactTooltip from 'react-tooltip';
 import { useFetch } from "../../hooks/useFetch";
 import { DateFormat2 } from "../../components/DateFormat2/DateFormat2";
@@ -69,9 +69,9 @@ export function MyLeads() {
                                 </div>
 
                                 <div className="dataUnic">
-                                    <h5> <b>Imóvel:</b> </h5>
+                                    <h5> <b>Auto:</b> </h5>
                                     <a href={`https://www.suachaveauto.com.br/auto/${client.idAuto}`} target="_blank" rel="noreferrer">
-                                      <h5><IoHomeOutline /> {client.idAuto} </h5>
+                                      <h5><IoCarSportOutline /> {client.idAuto === null ? "Contato direto" : client.idAuto} </h5>
                                     </a>
                                 </div>
 
