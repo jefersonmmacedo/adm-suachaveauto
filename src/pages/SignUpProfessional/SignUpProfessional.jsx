@@ -40,6 +40,13 @@ export function SignUpProfessional() {
     const [email, setEmail] = useState("");
     const [phone, setPhone] = useState("");
     const [whatsapp, setWhatsapp] = useState("");
+    const [whatsapp2, setWhatsapp2] = useState("");
+    const [whatsapp3, setWhatsapp3] = useState("");
+    const [whatsapp4, setWhatsapp4] = useState("");
+    const [textWhatsapp, setTextWhatsapp] = useState("Principal");
+    const [textWhatsapp2, setTextWhatsapp2] = useState("");
+    const [textWhatsapp3, setTextWhatsapp3] = useState("");
+    const [textWhatsapp4, setTextWhatsapp4] = useState("");
     const [passwordConfirm, setPasswordConfirm] = useState("");
     const [password, setPassword] = useState("");
 
@@ -136,7 +143,8 @@ export function SignUpProfessional() {
     function continueNewAccount(photoUrlAvatar) {
         createAccountCompany({
           type, verified: false, status: "Ativo", cpf_Cnpj: cnpj,nameSlug: slugify(fantasyName), socialReason: newSocialReason, fantasyName: newFantasyName, creci, email, phone,
-          whatsapp, password, responsibleName: newResponsibleName, emailResponsible, whatsappResponsible, logo: photoUrlAvatar, cep, road: newRoad, number, district: newDistrict, reference, complement,
+          whatsapp, textWhatsapp, whatsapp2, textWhatsapp2, whatsapp3, textWhatsapp3, whatsapp4, textWhatsapp4,
+          password, responsibleName: newResponsibleName, emailResponsible, whatsappResponsible, logo: photoUrlAvatar, cep, road: newRoad, number, district: newDistrict, reference, complement,
           city: newCity, uf: uf.toUpperCase(), website, facebook, instagram, linkedin, youtube, viewAddress, aceptTerms, idComercialTeam: idComercialTeam, typeDocument: selectDocument
         })
     }
@@ -159,6 +167,34 @@ export function SignUpProfessional() {
     
         setWhatsapp(maskedValue)
       }
+    function ChangeMaskWhatsapp2(e) {
+        const originalValue = unMask(e.target.value);
+        const maskedValue = masker(originalValue, [
+          "(99)99999-9999",
+          "(99)99999-999",
+        ]);
+    
+        setWhatsapp2(maskedValue)
+      }
+    function ChangeMaskWhatsapp3(e) {
+        const originalValue = unMask(e.target.value);
+        const maskedValue = masker(originalValue, [
+          "(99)99999-9999",
+          "(99)99999-999",
+        ]);
+    
+        setWhatsapp3(maskedValue)
+      }
+    function ChangeMaskWhatsapp4(e) {
+        const originalValue = unMask(e.target.value);
+        const maskedValue = masker(originalValue, [
+          "(99)99999-9999",
+          "(99)99999-999",
+        ]);
+    
+        setWhatsapp4(maskedValue)
+      }
+      
     function ChangeMaskWhatsappResp(e) {
         const originalValue = unMask(e.target.value);
         const maskedValue = masker(originalValue, [
@@ -329,8 +365,6 @@ export function SignUpProfessional() {
 
                         }
                         <input type="email" placeholder="E-mail" value={email} onChange={(e) => setEmail(e.target.value)} />
-                        <input type="text" placeholder="Telefone" value={phone} onChange={ChangeMaskPhone} />
-                        <input type="text" placeholder="Whatsapp" value={whatsapp} onChange={ChangeMaskWhatsapp} />
                         <div className="dataInputs">
                         <input type={passwordView === false ? "password" : "text"}  placeholder="Senha" value={password} onChange={(e) => setPassword(e.target.value)} />
                         <div className="icon" onClick={handlePasswordView}>{passwordView === false ? <IoEyeOutline /> : <IoEyeOffOutline /> }
@@ -348,7 +382,7 @@ export function SignUpProfessional() {
                         }
                             </div>
                         <div className="buttons">
-                        {socialReason !== "" && fantasyName !== "" && email !== "" && phone !== "" && whatsapp !== "" 
+                        {socialReason !== "" && fantasyName !== "" && email !== ""  
                         && password !== "" && passwordConfirm !== "" && password === passwordConfirm? 
                         <button className="btn" onClick={() => handleSelectStepe("4")}>Avançar</button>
                          : ""                        
@@ -365,12 +399,31 @@ export function SignUpProfessional() {
                         <input type="email" placeholder="E-mail" value={emailResponsible} onChange={(e) => setEmailResponsible(e.target.value)} />
                         <input type="text" placeholder="Whatsapp" value={whatsappResponsible} onChange={ChangeMaskWhatsappResp} />
                           <br />
-                        <h5>Seu site e redes sociais</h5>
+                          <h5>Telefones</h5>
+                        <input type="text" placeholder="Telefone" value={phone} onChange={ChangeMaskPhone} />
+                        <br />
+                        <div className="inputNumber">
+                        <input type="text" placeholder="Whatsapp" value={whatsapp} onChange={ChangeMaskWhatsapp} />
+                        <input type="text" placeholder="Prinipal" value={textWhatsapp} onChange={(e) => setTextWhatsapp(e.target.value)} />
+                        </div>
+                        <div className="inputNumber">
+                        <input type="text" placeholder="Whatsapp2" value={whatsapp2} onChange={ChangeMaskWhatsapp2} />
+                        <input type="text" placeholder="Setor ou Vendedor" value={textWhatsapp2} onChange={(e) => setTextWhatsapp2(e.target.value)} />
+                        </div>
+                        <div className="inputNumber">
+                        <input type="text" placeholder="Whatsapp3" value={whatsapp3} onChange={ChangeMaskWhatsapp3} />
+                        <input type="text" placeholder="Setor ou Vendedor" value={textWhatsapp3} onChange={(e) => setTextWhatsapp3(e.target.value)} />
+                        </div>
+                        <div className="inputNumber">
+                        <input type="text" placeholder="Whatsapp4" value={whatsapp4} onChange={ChangeMaskWhatsapp4} />
+                        <input type="text" placeholder="Setor ou Vendedor" value={textWhatsapp4} onChange={(e) => setTextWhatsapp4(e.target.value)} />
+                        </div>
+                        {/* <h5>Seu site e redes sociais</h5>
                         <input type="text" placeholder="Site" value={website} onChange={(e) => setWebsite(e.target.value)} />
                         <input type="text" placeholder="Facebook" value={facebook} onChange={(e) => setFacebook(e.target.value)} />
                         <input type="text" placeholder="Instagram" value={instagram} onChange={(e) => setInstagram(e.target.value)} />
                         <input type="text" placeholder="Linkedin" value={linkedin} onChange={(e) => setLinkedin(e.target.value)} />
-                        <input type="text" placeholder="Youtube" value={youtube} onChange={(e) => setYoutube(e.target.value)} />
+                        <input type="text" placeholder="Youtube" value={youtube} onChange={(e) => setYoutube(e.target.value)} /> */}
                           </div>
 
                         <div className="buttons">
@@ -385,20 +438,32 @@ export function SignUpProfessional() {
                         </div>
                         // : data === "5" ?
                         // <div className="data">
-                        //     <>
                         //     <div className="dataInfo">
-                        //     <h5>Seu site e redes sociais</h5>
-                        // <input type="text" placeholder="" value={website} onChange={(e) => setWebsite(e.target.value)} />
-                        // <input type="text" placeholder="" value={facebook} onChange={(e) => setFacebook(e.target.value)} />
-                        // <input type="text" placeholder="" value={instagram} onChange={(e) => setInstagram(e.target.value)} />
-                        // <input type="text" placeholder="" value={linkedin} onChange={(e) => setLinkedin(e.target.value)} />
-                        // <input type="text" placeholder="" value={youtube} onChange={(e) => setYoutube(e.target.value)} />
+                        //     <h5>Telefones</h5>
+                        // <input type="text" placeholder="Telefone" value={phone} onChange={ChangeMaskPhone} />
+                        // <br />
+                        // <div className="inputNumber">
+                        // <input type="text" placeholder="Whatsapp" value={whatsapp} onChange={ChangeMaskWhatsapp} />
+                        // <input type="text" placeholder="Prinipal" value={whatsapp} onChange={ChangeMaskWhatsapp} />
+                        // </div>
+                        // <div className="inputNumber">
+                        // <input type="text" placeholder="Whatsapp2" value={whatsapp} onChange={ChangeMaskWhatsapp} />
+                        // <input type="text" placeholder="Setor ou Vendedor" value={whatsapp} onChange={ChangeMaskWhatsapp} />
+                        // </div>
+                        // <div className="inputNumber">
+                        // <input type="text" placeholder="Whatsapp3" value={whatsapp} onChange={ChangeMaskWhatsapp} />
+                        // <input type="text" placeholder="Setor ou Vendedor" value={whatsapp} onChange={ChangeMaskWhatsapp} />
+                        // </div>
+                        // <div className="inputNumber">
+                        // <input type="text" placeholder="Whatsapp4" value={whatsapp} onChange={ChangeMaskWhatsapp} />
+                        // <input type="text" placeholder="Setor ou Vendedor" value={whatsapp} onChange={ChangeMaskWhatsapp} />
+                        // </div>
                         //   </div>
                         // <div className="buttons">
                         // <button className="btn" onClick={() => handleSelectStepe("6")}>Avançar</button>
                         // <button className="btn3" onClick={() => handleSelectStepe("4")}>Voltar</button>
-                        // </div></>
-                       
+                        // </div>
+                      
                         // </div>
                         : data === "6" ?
                         <div className="data">

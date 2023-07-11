@@ -7,7 +7,7 @@ import {v4 as uuidv4} from 'uuid';
 import { IoCarSport, IoCheckmarkOutline, IoSearchOutline, IoStar, IoStarOutline, IoTrash} from "react-icons/io5";
 import { MdElectricCar } from "react-icons/md";
 import { mask as masker, unMask } from "remask";
-import buscaCep from "../../services/api-buscaCep";
+import {toast} from 'react-toastify';
 import { useContext } from "react";
 import { AuthContext } from "../../contexts/Auth";
 import { useFetch } from "../../hooks/useFetch";
@@ -43,7 +43,7 @@ export function EditAuto() {
     const [licensing, setLicensing] = useState("");
     const [feature, setFeature] = useState("");
     const [emphasis, setEmphasis] = useState(false);
-
+    const [phone, setPhone] = useState(user?.whatsapp);
     const [type, setType] = useState("");
     const [informations, setInfomations] = useState("");
     const [description, setDescription] = useState("");
@@ -136,6 +136,7 @@ export function EditAuto() {
           setGnv(res.data[0]?.gnv)
           setCityCompany(res.data[0]?.cityCompany)
           setUfCompany(res.data[0]?.ufCompany)
+          setPhone(res.data[0]?.phone)
         }).catch((error) => {
             console.log(error)
         })
@@ -147,6 +148,7 @@ export function EditAuto() {
 
 
     async function handlePlacaFipe() {
+        toast.info("Buscando dados do veículo...")
         const data = {
             "placa": placa
             }
@@ -218,7 +220,7 @@ export function EditAuto() {
         console.log(dado)
         const findCharacteristc = characteristcs.find(item => item.item === dado);
         if(findCharacteristc) {
-            const filterCharacteristc = characteristcs.filter((item) => item.item === dado);
+            const filterCharacteristc = characteristcs.filter((item) => item.item !== dado);
             setCharacteristcs(filterCharacteristc);
             return;
         } 
@@ -229,7 +231,7 @@ export function EditAuto() {
         console.log(dado)
         const findLicensing = licensingInfos.find(item => item.item === dado);
         if(findLicensing) {
-            const filterLicensing = licensingInfos.filter((item) => item.item === dado);
+            const filterLicensing = licensingInfos.filter((item) => item.item !== dado);
             setLicensingInfos(filterLicensing);
             return;
         } 
@@ -240,7 +242,7 @@ export function EditAuto() {
     function handleDeleteImage(dado) {
         const findImages = images.find(item => item.link === dado);
         if(findImages) {
-        const filterImages = images.filter((item) => item.link === dado);
+        const filterImages = images.filter((item) => item.link !== dado);
         setImages(filterImages);
 
         if(dado === images[0].link) {
@@ -257,7 +259,7 @@ function handleEditAuto() {
         id, idCompany: user.id, avatarCompany: user.logo, nameCompany: user.fantasyName, plate: placa, chassi, brand, model, version,
         segment, subsegment, doors, color, year, yearModel, mileage, march, engineCapacity, direction, fuel, endOfBoard, value, valueFipe,
         state, financing, city: cityCar, uf: ufCar, cityCompany: user.city, ufCompany: user.uf, characteristcs: feature, informations, description, horses, video,
-         platformVideo, images, featuredImage, emphasis, characteristcs, licensingInfos, availability: "Disponível", type, bodywork, eletricCar, gnv
+         platformVideo, images, featuredImage, emphasis, characteristcs, licensingInfos, availability: "Disponível", type, bodywork, eletricCar, gnv, phone
     })
 }
 
@@ -373,7 +375,10 @@ const searchFilter = data?.filter((characteristcs) => characteristcs.feature.toL
 const searchLicensingFilter = allLicensings?.filter((licensingInfos) => licensingInfos.licensing.toLowerCase().includes(searchLicensingLower))
 
 
-
+function handlePhone(e) {
+    setPhone(e.target.value)
+    console.log(e.target.value)
+}
 
 function handleSelectGng(e) {
     setGnv(e.target.value)
@@ -992,16 +997,32 @@ function handleNewLicensing() {
                        </div>
 
 
+                       
+                       <div className="textHome">
+            <h4>Setor/Vendedor</h4>
+                </div>
+                <div className="data">
+                    <select value={phone} onChange={handlePhone} className={video === "" ? "" : "select"}>
+                        <option value="">Selecionar Setor/Vendedor</option>
+                        <option value={user?.whatsapp}>{user?.textWhatsapp} - {user?.whatsapp}</option>
+                       {user?.whatsapp2 ?
+                       <option value={user?.whatsapp2}>{user?.textWhatsapp2} - {user?.whatsapp2}</option>
+                       : ""}
+                       {user?.whatsapp3 ?
+                       <option value={user?.whatsapp3}>{user?.textWhatsapp3} - {user?.whatsapp3}</option>
+                       : ""}
+                       {user?.whatsapp4 ?
+                       <option value={user?.whatsapp4}>{user?.textWhatsapp4} - {user?.whatsapp4}</option>
+                       : ""}
+                    </select>            
+                    </div>
+
+
                        <div className="textHome">
             <h4>Vídeo</h4>
                 </div>
                     
                     <div className="data">
-                    <select value={platformVideo} onChange={handlePlatformVideo} className={video === "" ? "" : "select"}>
-                        <option value="">SelecionePlataforma</option>
-                        <option value="Youtube">Youtube</option>
-                        <option value="Vímeo">Vímeo</option>
-                    </select>
                     <input type="text" className={video === "" ? "" : "select"} placeholder="Link do vídeo (Modelo e exemplo abaixo)" value={video} onChange={e => setVideo(e.target.value)}/>
                     </div>
                     <div className="data">

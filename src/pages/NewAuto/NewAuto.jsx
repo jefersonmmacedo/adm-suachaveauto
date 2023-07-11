@@ -7,7 +7,7 @@ import {v4 as uuidv4} from 'uuid';
 import { IoCarSport, IoCheckmarkOutline, IoSearchOutline, IoStar, IoStarOutline, IoTrash} from "react-icons/io5";
 import { MdElectricCar } from "react-icons/md";
 import { mask as masker, unMask } from "remask";
-import buscaCep from "../../services/api-buscaCep";
+import {toast} from 'react-toastify';
 import { useContext } from "react";
 import { AuthContext } from "../../contexts/Auth";
 import { useFetch } from "../../hooks/useFetch";
@@ -42,6 +42,7 @@ export function NewAuto() {
     const [emphasis, setEmphasis] = useState(false);
 
     const [type, setType] = useState("");
+    const [phone, setPhone] = useState(user?.whatsapp);
     const [informations, setInfomations] = useState("");
     const [description, setDescription] = useState("");
     const [placa, setPlaca] = useState("");
@@ -93,6 +94,8 @@ export function NewAuto() {
 
 
     async function handlePlacaFipe() {
+        toast.info("Buscando dados do veículo...")
+        
         const data = {
             "placa": placa
             }
@@ -106,7 +109,8 @@ export function NewAuto() {
                 handleSelecrCarNotFipe()
             }
         }).catch((err) => {
-            console.log(err)
+            console.log(err);
+            toast.error("Falha ao acessar consulta Fipe. Contacte o administrador do sistema.")
         });
     }
 
@@ -167,18 +171,21 @@ export function NewAuto() {
         console.log(dado)
         const findCharacteristc = characteristcs.find(item => item.item === dado);
         if(findCharacteristc) {
-            const filterCharacteristc = characteristcs.filter((item) => item.item === dado);
+            const filterCharacteristc = characteristcs.filter((item) => item.item !== dado);
             setCharacteristcs(filterCharacteristc);
             return;
         } 
             const data = {id: uuidv4(), item: dado}
             setCharacteristcs([...characteristcs, data])
     }
+
+
+
     function handleNewLicensingInfos(dado) {
         console.log(dado)
         const findLicensing = licensingInfos.find(item => item.item === dado);
         if(findLicensing) {
-            const filterLicensing = licensingInfos.filter((item) => item.item === dado);
+            const filterLicensing = licensingInfos.filter((item) => item.item !== dado);
             setLicensingInfos(filterLicensing);
             return;
         } 
@@ -189,7 +196,7 @@ export function NewAuto() {
     function handleDeleteImage(dado) {
         const findImages = images.find(item => item.link === dado);
         if(findImages) {
-        const filterImages = images.filter((item) => item.link === dado);
+        const filterImages = images.filter((item) => item.link !== dado);
         setImages(filterImages);
 
         if(dado === images[0].link) {
@@ -199,6 +206,8 @@ export function NewAuto() {
         return;
         } 
     }
+
+
     
 
 function handleNewAuto() {
@@ -206,7 +215,7 @@ function handleNewAuto() {
         id:idAuto, idCompany: user.id, avatarCompany: user.logo, nameCompany: user.fantasyName, plate: placa, chassi, brand, model, version,
         segment, subsegment, doors, color, year, yearModel, mileage, march, engineCapacity, direction, fuel, endOfBoard, value, valueFipe,
         state, financing, city: cityCar, uf: ufCar, cityCompany: user.city, ufCompany: user.uf, characteristcs: feature, informations, description, horses, video,
-         platformVideo, images, featuredImage, emphasis, characteristcs, licensingInfos, availability: "Disponível", type, bodywork, eletricCar, gnv
+         platformVideo, images, featuredImage, emphasis, characteristcs, licensingInfos, availability: "Disponível", type, bodywork, eletricCar, gnv, phone
     })
 }
 
@@ -324,6 +333,10 @@ const searchLicensingFilter = allLicensings?.filter((licensingInfos) => licensin
 
 
 
+function handlePhone(e) {
+    setPhone(e.target.value)
+    console.log(e.target.value)
+}
 function handleSelectGng(e) {
     setGnv(e.target.value)
     console.log(e.target.value)
@@ -883,6 +896,7 @@ function handleNewLicensing() {
                                 <button onClick={handleNewFeature}>Adicionar</button>
                             </div>                 
 
+
                         {characteristcs.length === 0 ? "" :
                         <div className="characteristcs">
                             {characteristcs.map((item) => {
@@ -963,15 +977,34 @@ function handleNewLicensing() {
 
 
                        <div className="textHome">
+            <h4>Setor/Vendedor</h4>
+                </div>
+                <div className="data">
+                    <select value={phone} onChange={handlePhone} className={video === "" ? "" : "select"}>
+                        <option value="">Selecionar Setor/Vendedor</option>
+                        <option value={user?.whatsapp}>{user?.textWhatsapp} - {user?.whatsapp}</option>
+                       {user?.whatsapp2 ?
+                       <option value={user?.whatsapp2}>{user?.textWhatsapp2} - {user?.whatsapp2}</option>
+                       : ""}
+                       {user?.whatsapp3 ?
+                       <option value={user?.whatsapp3}>{user?.textWhatsapp3} - {user?.whatsapp3}</option>
+                       : ""}
+                       {user?.whatsapp4 ?
+                       <option value={user?.whatsapp4}>{user?.textWhatsapp4} - {user?.whatsapp4}</option>
+                       : ""}
+                    </select>            
+                    </div>
+
+                       <div className="textHome">
             <h4>Vídeo</h4>
                 </div>
                     
                     <div className="data">
-                    <select value={platformVideo} onChange={handlePlatformVideo} className={video === "" ? "" : "select"}>
+                    {/* <select value={platformVideo} onChange={handlePlatformVideo} className={video === "" ? "" : "select"}>
                         <option value="">SelecionePlataforma</option>
                         <option value="Youtube">Youtube</option>
                         <option value="Vímeo">Vímeo</option>
-                    </select>
+                    </select> */}
                     <input type="text" className={video === "" ? "" : "select"} placeholder="Link do vídeo (Modelo e exemplo abaixo)" value={video} onChange={e => setVideo(e.target.value)}/>
                     </div>
                     <div className="data">

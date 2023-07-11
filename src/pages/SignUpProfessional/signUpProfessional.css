@@ -51,6 +51,32 @@
     margin: 20px 0;
     padding: 10px;
 }
+.SignUpProfessional .login form .data .dataInfo .inputNumber {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 5px 0;
+    padding: 5px;
+}
+
+.SignUpProfessional .login form .data .dataInfo .inputNumber input {
+    width:39%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border: 1px solid var(--Border);
+    border-radius: 20px;
+    padding: 7px 15px;
+    margin: 0px 10px;
+    font-weight: 600;
+}
+
+
+
 .SignUpProfessional .login form .data .dataInfo .infoAdress {
     width: 80%;
     display: flex;

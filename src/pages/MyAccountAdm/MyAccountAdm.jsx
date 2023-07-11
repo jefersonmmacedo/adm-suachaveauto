@@ -31,6 +31,13 @@ export function MyAccountAdm() {
     const [email, setEmail] = useState(user.email);
     const [phone, setPhone] = useState(user.phone);
     const [whatsapp, setWhatsapp] = useState(user.whatsapp);
+    const [whatsapp2, setWhatsapp2] = useState(user.whatsapp2);
+    const [whatsapp3, setWhatsapp3] = useState(user.whatsapp3);
+    const [whatsapp4, setWhatsapp4] = useState(user.whatsapp4);
+    const [textWhatsapp, setTextWhatsapp] = useState(user.textWhatsapp);
+    const [textWhatsapp2, setTextWhatsapp2] = useState(user.textWhatsapp2);
+    const [textWhatsapp3, setTextWhatsapp3] = useState(user.textWhatsapp3);
+    const [textWhatsapp4, setTextWhatsapp4] = useState(user.textWhatsapp4);
     const [responsibleName, setResponsibleName] = useState(user.responsibleName);
     const [emailResponsible, setEmailResponsible] = useState(user.emailResponsible);
     const [whatsappResponsible, setWhatsappResponsible] = useState(user.whatsappResponsible);
@@ -95,8 +102,9 @@ export function MyAccountAdm() {
 
     function continueNewAccount(photoUrlAvatar) {
         updateAccountCompany({
-          id: user.id, type: user.type, verifie: user.verifie, status:user.status, cpf_Cnpj,nameSlug: slugify(fantasyName), socialReason, fantasyName, creci, email, phone,
-          whatsapp, responsibleName, emailResponsible, whatsappResponsible, logo: photoUrlAvatar, cep, road, number, district,
+          id: user.id, type: user.type, verifie: user.verifie, status:user.status, cpf_Cnpj,nameSlug: slugify(fantasyName),
+          socialReason, fantasyName, creci, email, phone, whatsapp, textWhatsapp, whatsapp2, textWhatsapp2, whatsapp3, textWhatsapp3, whatsapp4, textWhatsapp4,
+          responsibleName, emailResponsible, whatsappResponsible, logo: photoUrlAvatar, cep, road, number, district,
           city, uf, website, facebook, instagram, linkedin, youtube, date: user.date
         })
     }
@@ -111,7 +119,7 @@ export function MyAccountAdm() {
     
         setPhone(maskedValue)
       }
-    function ChangeMaskWhatsapp(e) {
+      function ChangeMaskWhatsapp(e) {
         const originalValue = unMask(e.target.value);
         const maskedValue = masker(originalValue, [
           "(99)99999-9999",
@@ -119,6 +127,33 @@ export function MyAccountAdm() {
         ]);
     
         setWhatsapp(maskedValue)
+      }
+    function ChangeMaskWhatsapp2(e) {
+        const originalValue = unMask(e.target.value);
+        const maskedValue = masker(originalValue, [
+          "(99)99999-9999",
+          "(99)99999-999",
+        ]);
+    
+        setWhatsapp2(maskedValue)
+      }
+    function ChangeMaskWhatsapp3(e) {
+        const originalValue = unMask(e.target.value);
+        const maskedValue = masker(originalValue, [
+          "(99)99999-9999",
+          "(99)99999-999",
+        ]);
+    
+        setWhatsapp3(maskedValue)
+      }
+    function ChangeMaskWhatsapp4(e) {
+        const originalValue = unMask(e.target.value);
+        const maskedValue = masker(originalValue, [
+          "(99)99999-9999",
+          "(99)99999-999",
+        ]);
+    
+        setWhatsapp4(maskedValue)
       }
     function ChangeMaskWhatsappResp(e) {
         const originalValue = unMask(e.target.value);
@@ -186,8 +221,22 @@ export function MyAccountAdm() {
                     <div className="data">  
                     <input type="email" placeholder="E-mail" value={email} onChange={(e) => setEmail(e.target.value)} disabled/>
                     <input type="text" placeholder="Telefone" value={phone} onChange={ChangeMaskPhone}/>
+                    </div>
+                    <div className="data">  
                     <input type="text" placeholder="Whatsapp" value={whatsapp} onChange={ChangeMaskWhatsapp}/>
-                   
+                    <input type="text" placeholder="Setor ou Vendedor" value={textWhatsapp} onChange={(e) => setTextWhatsapp(e.target.value)}/>
+                    </div>
+                    <div className="data">  
+                    <input type="text" placeholder="Whatsapp2" value={whatsapp2} onChange={ChangeMaskWhatsapp2}/>
+                    <input type="text" placeholder="Setor ou Vendedor" value={textWhatsapp2} onChange={(e) => setTextWhatsapp2(e.target.value)}/>
+                    </div>
+                    <div className="data">  
+                    <input type="text" placeholder="Whatsapp3" value={whatsapp3} onChange={ChangeMaskWhatsapp3}/>
+                    <input type="text" placeholder="Setor ou Vendedor" value={textWhatsapp3} onChange={(e) => setTextWhatsapp3(e.target.value)}/>
+                    </div>
+                    <div className="data">  
+                    <input type="text" placeholder="Whatsapp4" value={whatsapp4} onChange={ChangeMaskWhatsapp4}/>
+                    <input type="text" placeholder="Setor ou Vendedor" value={textWhatsapp4} onChange={(e) => setTextWhatsapp4(e.target.value)}/>
                     </div>
                          
                     <div className="textHome">

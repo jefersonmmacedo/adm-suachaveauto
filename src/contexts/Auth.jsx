@@ -23,13 +23,17 @@ function AuthProvider({children}) {
     }
 
     async function createAccountCompany({
-        type, verified, status, cpf_Cnpj ,nameSlug, socialReason, fantasyName, creci, email, phone, whatsapp, password, responsibleName,
-        emailResponsible, whatsappResponsible, logo, cep, road, number, district, city, uf, complement, reference, website, facebook, instagram, linkedin, youtube,
-        idPlain, viewAddress, aceptTerms, idComercialTeam, typeDocument
+        type, verified, status, cpf_Cnpj ,nameSlug, socialReason, fantasyName, creci, email, phone, 
+        whatsapp, textWhatsapp, whatsapp2, textWhatsapp2, whatsapp3, textWhatsapp3, whatsapp4, textWhatsapp4,
+        password, responsibleName, emailResponsible, whatsappResponsible, logo, cep, road, number, district, city,
+        uf, complement, reference, website, facebook, instagram, linkedin, youtube,
+        viewAddress, aceptTerms, idComercialTeam, typeDocument
         }) {
         const data = {
-            type, verified, status, cpf_Cnpj ,nameSlug, socialReason, fantasyName, creci, email, phone, whatsapp, password, responsibleName,
-            emailResponsible, whatsappResponsible, logo, cep, road, number, district, city, uf, complement, reference, website, facebook, instagram, linkedin, youtube,
+            type, verified, status, cpf_Cnpj ,nameSlug, socialReason, fantasyName, creci, email, phone, 
+            whatsapp, textWhatsapp, whatsapp2, textWhatsapp2, whatsapp3, textWhatsapp3, whatsapp4, textWhatsapp4,
+            password, responsibleName, emailResponsible, whatsappResponsible, logo, cep, road, number, district, city,
+            uf, complement, reference, website, facebook, instagram, linkedin, youtube,
             viewAddress, aceptTerms, idComercialTeam, typeDocument
             }
 
@@ -50,23 +54,27 @@ function AuthProvider({children}) {
 
     async function mailcreateAccount({email, name}) {
         const data = {email, name}
-        await api.post("/mail/create", data);
+        await apiMail.post("/mail/create", data);
     }
 
 
     async function updateAccountCompany({
-        id, type, verified, status, cpf_Cnpj ,nameSlug, socialReason, fantasyName, creci, email, phone, whatsapp, responsibleName,
-        emailResponsible, whatsappResponsible, logo, cep, road, number, district, city, uf, website, facebook, instagram, linkedin, youtube,
-        date
+        id, type, verified, status, cpf_Cnpj ,nameSlug, socialReason, fantasyName, creci, email, phone,
+        whatsapp, textWhatsapp, whatsapp2, textWhatsapp2, whatsapp3, textWhatsapp3, whatsapp4, textWhatsapp4,
+        responsibleName, emailResponsible, whatsappResponsible, logo, cep, road, number, district, city, uf, website,
+        facebook, instagram, linkedin, youtube, date
         }) {
         const data = {
-            type, verified, status, cpf_Cnpj ,nameSlug, socialReason, fantasyName, creci, email, phone, whatsapp, responsibleName,
-            emailResponsible, whatsappResponsible, logo, cep, road, number, district, city, uf, website, facebook, instagram, linkedin, youtube
+            type, verified, status, cpf_Cnpj ,nameSlug, socialReason, fantasyName, creci, email, phone,
+            whatsapp, textWhatsapp, whatsapp2, textWhatsapp2, whatsapp3, textWhatsapp3, whatsapp4, textWhatsapp4,
+            responsibleName, emailResponsible, whatsappResponsible, logo, cep, road, number, district, city, uf, website,
+            facebook, instagram, linkedin, youtube
             }
         const data2 = {
-            id, type, verified, status, cpf_Cnpj ,nameSlug, socialReason, fantasyName, creci, email, phone, whatsapp, responsibleName,
-            emailResponsible, whatsappResponsible, logo, cep, road, number, district, city, uf, website, facebook, instagram, linkedin, youtube,
-            date
+            id, type, verified, status, cpf_Cnpj ,nameSlug, socialReason, fantasyName, creci, email, phone,
+            whatsapp, textWhatsapp, whatsapp2, textWhatsapp2, whatsapp3, textWhatsapp3, whatsapp4, textWhatsapp4,
+            responsibleName, emailResponsible, whatsappResponsible, logo, cep, road, number, district, city, uf, website,
+            facebook, instagram, linkedin, youtube, date
             }
         
         await api.patch(`/company/updateAccount/${id}`, data).then(() => {
@@ -85,9 +93,8 @@ function AuthProvider({children}) {
 
     async function mailUpdateAccount({email, name}) {
         const data = {email, name}
-        await api.post("/mail/updateAccount", data);
+        await apiMail.post("/mail/updateAccount", data);
     }
-
 
 
     async function loginSessionCompany({email, password, device, browser, latitude, longitude, ipDevice}) {     
@@ -230,7 +237,7 @@ function AuthProvider({children}) {
     }
     
     async function passwordRecoverOk(email) {
-        const res = await api.post("/mail/newpassword", {mail: email});
+        const res = await apiMail.post("/mail/newpassword", {mail: email});
         if(res.status === 200) {
             window.open(`/`,"_self")
         }
@@ -514,7 +521,7 @@ async function newCollaborator({idCompany, avatar, profession, name, schooling, 
 
             async function mailProcess({email, name, company,  status, website, title, idAuto}) {
                 const dataProcess = {email, name, company,  status, website, title, idAuto}
-                await api.post("/mail/newContract", dataProcess).then((res) => {
+                await apiMail.post("/mail/newContract", dataProcess).then((res) => {
                     window.open("/contratos", "_self")
                 }).catch((err) => {})
             }
@@ -763,14 +770,14 @@ async function newAuto({
     id, idCompany, avatarCompany, nameCompany, plate, chassi, brand, model, version,
     segment, subsegment, doors, color, year, yearModel, mileage, march, engineCapacity, direction, fuel, endOfBoard, value, valueFipe,
     state, financing, city, uf, cityCompany, ufCompany, characteristcs, informations, description, horses, video,
-     platformVideo, images, featuredImage, emphasis, licensingInfos, availability, type, bodywork, eletricCar
+     platformVideo, images, featuredImage, emphasis, licensingInfos, availability, type, bodywork, eletricCar, gnv, phone
 }) {
 
     const data  = {
         id, idCompany, avatarCompany, nameCompany, plate, chassi, brand, model, version,
         segment, subsegment, doors, color, year, yearModel, mileage, march, engineCapacity, direction, fuel, endOfBoard, value, valueFipe,
         state, financing, city, uf, cityCompany, ufCompany, characteristcs, informations, description, horses, video,
-         platformVideo, images, featuredImage, emphasis, licensingInfos, availability, type, bodywork, eletricCar
+         platformVideo, images, featuredImage, emphasis, licensingInfos, availability, type, bodywork, eletricCar, gnv, phone
         }
     await api.post("/autos", data).then(() => {
         toast.success("Anúncio cadastrado com sucesso!");
@@ -785,14 +792,14 @@ async function updateAuto({
     id, idCompany, avatarCompany, nameCompany, plate, chassi, brand, model, version,
     segment, subsegment, doors, color, year, yearModel, mileage, march, engineCapacity, direction, fuel, endOfBoard, value, valueFipe,
     state, financing, city, uf, cityCompany, ufCompany, characteristcs, informations, description, horses, video,
-     platformVideo, images, featuredImage, emphasis, licensingInfos, availability, type, bodywork, eletricCar, gnv
+     platformVideo, images, featuredImage, emphasis, licensingInfos, availability, type, bodywork, eletricCar, gnv, phone
     }) {
 
     const data  = {
         idCompany, avatarCompany, nameCompany, plate, chassi, brand, model, version,
         segment, subsegment, doors, color, year, yearModel, mileage, march, engineCapacity, direction, fuel, endOfBoard, value, valueFipe,
         state, financing, city, uf, cityCompany, ufCompany, characteristcs, informations, description, horses, video,
-         platformVideo, images, featuredImage, emphasis, licensingInfos, availability, type, bodywork, eletricCar, gnv
+         platformVideo, images, featuredImage, emphasis, licensingInfos, availability, type, bodywork, eletricCar, gnv, phone
         }
 
         console.log(data)

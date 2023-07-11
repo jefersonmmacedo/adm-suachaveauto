@@ -156,7 +156,7 @@ export function MyAutos() {
                   autos publicados
                  </h4>
 
-                <h3><a className="link" href={plains?.namePlain === "Free" && data?.length >= 5 ? "/atualizar-plano/Start" :
+                <h3><a className="link" href={plains?.namePlain === "Free" && data?.length >= 500 ? "/atualizar-plano/Start" :
                     plains?.namePlain === "Start" && data?.length >= 50 ? "/atualizar-plano/Lite" :
                     plains?.namePlain === "Lite" && data?.length >= 200 ? "/atualizar-plano/Tour" :
                     plains?.namePlain === "Pro" ? "/novoauto" :
