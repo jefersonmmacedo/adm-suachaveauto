@@ -160,13 +160,21 @@
     margin: 5px 0;
 }
 
+.ViewAutoList .searchItensFilter .searchOptionsFilter .form h4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    font-weight: 600;
+    margin: 2px 0;
+}
 .ViewAutoList .searchItensFilter .searchOptionsFilter .form h5 {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: row;
     font-weight: 600;
-    margin: 1px 0;
+    margin: 5px 0;
 }
 .ViewAutoList .searchItensFilter .searchOptionsFilter .form h6 {
     display: flex;
@@ -175,7 +183,7 @@
     flex-direction: row;
     font-weight: 700;
     color: var(--Gray);
-    margin: 10px 0 5px 0;
+    margin: 10px 0;
     font-size: 14px;
 }
 
@@ -201,122 +209,101 @@
     padding: 10px 20px;
 }
 
+
 .ViewAutoList .searchItensFilter .searchOptionsFilter .form .iconsBox {
     width: 100%;
-    height: 100%;
     display: flex;
     flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    margin: 10px 0px; 
+    align-items: flex-start;
+    justify-content: space-between;
+    margin: 20px 0px; 
+    padding: 0px 5px;
     flex-wrap: wrap;
 }
 
 .ViewAutoList .searchItensFilter .searchOptionsFilter .form .iconsBox .iconUnicBox {
-    width: 78px;
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
     text-align: center;
-    padding: 0px 5px;
-    margin: 0px 5px;
+    padding: 0px;
     color: var(--Gray);
 }
 .ViewAutoList .searchItensFilter .searchOptionsFilter .form .iconsBox .iconUnicBox svg {
-    font-size: 16px;
-    margin-right: 10px;
-    color: var(--Primary);
+    font-size: 18px;
+    margin-right: 5px;
+    color: var(--Gray);
+    margin-top: -2px;
+
 }
 
 .ViewAutoList .searchItensFilter .searchOptionsFilter .form .iconsBox .iconUnicBox .simbolBox {
     width: 100%;
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: flex-end;
     justify-content: flex-start;
     text-align: center;
-    margin-top: 3px;
+    margin: 3px;
 }
 .ViewAutoList .searchItensFilter .searchOptionsFilter .form .iconsBox .iconUnicBox .simbolBox  p {
-    color: var(--Gray);
+    color: var(--Paragraph);
     font-weight: 600;
     font-size: 12px;
 }
 
-
-.ViewAutoList .searchItensFilter .searchOptionsFilter .form .infosCompany {
-    width: 400px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    border-radius: 6px;
-    border: 1px solid var(--Border);
-    margin: 20px ;
-    padding: 10px;
-    margin-top: 20px;
-}
-
-.ViewAutoList .searchItensFilter .searchOptionsFilter .form .infosCompany .pricing {
+.ViewAutoList .searchItensFilter .searchOptionsFilter .form .pricing {
     width: 100%;
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
     text-align: flex-start;
-    margin-bottom: 5px;
+    margin: 0px;
 }
 
-.ViewAutoList .searchItensFilter .searchOptionsFilter .form .infosCompany .pricing h5 {
+.ViewAutoList .searchItensFilter .searchOptionsFilter .form .pricing h6 {
     color: var(--Gray);
     font-weight: 800;
-    margin: 5px 10px;
+    margin: 2px 5px;
+    text-align: flex-start;
 }
-.ViewAutoList .searchItensFilter .searchOptionsFilter .form .infosCompany .pricing h5 span {
+.ViewAutoList .searchItensFilter .searchOptionsFilter .form .pricing h6 span {
     font-weight: 500;
+    color: var(--Gray);
 }
-.ViewAutoList .searchItensFilter .searchOptionsFilter .form .infosCompany .pricing h2 {
+.ViewAutoList .searchItensFilter .searchOptionsFilter .form .pricing h3 {
     color: var(--Paragraph);
     font-weight: 400;
-    margin: 0 10px;
+    margin: 2px 5px;
+    text-align: flex-end;
+        width: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
 }
-.ViewAutoList .searchItensFilter .searchOptionsFilter .form .infosCompany .pricing h2 span {
+.ViewAutoList .searchItensFilter .searchOptionsFilter .form .pricing span {
+    color: var(--Paragraph);
+    font-weight: 800;
+}
+.ViewAutoList .searchItensFilter .searchOptionsFilter .form .pricing h4 {
+    color: var(--Paragraph);
+    font-weight: 400;
+    margin: 2px 5px;
+    text-align: flex-end;
+        width: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+}
+.ViewAutoList .searchItensFilter .searchOptionsFilter .form .pricing h4 span {
     color: var(--Paragraph);
     font-weight: 800;
 }
 
-.ViewAutoList .searchItensFilter .searchOptionsFilter .form .infosCompany .otherPrincings {
-    width: 100%;
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    flex-direction: row;
-    border-bottom: 1px solid var(--Border);
-    padding: 5px 0;
-}
-
-.ViewAutoList .searchItensFilter .searchOptionsFilter .form .infosCompany .otherPrincings h5 {
-    color: var(--Gray);
-    font-weight: 700;
-    margin: 5px 10px;
-}
-
-.ViewAutoList .searchItensFilter .searchOptionsFilter .form .infosCompany .pricingTotal {
-    width: 100%;
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    flex-direction: row;
-    padding: 5px 0;
-}
-
-.ViewAutoList .searchItensFilter .searchOptionsFilter .form .infosCompany .pricingTotal h4 {
-    color: var(--Paragraph);
-    font-weight: 800;
-    margin: 5px 10px;
-    margin-bottom: 20px;
-}
 
 @media(max-width:600px) {
 

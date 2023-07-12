@@ -416,6 +416,10 @@ function handleEletricCar(e) {
     setEletricCar(e.target.value)
     console.log(e.target.value)
 }
+function handleSelectFinancing(e) {
+    setFinancing(e.target.value)
+    console.log(e.target.value)
+}
 
 
 function handleselectType(data) {
@@ -866,7 +870,7 @@ function handleNewLicensing() {
                     </div>
                     <div className="dataInfo">
                     <span>Aceita financiamento?</span>
-                    <select value={"state"} onChange={"handleSelectState"} className={"state" === "" ? "" : "select"}>
+                    <select value={financing} onChange={handleSelectFinancing} className={financing=== "" ? "" : "select"}>
                         <option value="">Selecione</option>
                         <option value="Sim">Sim</option>
                         <option value="Não">Não</option>
