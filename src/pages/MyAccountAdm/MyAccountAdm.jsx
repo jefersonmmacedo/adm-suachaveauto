@@ -239,7 +239,7 @@ export function MyAccountAdm() {
                     </div>
                          
                     <div className="textHome">
-                       <h4>Redes Sociais</h4>
+                       <h4>Site e Redes Sociais</h4>
                     </div>              
                    
                     <div className="data">  
