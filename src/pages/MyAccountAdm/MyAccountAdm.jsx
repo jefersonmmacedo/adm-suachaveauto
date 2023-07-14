@@ -211,7 +211,6 @@ export function MyAccountAdm() {
                     <input type="text" placeholder="CNPJ" value={cpf_Cnpj} onChange={ChangeMaskCNPJ} disabled/>
                     <input type="text" placeholder="Razão Social" value={socialReason} onChange={(e) => setSocialReason(e.target.value)} disabled/>
                     <input type="text" placeholder="Nome Fantasia" value={fantasyName} onChange={(e) => setFantasyName(e.target.value)}/>
-                    <input type="text" placeholder="CRECI" value={creci} onChange={(e) => setCreci(e.target.value)} disabled/>
                     </div>
                 
                     <div className="textHome">
@@ -244,7 +243,7 @@ export function MyAccountAdm() {
                     </div>              
                    
                     <div className="data">  
-                    <input type="text" placeholder="Facebook" value={website} onChange={(e) => setWebsite(e.target.value)}/>
+                    <input type="text" placeholder="Site" value={website} onChange={(e) => setWebsite(e.target.value)}/>
                     <input type="text" placeholder="Facebook" value={facebook} onChange={(e) => setFacebook(e.target.value)}/>
                     <input type="text" placeholder="Instagram" value={instagram} onChange={(e) => setInstagram(e.target.value)}/>
                     <input type="text" placeholder="Linkedin" value={linkedin} onChange={(e) => setLinkedin(e.target.value)}/>
